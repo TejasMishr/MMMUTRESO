@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(30 30 30 / 94%);
+
+}
+.heading{
+    margin-top: 5%;
+    font-size: 3em;
+    color: #ffffff;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+    text-decoration-color: black;
+    
+}
+
+.container{
+    /* position: absolute; */
+    margin-top: 13%;
+    display: flex;
+    padding: 80px 40px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 300px;
+    /* z-index: -1; */
+}
+.card{
+    position: relative;
+    width: 350px;
+    height: 191px;
+    background: rgb(181 172 172);
+    
+    transition: 0.6s;
+}
+.card .lines{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+.card:hover{
+    height: 390px;
+}
+.card .lines::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    height: 120px;
+    
+    background: linear-gradient(45deg, grey,#bdb7b7,black,#bfbdbd,black,grey);
+    animation: animate 4s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .lines::before{
+    animation-play-state:running;   
+}
+
+@keyframes animate{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .lines::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    
+    background: linear-gradient(45deg,rgb(118 181 181),rgb(26 73 85),rgb(98 208 223));
+}
+.card .img{
+    position: absolute;
+    top: -105px;
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    /* transform: translateX(-60%); */
+    background: black;
+    z-index: 2;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .img:hover {
+   transform: scale(1.1);
+   transition: .97s ease-in-out;
+}
+.card .img::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    transform:translate(-50%,-50%);
+    background:linear-gradient(transparent,rgb(118 181 181),rgb(26 73 85),rgb(98 208 223),transparent);
+    animation: animate2 7s linear infinite;
+    animation-play-state: paused;
+}
+.card:hover .img::before{
+    animation-play-state:running;  
+}
+@keyframes animate2{
+    0%
+    {
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%
+    {
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.card .img::after{
+    content: '';
+    position: absolute;
+    inset: 6px;
+    background: linear-gradient(45deg, grey,#bdb7b7,black,#bfbdbd,black,grey);
+}
+.card .img img{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.card:hover .img img{
+    opacity: 1;
+}
+.card .content{
+position: absolute;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+overflow: hidden;
+}
+.card .content .details{
+    padding: 30px 20px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(145px);
+
+}
+.card:hover .content .details{
+    transform: translateY(0px);
+}
+.card .content .details h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(5 195 170);
+    text-decoration: underline;
+    line-height: 0.2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.card .content .details h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(5 195 170);
+    text-decoration: underline;
+    line-height: 4rem;
+    font-family: 'Open Sans', sans-serif;
+}
+.card .content .details p{
+    color: white;
+    opacity: 0;
+    font-size: 1.1rem;
+    transition: 0.5s;
+    margin-bottom: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.card:hover .content .details p{
+    opacity: 1;
+}
+.card .content .details .info{
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 31px;
+    font-size: 1.1rem;
+}
+.card .content .details .info a{
+    opacity: 0.5;
+    font-size: 1.1rem;
+    transition: 0.5s;
+}
+.card .content .details .info a:hover{
+    color: white;
+    opacity: 1;
+    font-size: 1.5rem;
+}
+.card .content .details .info a:hover .fa-brands{
+    color: white;
+}
