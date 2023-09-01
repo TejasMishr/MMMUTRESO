@@ -84,6 +84,7 @@ h2 {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 5;
 }
 
 .grad-bar {
@@ -153,7 +154,7 @@ h2 {
  
   padding: 50px 20px;
 
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(380px, auto));
 }
 
