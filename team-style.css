@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: rgb(30 30 30 / 94%);
+    background: radial-gradient(circle at top,transparent,#0c0e50, #00363d , #305378);
 
 }
 .heading{
