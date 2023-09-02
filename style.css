@@ -175,12 +175,16 @@ h2 {
 }
 
 .feature-container a img {
-  width: 50vw;
-  height: 40vh;
-  
-  margin-bottom: 15px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 7px;
+    border: 2px solid black;
+    width: 75%;
+    height: 22vh;
 }
-
+.feature-container a img::hover{
+  width:52vw;
+  height:42vh;
+}
 /* SEARCH FUNCTION */
 
 #search-icon {
