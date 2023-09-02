@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded PDF Viewer</title>
+    <style>
+        /* Style for the container */
+        .pdf-container {
+            max-width: 100%;
+            overflow: hidden;
+            position: relative;
+            padding-top: 56.25%; /* 16:9 aspect ratio for responsive iframe */
+        }
+
+        /* Style for the iframe */
+        .pdf-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 60%;
+            height: 100%;
+            border: none; /* Remove iframe border */
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- HTML -->
+    <select id="fileSelect">
+      <option value="0">File 1</option>
+      <option value="1">File 2</option>
+      <option value="2">File 3</option>
+      <!-- Add more options as needed -->
+    </select>
+    <div class="pdf-container">
+        <iframe
+            id="pdfViewer"
+            frameborder="0"
+            scrolling="no"
+            src="" <!-- Leave the src attribute empty for now -->
+        ></iframe>
+    </div>
+
+    <script>
+        // Your JavaScript code for updating the iframe's src attribute goes here
+        var fileIDs = [
+            'file_id_1',
+            'file_id_2',
+            'file_id_3'
+        ];
+
+        var fileSelect = document.getElementById('fileSelect');
+        var pdfViewer = document.getElementById('pdfViewer');
+
+        fileSelect.addEventListener('change', function () {
+            var selectedValue = fileSelect.value;
+            var selectedFileID = fileIDs[selectedValue];
+            pdfViewer.src = 'https://drive.google.com/file/d/' + '13018QeExFpL8vkjNpUtQHxnknAKcpKel' + '/preview';
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+<!-- pdfViewer.src = 'https://drive.google.com/file/d/' + '13018QeExFpL8vkjNpUtQHxnknAKcpKel' + '/preview'; -->

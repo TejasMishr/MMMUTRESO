@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MMMUT Resource </title>
+  <link href="PYQ.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="script.js"></script>
+  <style>
+    .nav-wrapper{
+      z-index: 7;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+        <img src="../img/logo.png" alt="MMMUT">
+        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+          <li class="nav-item"><a href="team.html">Teams</a></li>
+          <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+    <section id="particles-js" class="heading">
+      <h1>MMMUT Resource Hub</h1>
+      <p> Empowering Your Academic Journey!</p>
+
+
+    </section>
+
+
+
+    
+
+
+    <!-- Select branch and sem starts  -->
+   <form action="#" class="filter-options">
+        <select name="branch" id="branch">
+          <option value="select">Select a Branch</option>
+          <option value="0">CSE</option>
+          <option value="1">IT</option>
+          <option value="2">ECE</option>
+          <option value="3">EE</option>
+          <option value="4">CE</option>
+          <option value="5">ME</option>
+          <option value="6">CHE</option>
+        </select>
+
+        <select name="semester" id="fileSelect" >
+
+          <option value="select">Select a Semester</option>
+          <option value="1">I</option>
+          <option value="2">II</option>
+          <option value="3">III</option>
+          <option value="4">IV</option>
+          <option value="5">V</option>
+          <option value="6">VI</option>
+          <option value="7">VII</option>
+          <option value="8">VIII</option>
+        </select>
+
+        <select name="paper" id="selectpaper" >
+
+          <option value="selectpaper">Select Papers</option>
+          <option value="1">Minor 1</option>
+          <option value="2">Minor 2</option>
+          <option value="3">Major</option>
+
+        </select>
+
+        <!-- <input type="submit" value="Submit" class="sem-branch-submit"/> -->
+  </form>
+
+  <div class="pdf-container">
+    <iframe
+        id="pdfViewer"
+        frameborder="0"
+        scrolling="no"
+        sandbox="allow-same-origin allow-scripts"
+        src="" 
+        onerror="displayErrorMessage()"
+      > </iframe>
+  </div>
+  
+</div>
+</body>
+
+<script>
+  var fileIDs = [
+    [
+      ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET','12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE','13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
+      ['file_id_1_2_1', 'file_id_1_2_2', 'file_id_1_2_3'],
+      ['file_id_1_2_1', 'file_id_1_2_2', 'file_id_1_2_3']
+    ],
+    [
+      ['file_id_2_1_1', 'file_id_2_1_2', 'file_id_2_1_3'],
+      ['file_id_2_2_1', 'file_id_2_2_2', 'file_id_2_2_3']
+    ]
+  ];
+
+  var branchSelect = document.getElementById('branch');
+  var fileSelect = document.getElementById('fileSelect');
+  var selectpaper = document.getElementById('selectpaper');
+  var pdfViewer = document.getElementById('pdfViewer');
+
+  // Add change event listeners to the select elements
+  branchSelect.addEventListener('change', updatePDF);
+  fileSelect.addEventListener('change', updatePDF);
+  selectpaper.addEventListener('change', updatePDF);
+
+  function updatePDF() {
+    var selectedBranch = branchSelect.value;
+    var selectedSemester = fileSelect.value;
+    var selectedPaper = selectpaper.value;
+    var selectedFileID = fileIDs[selectedBranch][selectedSemester - 1][selectedPaper - 1];
+    pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+  }
+
+  function displayErrorMessage() {
+    alert('There was an error loading the PDF. Please contact the administrator.');
+  }
+
+  // Initial update when the page loads
+  updatePDF();
+</script>
+
+<script src="../script.js" theme="dark" position="bottom-right"></script>
+<script src="../particles.js"></script>
+<script src="../app.js"></script>
+<script src="pyq.js"></script>
+</html>
