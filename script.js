@@ -11,7 +11,8 @@
 
 
 //   obj.data= "UNIT 1.pdf";
-console.log("hello");
+
+// console.log("hello");
 
 var bari1 = document.querySelector('#bar1');
 var bari2 = document.querySelector('#bar2');
@@ -49,6 +50,8 @@ var f1 = ()=>{
 
 
 }
+
+
 
 
 // menu.addEventListener('click',function(){
