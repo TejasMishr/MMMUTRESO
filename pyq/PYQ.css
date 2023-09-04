@@ -521,7 +521,7 @@ select * {
     max-width: 100%;
     overflow: hidden;
     position: relative;
-    padding-top: 56.25%; /* 16:9 aspect ratio for responsive iframe */
+    padding-top: 50.25rem; /* 16:9 aspect ratio for responsive iframe */
 }
 
 /* Style for the iframe */
