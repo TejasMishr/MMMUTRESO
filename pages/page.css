@@ -56,6 +56,7 @@ object{
 
 
 
+
 .text{
   display: flex;
   justify-content: center;
@@ -445,7 +446,7 @@ object{
 .iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 100.25%; /* 16:9 aspect ratio (adjust as needed) */
+    padding-top: 50.25rem; /* 16:9 aspect ratio (adjust as needed) */
 }
 
 /* Style for the iframe itself */
@@ -456,4 +457,45 @@ object{
     width: 100%;
     height: 100%;
     border: 2px solid #a7cc36;
+
+
 }
+
+
+
+.filter-options{
+    display: grid;
+    margin-inline: 40px;
+    
+  }
+  
+  @media (min-width : 720px){
+    .filter-options {
+    display: flex;
+    justify-content:space-between;
+    padding: 10px;
+    max-width: 500px;
+    margin-inline: auto;
+    }
+    
+  }
+  
+  select {
+    margin-block: 3px;
+    font-family: cursive, sans-serif;
+    outline: 0;
+    background: #e1e1e1;
+    color: #090909;
+    border: 1px solid crimson;
+    padding: 7px;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  select * {
+    font-size: 1.01rem;
+  }
+
+  #branch{
+    width: 60%;
+  }
