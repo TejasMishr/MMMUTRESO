@@ -1,0 +1,16 @@
+/* Add your CSS styles here */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#file-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.file-item {
+    text-align: center;
+    margin: 10px;
+}

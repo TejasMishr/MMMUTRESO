@@ -7,7 +7,26 @@
   <title>MMMUT Resource </title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="../script.js"></script>
+  <style>
+    /* Style for the container div */
+    .iframe-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 100.25%; /* 16:9 aspect ratio (adjust as needed) */
+    }
+  
+    /* Style for the iframe itself */
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 2px solid #a7cc36;
+    }
+  </style>
 </head>
+
 
 <body>
 
@@ -39,15 +58,23 @@
   </section>
   <!-- <a href="something" class="button3">Button</a>
   <a href="something" class="button3">It's getting old</a> -->
-  <section class="features " style="display: flex;
+  <!-- <section class="features " style="display: flex;
   flex-direction: column; width: 100%;">
     
-   <button><a href="#">2022-23 | sem1</a></button>
-   <button><a href="#">2022-23 | sem2</a></button>
+  
+      <iframe src="https://googledriveembedder.collegefam.com/?key=AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ&folderid=1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM&allowdl=no" frameborder="0" allowfullscreen></iframe> -->
 
-  </section>
+
+  <!-- </section> -->
+  <div class="iframe-container">
+    <iframe src="https://googledriveembedder.collegefam.com/?key=AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ&folderid=1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM&allowdl=no" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
 </div>
   <!-- <script src="imgscript.js" theme="dark" position="bottom-right"></script> -->
 </body>
-
+<script src="../script.js" theme="dark" position="bottom-right"></script>
+<script src="../particles.js"></script>
+<script src="../app.js"></script>
 </html>
