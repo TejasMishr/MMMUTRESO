@@ -45,7 +45,7 @@ object{
 #particles-js {
   width: 100%;
   height: 0vh;
-  min-height: 117px;
+  min-height: 350px;
   background: linear-gradient(rgba(0,0,0,-0.7),rgba(0,0,0,2.7),rgba(0,0,0,-0.3)), url(https://images.unsplash.com/photo-1435224668334-0f82ec57b605?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDd8fHxlbnwwfHx8fA%3D%3D&w=1000&q=80);
   background-size: cover;
   display: flex;
@@ -53,7 +53,11 @@ object{
   justify-content: center;
 }
 
-
+/* .particles-js-canvas-el{
+  width: 99%;
+  height: 15%;
+  position: absolute;
+} */
 
 .text{
   display: flex;
@@ -459,12 +463,12 @@ object{
 }
 
 select {
-  margin-block: 20px;
+  margin-block: 3px;
   font-family: cursive, sans-serif;
   outline: 0;
   background: #e1e1e1;
   color: #090909;
-  border: 5px solid crimson;
+  border: 1px solid crimson;
   padding: 7px;
   border-radius: 30px;
   cursor: pointer;
