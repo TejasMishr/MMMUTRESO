@@ -45,28 +45,67 @@
 
     </section>
 
-
     <form action="#" class="filter-options">
       <select name="branch" id="branch">
-        <option value="select">Select a Branch</option>
-        <option value="0">CSE</option>
-        <option value="1">IT</option>
-        <option value="2">ECE</option>
-        <option value="3">EE</option>
-        <option value="4">CE</option>
-        <option value="5">ME</option>
-        <option value="6">CHE</option>
+          <option value="select">Select a Branch</option>
+          <option value="0">CSE</option>
+          <option value="1">IT</option>
+          <option value="2">ECE</option>
+          <option value="3">EE</option>
+          <option value="4">CE</option>
+          <option value="5">ME</option>
+          <option value="6">CHE</option>
       </select>
-    </form>
-    <div class="iframe-container">
-    <iframe 
-        src="https://googledriveembedder.collegefam.com/?key=AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ&folderid=1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM&allowdl=no" 
-        frameborder="0" 
-        scrolling="no"
-        sandbox="allow-same-origin allow-scripts"
-        allowfullscreen>
-    </iframe>
-    </div>
+  </form>
+  <div class="iframe-container">
+      <iframe 
+          id="iframeViewer"
+          frameborder="0" 
+          scrolling="no"
+          sandbox="allow-same-origin allow-scripts"
+          allowfullscreen>
+      </iframe>
+  </div>
+  
+  <script>
+      var branchSelect = document.getElementById('branch');
+      var iframeViewer = document.getElementById('iframeViewer');
+  
+      // Add change event listener to the select element
+      branchSelect.addEventListener('change', updateIframe);
+  
+      function updateIframe() {
+          var selectedBranch = branchSelect.value;
+  
+          // Update the src attribute of the iframe with the selected folderid
+          iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ&folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
+      }
+  
+      // Define a function to get the folderid based on the selected branch
+      function getFolderId(branch) {
+          // Map branch values to corresponding folder ids
+          var folderIds = {
+              '0': '1iwS1nr7wLL7l2_AfD5iGXe5p-4N_T80P',
+              '1': '1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM',
+              '2': 'folderid_for_ECE',
+              '3': 'folderid_for_EE',
+              '4': '1ALY5y4phhhHzpqghdB-I8N7OhcbUVLCu',
+              '5': 'folderid_for_ME',
+              '6': 'folderid_for_CHE'
+          };
+  
+          // Return the folder id for the selected branch
+          return folderIds[branch] || '';
+      }
+  
+      // Initial update when the page loads
+      updateIframe();
+  </script>
+
+
+
+
+
     <script src="../script.js" theme="dark" position="bottom-right"></script>
     <!-- <script src="../particles.js"></script>
     <script src="../app.js"></script> -->

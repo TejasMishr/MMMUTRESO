@@ -446,7 +446,7 @@ object{
 .iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 50.25rem; /* 16:9 aspect ratio (adjust as needed) */
+    padding-top: 100.25rem; /* 16:9 aspect ratio (adjust as needed) */
 }
 
 /* Style for the iframe itself */

@@ -447,8 +447,10 @@ object{
  /* filters css starts */
 
 .filter-options{
-  display: grid;
-  margin-inline: 40px;
+  /* display: grid; */
+  margin-inline: auto;
+    max-width: 40rem;
+    padding-left: 40px;
   
 }
 
@@ -457,7 +459,7 @@ object{
     display: flex;
     justify-content:space-between;
   padding: 10px;
-  max-width: 500px;
+  max-width: 40rem;
   margin-inline: auto;
   }
 }
@@ -472,6 +474,7 @@ select {
   padding: 7px;
   border-radius: 30px;
   cursor: pointer;
+  width: 8rem;
 }
 
 select * {
@@ -491,32 +494,7 @@ select * {
   cursor: pointer;
 }
 
-
-/*button 3  */
-
-/*  display:inline-block;
-   padding:0.3em 1.2em;
-   margin:0 0.3em 0.3em 0;
-   border-radius:2em;
-   box-sizing: border-box;
-   text-decoration:none;
-   font-family:'Roboto',sans-serif;
-   font-weight:300;
-   color:#FFFFFF;
-   background-color:#4eb5f1;
-   text-align:center;
-   transition: all 0.2s;
-  }
-  a.button3:hover{
-   background-color:#4095c6;
-  }
-  @media all and (max-width:30em){
-   a.button3{
-    display:block;
-    margin:0.2em auto;
-   }
-  } */
-
+/* pdf Container CSS */
   .pdf-container {
     max-width: 100%;
     overflow: hidden;
