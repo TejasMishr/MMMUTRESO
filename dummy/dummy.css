@@ -511,3 +511,66 @@ select * {
     height: 100%;
     border: none;
 } 
+
+
+
+
+
+
+
+/* --------TOPBAR--------*/
+
+/* .topbar{
+    background-color: #fff;
+    border: none;
+    height: 25px;
+    padding: 2px 0px;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.row {
+  
+  display: flex;
+  
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+.col-md-12 {
+  height: 25px;
+}
+@media (min-width: 768px){
+
+
+.col-md-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+}
+
+#m5{
+  border-width: 0px;
+  border-style: none;
+  width: 100%;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+#Repeater1{
+  color: Red;
+    font-size: 15px;
+    font-weight: bold;
+} */
