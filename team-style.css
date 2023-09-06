@@ -397,10 +397,10 @@ object{
     display: block;
     cursor: pointer;
   }
-
+/* 
   .mobile-nav {
-    /* transform: translate(0%) !important; */
-  }
+    /* transform: translate(0%) !important; 
+  } */
 
   /* SECTIONS */
 
