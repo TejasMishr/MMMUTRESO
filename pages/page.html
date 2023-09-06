@@ -52,9 +52,11 @@
           <option value="1">IT</option>
           <option value="2">ECE</option>
           <option value="3">EE</option>
-          <option value="4">CE</option>
-          <option value="5">ME</option>
-          <option value="6">CHE</option>
+          <option value="4">CIVIL</option>
+          <option value="5">MECH.</option>
+          <option value="6">CHEMICAL</option>
+          <option value="7">B-Pharma</option>
+          <option value="8">BBA</option>
       </select>
   </form>
   <div class="iframe-container">
@@ -85,13 +87,15 @@
       function getFolderId(branch) {
           // Map branch values to corresponding folder ids
           var folderIds = {
-              '0': '1iwS1nr7wLL7l2_AfD5iGXe5p-4N_T80P',
-              '1': '1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM',
-              '2': 'folderid_for_ECE',
-              '3': 'folderid_for_EE',
-              '4': '1ALY5y4phhhHzpqghdB-I8N7OhcbUVLCu', //Civil
-              '5': 'folderid_for_ME',
-              '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL'
+              '0': '1iwS1nr7wLL7l2_AfD5iGXe5p-4N_T80P', //CSE
+              '1': '1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM', //IT
+              '2': 'folderid_for_ECE', //ECE
+              '3': 'folderid_for_EE', //EE
+              '4': '1I9pYtd3Uwt01MNbxSk-b3ytL46hKel-p', //Civil
+              '5': 'folderid_for_ME', //ME
+              '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', //CHE
+              '7': 'ID', //Bpharma
+              '8': 'ID'  //BBA
           };
   
           // Return the folder id for the selected branch
