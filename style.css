@@ -23,12 +23,26 @@ p {
   text-align: center;
   line-height: 1.4;
 }
+.features{
+  display: flex;
+  flex-wrap: wrap;
+  background-image: linear-gradient(antiquewhite,rgb(252, 253, 253));
+}
 .features button{
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px 3px black;
+  border: 1px solid black;
+  margin: 10px;
   width: 30vw;
   padding: 5px;
-  background: rgb(220, 176, 176);
+  background: rgb(7 26 32);
   color: blue;
   text-decoration: none;
+}
+.features button a{
+  text-decoration: none;
+  color: white;
+ 
 }
 .obj,.foot{
   width: 50%;
@@ -175,16 +189,18 @@ h2 {
 }
 
 .feature-container a img {
-    box-shadow: 10px 10px 20px black;
-    border-radius: 7px;
-    border: 2px solid black;
-    width: 75%;
-    height: 22vh;
+  box-shadow: 10px 13px 37px 6px black;
+  border-radius: 12px;
+  border: 2px solid black;
+  width: 60%;
+  height: 22vh;
+  margin-bottom: 15px;
 }
-.feature-container a img::hover{
-  width:52vw;
-  height:42vh;
+.feature-container a img:hover{
+  width: 77%;
+  height: 24vh;
 }
+
 /* SEARCH FUNCTION */
 
 #search-icon {
@@ -338,11 +354,7 @@ input {
 
 /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 720px) {
-  .features {
-    flex-direction: column;
-    padding: 50px;
-  }
+
 
   /* MOBILE HEADINGS */
 
@@ -437,8 +449,13 @@ object{
   .search-input {
     display: none;
   }
+  .feature-container a img:hover{
+    width: 75%;
+    height: 52%;
+   
+  }
 
-}
+
 
 
 
@@ -466,3 +483,37 @@ object{
     margin:0.2em auto;
    }
   } */
+  @media only screen and (max-width: 721px) {
+    .feature-container {
+      /* flex-direction: column; */
+      /* padding: 50px; */
+      
+      width: 40vw;
+      
+    }
+    .features{
+      justify-content: space-between;
+    }
+  }
+  @media only screen and (max-width: 435px) {
+    .feature-container {
+      /* flex-direction: column; */
+      /* padding: 50px; */
+      
+      width: 70vw;
+    }
+    .features{
+      justify-content: space-around;
+    }
+  }
+  @media only screen and (min-width:722px){
+    .feature-container {
+      /* flex-direction: column; */
+      /* padding: 50px; */
+      
+      width: 30vw;
+    }
+    .features{
+      justify-content: space-around;
+    }
+  }
