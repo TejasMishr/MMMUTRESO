@@ -10,7 +10,7 @@ function createUpdateLink(text, href) {
     
     // Create an image element
     var img = document.createElement('img');
-    img.src = 'star.gif';
+    img.src = 'topbar/star.gif';
     img.style.width = '22px';
   
     // Append the image and link to the updates container
