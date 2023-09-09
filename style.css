@@ -668,3 +668,9 @@ object{
       justify-content: space-around;
     }
   } */
+  @media (max-width:700px) {
+    body{
+      width: 170%;
+    }
+    
+  }
