@@ -34,12 +34,12 @@ var f1 = ()=>{
     // alert("ok");
     navi.style.transform = "translate(-101%)";
 
-    bari2.style.display="block";
+    bari2.style.display="flex";
     bari1.style.transform="rotate(0) translateY(0px)";
     bari3.style.transform="rotate(0)  translateY(0px)";
    }else{
     
-    navi.style.display="block";
+    navi.style.display="flex";
     navi.style.transform = "translate(0%)";
     bari2.style.display="none";
     bari1.style.transform="rotate(45deg) translateY(6px)";

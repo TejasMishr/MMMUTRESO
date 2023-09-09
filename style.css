@@ -268,6 +268,8 @@ h2 {
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
+      padding: 1vw;
+
 }
 
 
@@ -312,7 +314,7 @@ h2 {
 }
 
 .no-search {
-  transform: translate(0);
+  transform: translate(0%);
   transition: transform 0.7s ease-in-out;
 }
 
@@ -459,3 +461,12 @@ object{
   transform-origin: bottom left;
 
 }
+.navi{
+  display: flex;
+}
+ @media (max-width:700px) {
+    body{
+      width: 170%;
+    }
+    
+  }
