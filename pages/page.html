@@ -78,9 +78,9 @@
   
       function updateIframe() {
           var selectedBranch = branchSelect.value;
-  
+          var bkey='AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ'
           // Update the src attribute of the iframe with the selected folderid
-          iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ&folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
+          iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=' + bkey + ' &folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
       }
   
       // Define a function to get the folderid based on the selected branch
