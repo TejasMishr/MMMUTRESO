@@ -8,7 +8,7 @@
   <link href="PYQ.css" rel="stylesheet" type="text/css" />
   <!-- <script type="text/javascript" src="script.js"></script> -->
   <style>
-    .nav-wrapper{
+    .nav-wrapper {
       z-index: 7;
       position: relative;
     }
@@ -23,9 +23,9 @@
       <nav class="navbar">
         <img src="../img/logo.png" alt="MMMUT">
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-            <span class="bar" id="bar1"></span>
-            <span class="bar" id="bar2"></span>
-            <span class="bar" id="bar3"></span>
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
         </div>
         <ul class="nav no-search">
           <li class="nav-item"><a href="../index.html">Home</a></li>
@@ -47,18 +47,18 @@
 
 
 
-    
 
 
- <!-- Select branch and semester -->
- <form action="#" class="filter-options">
-    <select name="session" id="session">
+
+    <!-- Select branch and semester -->
+    <form action="#" class="filter-options">
+      <select name="session" id="session">
         <option value="Session">Select Session</option>
         <option value="0">2021-25</option>
         <option value="1">2022-26</option>
-    </select>
+      </select>
 
-    <select name="branch" id="branch">
+      <select name="branch" id="branch">
         <option value="select">Select a Branch</option>
         <option value="0">C.S.E</option>
         <option value="1">I.T</option>
@@ -67,9 +67,9 @@
         <option value="4">Civil</option>
         <option value="5">Mechanical</option>
         <option value="6">Chemical</option>
-    </select>
+      </select>
 
-    <select name="semester" id="fileSelect">
+      <select name="semester" id="fileSelect">
         <option value="select">Select a Semester</option>
         <option value="0">I</option>
         <option value="1">II</option>
@@ -79,395 +79,425 @@
         <option value="5">VI</option>
         <option value="6">VII</option>
         <option value="7">VIII</option>
-    </select>
+      </select>
 
-    <select name="paper" id="selectpaper">
+      <select name="paper" id="selectpaper">
         <option value="selectpaper">Select Papers</option>
         <option value="0">Minor 1</option>
         <option value="1">Minor 2</option>
         <option value="2">Major</option>
-    </select>
-</form>
+      </select>
+    </form>
 
-<div class="pdf-container">
-    <iframe
-        id="pdfViewer"
-        frameborder="0"
-        scrolling="no"
-        sandbox="allow-same-origin allow-scripts"
-        src=""
-        onerror="displayErrorMessage()"
-    ></iframe>
-</div>
+    <div class="pdf-container">
+      <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
+        onerror="displayErrorMessage()"></iframe>
+    </div>
 
-<script>
-    
-    var fileIDs = 
-      [
+    <script>
+      var fileIDs = [
         // SESSION 2021-25
-       
+
         [
-             // BRANCH CSE
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH CSE
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1NGe7Hn9k0KuI0ZvMpuFNA0by1cng7z54', '1YVxghhRg1Enk5x-wc7U7mtdoEl01dOBy', '1hQb5vVgvbwpy4UdQzvhkHDqkZR_H20rz'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1NGe7Hn9k0KuI0ZvMpuFNA0by1cng7z54', '1YVxghhRg1Enk5x-wc7U7mtdoEl01dOBy','1hQb5vVgvbwpy4UdQzvhkHDqkZR_H20rz'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
+
+
+          // BRANCH IT
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6', '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6',
+              '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6'
             ],
-
-
-            // BRANCH IT
-            
-            [
-              // SEMESTER--------------------->>>>>
-
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6', '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6', '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ', '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ', '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1Crnh119QuXl20YXzpe32_H3xX82sn-Df','1Cwpm_2MrhtNs15kmE1bYlzW2UL9QjFfH','1CturwVpUG8snif8Idlg6yBpml5RXddVW'],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1DL9cH4XiugxYK9a0k8qU8dJbZ64Xa_0P', '1DKwutrHv8VumOXodd4yhd3HL1ml6gzpO', '1DFcPnH1x8fJujmZ2-B8J09E-OTQjNlIz'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1-28SctleYsF-acD_irrxkPS2eioqezhY','11NfErux95YTDx-rLqIoEE-qTmtAftcPs','1r6Q4K9QOToYXITXQpRSE94rBbGvScJeY'],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ', '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ',
+              '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ'
             ],
-             // BRANCH ECE
-            
-            [
-              // SEMESTER--------------------->>>>>
-
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Crnh119QuXl20YXzpe32_H3xX82sn-Df', '1Cwpm_2MrhtNs15kmE1bYlzW2UL9QjFfH',
+              '1CturwVpUG8snif8Idlg6yBpml5RXddVW'
             ],
-
-             // BRANCH EE
-            
-            [
-              // SEMESTER--------------------->>>>>
-
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['17v_7PChQzXSi9lSr0O9BxJcZt5qWxkyr', '18E2ILt6s5QiTEZEn9SKv94w7fTiUmLKW', '17tNSguzuiY-mF-CFSBOLzghdSZIPcYms'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['18KwhsKhDiaqeqolEMjjf-xmPvcHrwNiC', '18FwB4Jp8Lws4krkDCtTzElobUPrxJ2aw', '18FcWP80Ut342X9yFjZGW-scOegxx5Q-w'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['18vmW0NXXMN_NBNeoc9WCulnqj6r83moG','191CWRSjIfjpmu1mctdIkeej2ckLJnyDq','18wmZNKarobRJARuDnu55UAC15zQxAOkz'],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1DL9cH4XiugxYK9a0k8qU8dJbZ64Xa_0P', '1DKwutrHv8VumOXodd4yhd3HL1ml6gzpO',
+              '1DFcPnH1x8fJujmZ2-B8J09E-OTQjNlIz'
             ],
-
-
-            // BRANCH CHEMICAL
-            
-            [
-              // SEMESTER--------------------->>>>>
-
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                [' ', ' ', ' '],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1-28SctleYsF-acD_irrxkPS2eioqezhY', '11NfErux95YTDx-rLqIoEE-qTmtAftcPs',
+              '1r6Q4K9QOToYXITXQpRSE94rBbGvScJeY'
             ],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
 
-            // BRANCH Mechanical
-            
-             [
-              // SEMESTER--------------------->>>>>
+          ],
+          // BRANCH ECE
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar',
+              '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar',
+              '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
+
+          // BRANCH EE
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['17v_7PChQzXSi9lSr0O9BxJcZt5qWxkyr', '18E2ILt6s5QiTEZEn9SKv94w7fTiUmLKW',
+              '17tNSguzuiY-mF-CFSBOLzghdSZIPcYms'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['18KwhsKhDiaqeqolEMjjf-xmPvcHrwNiC', '18FwB4Jp8Lws4krkDCtTzElobUPrxJ2aw',
+              '18FcWP80Ut342X9yFjZGW-scOegxx5Q-w'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['18vmW0NXXMN_NBNeoc9WCulnqj6r83moG', '191CWRSjIfjpmu1mctdIkeej2ckLJnyDq',
+              '18wmZNKarobRJARuDnu55UAC15zQxAOkz'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
 
 
-            // BRANCH CIVIL
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH CHEMICAL
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['minor 1', '2' , 'major '],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1Yhq42Ucir1lhVY_Cbp-RFnfVYrE8kQ5F','1iD7xg6_2s113TVJcGw4TQiGk-yU3Mcg-','1oyKcUVsuEPTdZ7bax2A_oSz-9-sxW0YX'],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) ->, Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
-            ]
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            [' ', ' ', ' '],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
+
+          // BRANCH Mechanical
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+
+          ],
+
+
+          // BRANCH CIVIL
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['minor 1', '2', 'major '],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Yhq42Ucir1lhVY_Cbp-RFnfVYrE8kQ5F', '1iD7xg6_2s113TVJcGw4TQiGk-yU3Mcg-',
+              '1oyKcUVsuEPTdZ7bax2A_oSz-9-sxW0YX'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) ->, Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ]
         ],
 
 
 
         // SESSION 2022-26
-       
+
         [
-             // BRANCH CSE
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH CSE
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
 
 
-            // BRANCH IT
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH IT
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
-             // BRANCH ECE
-            
-            [
-              // SEMESTER--------------------->>>>>
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          ],
+          // BRANCH ECE
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
 
-             // BRANCH EE
-            
-            [
-              // SEMESTER--------------------->>>>>
+          ],
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          // BRANCH EE
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
 
 
-            // BRANCH CHEMICAL
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH CHEMICAL
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
 
-            // BRANCH Mechanical
-            
-             [
-              // SEMESTER--------------------->>>>>
+          ],
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1-juPEIreZJfVQIHrjpbMJnpC-N3RZ0yg', '1-qG5s1gUQS7UUdsnmw7as63FvoO03zLb', '1-un-hUvdmh5ccMu8pGFT9rXT8Ghg9m8A'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          // BRANCH Mechanical
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1-juPEIreZJfVQIHrjpbMJnpC-N3RZ0yg', '1-qG5s1gUQS7UUdsnmw7as63FvoO03zLb',
+              '1-un-hUvdmh5ccMu8pGFT9rXT8Ghg9m8A'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
 
 
-            // BRANCH CIVIL
-            
-            [
-              // SEMESTER--------------------->>>>>
+          // BRANCH CIVIL
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE', '13018QeExFpL8vkjNpUtQHxnknAKcpKel'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ],
         ]
       ];
 
-    var sessionSelect = document.getElementById('session');
-    var branchSelect = document.getElementById('branch');
-    var fileSelect = document.getElementById('fileSelect');
-    var selectpaper = document.getElementById('selectpaper');
-    var pdfViewer = document.getElementById('pdfViewer');
+      var sessionSelect = document.getElementById('session');
+      var branchSelect = document.getElementById('branch');
+      var fileSelect = document.getElementById('fileSelect');
+      var selectpaper = document.getElementById('selectpaper');
+      var pdfViewer = document.getElementById('pdfViewer');
 
-    // Add change event listeners to the select elements
-    sessionSelect.addEventListener('change', updatePDF);
-    branchSelect.addEventListener('change', updatePDF);
-    fileSelect.addEventListener('change', updatePDF);
-    selectpaper.addEventListener('change', updatePDF);
+      // Add change event listeners to the select elements
+      sessionSelect.addEventListener('change', updatePDF);
+      branchSelect.addEventListener('change', updatePDF);
+      fileSelect.addEventListener('change', updatePDF);
+      selectpaper.addEventListener('change', updatePDF);
 
-    function updatePDF() {
+      function updatePDF() {
         var selectedSession = sessionSelect.value;
         var selectedBranch = branchSelect.value;
         var selectedSemester = fileSelect.value;
@@ -476,21 +506,26 @@
         // Adjust the array indices based on the selected values
         var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
+        if (selectedFileID === 'null') {
+          // Redirect to another page (e.g., "error.html")
+          window.location.href = 'error.html';
+        }
+        
         // Update the src attribute of the iframe
         pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
-    }
+      }
 
-    // Function to display an error message
-    function displayErrorMessage() {
+      // Function to display an error message
+      function displayErrorMessage() {
         alert('There was an error loading the PDF. Please contact the administrator.');
-    }
+      }
 
-    // Initial update when the page loads
-    updatePDF();
-</script>
+      // Initial update when the page loads
+      updatePDF();
+    </script>
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
+    <script type="module">
+      // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
