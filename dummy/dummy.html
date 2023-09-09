@@ -7,6 +7,7 @@
   <title>MMMUT Resource </title>
   <link href="dummy.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="script.js"></script>
+  
   <style>
     .nav-wrapper {
       z-index: 7;
@@ -21,57 +22,24 @@
 
   <!-- ===================================================================================================== -->
 
-
-  <div class="topbar ">
-    <div class="container " style="max-width: 99%;">
-      <div class="row ">
+<!-- Top Bar start HERE -->
+  <div class="topbar">
+    <div class="container1" style="max-width: 99%;">
+      <div class="row">
         <div class="col-md-12" style="height: 25px;">
           <marquee id="m5" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300"
             onmouseout="this.start();" onmouseover="this.stop();"
             style="border-width: 0px; border-style: none; width: 100%;">
-
-
-            <img id="Repeater" src="../img/star.gif" style="width:22px;">&nbsp;
-
-            <a id="Repeater1_HyperLink3_0" target="_blank" style="color:Red;font-size:15px;font-weight:bold;">Update 1</a>
-
-
-            &nbsp;|&nbsp;
-
-            <img id="Repeater" src="../img/star.gif" style="width:22px;">&nbsp;
-            <a id="Repeater1" href="News_content/33100news_09012023094810.pdf" target="_blank"
-              style="color:Red;font-size:15px;font-weight:bold;">Update 2</a>
-
-
-            &nbsp;|&nbsp;
-
-            <img id="Repeater" src="../img/star.gif" style="width:22px;">&nbsp;
-            <a id="Repeater1" href="News_content/10320news_09022023120824.pdf" target="_blank"
-              style="color:Red;font-size:15px;font-weight:bold;">Update 3</a>
-
-
-            &nbsp;|&nbsp;
-
-            <img id="Repeater" src="../img/star.gif" style="width:22px;">&nbsp;
-            
-
-
-
-
+  
+            <!-- Create a container for updates -->
+            <div id="updates-container"></div>
           </marquee>
-
-
         </div>
-
       </div>
     </div>
   </div>
 
-
-
-
-
-
+  
   <!-- ===================================================================================================== -->
 
   <div class="page-wrapper">
@@ -577,6 +545,10 @@
 
 
 
+
+
+
+
     <script type="module">
       // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
@@ -600,5 +572,7 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+
+<script src="updates.js"></script>
 
 </html>
