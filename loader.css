@@ -1,0 +1,107 @@
+
+body{
+    margin: 0;
+    padding: 0;
+}
+#back{
+    position: fixed;
+    
+
+    min-height: 100vh;
+    width: 100%;
+
+    visibility: visible;
+    z-index: 100;
+    background-image: linear-gradient(
+        180deg,
+        hsl(240deg 71% 25%) 0%,
+        hsl(210deg 100% 33%) 17%,
+        hsl(195deg 100% 38%) 33%,
+        hsl(178deg 100% 39%) 48%,
+        hsl(178deg 100% 40%) 62%,
+        hsl(195deg 100% 40%) 76%,
+        hsl(208deg 100% 36%) 89%,
+        hsl(245deg 58% 32%) 100%
+      );
+
+animation: animation 16s infinite none;
+}
+
+
+@keyframes animation{
+    0%{
+        
+        opacity: 1;
+        
+    }
+    100%{
+        opacity: 0.8;
+    }
+}
+.load{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+    
+}
+
+.load span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 5px;
+    background-color: white;
+
+
+}
+
+
+.load span:not(:last-child){
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform:translateX(60px) ;
+    }
+}
+.load span:last-child{
+    animation: roll 1.5s ease-in-out infinite;
+}
+@keyframes roll{
+    0%{
+        transform: translate(0px ,0px);
+    }
+    10%{
+        transform: translate(20px,-20px);
+    }
+    20%{
+        transform: translate(30px,20px);
+    }
+    30%{
+        transform: translate(40px,-80px);
+    }
+    70%{
+        transform: translate(-300px,-80px);
+    }
+    80%{
+        transform: translate(-280px,20px);
+    }
+    90%{
+        transform: translate(-260px,-5px);
+    }
+    100%{
+        transform: translate(-240px,0px);
+    }
+
+}
+@media (max-width:700px) {
+    #back{
+        height: 200vh;
+    }
+}
