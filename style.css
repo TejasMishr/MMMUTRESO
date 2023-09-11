@@ -166,7 +166,8 @@ p.sep {
 .features{
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(antiquewhite,rgb(252, 253, 253));
+  background: rgb(7,0,130);
+  background: radial-gradient(circle, rgba(7,0,130,1) 0%, rgba(103,103,241,1) 35%, rgba(69,224,255,1) 100%);
 }
 
 .obj,.foot{
@@ -464,7 +465,7 @@ object{
 .navi{
   display: flex;
 }
- @media (max-width:700px) {
+ @media (max-width:701px) {
     body{
       width: 170%;
     }
