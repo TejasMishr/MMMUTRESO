@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width">
   <title>MMMUT Resource </title>
   <link href="page.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css">
   <!-- <script type="text/javascript" src="script.js"></script> -->
   <style>
-    .nav-wrapper{
+    .nav-wrapper {
       z-index: 7;
       position: relative;
     }
@@ -23,9 +24,9 @@
       <nav class="navbar">
         <img src="../img/logo.png" alt="MMMUT">
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-            <span class="bar" id="bar1"></span>
-            <span class="bar" id="bar2"></span>
-            <span class="bar" id="bar3"></span>
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
         </div>
         <ul class="nav no-search">
           <li class="nav-item"><a href="../index.html">Home</a></li>
@@ -44,71 +45,100 @@
 
 
     </section>
+    
 
     <form action="#" class="filter-options">
-      <select name="branch" id="branch">
-          <option value="select">Select a Branch</option>
-          <option value="0">CSE</option>
-          <option value="1">IT</option>
-          <option value="2">ECE</option>
-          <option value="3">EE</option>
-          <option value="4">CIVIL</option>
-          <option value="5">MECH.</option>
-          <option value="6">CHEMICAL</option>
-          <option value="7">B-Pharma</option>
-          <option value="8">MCA</option>
+      <select name="branch" id="branch" value="x">
+        <option value="select">Select a Branch</option>
+        <option value="0">CSE</option>
+        <option value="1">IT</option>
+        <option value="2">ECE</option>
+        <option value="3">EE</option>
+        <option value="4">CIVIL</option>
+        <option value="5">MECH.</option>
+        <option value="6">CHEMICAL</option>
+        <option value="7">B-Pharma</option>
+        <option value="8">MCA</option>
       </select>
-  </form>
-  <div class="iframe-container">
-      <iframe 
-          id="iframeViewer"
-          frameborder="0" 
-          scrolling="no"
-          sandbox="allow-same-origin allow-scripts"
-          allowfullscreen>
+    </form>
+    <div id="load">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="iframe-container">
+      
+      <iframe id="iframeViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts"
+        allowfullscreen>
       </iframe>
-  </div>
-  
-  <script>
+      
+    </div>
+    
+    
+
+    <script>
       var branchSelect = document.getElementById('branch');
       var iframeViewer = document.getElementById('iframeViewer');
-  
+
       // Add change event listener to the select element
       branchSelect.addEventListener('change', updateIframe);
+      let ripple = document.querySelector("#load");
+
+
+
+
+ function displayripple(){
+
   
+  ripple.style.display="flex";
+  setTimeout(() => {
+    ripple.style.display="none";
+  }, 3000);
+
+ }
+
+
+
       function updateIframe() {
-          var selectedBranch = branchSelect.value;
-          var bkey='AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ'
-          // Update the src attribute of the iframe with the selected folderid
-          iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=' + bkey + ' &folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
+        var selectedBranch = branchSelect.value;
+        if(selectedBranch<9) 
+        {
+          displayripple();
+        
+
+        var bkey = 'AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ'
+        // Update the src attribute of the iframe with the selected folderid
+        iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=' + bkey + ' &folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
       }
-  
+    }
+
       // Define a function to get the folderid based on the selected branch
       function getFolderId(branch) {
-          // Map branch values to corresponding folder ids
-          var folderIds = {
-              '0': '1iwS1nr7wLL7l2_AfD5iGXe5p-4N_T80P', //CSE
-              '1': '1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM', //IT
-              '2': '1vj6BridAqPq2Sm_bKdBW5hFhAmf2RmPh', //ECE
-              '3': 'folderid_for_EE', //EE
-              '4': '1-3oNaI3uw4-drdWTzsgpRhfico9Ff3wh', //Civil
-              '5': 'folderid_for_ME', //ME
-              '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', //CHE
-              '7': '1BrYznkf8M5kGSAJK70woS1-kjd1JWF0j', //Bpharma
-              '8': 'ID'  //MCA
-          };
-  
-          // Return the folder id for the selected branch
-          return folderIds[branch] || '';
+        // Map branch values to corresponding folder ids
+        var folderIds = {
+          '0': '1iwS1nr7wLL7l2_AfD5iGXe5p-4N_T80P', //CSE
+          '1': '1ixkdJB50nuRrn1A9-gyDAfG_A3DqG-tM', //IT
+          '2': '1vj6BridAqPq2Sm_bKdBW5hFhAmf2RmPh', //ECE
+          '3': 'folderid_for_EE', //EE
+          '4': '1-3oNaI3uw4-drdWTzsgpRhfico9Ff3wh', //Civil
+          '5': 'folderid_for_ME', //ME
+          '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', //CHE
+          '7': '1BrYznkf8M5kGSAJK70woS1-kjd1JWF0j', //Bpharma
+          '8': 'ID'  //MCA
+        };
+
+        // Return the folder id for the selected branch
+        return folderIds[branch] || '';
       }
-  
+
       // Initial update when the page loads
       updateIframe();
-  </script>
+    </script>
 
 
 
-
+    <script src="../loader/load.js"></script>
 
     <script src="../script.js" theme="dark" position="bottom-right"></script>
     <!-- <script src="../particles.js"></script>

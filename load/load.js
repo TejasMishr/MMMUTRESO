@@ -1,4 +1,4 @@
 function div(){
     document.getElementById("back").style.visibility="hidden";
 }
-setTimeout("div()", 8800);
+setTimeout("div()", 3000);

@@ -433,7 +433,7 @@ object{
 
   
 
-}
+
 
 .animation {
   display: inline-block;
@@ -462,18 +462,11 @@ object{
 
 }
 .container{
-  width: 100%;
+  width: 99%;
     height: 80vh;
 }
 .navi{
   display: flex;
 }
- @media (max-width:700px) {
-    body{
-      /* width: 170%; */
-    }
-    
-  }
-  @media (max-width:290px) {
-    
-  }
+
+}
