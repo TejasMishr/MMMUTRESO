@@ -22,7 +22,9 @@ function createUpdateLink(text, href) {
   }
   
   // Call the createUpdateLink function to add updates
+  createUpdateLink('Civil old Notes Added', 'pages/pages.html');
   createUpdateLink('IT Content Updated', '#');
   createUpdateLink('B-pharma Sem 1 Added', '#');
   createUpdateLink('MCA BBA MBA department Added', '#');
+  
   
