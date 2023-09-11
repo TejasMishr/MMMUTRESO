@@ -35,7 +35,7 @@ function createUpdateLink(text, href) {
     
     // Create an image element
     var img = document.createElement('img');
-    img.src = 'img/warn.png';
+    img.src = 'topbar/warn.jpeg';
     img.style.width = '22px';
   
     // Append the image and link to the updates container
@@ -48,7 +48,7 @@ function createUpdateLink(text, href) {
 
 
   // Call the createUpdateLink function to add updates
-  createUpdateExtraLink('Report Issues', '../report.html');
+  createUpdateExtraLink('Report Issues', 'report.html');
   createUpdateLink('Civil old Notes Added', 'pages/pages.html');
   createUpdateLink('IT Content Updated', '#');
   createUpdateLink('B-pharma Sem 1 Added', '#');
