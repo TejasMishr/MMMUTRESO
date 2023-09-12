@@ -357,7 +357,7 @@ h2 {
 
 /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 520px) {
   .features {
     flex-direction: column;
     padding: 50px;
