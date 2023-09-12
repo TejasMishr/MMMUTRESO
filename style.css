@@ -351,6 +351,68 @@ h2 {
   background: rgb(224, 167, 167);
   height: 30vh;
 }
+/*footer */
+.footer{
+  color: white;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    background: linear-gradient(to right,#00093c,#2d0b00);
+    padding: 10px 0 20px;
+    font-size: 18px;
+}
+.row{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.col{
+  margin-top: 10px;
+  text-align: left;
+  justify-content: space-between;
+flex-basis: 25%;
+padding: 20px;
+}
+.col2{
+  margin-top: 10px;
+  text-align: left;
+  justify-content: space-between;
+flex-basis: 13%;
+padding: 20px;
+}
+.logo{
+  border-radius: 15px;
+  height: 36px;
+  width: auto;
+}
+.col p{
+  padding-top: 16px;
+}
+.col ul{
+  padding: 10px;
+}
+ul li{
+  padding-top:15px;
+ list-style: none;
+}
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+.last{
+  padding: 5px;
+  text-align: center;
+  justify-content: center;
+}
+.fa-brands, .fab {
+  margin-top: 16px;
+  padding: 6px;
+  font-weight: 400;
+}
 /* no changes */
 
 /* Media Queries */
