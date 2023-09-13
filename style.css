@@ -358,10 +358,22 @@ h2 {
 /* Mobile Devices - Phones/Tablets */
 
 @media only screen and (max-width: 520px) {
-  .features {
-    flex-direction: column;
-    padding: 50px;
-  }
+  .container .card .imgbr {
+    position: absolute;
+    width: 260px;
+    height: 220px;
+    background: #333;
+    top: 20px;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  
+  
 
   .container .card .imgbr {
     position: absolute;

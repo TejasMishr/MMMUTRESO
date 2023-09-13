@@ -4,7 +4,7 @@ function createUpdateLink(text, href) {
     updateLink.textContent = text;
     updateLink.href = href;
     updateLink.target = '_blank';
-    updateLink.style.color = 'Red';
+    updateLink.style.color = 'blue';
     updateLink.style.fontSize = '15px';
     updateLink.style.fontWeight = 'bold';
     
@@ -29,7 +29,7 @@ function createUpdateLink(text, href) {
     updateLink.textContent = text;
     updateLink.href = href;
     updateLink.target = '_blank';
-    updateLink.style.color = 'Red';
+    updateLink.style.color = 'blue';
     updateLink.style.fontSize = '15px';
     updateLink.style.fontWeight = 'bold';
     
@@ -47,12 +47,30 @@ function createUpdateLink(text, href) {
   }
 
 
+
+
+
+
+
+
+
+
   // Call the createUpdateLink function to add updates
   createUpdateExtraLink('Report Issues', 'report.html');
-  createUpdateLink('Civil old Notes Added', 'pages/pages.html');
+  
   createUpdateLink('IT Content Updated', '#');
+
   createUpdateLink('B-pharma Sem 1 Added', '#');
+
+  createUpdateLink('Civil old Notes Added', 'pages/pages.html');
+  createUpdateLink('MCA BBA MBA department Added', '#');
+  createUpdateLink('Civil old Notes Added', 'pages/pages.html');
   createUpdateLink('MCA BBA MBA department Added', '#');
 
-  
+
+
+
+
+
+
   
