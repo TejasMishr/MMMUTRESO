@@ -49,64 +49,225 @@ body {
   border-radius: 4px;
 }
 
-.tab-panel.active {
-  display: block;
+#mobile-menu.is-active .bar:nth-child(3) {
+  -webkit-transform: translateY(-8px) rotate(-45deg);
+  -ms-transform: translateY(-8px) rotate(-45deg);
+  -o-transform: translateY(-8px) rotate(-45deg);
+  transform: translateY(-8px) rotate(-45deg);
+} */
+
+/* KEYFRAME ANIMATIONS */
+/* 
+@-webkit-keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+ 
+
+@-moz-keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
 }
 
-.tab-heading h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
+@keyframes gradbar {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+} */
+.box{
+  display: flex;
 }
 
-.tab-block {
-  padding: 10px;
-  position: relative; /* Add this line */
-}
-
-
-.tab-block h6 {
-  font-size: 18px;
-  margin: 0;
-  padding: 5px 0;
-}
-
-.tab-block p {
-  font-size: 16px;
-  color: #555;
-  margin: 0;
-  padding: 5px 0;
-  text-align: justify;
-}
-
-.tab-more-link {
-  position: absolute; /* Change from display: block to position: absolute */
-  top: 10px; /* Adjust top position to your preference */
-  right: 10px; /* Align to the right */
-  text-decoration: none;
-  color: #007bff;
-  font-weight: bold;
-}
-
-
-.tab-more-link:hover {
-  text-decoration: underline;
-}
-
-.tab-block hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 10px 0;
-}
-
-/* Add these styles to your CSS */
-.tab-more-button {
+.search{
+  width: 100%;
   position: relative;
-  left: 85%;
-  padding: 5px 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+  z-index: -1;
+  background: rgb(224, 167, 167);
+  height: 30vh;
+}
+/* no changes */
+
+/* Media Queries */
+
+/* Mobile Devices - Phones/Tablets */
+
+@media only screen and (max-width: 720px) {
+  .features {
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  /* MOBILE HEADINGS */
+
+  h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  /* MOBILE NAVIGATION */
+
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: start;
+    top: 55px;
+    background-color: #fff;
+    width: 100%;
+    height: calc(100vh - 55px);
+    /* transform: translate(-101%); */
+    text-align: center;
+    overflow: hidden;
+    display: none;
+  }
+  .box{
+    flex-direction: column;
+   
+  }
+  .obj{
+    margin: auto;
+    text-align: center;
+  }
+object{
+  width: 100%;
+}
+  .navbar li {
+    padding: 15px;
+  }
+
+  .navbar li:first-child {
+    margin-top: 50px;
+  }
+
+  .navbar li a {
+    font-size: 1rem;
+  }
+
+  .menu-toggle,
+  .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  /* .mobile-nav {
+    /* transform: translate(0%) !important; 
+  } */
+
+  /* SECTIONS */
+
+  .headline {
+    height: 20vh;
+  }
+
+  .feature-container p {
+    margin-bottom: 25px;
+  }
+
+  .feature-container {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+  
+
+  .feature-container:nth-child(2) {
+    order: -1;
+  }
+
+  /* SEARCH DISABLED ON MOBILE */
+
+  #search-icon {
+    display: none;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+}
+
+
+
+ /* filters css starts */
+
+.filter-options{
+  /* display: grid; */
+  margin-inline: auto;
+    max-width: 40rem;
+    padding-left: 40px;
+  
+}
+
+@media (min-width : 720px){
+  .filter-options {
+    display: flex;
+    justify-content:space-between;
+  padding: 10px;
+  max-width: 40rem;
+  margin-inline: auto;
+  }
+}
+
+select {
+  margin-block: 3px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  background: #e1e1e1;
+  color: #090909;
+  border: 1px solid crimson;
+  padding: 7px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 8rem;
+}
+
+select * {
+  font-size: 1.01rem;
+}
+
+.sem-branch-submit {
+  margin-block: 10px;
+  font-family: cursive, sans-serif;
+  outline: 0;
+  background: #e1e1e1;
+  color: #090909;
+  border: 1px solid crimson;
+  padding-block: 5px;
+  padding-inline: 15px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
