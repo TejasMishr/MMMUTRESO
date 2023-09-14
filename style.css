@@ -356,7 +356,7 @@ h2 {
   color: white;
     height: auto;
     width: 100%;
-    position: absolute;
+    position: relative;
     background: linear-gradient(to right,#00093c,#2d0b00);
     padding: 10px 0 20px;
    font-size: 13px;
@@ -556,3 +556,4 @@ object{
 }
 }
 
+}

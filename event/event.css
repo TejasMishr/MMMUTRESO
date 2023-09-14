@@ -3,20 +3,24 @@ body {
 }
 
 *{
+  
   list-style: none;
 }
 
 .tab-container {
-  max-width: 800px;
+  width: 100%;
+  height: 60vh;
   margin: 0 auto;
   padding: 20px;
+  height: 50vh;
+ 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
 
 .tab-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .tab-item {
@@ -57,8 +61,46 @@ body {
 
 .tab-block {
   padding: 10px;
+  height: 60vh;
   position: relative; /* Add this line */
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+
 }
+.eve{
+  height: 90vh;
+}
+.p-10,hr{
+  animation: scroll 30s infinite linear ;
+}
+@keyframes scroll  {
+  0%{
+    transform: translateY(10vh);
+  }
+  50%{
+    transform: translateY(-100vh);
+  }
+  100%{
+    transform: translateY(10vh);
+  }
+  
+}
+.p-10 p{
+  animation: blink .5s infinite linear ;
+}
+@keyframes blink  {
+  0%{
+    color: red;
+  }
+  50%{
+    color: rgb(43, 70, 243);
+  }
+  100%{
+    color: red;
+  }
+  
+}
+
 
 .tab-block h6 {
   font-size: 18px;
@@ -105,4 +147,35 @@ body {
 
 .tab-more-button:hover {
   background-color: #0056b3;
+}
+.left{
+  background: linear-gradient(120deg,red yellow);
+}
+.part{
+  height: 90vh;
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+}
+.left
+{
+  background-color: #0056b3;
+  width: 50%;
+  height: auto;
+}
+.right{
+  width: 50%;
+  height: auto;
+}
+@media (max-width:720px) {
+  .part{
+    display: grid;
+
+  }
+  .tab-container{
+    width: 100vw;
+  }
+  .tab-more-button {
+    left:80%;
+  }
 }
