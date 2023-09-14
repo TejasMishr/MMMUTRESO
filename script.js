@@ -53,7 +53,7 @@ var f1 = ()=>{
 
 
 
+// <!-- block right -->
+document.addEventListener("contextmenu",function(e){e.preventDefault();})
 
-// menu.addEventListener('click',function(){
- 
-// });
+// 
