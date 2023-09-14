@@ -359,7 +359,7 @@ h2 {
     position: relative;
     background: linear-gradient(to right,#00093c,#2d0b00);
     padding: 10px 0 20px;
-    font-size: 18px;
+   font-size: 13px;
 }
 .row{
   display: flex;
@@ -381,7 +381,7 @@ padding: 20px;
   margin-top: 10px;
   text-align: left;
   justify-content: space-between;
-flex-basis: 13%;
+flex-basis: 14%;
 padding: 20px;
 }
 .logo{
