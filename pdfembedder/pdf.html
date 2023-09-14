@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Embed</title>
+    <!-- Include PDF.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+</head>
+<body>
+    <div id="pdf-container"></div>
+
+    <script>
+        // Construct the URL with your Google Drive sharing link
+        var googleDriveUrl = 'https://drive.google.com/file/d/1-mN5G4i1ZDTCzqdpqXbHh4OlayXlgVj2/view?usp=sharing'; // Replace with your sharing link
+
+        // Reference to the container div
+        var pdfContainer = document.getElementById('pdf-container');
+
+        // Initialize PDF.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js';
+
+        // Load and render the PDF
+        pdfjsLib.getDocument(googleDriveUrl).promise.then(function (pdfDoc) {
+            return pdfDoc.getPage(1); // Fetch the first page
+        }).then(function (page) {
+            var viewport = page.getViewport({ scale: 1.0 });
+            var canvas = document.createElement('canvas');
+            var context = canvas.getContext('2d');
+            canvas.width = viewport.width;
+            canvas.height = viewport.height;
+            pdfContainer.appendChild(canvas);
+
+            // Render the PDF page on the canvas
+            var renderContext = {
+                canvasContext: context,
+                viewport: viewport
+            };
+            return page.render(renderContext).promise;
+        }).catch(function (error) {
+            console.error('Error rendering PDF:', error);
+        });
+    </script>
+</body>
+</html>
