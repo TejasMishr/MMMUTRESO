@@ -2,6 +2,7 @@
 function addNewItem(tabType, title, description, link) {
   // Create a new list item element
   const listItem = document.createElement('li');
+  // listItem.id.add('P-10');
   listItem.classList.add('p-10');
 
   // Create the title element

@@ -8,6 +8,7 @@
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="script.js"></script>
   <link rel="stylesheet" href="load/loader.css">
+  <link rel="stylesheet" href="event/event.css">
   <style>
     .nav-wrapper {
       z-index: 7;
@@ -19,13 +20,13 @@
 <body>
   <div id="back">
     <div class="load">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-</div>
+  </div>
 
 
   <!-- ===================================================================================================== -->
@@ -77,7 +78,7 @@
 
 
     </section>
-   
+
 
     <section class="features">
       <div class="container">
@@ -253,6 +254,52 @@
 
       </div>
   </div>
+
+
+  <!-- here goes he event and news section -->
+
+
+
+  <section class="eve">
+
+  <div class="part">
+    <div class="left">
+        <div class="caros">
+ <h1>hello </h1>
+        </div>
+    </div>
+    <div class="right">
+        <div class="tab-container" style="height: 90vh;">
+            <nav>
+                <div class="tab-header">
+                    <a class="tab-item active" data-tab="events">Events</a>
+                    <a class="tab-item" data-tab="news">Latest News</a>
+                </div>
+            </nav>
+            <div class="tab-content">
+                <div class="tab-panel active" id="events">
+                    <div class="tab-heading">
+                        <h3>Events</h3>
+                    </div>
+                    <div class="tab-block">
+                        <!-- Event items go here -->
+                    </div>
+                </div>
+                <div class="tab-panel" id="news">
+                    <div class="tab-heading">
+                        <h3>Latest News</h3>
+                    </div>
+                    <div class="tab-block">
+                        <!-- News items go here -->
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+</section>
   <footer class="footer">
     <div class="row">
       <div class="col">
@@ -263,16 +310,17 @@
       <div class="col2">
         <ul>
           <div>
-          <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
-          <li><a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
-          <li><a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact Us</a></li>
-        </div>
+            <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
+            <li><a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
+            <li><a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
+                Us</a></li>
+          </div>
         </ul>
       </div>
       <div class="col2">
         <h3>Reach us </h3>
-        <p ><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i
-            class="fa-brands fa-instagram fa-xl" style="color: #ffffff;"></i>
+        <p><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
+            style="color: #ffffff;"></i>
           <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
           <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
         </p>
@@ -281,15 +329,16 @@
         <p>A best team is not a group of best players,its a group that plays best together.</p>
       </div>
     </div>
-    <hr>
+  
     <div class="last">
-     <p>&copy;Copyright <b>MMMUT RESOURCES</b> | All rights reserved |</p> 
+      <p>&copy;Copyright <b>MMMUT RESOURCES</b> | All rights reserved |</p>
       <p> designed with ❤️ by <b>MMMUT RESOURCES TEAM</b></p>
     </div>
   </footer>
-  </section> 
+  </section>
 
-
+<script src="event/event.js"></script>
+<script src="event/updates.js"></script>
 
 
 
@@ -306,7 +355,7 @@
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
-  
+
     // Your web app's Firebase configuration
     // For Firebase JS SDK v7.20.0 and later, measurementId is optional
     const firebaseConfig = {
@@ -318,7 +367,7 @@
       appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
       measurementId: "G-CDM7273LVH"
     };
-  
+
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);

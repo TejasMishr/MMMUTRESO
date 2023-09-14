@@ -17,7 +17,7 @@ if(ans == true){
 }
 }
 
-    setTimeout("div()", 3800);
+    setTimeout("div()", 800);
   
 
 
