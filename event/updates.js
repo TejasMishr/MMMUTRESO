@@ -52,37 +52,28 @@ if (link) {
 
 // Add an event item
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
+addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 // Add a news item
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
+addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
+addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
+addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
 
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
+addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
 
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
+addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
 
-
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
-
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
-// Add a news item
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-
-
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'MMMUT', 'News_content/24504news_09122023.pdf');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
+addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
 
 
 
