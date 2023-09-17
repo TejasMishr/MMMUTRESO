@@ -498,102 +498,80 @@
       ];
 
       var sessionSelect = document.getElementById('session');
-      var branchSelect = document.getElementById('branch');
-      var fileSelect = document.getElementById('fileSelect');
-      var selectpaper = document.getElementById('selectpaper');
-      var pdfViewer = document.getElementById('pdfViewer');
+  var branchSelect = document.getElementById('branch');
+  var fileSelect = document.getElementById('fileSelect');
+  var selectpaper = document.getElementById('selectpaper');
+  var pdfViewer = document.getElementById('pdfViewer');
+  var ripple = document.querySelector("#load");
+  var maine = document.querySelector('.main');
+  var pdf = document.querySelector('.pdf-container');
 
-      // Add change event listeners to the select elements
-      sessionSelect.addEventListener('change', updatePDF);
-      branchSelect.addEventListener('change', updatePDF);
-      fileSelect.addEventListener('change', updatePDF);
-      selectpaper.addEventListener('change', updatePDF);
-      let ripple = document.querySelector("#load");
-      let  maine = document.querySelector('.main');
-      let  pdf = document.querySelector('.pdf-container')
+  // Function ripple
+  function displayRipple(duration) {
+    ripple.style.display = "flex";
+    setTimeout(() => {
+      ripple.style.display = "none";
+    }, duration);
+  }
 
-     
+  function updatePDF() {
+    var selectedSession = sessionSelect.value;
+    var selectedBranch = branchSelect.value;
+    var selectedSemester = fileSelect.value;
+    var selectedPaper = selectpaper.value;
 
-      function displayripple() {
+    // Check if any of the selections is -1
+    if (
+      selectedSession == -1 ||
+      selectedBranch == -1 ||
+      selectedSemester == -1 ||
+      selectedPaper == -1
+    ) {
+      // Display the "ripple" for 60 seconds (1 minute)
+      displayRipple(60000);
+      selectpaper.style.backgroundColor = "#fe0000";
+      selectpaper.style.color = "white";
+    } else {
+      selectpaper.style.backgroundColor = "#e1e1e1";
+      selectpaper.style.color = "black";
 
+      // Hide "ripple" after 4 seconds
+      setTimeout(() => {
+        ripple.style.display = "none";
+      }, 4000);
+    }
 
-        ripple.style.display = "flex";
-        setTimeout(() => {
-          ripple.style.display = "none";
-        }, 600000);
+    var selectedFileID =fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
-      }
+    if (selectedFileID === 'null') {
+      // Redirect to another page (e.g., "error.html")
+      // window.location.href = 'error.html';
+      maine.style.display = "flex";
+      pdf.style.display = "none";
+    } else {
+      maine.style.display = "none";
+      pdf.style.display = "flex";
+      // Display the "ripple" for 60 seconds (1 minute)
+      displayRipple(60000);
+    }
 
-      let ppr;
-      function updatePDF() {
-        var selectedSession = sessionSelect.value;
-        var selectedBranch = branchSelect.value;
-        var selectedSemester = fileSelect.value;
-        var selectedPaper = selectpaper.value;
-        ppr = document.getElementById('selectpaper').value;
+    // Update the src attribute of the iframe
+    pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+  }
 
-        if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
+  // Function to display an error message
+  function displayErrorMessage() {
+    alert('There was an error loading the PDF. Please contact the administrator.');
+  }
 
-          ripple.style.display = "flex";
-          selectpaper.style.backgroundColor = "#fe0000";
-          selectpaper.style.color = "white";
+  sessionSelect.addEventListener('change', updatePDF);
+  branchSelect.addEventListener('change', updatePDF);
+  fileSelect.addEventListener('change', updatePDF);
+  selectpaper.addEventListener('change', updatePDF);
 
-
-
-        }
-        else if (ppr != -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
-          selectpaper.style.backgroundColor = "#e1e1e1";
-          selectpaper.style.color = "black";
-
-          setTimeout(() => {
-            ripple.style.display = "none";
-          }, 4000);
-        }
-
-
- //    displaying error msg //
-
-//  if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1 && selectedPaper !=-1) {
-
-//       maine.style.display="flex";
-//       pdf.style.display = "none";
-
-//  }
-
-
-
-
-
-
-
-        // Adjust the array indices based on the selected values
-        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
-
-        if (selectedFileID === 'null') {
-          // Redirect to another page (e.g., "error.html")
-          // window.location.href = 'error.html';
-          maine.style.display="flex";
-          pdf.style.display = "none";
-
- 
-        } else {
-          maine.style.display="none";
-          pdf.style.display = "flex";
-          displayripple();
-        }
-
-        // Update the src attribute of the iframe
-        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
-      }
-
-      // Function to display an error message
-      function displayErrorMessage() {
-        alert('There was an error loading the PDF. Please contact the administrator.');
-      }
-
-      // Initial update when the page loads
-      updatePDF();
-    </script>
+  // Initial update when the page loads
+  updatePDF();
+</script>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
