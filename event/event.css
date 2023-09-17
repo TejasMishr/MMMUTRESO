@@ -71,7 +71,7 @@ body {
   height: 90vh;
 }
 .p-10,hr{
-  animation: scroll 30s infinite linear ;
+  animation: scroll 60s infinite linear ;
 }
 @keyframes scroll  {
   0%{
