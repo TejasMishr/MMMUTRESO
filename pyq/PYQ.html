@@ -7,6 +7,8 @@
   <title>MMMUT Resource </title>
   <link href="PYQ.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../loader/load.css">
+  <link rel="stylesheet" href="error.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
 
   <script type="text/javascript" src="../script.js"></script>
   <style>
@@ -14,9 +16,9 @@
       z-index: 7;
       position: relative;
     }
-     
+
     @media (max-width:400px) {
-      #load{
+      #load {
         height: 121vh;
       }
     }
@@ -102,12 +104,23 @@
         <div></div>
       </div>
     </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h1 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h1>
+          <h2>Error: 404 page not found</h2>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
+      </div>
+    </div>
     <div class="pdf-container">
       <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
         onerror="displayErrorMessage()"></iframe>
     </div>
 
     <script src="../loader/load.js"></script>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
 
     <script>
       var fileIDs = [
@@ -482,7 +495,7 @@
               '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'file_id_3']
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -512,7 +525,10 @@
       fileSelect.addEventListener('change', updatePDF);
       selectpaper.addEventListener('change', updatePDF);
       let ripple = document.querySelector("#load");
+      let  maine = document.querySelector('.main');
+      let  pdf = document.querySelector('.pdf-container')
 
+     
 
       function displayripple() {
 
@@ -535,15 +551,15 @@
         if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
 
           ripple.style.display = "flex";
-          selectpaper.style.backgroundColor="#fe0000";
-          selectpaper.style.color="white";
+          selectpaper.style.backgroundColor = "#fe0000";
+          selectpaper.style.color = "white";
 
 
-          
+
         }
         else if (ppr != -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
-          selectpaper.style.backgroundColor="#e1e1e1";
-          selectpaper.style.color="black";
+          selectpaper.style.backgroundColor = "#e1e1e1";
+          selectpaper.style.color = "black";
 
           setTimeout(() => {
             ripple.style.display = "none";
@@ -551,13 +567,34 @@
         }
 
 
+ //    displaying error msg //
+
+//  if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1 && selectedPaper !=-1) {
+
+//       maine.style.display="flex";
+//       pdf.style.display = "none";
+
+//  }
+
+
+
+
+
+
+
         // Adjust the array indices based on the selected values
         var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
         if (selectedFileID === 'null') {
           // Redirect to another page (e.g., "error.html")
-          window.location.href = 'error.html';
+          // window.location.href = 'error.html';
+          maine.style.display="flex";
+          pdf.style.display = "none";
+
+ 
         } else {
+          maine.style.display="none";
+          pdf.style.display = "flex";
           displayripple();
         }
 
@@ -598,4 +635,8 @@
       const analytics = getAnalytics(app);
     </script>
     <script src="pyq.js"></script>
+   
+    
+</body>
+
 </html>
