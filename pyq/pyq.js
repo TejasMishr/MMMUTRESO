@@ -1,3 +1,4 @@
+// import Stats from 'stats.js';
 var bari1 = document.querySelector('#bar1');
 var bari2 = document.querySelector('#bar2');
 var bari3 = document.querySelector('#bar3');
