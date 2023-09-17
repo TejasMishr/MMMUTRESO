@@ -110,6 +110,10 @@
         var bkey = 'AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ'
         // Update the src attribute of the iframe with the selected folderid
         iframeViewer.src = 'https://googledriveembedder.collegefam.com/?key=' + bkey + ' &folderid=' + getFolderId(selectedBranch) + '&allowdl=no';
+
+        iframeViewer.addEventListener('contextmenu', (e) => {
+                e.preventDefault(); // Prevent the default right-click behavior on the iframe
+            });
       }
     }
 
@@ -122,7 +126,7 @@
           '2': '1vj6BridAqPq2Sm_bKdBW5hFhAmf2RmPh', //ECE
           '3': 'folderid_for_EE', //EE
           '4': '1-3oNaI3uw4-drdWTzsgpRhfico9Ff3wh', //Civil
-          '5': 'folderid_for_ME', //ME
+          '5': '1-57W78GsClxzmtTQe2xn-Y3YKeE6Ewuv', //ME
           '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', //CHE
           '7': '1BrYznkf8M5kGSAJK70woS1-kjd1JWF0j', //Bpharma
           '8': 'ID'  //MCA
@@ -143,6 +147,13 @@
     <script src="../script.js" theme="dark" position="bottom-right"></script>
     <!-- <script src="../particles.js"></script>
     <script src="../app.js"></script> -->
+    <script>
+      const iframeViewer = document.getElementById('iframeViewer');
+
+      iframeViewer.addEventListener('contextmenu', (e) => {
+          e.preventDefault(); // Prevent the default right-click behavior on the iframe
+      });
+  </script>
     <script src="page.js"></script>
 
 
