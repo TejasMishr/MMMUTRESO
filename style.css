@@ -309,6 +309,7 @@ h2 {
   padding: 50px 20px;
 
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(380px, auto));
 }
 
