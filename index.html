@@ -340,7 +340,7 @@
 
         </div>
 
-        
+
 
 
 
@@ -356,10 +356,26 @@
 
       <div class="part">
         <div class="left">
-          <div class="caros">
-            <h1>hello </h1>
+          <div class="caros active" var="0">
+            <img class="carosimage activeimage" src="eventassets/gameofcodes.jpg" />
+          </div>
+          <div class="caros" var="1">
+            <img class="carosimage" src="eventassets/cpseminar.jpg" />
+          </div>
+          <div class="caros" var="2">
+            <img class="carosimage" src="eventassets/mmmut.jpg" />
+          </div>
+          <div class="caros" var="3">
+            <img class="carosimage" src="eventassets/tnp.jpg" />
+          </div>
+          <div class="backarrow">
+            <img src="eventassets/back-arrow.svg" />
+          </div>
+          <div class="rightarrow">
+            <img src="eventassets/right-arrow.svg" />
           </div>
         </div>
+
         <div class="right">
           <div class="tab-container" style="height: 85vh;">
             <nav>
@@ -441,7 +457,45 @@
 
   <!-- <script src="imgscript.js" theme="dark" position="bottom-right"></script> -->
   <!-- test git -->
+  <script>
+    var caros = document.querySelectorAll('.caros');
+    let currentindex = document.querySelector('.active').getAttribute('var');
+    let numitems = caros.length;
+    var leftclick=document.querySelector('.backarrow')
+    var rightclick=document.querySelector('.rightarrow')
+    leftclick.addEventListener('click',function(){
+      currentindex = document.querySelector('.active').getAttribute('var')
+            console.log(currentindex);
 
+            caros[currentindex].classList.toggle('active')
+            currentindex = currentindex - 1;
+            if (currentindex < 0) {
+                currentindex = numitems - 1;
+            }
+            caros[currentindex].classList.toggle('active')
+    })
+    rightclick.addEventListener('click',function(){
+      caros[currentindex].classList.toggle('active')
+            currentindex++;
+            if (currentindex === numitems) {
+                currentindex = 0;
+            }
+            caros[currentindex].classList.toggle('active')
+
+    })
+    setInterval(() => {
+      caros[currentindex].classList.toggle('active');
+      currentindex++;
+
+
+      if (currentindex === numitems) {
+        currentindex = 0;
+      }
+      caros[currentindex].classList.toggle('active')
+
+    }, 7000);
+
+  </script>
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
