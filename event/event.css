@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
 }
 
-*{
-  
+* {
+
   list-style: none;
 }
 
@@ -13,7 +13,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   height: 85vh;
- 
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-color: #fff;
 }
@@ -62,43 +62,54 @@ body {
 .tab-block {
   padding: 10px;
   height: 60vh;
-  position: relative; /* Add this line */
+  position: relative;
+  /* Add this line */
   overflow-y: auto;
   /* overflow-x: hidden; */
 
 }
-.eve{
-  height: 90vh;
+
+.eve {
+  height: max-content;
 }
-.p-10,hr{
-  animation: scroll 30s infinite linear ;
+
+.p-10,
+hr {
+  animation: scroll 60s infinite linear;
 }
-@keyframes scroll  {
-  0%{
+
+@keyframes scroll {
+  0% {
     transform: translateY(10vh);
   }
-  50%{
+
+  50% {
     transform: translateY(-100vh);
   }
-  100%{
+
+  100% {
     transform: translateY(10vh);
   }
-  
+
 }
-.p-10 p{
-  animation: blink .5s infinite linear ;
+
+.p-10 p {
+  animation: blink .5s infinite linear;
 }
-@keyframes blink  {
-  0%{
+
+@keyframes blink {
+  0% {
     color: red;
   }
-  50%{
+
+  50% {
     color: rgb(43, 70, 243);
   }
-  100%{
+
+  100% {
     color: red;
   }
-  
+
 }
 
 
@@ -117,16 +128,21 @@ body {
 }
 
 .tab-more-link {
-  position: absolute; /* Change from display: block to position: absolute */
-  top: 10px; /* Adjust top position to your preference */
-  right: 10px; /* Align to the right */
+  position: absolute;
+  /* Change from display: block to position: absolute */
+  top: 10px;
+  /* Adjust top position to your preference */
+  right: 10px;
+  /* Align to the right */
   text-decoration: none;
   color: #007bff;
   font-weight: bold;
 }
+
 .tab-more-link:hover {
   text-decoration: underline;
 }
+
 .tab-block hr {
   border: none;
   border-top: 1px solid #ddd;
@@ -148,34 +164,123 @@ body {
 .tab-more-button:hover {
   background-color: #0056b3;
 }
-.left{
-  background: linear-gradient(120deg,red yellow);
+
+.left {
+  background: linear-gradient(120deg, red yellow);
 }
-.part{
-  height: 90vh;
+
+.part {
+  height: max-content;
   display: flex;
-  justify-content:center ;
+  justify-content: center;
   align-items: center;
 }
-.left
-{
-  background-color: #0056b3;
+
+.left {
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  height: 90vh;
+  display: flex;
+  overflow-x: hidden;
+  position: relative;
+
+}
+
+.right {
   width: 50%;
   height: auto;
 }
-.right{
-  width: 50%;
-  height: auto;
+
+.caros {
+  flex: 0 0 100%;
+  display: flex;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index: 0;
 }
+
+@keyframes show {
+  0% {}
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.caros img {
+
+  object-fit: contain;
+  height: 80vh;
+  width: 90%;
+  opacity: 0;
+  animation: show 2s forwards;
+  /* width: auto; */
+}
+
+.backarrow,
+.rightarrow {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: #007bff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.backarrow img,
+.rightarrow img {
+  width: 70%;
+  color: white;
+  height: 70%;
+}
+
+
+.backarrow {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 2%;
+  z-index: 1;
+}
+
+.rightarrow {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2%;
+  z-index: 1;
+}
+
+.backarrow:hover,
+.rightarrow:hover {
+  background-color: #333;
+}
+
+.active {
+  opacity: 1;
+  display: flex;
+}
+
 @media (max-width:720px) {
-  .part{
+  .part {
     display: grid;
 
   }
-  .tab-container{
+
+  .left{
+    width: 90%;
+    height: 90vh;
+  }
+  .tab-container {
     width: 100vw;
   }
+
   .tab-more-button {
-    left:80%;
+    left: 80%;
   }
 }

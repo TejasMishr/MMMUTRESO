@@ -20,8 +20,8 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: linear-gradient(45deg, #2d2d2d, #72726f);
-
+  background: rgb(7,0,130);
+background: radial-gradient(circle, rgba(7,0,130,1) 7%, rgba(67,74,214,1) 21%, rgba(69,224,255,1) 95%);
 
 }
 
@@ -309,6 +309,7 @@ h2 {
   padding: 50px 20px;
 
   display: grid;
+  flex-wrap: wrap;
   grid-template-columns: repeat(auto-fit, minmax(380px, auto));
 }
 

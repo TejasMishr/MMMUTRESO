@@ -56,6 +56,8 @@ function createUpdateLink(text, href) {
 
 
   // Call the createUpdateLink function to add updates
+
+  createUpdateLink('Syllabus Updated', 'sy/sy.html');
   createUpdateExtraLink('Report Issues', 'report.html');
   
   createUpdateLink('IT Content Updated', '#');
