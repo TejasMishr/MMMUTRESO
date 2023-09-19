@@ -369,7 +369,7 @@ h2 {
     position: relative;
     background: linear-gradient(to right,#00093c,#2d0b00);
     padding: 10px 0 20px;
-   font-size: 13px;
+
 }
 .row{
   display: flex;
@@ -381,18 +381,28 @@ h2 {
 }
 
 .col{
+  font-size: 13px;
   margin-top: 10px;
   text-align: left;
   justify-content: space-between;
 flex-basis: 25%;
 padding: 20px;
 }
-.col2{
+.col3{
   margin-top: 10px;
   text-align: left;
-  justify-content: space-between;
-flex-basis: 14%;
+  font-size: 15px;
+flex-basis: 25%;
 padding: 20px;
+}
+
+
+.col2{
+  
+  margin-top: 10px;
+  text-align: left;
+font-size: 13px;
+padding:2px;
 }
 .logo{
   border-radius: 15px;
@@ -572,3 +582,31 @@ object{
 .nav{
   margin-bottom: 15px;
 }
+@media only screen and (max-width:420px){
+.col{
+  font-size: 17px;
+  margin-top: 10px;
+  text-align: center;
+  justify-content: space-between;
+  flex-basis: 100%;
+  padding: 20px;
+}
+  .col2{
+    margin-top: -7px;
+    text-align: left;
+    font-size: 12px;
+    padding: 11px;
+  }
+}
+@media only screen and (max-width:504px){
+  .col2{
+    font-size: 12px;
+padding: 10px;
+}
+}
+@media only screen and (max-width:809px) {
+
+  .col3{
+    display: none;
+  }
+  }
