@@ -274,7 +274,8 @@ hr {
 
   .left{
     width: 90%;
-    height: 90vh;
+    height: 60vh;
+    overflow-y: hidden;
   }
   .tab-container {
     width: 100vw;

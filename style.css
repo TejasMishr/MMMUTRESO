@@ -610,3 +610,14 @@ padding: 10px;
     display: none;
   }
   }
+
+  
+@media (max-width:400px) {
+  .container{
+    margin-top: 18%;
+  }
+  .left{
+    height: 60vh;
+  }
+  
+}
