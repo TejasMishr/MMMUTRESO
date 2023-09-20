@@ -12,13 +12,24 @@
   <link rel="stylesheet" href="event/event.css">
 
   <script src="https://kit.fontawesome.com/e5de940d24.js"></script>
+  <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
     .nav-wrapper {
       z-index: 7;
       position: relative;
+
+    }
+
+    .dg.ac {
+      display: none;
     }
   </style>
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-105392568-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 
@@ -39,22 +50,21 @@
   <!-- ===================================================================================================== -->
 
   <!-- Top Bar start HERE -->
-  <div class="topbar">
+  <!-- <div class="topbar">
     <div class="container1" style="max-width: 99%;">
       <div class="row">
         <div class="col-md-12" style="height: 25px;">
-          <marquee id="m5" style="display:none" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300"
+          <marquee id="m5" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300"
             onmouseout="this.start();" onmouseover="this.stop();"
             style="border-width: 0px; border-style: none; width: 100%;">
-  
-            <!-- Add your scrolling text content here -->
-           
+
+
           </marquee>
-        </div>
+        </div> 
       </div>
     </div>
-  </div>
-  
+  </div> -->
+
 
 
   <!-- ===================================================================================================== -->
@@ -79,13 +89,18 @@
         </ul>
       </nav>
     </div>
-
-    <section id="particles-js" class="heading">
+    <div class="heropage">
+      <div class="text">
+        <h1>MMMUT RESOURCES</h1>
+      </div>
+      <canvas></canvas>
+    </div>
+    <!-- <section id="particles-js" class="heading">
       <h1 class="sep">MMMUT Resource Hub</h1>
       <p class="sep"> Empowering Your Academic Journey!</p>
 
 
-    </section>
+    </section> -->
 
     <div class="parent">
       <section class="features">
@@ -433,20 +448,25 @@
       </div>
     </section>
   </div>
+
 <div style="width: 100vw; height: 5px;background-color: aqua;"></div>
    <footer class="footer">
+
+  
+
     <div class="row">
       <div class="col">
         <img src="img/logo.png" class="logo">
-        <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources  to everyone.✨</p>
+        <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources to everyone.✨
+        </p>
       </div>
 
       <div class="col2">
         <ul>
           <div class="mid">
-           <li> <a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
-           <li> <a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
-           <li> <a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
+            <li> <a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
+            <li> <a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
+            <li> <a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
                 Us</a></li>
           </div>
         </ul>
@@ -454,9 +474,9 @@
       <div class="col2">
         <h3>Reach us </h3>
         <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
-            style="color: #ffffff;"></i>
-          <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+          style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
         </p>
       </div>
       <div class="col3"><b><u>About Us</u></b>
@@ -465,7 +485,7 @@
     </div>
 
     <div class="last">
-  
+
       <p>&copy;Copyright <b>MMMUT RESOURCES</b> | All rights reserved |</p>
       <p> designed with ❤️ by <b>MMMUT RESOURCES TEAM</b></p>
     </div>
@@ -478,35 +498,36 @@
 
 
   <script src="script.js" theme="dark" position="bottom-right"></script>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
+  <!-- <script src="particles.js"></script> -->
+  <!-- <script src="app.js"></script> -->
 
   <!-- <script src="imgscript.js" theme="dark" position="bottom-right"></script> -->
   <!-- test git -->
+
   <script>
     var caros = document.querySelectorAll('.caros');
     let currentindex = document.querySelector('.active').getAttribute('var');
     let numitems = caros.length;
-    var leftclick=document.querySelector('.backarrow')
-    var rightclick=document.querySelector('.rightarrow')
-    leftclick.addEventListener('click',function(){
+    var leftclick = document.querySelector('.backarrow')
+    var rightclick = document.querySelector('.rightarrow')
+    leftclick.addEventListener('click', function () {
       currentindex = document.querySelector('.active').getAttribute('var')
-            console.log(currentindex);
+      console.log(currentindex);
 
-            caros[currentindex].classList.toggle('active')
-            currentindex = currentindex - 1;
-            if (currentindex < 0) {
-                currentindex = numitems - 1;
-            }
-            caros[currentindex].classList.toggle('active')
-    })
-    rightclick.addEventListener('click',function(){
       caros[currentindex].classList.toggle('active')
-            currentindex++;
-            if (currentindex === numitems) {
-                currentindex = 0;
-            }
-            caros[currentindex].classList.toggle('active')
+      currentindex = currentindex - 1;
+      if (currentindex < 0) {
+        currentindex = numitems - 1;
+      }
+      caros[currentindex].classList.toggle('active')
+    })
+    rightclick.addEventListener('click', function () {
+      caros[currentindex].classList.toggle('active')
+      currentindex++;
+      if (currentindex === numitems) {
+        currentindex = 0;
+      }
+      caros[currentindex].classList.toggle('active')
 
     })
     setInterval(() => {
@@ -522,7 +543,7 @@
     }, 7000);
 
   </script>
-  <script type="module">
+  <!-- <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
@@ -544,14 +565,19 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-  </script>
+  </script> -->
   <script src="load/load.js"></script>
+  <script src="./scripts.js"></script>
 </body>
 
 
 
+<script src="pages/page.html"></script>
 
 <script src="topbar/topbar.js"></script>
 
-<script src="pages/page.html"></script>
+>
+
+
 </html>
+
