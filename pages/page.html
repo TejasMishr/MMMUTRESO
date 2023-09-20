@@ -45,8 +45,9 @@
 
 
     </section>
-    
+  <div class="parents">
 
+  
     <form action="#" class="filter-options">
       <select name="branch" id="branch" value="x">
         <option value="-1">Select a Branch</option>
@@ -64,8 +65,11 @@
         <option value="11">MSC</option>
         <option value="12">PHD</option>
       </select>
+     
     </form>
-    <div id="load">
+    <button class="btn" onclick="updateIframe()">Search</button>
+  </div>
+    <div id="load" style="min-height: 200vh;">
       <div class="lds-ripple">
         <div></div>
         <div></div>
@@ -73,7 +77,7 @@
     </div>
     <div class="iframe-container">
       
-      <iframe id="iframeViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" contextmenu="none"
+      <iframe id="iframeViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" oncontextmenu="return false;"
         allowfullscreen>
       </iframe>
       
@@ -159,6 +163,8 @@
       // Initial update when the page loads
       updateIframe();
     </script>
+
+
     
     
     
