@@ -55,11 +55,11 @@ var f1 = ()=>{
 
 
 // <!-- block right -->
-document.addEventListener("contextmenu",function(e){e.preventDefault();})
+// document.addEventListener("contextmenu",function(e){e.preventDefault();})
 
-window.addEventListener('keydown', function (event) {
+// window.addEventListener('keydown', function (event) {
 
-    event.preventDefault();
+//     event.preventDefault();
 
-});
+// });
 
