@@ -604,6 +604,10 @@ ul li a {
       cursor: pointer;
     }
 
+    .navbar img {
+      margin-left: 10%;
+    }
+
     .mobile-nav {
       transform: translate(0%) !important;
     }
