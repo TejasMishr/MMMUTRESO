@@ -19,6 +19,10 @@ font-family: 'Poppins', sans-serif; */
 
 /* HEADINGS */
 
+.main{
+  display:none;
+}
+
 h1,
 p {
   color: #fff;
