@@ -403,9 +403,6 @@ object{
     cursor: pointer;
   }
 
-  .mobile-nav {
-    /* transform: translate(0%) !important; */
-  }
 
   /* SECTIONS */
 
@@ -499,13 +496,14 @@ object{
   }
 
   #branch{
-    width: 12rem;
+    width: 35vw;
   }
 .parents{
-  width: 70%;
+  width: 90%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding: 5px;
 }
 
 .button {
@@ -517,16 +515,18 @@ object{
   gap: 10px;
   /* background-color: rgb(161, 255, 20); */
   background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
-  border-radius: 30px;
+  border-radius: 17px;
   color: rgb(19, 19, 19);
   font-weight: 600;
-  border: none;
+  border: solid #842e2e;
   position: relative;
   cursor: pointer;
   transition-duration: .2s;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
-  padding-left: 8px;
-  transition-duration: .5s;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  transition-duration: 0.5s;
 }
 
 .svgIcon {

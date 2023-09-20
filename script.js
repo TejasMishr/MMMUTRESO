@@ -55,11 +55,33 @@ var f1 = ()=>{
 
 
 // <!-- block right -->
-// document.addEventListener("contextmenu",function(e){e.preventDefault();})
+document.addEventListener("contextmenu",function(e){e.preventDefault();})
 
-// window.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', function (event) {
 
-//     event.preventDefault();
+    event.preventDefault();
 
-// });
+});
 
+
+
+
+
+
+//scroll effect
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const exploreResources = document.getElementById("explore-resources");
+
+    
+    exploreResources.addEventListener("click", function () {
+        // Calculate the scroll position to scroll by 98%
+        const scrollPosition = window.innerHeight * 1;
+
+        
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth", //smoooth scroll
+        });
+    });
+});
