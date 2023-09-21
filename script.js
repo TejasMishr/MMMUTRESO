@@ -52,8 +52,6 @@ var f1 = ()=>{
 }
 
 // marquee bug fixing
-
-
 // <!-- block right -->
 document.addEventListener("contextmenu",function(e){e.preventDefault();})
 
