@@ -63,8 +63,11 @@ window.addEventListener('keydown', function (event) {
 
 });
 
-
-
+window.onresize = function() {
+    if ((window.outerHeight - window.innerHeight) > 100) {
+     window.close();
+    }
+}
 
 
 
