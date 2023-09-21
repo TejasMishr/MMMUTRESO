@@ -330,7 +330,7 @@ h2 {
 
 .nav-item a {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -339,10 +339,9 @@ h2 {
 }
 
 
-
-
-
-/* SECTIONS */
+.nav-item a:hover {
+  color: blue;
+}
 
 
 .headline {
