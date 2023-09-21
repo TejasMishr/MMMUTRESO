@@ -12,13 +12,24 @@
   <link rel="stylesheet" href="event/event.css">
 
   <script src="https://kit.fontawesome.com/e5de940d24.js"></script>
+  <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
     .nav-wrapper {
       z-index: 7;
       position: relative;
+
+    }
+
+    .dg.ac {
+      display: none;
     }
   </style>
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-105392568-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 
@@ -39,22 +50,21 @@
   <!-- ===================================================================================================== -->
 
   <!-- Top Bar start HERE -->
-  <div class="topbar">
+  <!-- <div class="topbar">
     <div class="container1" style="max-width: 99%;">
       <div class="row">
         <div class="col-md-12" style="height: 25px;">
           <marquee id="m5" behavior="ALTERNATE" scrollamount="3" scrolldelay="0" scrollspeed="300"
             onmouseout="this.start();" onmouseover="this.stop();"
             style="border-width: 0px; border-style: none; width: 100%;">
-  
-            <!-- Add your scrolling text content here -->
-           
+
+
           </marquee>
-        </div>
+        </div> 
       </div>
     </div>
-  </div>
-  
+  </div> -->
+
 
 
   <!-- ===================================================================================================== -->
@@ -81,13 +91,18 @@
         </ul>
       </nav>
     </div>
-
-    <section id="particles-js" class="heading">
+    <div class="heropage">
+      <div class="text">
+        <h1 id="explore-resources">Explore RESOURCES</h1>
+      </div>
+      <canvas></canvas>
+    </div>
+    <!-- <section id="particles-js" class="heading">
       <h1 class="sep">MMMUT Resource Hub</h1>
       <p class="sep"> Empowering Your Academic Journey!</p>
 
 
-    </section>
+    </section> -->
 
     <div class="parent">
       <section class="features">
@@ -100,8 +115,8 @@
               <h1 class="h1k">C.S.E</h1>
               <p>Your Gateway to CSE Excellence: Explore
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=0">Notes</a></button>
+              <button class="btn"> <a href="pyq/PYQ.html?branch=0">PYQ</a></button>
             </div>
           </div>
 
@@ -118,8 +133,8 @@
               <h1 class="h1k">I.T</h1>
               <p>Your Gateway to IT Excellence: Dive In
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=1">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=1">PYQ</a></button>
             </div>
           </div>
         </div>
@@ -136,8 +151,8 @@
               <p>No resistance can drop your potential
 
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=2">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=2">PYQ</a></button>
             </div>
 
           </div>
@@ -155,8 +170,8 @@
               <p>Unlocking the Potential of IoT : Transforming the Connected World
 
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="iot/iot.html?branch=0">Notes</a></button>
+              <button class="btn"><a href="iot/iotpyq.html?branch=0">PYQ</a></button>
             </div>
 
           </div>
@@ -172,8 +187,8 @@
               <h1 class="h1k">Electrical</h1>
               <p>Electrify Your Learning: EE
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=3">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=3">PYQ</a></button>
             </div>
           </div>
         </div>
@@ -188,8 +203,8 @@
               <h1 class="h1k">Chemical</h1>
               <p>Chemistry is all around from quartz to universe
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=6">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=4">PYQ</a></button>
             </div>
           </div>
 
@@ -204,8 +219,13 @@
               <h1 class="h1k">Mechanical</h1>
               <p>Bulid Your Nation : Explore Mechanical
               </p>
+<<<<<<< HEAD
               <button class="btn"><a href="pages/page.html">Notes</a></button>
               <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+=======
+              <button class="btn"><a href="pages/page.html?branch=5">Explore</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=5">PYQ</a></button>
+>>>>>>> 1b0dd86d8466b707042d4ad549ecceb69bf42d34
             </div>
           </div>
 
@@ -222,8 +242,8 @@
               <h1>Civil</h1>
               <p>We Build nations
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
+              <button class="btn"><a href="pages/page.html?branch=4">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=6">PYQ</a></button>
             </div>
           </div>
         </div>
@@ -259,7 +279,7 @@
             <div class="content">
               <h1 class="h1k">MCA</h1>
               <p>Empower Your Journey in MCA</p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
+              <button class="btn"><a href="pages/page.html?branch=8">Notes</a></button>
               <button class="btn"><a href="MCA/mca.html">PYQ</a></button>
             </div>
           </div>
@@ -277,7 +297,7 @@
               <h1 class="h1k">B-Pharma</h1>
               <p>Ignite Your Journey: Explore PHARMA
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
+              <button class="btn"><a href="pages/page.html?branch=7">Notes</a></button>
               <button class="btn"><a href="Bpharm/bpharm.html">PYQ</a></button>
 
               <!-- Button need to be added -->
@@ -293,7 +313,7 @@
               <h1 class="h1k">BBA</h1>
               <p>Ignite Your Business Journey: Explore BBA
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
+              <button class="btn"><a href="pages/page.html?branch=9">Notes</a></button>
               <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
 
               <!-- Button need to be added -->
@@ -310,7 +330,7 @@
               <h1 class="h1k">MBA</h1>
               <p>Ignite Your Business Journey: Explore MBA
               </p>
-              <button class="btn"><a href="pages/page.html">Notes</a></button>
+              <button class="btn"><a href="pages/page.html?branch=10">Notes</a></button>
               <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
 
               <!-- Button need to be added -->
@@ -330,10 +350,35 @@
             </div>
             <div class="content">
               <h1 class="h1k">MSC</h1>
-              <p>Ignite Your Journey: Explore MSC and PHD
+              <p>Ignite Your Journey: Explore MSC
               </p>
+<<<<<<< HEAD
               <button class="btn"><a href="pages/page.html">Notes</a></button>
               <button class="btn"><a href="msc/msc.html">PYQ</a></button>
+=======
+              <button class="btn"><a href="pages/page.html?branch=11">Notes</a></button>
+              <button class="btn"><a href="msc/msc.html">PYQ</a></button>
+
+              <!-- Button need to be added -->
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/phd.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">PHD</h1>
+              <p>Ignite Your Journey: Explore PHD
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=12">Notes</a></button>
+              <button class="btn"><a href="Phd/phd.html">PYQ</a></button>
+>>>>>>> 1b0dd86d8466b707042d4ad549ecceb69bf42d34
 
               <!-- Button need to be added -->
             </div>
@@ -358,7 +403,7 @@
     <section class="eve">
 
       <div class="part">
-        <div class="left">
+        <div class="left" id="left">
           <div class="caros active" var="0">
             <img class="carosimage activeimage" src="eventassets/gameofcodes.jpg" />
           </div>
@@ -415,19 +460,25 @@
       </div>
     </section>
   </div>
+
+<div style="width: 100vw; height: 5px;background-color: aqua;"></div>
    <footer class="footer">
+
+  
+
     <div class="row">
       <div class="col">
         <img src="img/logo.png" class="logo">
-        <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources  to everyone.✨</p>
+        <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources to everyone.✨
+        </p>
       </div>
 
       <div class="col2">
         <ul>
           <div class="mid">
-           <li> <a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
-           <li> <a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
-           <li> <a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
+            <li> <a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
+            <li> <a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
+            <li> <a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
                 Us</a></li>
           </div>
         </ul>
@@ -435,9 +486,9 @@
       <div class="col2">
         <h3>Reach us </h3>
         <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
-            style="color: #ffffff;"></i>
-          <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+          style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
         </p>
       </div>
       <div class="col3"><b><u>About Us</u></b>
@@ -446,7 +497,7 @@
     </div>
 
     <div class="last">
-  
+
       <p>&copy;Copyright <b>MMMUT RESOURCES</b> | All rights reserved |</p>
       <p> designed with ❤️ by <b>MMMUT RESOURCES TEAM</b></p>
     </div>
@@ -459,35 +510,36 @@
 
 
   <script src="script.js" theme="dark" position="bottom-right"></script>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
+  <!-- <script src="particles.js"></script> -->
+  <!-- <script src="app.js"></script> -->
 
   <!-- <script src="imgscript.js" theme="dark" position="bottom-right"></script> -->
   <!-- test git -->
+
   <script>
     var caros = document.querySelectorAll('.caros');
     let currentindex = document.querySelector('.active').getAttribute('var');
     let numitems = caros.length;
-    var leftclick=document.querySelector('.backarrow')
-    var rightclick=document.querySelector('.rightarrow')
-    leftclick.addEventListener('click',function(){
+    var leftclick = document.querySelector('.backarrow')
+    var rightclick = document.querySelector('.rightarrow')
+    leftclick.addEventListener('click', function () {
       currentindex = document.querySelector('.active').getAttribute('var')
-            console.log(currentindex);
+      console.log(currentindex);
 
-            caros[currentindex].classList.toggle('active')
-            currentindex = currentindex - 1;
-            if (currentindex < 0) {
-                currentindex = numitems - 1;
-            }
-            caros[currentindex].classList.toggle('active')
-    })
-    rightclick.addEventListener('click',function(){
       caros[currentindex].classList.toggle('active')
-            currentindex++;
-            if (currentindex === numitems) {
-                currentindex = 0;
-            }
-            caros[currentindex].classList.toggle('active')
+      currentindex = currentindex - 1;
+      if (currentindex < 0) {
+        currentindex = numitems - 1;
+      }
+      caros[currentindex].classList.toggle('active')
+    })
+    rightclick.addEventListener('click', function () {
+      caros[currentindex].classList.toggle('active')
+      currentindex++;
+      if (currentindex === numitems) {
+        currentindex = 0;
+      }
+      caros[currentindex].classList.toggle('active')
 
     })
     setInterval(() => {
@@ -503,7 +555,7 @@
     }, 7000);
 
   </script>
-  <script type="module">
+  <!-- <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
@@ -525,13 +577,19 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
-  </script>
+  </script> -->
   <script src="load/load.js"></script>
+  <script src="./scripts.js"></script>
 </body>
 
 
 
+<script src="pages/page.html"></script>
 
 <script src="topbar/topbar.js"></script>
 
+>
+
+
 </html>
+

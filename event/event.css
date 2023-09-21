@@ -15,7 +15,8 @@ body {
   height: 85vh;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: #fff;
+  background-color: #262626;
+  border-radius: 5px;
 }
 
 .tab-header {
@@ -45,9 +46,10 @@ body {
 .tab-panel {
   display: none;
   padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #000;
+  border: 1px solid #555;
   border-radius: 4px;
+  color: #fff;
 }
 
 .tab-panel.active {
@@ -73,11 +75,9 @@ body {
   height: max-content;
 }
 
-.p-10,
-hr {
+.p-10,hr{
   animation: scroll 60s infinite linear;
 }
-
 @keyframes scroll {
   0% {
     transform: translateY(10vh);
@@ -200,7 +200,7 @@ hr {
   align-items: center;
   height: 100%;
   width: 100%;
-  background: white;
+  background-color: black;
   z-index: 0;
 }
 
@@ -274,7 +274,8 @@ hr {
 
   .left{
     width: 90%;
-    height: 90vh;
+    height: 60vh;
+    overflow-y: hidden;
   }
   .tab-container {
     width: 100vw;

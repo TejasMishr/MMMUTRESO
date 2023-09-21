@@ -63,3 +63,25 @@ window.addEventListener('keydown', function (event) {
 
 });
 
+
+
+
+
+
+//scroll effect
+document.addEventListener("DOMContentLoaded", function () {
+    
+    const exploreResources = document.getElementById("explore-resources");
+
+    
+    exploreResources.addEventListener("click", function () {
+        // Calculate the scroll position to scroll by 98%
+        const scrollPosition = window.innerHeight * 1;
+
+        
+        window.scrollTo({
+            top: scrollPosition,
+            behavior: "smooth", //smoooth scroll
+        });
+    });
+});
