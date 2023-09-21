@@ -70,6 +70,8 @@ var f1 = ()=>{
 
 
 //scroll effect
+
+
 document.addEventListener("DOMContentLoaded", function () {
     
     const exploreResources = document.getElementById("explore-resources");
@@ -86,3 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
