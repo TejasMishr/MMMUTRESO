@@ -120,8 +120,8 @@
       </div>
     </div>
     <div class="pdf-container">
-      <iframe id="pdfViewer" import { } from 'module' ; frameborder="0" scrolling="no"
-        sandbox="allow-same-origin allow-scripts" src="" onerror="displayErrorMessage()"></iframe>
+      <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
+        onerror="displayErrorMessage()"></iframe>
     </div>
 
     <script src="../loader/load.js"></script>
@@ -515,26 +515,26 @@
     }, duration);
   }
 
-      let ppr;
-      function updatePDF() {
-        var selectedSession = sessionSelect.value;
-        var selectedBranch = branchSelect.value;
-        var selectedSemester = fileSelect.value;
-        var selectedPaper = selectpaper.value;
-        ppr = document.getElementById('selectpaper').value;
+  function updatePDF() {
+    var selectedSession = sessionSelect.value;
+    var selectedBranch = branchSelect.value;
+    var selectedSemester = fileSelect.value;
+    var selectedPaper = selectpaper.value;
 
-        if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
-
-          ripple.style.display = "flex";
-          selectpaper.style.backgroundColor="#fe0000";
-          selectpaper.style.color="white";
-
-
-          
-        }
-        else if (ppr != -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
-          selectpaper.style.backgroundColor="#e1e1e1";
-          selectpaper.style.color="black";
+    // Check if any of the selections is -1
+    if (
+      selectedSession == -1 ||
+      selectedBranch == -1 ||
+      selectedSemester == -1 ||
+      selectedPaper == -1
+    ) {
+      // Display the "ripple" for 60 seconds (1 minute)
+      displayRipple(60000);
+      selectpaper.style.backgroundColor = "#fe0000";
+      selectpaper.style.color = "white";
+    } else {
+      selectpaper.style.backgroundColor = "#e1e1e1";
+      selectpaper.style.color = "black";
 
       // Hide "ripple" after 4 seconds
       setTimeout(() => {
@@ -598,4 +598,8 @@
       const analytics = getAnalytics(app);
     </script>
     <script src="pyq.js"></script>
+   
+    
+</body>
+
 </html>
