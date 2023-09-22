@@ -7,6 +7,8 @@
     <title>MMMUT Resource </title>
     <!-- <link href="style.css" rel="stylesheet" type="text/css" /> -->
     <link href="team-style.css" rel="stylesheet" type="text/css" />
+    <link href="./load/loader.css" rel="stylesheet" type="text/css" />
+    <link href="./startss.css" rel="stylesheet" type="text/css" />
     <!-- <script type="text/javascript" src="script.js"></script> -->
     <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
@@ -14,8 +16,89 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
 
 </head>
+<style>
+    #back , .stars{
+        position: fixed;
+        top: 0;
+    }
+</style>
 
-<body>
+<body style="background: black;">
+
+    <!-- loader -->
+    <div id="back">
+        <div class="stars">
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+            <div class="star"></div>
+        </div>
+        <div class="pyramid-loader">
+            <div class="wrapper">
+                <span class="side side1"></span>
+                <span class="side side2"></span>
+                <span class="side side3"></span>
+                <span class="side side4"></span>
+                <span class="shadow"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-animation">
+        <div id="starss"></div>
+        <div id="starss2"></div>
+        <div id="starss3"></div>
+        <div id="starss4"></div>
+    </div>
+
+
+
 
     <div class="page-wrapper">
         <div class="nav-wrapper">
@@ -254,7 +337,8 @@
                         <h1>Anjul Singh</h1>
                         <h2>IT (2022-26)</h2>
 
-                        <p>Anjul skillful management of background links and seamless integration has enhanced website functionality and user experience significantly.</p>
+                        <p>Anjul skillful management of background links and seamless integration has enhanced website
+                            functionality and user experience significantly.</p>
                         <div class="info">
                             <a href="http://www.linkedin.com/in/anjul-singh-3500a1219"><i
                                     class="fa-brands fa-linkedin fa-xl" style="color: white;"></i></a>
@@ -262,15 +346,15 @@
                                     style="color: white;"></i></a>
                             <a href="mailto:anjulsingh462@gmail.com"><i class="fa-solid fa-envelope fa-xl"
                                     style="color: white;"></i></a>
-                            <a href="https://x.com/Anjul__s?t=bPxYBeuPVdyGTbQkZ-7uIA&s=08"><i class="fa-brands fa-twitter fa-xl"
-                                    style="color: white;"></i></a>
+                            <a href="https://x.com/Anjul__s?t=bPxYBeuPVdyGTbQkZ-7uIA&s=08"><i
+                                    class="fa-brands fa-twitter fa-xl" style="color: white;"></i></a>
                         </div>
                     </div>
 
 
                 </div>
             </div>
-           
+
 
 
 
@@ -287,7 +371,7 @@
                         <h1>Prabhat Yadav</h1>
                         <h2>IT (2022-26)</h2>
                         <p>Collaborated with Jyoti Maurya to address and rectify frontend bugs effectively.
-                            Designed Website frontend Footer Page 
+                            Designed Website frontend Footer Page
                         </p>
                         <div class="info">
                             <a href="https://www.linkedin.com/in/prabhat-yadav-404b7727a"><i
@@ -722,7 +806,14 @@
 
 
 
+<script>
+    function div() {
+        document.getElementById("back").style.visibility = "hidden";
+    }
+    setTimeout("div()", 5000);
+</script>
 
 
-    
+
+
 </html>

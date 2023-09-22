@@ -455,7 +455,7 @@ body{
     align-items: center;
     min-height: 100vh;
     background: rgb(7,0,130);
-    background: radial-gradient(circle at top, rgba(7,0,130,1) 0%, rgba(103,103,241,1) 35%, rgba(69,224,255,1) 100%);
+    /* background: radial-gradient(circle at top, rgba(7,0,130,1) 0%, rgba(103,103,241,1) 35%, rgba(69,224,255,1) 100%); */
 
 }
 .heading{
@@ -485,7 +485,7 @@ body{
     position: relative;
     width: 350px;
     height: 230px;
-    background: rgb(181 172 172);
+    background: bottom;
     
     transition: 0.6s;
 }
@@ -528,7 +528,7 @@ body{
     position: absolute;
     inset: 5px;
     
-    background: linear-gradient(45deg,rgb(118 181 181),rgb(26 73 85),rgb(98 208 223));
+    /* background: linear-gradient(45deg,rgb(118 181 181),rgb(26 73 85),rgb(98 208 223)); */
 }
 .card .img{
     position: absolute;
@@ -543,10 +543,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+  
 }
 .card .img:hover {
    transform: scale(1.1);
-   transition: .97s ease-in-out;
+   transition: .44s ease-in;
+   border-radius: 50%;
 }
 .card .img::before{
     content: '';
@@ -599,13 +601,15 @@ justify-content: center;
 align-items: flex-end;
 overflow: hidden;
 }
-.card .content .details{
-    padding: 30px 20px;
-    text-align: center;
-    width: 100%;
-    transition: 0.5s;
-    transform: translateY(145px);
-
+.card .content .details {
+  padding: 30px 31px 56px 0px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(145px);
+  margin-right: 3px;
+  margin-top: 50%;
+  margin-bottom: 5%;
 }
 .card:hover .content .details{
     transform: translateY(0px);
@@ -658,4 +662,9 @@ overflow: hidden;
 }
 .card .content .details .info a:hover .fa-brands{
     color: white;
+}
+
+
+.lines{
+  display: none;
 }
