@@ -34,3 +34,20 @@ var f1 = ()=>{
 
 
 }
+// changing z-Index of iframe // 
+
+
+var pdf = document.getElementById('pdfViewer');
+
+pdf.addEventListener('click',function(){
+    alert('ok');
+    pdf.style.zIndex="-10";
+
+    setTimeout(() => {
+        pdf.style.zIndex="0";
+    }, 5000);
+})
+
+
+
+
