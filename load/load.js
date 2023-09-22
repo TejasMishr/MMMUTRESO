@@ -2,23 +2,26 @@
 
 
 // localStorage.setItem('loaderShown', 'false');
-let ans =  localStorage.getItem('loaderShown');
+// let ans =  localStorage.getItem('loaderShown');
 
-function div(){
+// function div(){
 
-if(ans == true){
+// if(ans == true){
   
-    document.getElementById("back").style.visibility="hidden";
-    localStorage.setItem('loaderShown', 'true')
+//     document.getElementById("back").style.visibility="hidden";
+//     localStorage.setItem('loaderShown', 'true')
            
-}else{
+// }else{
    
-    document.getElementById("back").style.display="none";
-}
-}
+//     document.getElementById("back").style.display="none";
+// }
+// }
 
-    setTimeout("div()", 800);
-  
+//     setTimeout("div()", 5900);
+function div(){
+    document.getElementById("back").style.visibility="hidden";
+}
+setTimeout("div()", 900);
 
 
 

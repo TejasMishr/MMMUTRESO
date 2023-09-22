@@ -10,11 +10,13 @@
   <link rel="stylesheet" href="load/loader.css">
 
   <link rel="stylesheet" href="event/event.css">
+  <link rel="stylesheet" href="startss.css">
 
   <script src="https://kit.fontawesome.com/e5de940d24.js"></script>
   <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
+    
     .nav-wrapper {
       z-index: 7;
       position: relative;
@@ -24,6 +26,8 @@
     .dg.ac {
       display: none;
     }
+
+   
   </style>
   <script>
     window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
@@ -35,15 +39,71 @@
 
 
 <body>
+
+  <!-- loader -->
   <div id="back">
-    <div class="load">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+    <div class="pyramid-loader">
+        <div class="wrapper">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
+</div>
 
   <!-- hello tejas  -->
 
@@ -68,8 +128,14 @@
 
 
   <!-- ===================================================================================================== -->
-
+  <div class="bg-animation">
+    <div id="starss"></div>
+    <div id="starss2"></div>
+    <div id="starss3"></div>
+    <div id="starss4"></div>
+</div>
   <div class="page-wrapper">
+    
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
@@ -220,10 +286,11 @@
               <p>Bulid Your Nation : Explore Mechanical
               </p>
 
-              <!-- <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
+               <button class="btn"><a href="pages/page.html">Notes</a></button>
+<!--               <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
 
-              <button class="btn"><a href="pages/page.html?branch=5">Explore</a></button>
+
+             
               <button class="btn"><a href="pyq/PYQ.html?branch=5">PYQ</a></button>
 
             </div>
@@ -258,7 +325,9 @@
               <h1 class="h1k">SYLLABUS</h1>
               <p>Navigate to Your Course Syllabus: Explore Syllabus
               </p>
-              <button class="btn"><a href="sy/sy.html">Explore </a></button>
+              <button class="btn"><a href="sy/sy.html">
+                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+                Explore </a></button>
               <!-- <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button> -->
 
               <!-- Button need to be added -->
@@ -353,8 +422,6 @@
               <p>Ignite Your Journey: Explore MSC
               </p>
 
-              <!-- <button class="btn"><a href="pages/page.html">Notes</a></button>
-              <button class="btn"><a href="msc/msc.html">PYQ</a></button> -->
 
               <button class="btn"><a href="pages/page.html?branch=11">Notes</a></button>
               <button class="btn"><a href="msc/msc.html">PYQ</a></button>
@@ -399,7 +466,7 @@
     <!-- here goes he event and news section -->
 
 
-
+    
     <section class="eve">
 
       <div class="part">
@@ -555,29 +622,7 @@
     }, 7000);
 
   </script>
-  <!-- <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
-      authDomain: "mmmutreso.firebaseapp.com",
-      projectId: "mmmutreso",
-      storageBucket: "mmmutreso.appspot.com",
-      messagingSenderId: "3955922251",
-      appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
-      measurementId: "G-CDM7273LVH"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-  </script> -->
   <script src="load/load.js"></script>
   <script src="./scripts.js"></script>
 </body>
@@ -588,7 +633,30 @@
 
 <script src="topbar/topbar.js"></script>
 
->
+<!-- // analytics-->
+<script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+  authDomain: "mmmutreso.firebaseapp.com",
+  projectId: "mmmutreso",
+  storageBucket: "mmmutreso.appspot.com",
+  messagingSenderId: "3955922251",
+  appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+  measurementId: "G-CDM7273LVH"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
 
 
 </html>

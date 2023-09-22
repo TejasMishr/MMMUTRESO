@@ -198,7 +198,67 @@ canvas {
   touch-action: manipulation;
   width: 50%;
 }
+@keyframes gradientAnimation {
+  0% {
+    background-image: linear-gradient(90deg, #17659a, #df580f);
+  }
+  100% {
+    background-image: linear-gradient(90deg, #d18007, #07507a);
+  }
+}
 
+.btn {
+ 
+  background-size: 200% 100%; 
+  animation: gradientAnimation 1s linear infinite; 
+}
+
+
+.button {
+  width: 110px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  /* background-color: rgb(161, 255, 20); */
+  background-image: linear-gradient(to right, #7474BF 0%, #348AC7 51%, #7474BF 100%);
+  border-radius: 17px;
+  color: rgb(19, 19, 19);
+  font-weight: 600;
+  border: solid #842e2e;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  transition-duration: 0.5s;
+}
+.svgIcon {
+  height: 11px;
+    transition-duration: 1.5s;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    text-align: center;
+}
+
+.btn:hover {
+  background-color: rgb(192, 255, 20);
+  transition-duration: .5s;
+}
+
+.btn:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.btn:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
 
 a {
   color: #f4f1f1;
@@ -330,7 +390,7 @@ h2 {
 
 .nav-item a {
   color: white;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
@@ -339,10 +399,9 @@ h2 {
 }
 
 
-
-
-
-/* SECTIONS */
+.nav-item a:hover {
+  color: blue;
+}
 
 
 .headline {
@@ -709,3 +768,5 @@ ul li a {
     height: 60vh;
   }
 }
+
+
