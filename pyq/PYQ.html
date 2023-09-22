@@ -7,7 +7,11 @@
   <title>MMMUT Resource </title>
   <link href="PYQ.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../loader/load.css">
-
+  <link rel="stylesheet" href="error.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
   <script type="text/javascript" src="../script.js"></script>
   <style>
     .nav-wrapper {
@@ -29,7 +33,8 @@
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <img src="../img/logo.png" alt="MMMUT">
+       
+        <a href="../index.html"> <img src="../img/logo.png" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
           <span class="bar" id="bar1"></span>
           <span class="bar" id="bar2"></span>
@@ -56,6 +61,7 @@
 
 
 
+  <!-- <div class="parents"> -->
 
 
     <!-- Select branch and semester -->
@@ -72,9 +78,9 @@
         <option value="1">I.T</option>
         <option value="2">E.C.E</option>
         <option value="3">E.E</option>
-        <option value="4">Civil</option>
+        <option value="4">Chemical</option>
         <option value="5">Mechanical</option>
-        <option value="6">Chemical</option>
+        <option value="6">CIVIL</option>
       </select>
 
       <select name="semester" id="fileSelect">
@@ -96,10 +102,21 @@
         <option value="2">Major</option>
       </select>
     </form>
+    <!-- <button class="btn" onclick="updatePDF()">Search</button> -->
+  
     <div id="load">
       <div class="lds-ripple">
         <div></div>
         <div></div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h1 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h1>
+          <h2>Error: 404 page not found</h2>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
       </div>
     </div>
     <div class="pdf-container">
@@ -122,19 +139,19 @@
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['1NGe7Hn9k0KuI0ZvMpuFNA0by1cng7z54', '1YVxghhRg1Enk5x-wc7U7mtdoEl01dOBy', '1hQb5vVgvbwpy4UdQzvhkHDqkZR_H20rz'],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['null', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['null', 'null', 'null'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'null']
 
           ],
 
@@ -145,31 +162,21 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6', '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6',
-              '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6'
-            ],
+            ['1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6', '1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6','1SOfCpBtUGr6ZMbW7qy5h79OqLkwi7ZQ6'],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ', '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ',
-              '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ'
-            ],
+            ['1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ', '1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ','1eKKZZbPpjvfMr49wJUqf_gITnwltnpVJ'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1Crnh119QuXl20YXzpe32_H3xX82sn-Df', '1Cwpm_2MrhtNs15kmE1bYlzW2UL9QjFfH',
-              '1CturwVpUG8snif8Idlg6yBpml5RXddVW'
-            ],
+            ['1Crnh119QuXl20YXzpe32_H3xX82sn-Df', '1Cwpm_2MrhtNs15kmE1bYlzW2UL9QjFfH','1CturwVpUG8snif8Idlg6yBpml5RXddVW'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1DL9cH4XiugxYK9a0k8qU8dJbZ64Xa_0P', '1DKwutrHv8VumOXodd4yhd3HL1ml6gzpO',
-              '1DFcPnH1x8fJujmZ2-B8J09E-OTQjNlIz'
-            ],
+            ['1DL9cH4XiugxYK9a0k8qU8dJbZ64Xa_0P', '1DKwutrHv8VumOXodd4yhd3HL1ml6gzpO','1DFcPnH1x8fJujmZ2-B8J09E-OTQjNlIz'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1-28SctleYsF-acD_irrxkPS2eioqezhY', '11NfErux95YTDx-rLqIoEE-qTmtAftcPs',
-              '1r6Q4K9QOToYXITXQpRSE94rBbGvScJeY'
-            ],
+            ['1-28SctleYsF-acD_irrxkPS2eioqezhY', '11NfErux95YTDx-rLqIoEE-qTmtAftcPs','1r6Q4K9QOToYXITXQpRSE94rBbGvScJeY'],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'null']
 
           ],
           // BRANCH ECE
@@ -178,25 +185,21 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar',
-              '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'
-            ],
+            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar','1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar',
-              '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'
-            ],
+            ['1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar', '1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar','1CiY5VE_-wp2HcFtDZvEZv2QXe3Iu9Bar'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'null']
 
           ],
 
@@ -218,15 +221,15 @@
               '18wmZNKarobRJARuDnu55UAC15zQxAOkz'
             ],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'null']
 
           ],
 
@@ -237,21 +240,21 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            [' ', ' ', ' '],
+            ['null', 'null', 'null'],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['null', 'null', 'null']
 
           ],
 
@@ -261,23 +264,21 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
-              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
-            ],
+            ['null', 'null','null'],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['108Xj5Zg_KISzHiZVO9vHobdWv52R8cd-', '10SyxGVebEh4-HjBs1OP5TR89cxOyAecU', '10_Z3rlUhw1Fy7SHS2HQ_zt2ryO4JpXhW'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['null', 'null', 'null'],
 
           ],
 
@@ -320,13 +321,11 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
-              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
-            ],
+            ['null', 'null','null' ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['1eE5LvZxmYH1KOnA9NPIVTvkM8DGay1Wg', '1s-MAqXIzEB9lFWoNwNzGKYo6c8LCSfW_', '1ZXg0BgLtwpmG2JNGfXL3V-1R6H5CUnzl'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['  ', '  ', '  '],
+            ['null', 'null', 'null'],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -347,11 +346,10 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
-              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
-            ],
+            [ '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE','12qhbpk0fQnxse-__pY43n3iGJYxbcXET',
+              '13018QeExFpL8vkjNpUtQHxnknAKcpKel' ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            ['158DO6C8Hm6S2zn8BquBUfIxRRrD5xWC3', '151rG2rO2BYiFCzlkyRwqjBMU9peFz-tI', '14xKWaUYk68JHpgEgOMqnvRrI_qiicCWw'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -376,15 +374,15 @@
               '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -402,15 +400,15 @@
               '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -429,15 +427,15 @@
               '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -451,19 +449,19 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1-juPEIreZJfVQIHrjpbMJnpC-N3RZ0yg', '1-qG5s1gUQS7UUdsnmw7as63FvoO03zLb',
-              '1-un-hUvdmh5ccMu8pGFT9rXT8Ghg9m8A'
+            ['12YBHj1NaYPSL3-qXtGLy4_aLGRC2bfdF', '11wPRn9TYy0B5X41RLN6pUwaKmxRfDzVx',
+              '1-iO7mkr3PjwlyD3UMo_DI9abyOFKIrWE'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['1-xA8R55Yj9sxjYeFwSI_REiGN7L_Eu2q', '100VekL-q9ELRnzPF-CrRj1qysoPPdDz4', '102IAZAufBCEPyigaowSHIqUD8TpmRtyO'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -478,19 +476,19 @@
             // SEMESTER--------------------->>>>>
 
             // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['12qhbpk0fQnxse-__pY43n3iGJYxbcXET', '12q8tmcUdMS6Q3Bs28QlyqF_ZAXPSS_JE',
-              '13018QeExFpL8vkjNpUtQHxnknAKcpKel'
+            [ '1h93JhnHTx-gFlbx6YpInuCy6guMvKnFp','12qKO7wzCIKJMwd12xHDeS3WrqmFUsDjM',
+              '1-CtdivsDWCb2fJZLV_7P57ruaeRYuy9t'
             ],
             // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['1K0vowulbzSMXRsH4JiCbgBpypX2qlugY', '1pFNMIHLjCFGPPlJTQ21THG3_OAm3d_eJ', '1e-nBtTXcC9uV9o0lFT-Rx2hx4DJJQs2h'],
             // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
             // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
             ['  ', '  ', '  '],
             // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
@@ -501,28 +499,21 @@
       ];
 
       var sessionSelect = document.getElementById('session');
-      var branchSelect = document.getElementById('branch');
-      var fileSelect = document.getElementById('fileSelect');
-      var selectpaper = document.getElementById('selectpaper');
-      var pdfViewer = document.getElementById('pdfViewer');
+  var branchSelect = document.getElementById('branch');
+  var fileSelect = document.getElementById('fileSelect');
+  var selectpaper = document.getElementById('selectpaper');
+  var pdfViewer = document.getElementById('pdfViewer');
+  var ripple = document.querySelector("#load");
+  var maine = document.querySelector('.main');
+  var pdf = document.querySelector('.pdf-container');
 
-      // Add change event listeners to the select elements
-      sessionSelect.addEventListener('change', updatePDF);
-      branchSelect.addEventListener('change', updatePDF);
-      fileSelect.addEventListener('change', updatePDF);
-      selectpaper.addEventListener('change', updatePDF);
-      let ripple = document.querySelector("#load");
-
-
-      function displayripple() {
-
-
-        ripple.style.display = "flex";
-        setTimeout(() => {
-          ripple.style.display = "none";
-        }, 600000);
-
-      }
+  // Function ripple
+  function displayRipple(duration) {
+    ripple.style.display = "flex";
+    setTimeout(() => {
+      ripple.style.display = "none";
+    }, duration);
+  }
 
       let ppr;
       function updatePDF() {
@@ -535,44 +526,53 @@
         if (ppr == -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
 
           ripple.style.display = "flex";
-          selectpaper.style.backgroundColor = "#fe0000";
-          selectpaper.style.color = "white";
+          selectpaper.style.backgroundColor="#fe0000";
+          selectpaper.style.color="white";
 
 
-
+          
         }
         else if (ppr != -1 && selectedSession != -1 && selectedBranch != -1 && selectedSemester != -1) {
-          selectpaper.style.backgroundColor = "#e1e1e1";
-          selectpaper.style.color = "black";
+          selectpaper.style.backgroundColor="#e1e1e1";
+          selectpaper.style.color="black";
 
-          setTimeout(() => {
-            ripple.style.display = "none";
-          }, 4000);
-        }
+      // Hide "ripple" after 4 seconds
+      setTimeout(() => {
+        ripple.style.display = "none";
+      }, 4000);
+    }
 
+    var selectedFileID =fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
-        // Adjust the array indices based on the selected values
-        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
+    if (selectedFileID === 'null') {
+      // Redirect to another page (e.g., "error.html")
+      // window.location.href = 'error.html';
+      maine.style.display = "flex";
+      pdf.style.display = "none";
+    } else {
+      maine.style.display = "none";
+      pdf.style.display = "flex";
+      // Display the "ripple" for 60 seconds (1 minute)
+      displayRipple(60000);
+    }
 
-        if (selectedFileID === 'null') {
-          // Redirect to another page (e.g., "error.html")
-          window.location.href = 'error.html';
-        } else {
-          displayripple();
-        }
+    // Update the src attribute of the iframe
+    pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+  }
 
-        // Update the src attribute of the iframe
-        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
-      }
+  // Function to display an error message
+  function displayErrorMessage() {
+    alert('There was an error loading the PDF. Please contact the administrator.');
+  }
 
-      // Function to display an error message
-      function displayErrorMessage() {
-        alert('There was an error loading the PDF. Please contact the administrator.');
-      }
+  sessionSelect.addEventListener('change', updatePDF);
+  branchSelect.addEventListener('change', updatePDF);
+  fileSelect.addEventListener('change', updatePDF);
+  selectpaper.addEventListener('change', updatePDF);
 
-      // Initial update when the page loads
-      updatePDF();
-    </script>
+  // Initial update when the page loads
+  updatePDF();
+</script>
 
     <script type="module">
       // Import the functions you need from the SDKs you need
@@ -598,7 +598,4 @@
       const analytics = getAnalytics(app);
     </script>
     <script src="pyq.js"></script>
-
-</body>
-
 </html>

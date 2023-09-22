@@ -36,7 +36,7 @@ if (link) {
   if (previousItem) {
       tabBlock.insertBefore(document.createElement('hr'), previousItem.nextSibling);
   }
-
+  document.querySelector('hr').classList.add('hr');
   // Add the new item to the tab block
   tabBlock.appendChild(listItem);
 }

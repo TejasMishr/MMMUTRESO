@@ -10,36 +10,107 @@
   <link rel="stylesheet" href="load/loader.css">
 
   <link rel="stylesheet" href="event/event.css">
+  <link rel="stylesheet" href="startss.css">
 
   <script src="https://kit.fontawesome.com/e5de940d24.js"></script>
+  <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
+    
     .nav-wrapper {
       z-index: 7;
       position: relative;
+
     }
+
+    .dg.ac {
+      display: none;
+    }
+
+   
   </style>
+  <script>
+    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    ga('create', 'UA-105392568-1', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
 
 
 <body>
-  <div id="back">
-    <div class="load">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
- <!-- hello tejas  -->
- 
+  <!-- loader -->
+  <div id="back">
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+    <div class="pyramid-loader">
+        <div class="wrapper">
+          <span class="side side1"></span>
+          <span class="side side2"></span>
+          <span class="side side3"></span>
+          <span class="side side4"></span>
+          <span class="shadow"></span>
+        </div>  
+      </div>
+</div>
+
+  <!-- hello tejas  -->
+
   <!-- ===================================================================================================== -->
 
   <!-- Top Bar start HERE -->
-  <div class="topbar">
+  <!-- <div class="topbar">
     <div class="container1" style="max-width: 99%;">
       <div class="row">
         <div class="col-md-12" style="height: 25px;">
@@ -47,22 +118,30 @@
             onmouseout="this.start();" onmouseover="this.stop();"
             style="border-width: 0px; border-style: none; width: 100%;">
 
-            <!-- Create a container for updates -->
-            <div id="updates-container"></div>
+
           </marquee>
-        </div>
+        </div> 
       </div>
     </div>
-  </div>
+  </div> -->
+
 
 
   <!-- ===================================================================================================== -->
-
+  <div class="bg-animation">
+    <div id="starss"></div>
+    <div id="starss2"></div>
+    <div id="starss3"></div>
+    <div id="starss4"></div>
+</div>
   <div class="page-wrapper">
+    
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <img src="img/logo.png" alt="MMMUT">
+        
+        <a href="index.html"><img src="img/logo.png" alt="MMMUT"></a>
+
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
           <span class="bar" id="bar1"></span>
           <span class="bar" id="bar2"></span>
@@ -78,292 +157,414 @@
         </ul>
       </nav>
     </div>
-
-    <section id="particles-js" class="heading">
+    <div class="heropage">
+      <div class="text">
+        <h1 id="explore-resources">Explore RESOURCES</h1>
+      </div>
+      <canvas></canvas>
+    </div>
+    <!-- <section id="particles-js" class="heading">
       <h1 class="sep">MMMUT Resource Hub</h1>
       <p class="sep"> Empowering Your Academic Journey!</p>
 
 
+    </section> -->
+
+    <div class="parent">
+      <section class="features">
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/CSE.png" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">C.S.E</h1>
+              <p>Your Gateway to CSE Excellence: Explore
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=0">Notes</a></button>
+              <button class="btn"> <a href="pyq/PYQ.html?branch=0">PYQ</a></button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="container">
+
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/it.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">I.T</h1>
+              <p>Your Gateway to IT Excellence: Dive In
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=1">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=1">PYQ</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/ece.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">E.C.E</h1>
+              <p>No resistance can drop your potential
+
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=2">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=2">PYQ</a></button>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/iot.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">I.O.T</h1>
+              <p>Unlocking the Potential of IoT : Transforming the Connected World
+
+              </p>
+              <button class="btn"><a href="iot/iot.html?branch=0">Notes</a></button>
+              <button class="btn"><a href="iot/iotpyq.html?branch=0">PYQ</a></button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/EE.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">Electrical</h1>
+              <p>Electrify Your Learning: EE
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=3">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=3">PYQ</a></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/chem.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">Chemical</h1>
+              <p>Chemistry is all around from quartz to universe
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=6">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=4">PYQ</a></button>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/mech.jpg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">Mechanical</h1>
+              <p>Bulid Your Nation : Explore Mechanical
+              </p>
+
+               <button class="btn"><a href="pages/page.html">Notes</a></button>
+<!--               <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
+
+
+             
+              <button class="btn"><a href="pyq/PYQ.html?branch=5">PYQ</a></button>
+
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="container">
+
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/Civil.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1>Civil</h1>
+              <p>We Build nations
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=4">Notes</a></button>
+              <button class="btn"><a href="pyq/PYQ.html?branch=6">PYQ</a></button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/sy.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">SYLLABUS</h1>
+              <p>Navigate to Your Course Syllabus: Explore Syllabus
+              </p>
+              <button class="btn"><a href="sy/sy.html">
+                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
+                Explore </a></button>
+              <!-- <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button> -->
+
+              <!-- Button need to be added -->
+            </div>
+
+          </div>
+
+
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/mca.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">MCA</h1>
+              <p>Empower Your Journey in MCA</p>
+              <button class="btn"><a href="pages/page.html?branch=8">Notes</a></button>
+              <button class="btn"><a href="MCA/mca.html">PYQ</a></button>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/bpharm.png" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">B-Pharma</h1>
+              <p>Ignite Your Journey: Explore PHARMA
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=7">Notes</a></button>
+              <button class="btn"><a href="Bpharm/bpharm.html">PYQ</a></button>
+
+              <!-- Button need to be added -->
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/BBA.png" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">BBA</h1>
+              <p>Ignite Your Business Journey: Explore BBA
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=9">Notes</a></button>
+              <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
+
+              <!-- Button need to be added -->
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/mba.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">MBA</h1>
+              <p>Ignite Your Business Journey: Explore MBA
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=10">Notes</a></button>
+              <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
+
+              <!-- Button need to be added -->
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/msc.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">MSC</h1>
+              <p>Ignite Your Journey: Explore MSC
+              </p>
+
+
+              <button class="btn"><a href="pages/page.html?branch=11">Notes</a></button>
+              <button class="btn"><a href="msc/msc.html">PYQ</a></button>
+
+              <!-- Button need to be added -->
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div class="container">
+          <div class="card" style="---clr:#009688;">
+            <div class="imgbr">
+              <img src="img/phd.jpeg" alt="">
+            </div>
+            <div class="content">
+              <h1 class="h1k">PHD</h1>
+              <p>Ignite Your Journey: Explore PHD
+              </p>
+              <button class="btn"><a href="pages/page.html?branch=12">Notes</a></button>
+              <button class="btn"><a href="Phd/phd.html">PYQ</a></button>
+
+
+              <!-- Button need to be added -->
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <!-- here goes he event and news section -->
+
+
+    
+    <section class="eve">
+
+      <div class="part">
+        <div class="left" id="left">
+          <div class="caros active" var="0">
+            <img class="carosimage activeimage" src="eventassets/gameofcodes.jpg" />
+          </div>
+          <div class="caros" var="1">
+            <img class="carosimage" src="eventassets/cpseminar.jpg" />
+          </div>
+          <div class="caros" var="1">
+            <img class="carosimage" src="eventassets/mmmadmin.jpeg" />
+          </div>
+          <div class="caros" var="2">
+            <img class="carosimage" src="eventassets/mmmut.jpg" />
+          </div>
+          <div class="caros" var="3">
+            <img class="carosimage" src="eventassets/tnp.jpg" />
+          </div>
+          <div class="backarrow">
+            <img src="eventassets/back-arrow.svg" />
+          </div>
+          <div class="rightarrow">
+            <img src="eventassets/right-arrow.svg" />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="tab-container" style="height: 85vh;">
+            <nav>
+              <div class="tab-header">
+                <a class="tab-item active" data-tab="events">Events</a>
+                <a class="tab-item" data-tab="news">Latest News</a>
+              </div>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel active" id="events">
+                <div class="tab-heading">
+                  <h3>Events</h3>
+                </div>
+                <div class="tab-block">
+                  <!-- Event items go here -->
+                </div>
+              </div>
+              <div class="tab-panel" id="news">
+                <div class="tab-heading">
+                  <h3>Latest News</h3>
+                </div>
+                <div class="tab-block">
+                  <!-- News items go here -->
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
     </section>
-
-
-    <section class="features">
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/CSE.png" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">CSE</h1>
-            <p>Your Gateway to CSE Excellence: Explore
-            </p>
-            <button class="btn" onclick="var ans = document.querySelector('.btn').getAttribute('var');cons('${var}')><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-        </div>
-
-
-      </div>
-
-      <div class="container">
-
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/IT.png" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">IT</h1>
-            <p>Your Gateway to IT Excellence: Dive In
-            </p>
-            <button class="btn"  var="it"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-        </div>
-      </div>
-
-
-
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/ece.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">ECE</h1>
-            <p>No resistance can drop your potential
-
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-
-        </div>
-
-      </div>
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/EE.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">Electrical</h1>
-            <p>Electrify Your Learning: EE
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/chem.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">Chemical</h1>
-            <p>Chemistry is all around from quartz to universe
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-        </div>
-
-      </div>
-      <div class="container">
-
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/Civil.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1>Civil</h1>
-            <p>We Build nations
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-    <section class="features">
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/mca.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">MCA</h1>
-            <p>Empower Your Journey in MCA</p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="MCA/mca.html">PYQ</a></button>
-          </div>
-        </div>
-      </div>
-
-
-
-
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/bpharm.png" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">B-Pharma</h1>
-            <p>Ignite Your Journey: Explore PHARMA
-            </p>
-            <button class="btn" ><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="Bpharm/bpharm.html">PYQ</a></button>
-
-            <!-- Button need to be added -->
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/BBA.png" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">BBA</h1>
-            <p>Ignite Your Business Journey: Explore BBA
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
-
-            <!-- Button need to be added -->
-          </div>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/mba.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">MBA</h1>
-            <p>Ignite Your Business Journey: Explore MBA
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
-
-            <!-- Button need to be added -->
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-
-      <div class="container">
-        <div class="card" style="---clr:#009688;">
-          <div class="imgbr">
-            <img src="img/mba.jpeg" alt="">
-          </div>
-          <div class="content">
-            <h1 class="h1k">MSC & PHD</h1>
-            <p>Ignite Your Journey: Explore MSC and PHD
-            </p>
-            <button class="btn"><a href="pages/page.html">Explore</a></button>
-            <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button>
-
-            <!-- Button need to be added -->
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-
-
   </div>
 
+<div style="width: 100vw; height: 5px;background-color: aqua;"></div>
+   <footer class="footer">
 
-  <!-- here goes he event and news section -->
+  
 
-
-
-  <section class="eve">
-
-    <div class="part">
-      <div class="left">
-        <div class="caros">
-          <h1>hello </h1>
-        </div>
-      </div>
-      <div class="right">
-        <div class="tab-container" style="height: 85vh;">
-          <nav>
-            <div class="tab-header">
-              <a class="tab-item active" data-tab="events">Events</a>
-              <a class="tab-item" data-tab="news">Latest News</a>
-            </div>
-          </nav>
-          <div class="tab-content">
-            <div class="tab-panel active" id="events">
-              <div class="tab-heading">
-                <h3>Events</h3>
-              </div>
-              <div class="tab-block">
-                <!-- Event items go here -->
-              </div>
-            </div>
-            <div class="tab-panel" id="news">
-              <div class="tab-heading">
-                <h3>Latest News</h3>
-              </div>
-              <div class="tab-block">
-                <!-- News items go here -->
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer">
     <div class="row">
       <div class="col">
         <img src="img/logo.png" class="logo">
-        <p>Our motive is to support our upcomming juniors and share our valuable knowledge to everyone.✨</p>
+        <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources to everyone.✨
+        </p>
       </div>
 
       <div class="col2">
         <ul>
-          <div>
-            <li><a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
-            <li><a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
-            <li><a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
+          <div class="mid">
+            <li> <a href="#"><i class="fa-solid fa-house" style="color: #ffffff;"></i> Home</a></li>
+            <li> <a href="team.html"><i class="fa-solid fa-user-plus fa-lg" style="color: #ffffff;"></i>Team</a></li>
+            <li> <a href="contact/contact.html"><i class="fa-solid fa-address-book" style="color: #ffffff;"></i>Contact
                 Us</a></li>
           </div>
         </ul>
       </div>
       <div class="col2">
         <h3>Reach us </h3>
-        <p><i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
-            style="color: #ffffff;"></i>
-          <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
-          <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
+          style="color: #ffffff;"></i>
+        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
         </p>
       </div>
-      <div class="col"><b><u>About Us</u></b>
+      <div class="col3"><b><u>About Us</u></b>
         <p>A best team is not a group of best players,its a group that plays best together.</p>
       </div>
     </div>
 
     <div class="last">
+
       <p>&copy;Copyright <b>MMMUT RESOURCES</b> | All rights reserved |</p>
       <p> designed with ❤️ by <b>MMMUT RESOURCES TEAM</b></p>
     </div>
@@ -376,41 +577,87 @@
 
 
   <script src="script.js" theme="dark" position="bottom-right"></script>
-  <script src="particles.js"></script>
-  <script src="app.js"></script>
+  <!-- <script src="particles.js"></script> -->
+  <!-- <script src="app.js"></script> -->
 
   <!-- <script src="imgscript.js" theme="dark" position="bottom-right"></script> -->
   <!-- test git -->
 
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
+  <script>
+    var caros = document.querySelectorAll('.caros');
+    let currentindex = document.querySelector('.active').getAttribute('var');
+    let numitems = caros.length;
+    var leftclick = document.querySelector('.backarrow')
+    var rightclick = document.querySelector('.rightarrow')
+    leftclick.addEventListener('click', function () {
+      currentindex = document.querySelector('.active').getAttribute('var')
+      console.log(currentindex);
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-      apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
-      authDomain: "mmmutreso.firebaseapp.com",
-      projectId: "mmmutreso",
-      storageBucket: "mmmutreso.appspot.com",
-      messagingSenderId: "3955922251",
-      appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
-      measurementId: "G-CDM7273LVH"
-    };
+      caros[currentindex].classList.toggle('active')
+      currentindex = currentindex - 1;
+      if (currentindex < 0) {
+        currentindex = numitems - 1;
+      }
+      caros[currentindex].classList.toggle('active')
+    })
+    rightclick.addEventListener('click', function () {
+      caros[currentindex].classList.toggle('active')
+      currentindex++;
+      if (currentindex === numitems) {
+        currentindex = 0;
+      }
+      caros[currentindex].classList.toggle('active')
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+    })
+    setInterval(() => {
+      caros[currentindex].classList.toggle('active');
+      currentindex++;
+
+
+      if (currentindex === numitems) {
+        currentindex = 0;
+      }
+      caros[currentindex].classList.toggle('active')
+
+    }, 7000);
+
   </script>
+
   <script src="load/load.js"></script>
+  <script src="./scripts.js"></script>
 </body>
 
 
 
+<script src="pages/page.html"></script>
 
 <script src="topbar/topbar.js"></script>
 
+<!-- // analytics-->
+<script type="module">
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+  authDomain: "mmmutreso.firebaseapp.com",
+  projectId: "mmmutreso",
+  storageBucket: "mmmutreso.appspot.com",
+  messagingSenderId: "3955922251",
+  appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+  measurementId: "G-CDM7273LVH"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
+
+
 </html>
+
