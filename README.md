@@ -47,15 +47,19 @@ To get started, follow the steps below:
 
 Happy learning and best of luck with your studies! 🌟
 
+ ## Technology Stack
 
-## Technology Stack
+
 
 Our project harnesses the power of a diverse technology stack to provide you with a seamless experience. We've carefully selected the following technologies and languages to create an engaging platform:
 
 - **HTML**: Crafting elegant and structured web content.
 - **CSS**: Adding style and personality to every element.
 - **JavaScript**: Enhancing interactivity and responsiveness.
-
+  
+ <div align="center">
+   <img src="https://wallpapercave.com/dwp1x/wp7833918.jpg" alt="Alt text" height="150px">
+  </div>
 
 ## How to Run the Project
 
@@ -64,6 +68,8 @@ To run this project locally, follow these steps:
 Clone the repository to your local machine using git clone https://github.com/TejasMishr/MMMUTRESO.
 Navigate to the project directory: MMMUTRESO.
 Open the HTML files in your preferred web browser to access the resources.
+
+
 
 ## Contributors
 
