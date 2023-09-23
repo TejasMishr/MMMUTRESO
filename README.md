@@ -1,22 +1,12 @@
 # MMMUT Resources
 <div align="center">
-  <img src="https://i0.wp.com/norklan.app/wp-content/uploads/2022/09/102926-support.gif?fit=640%2C640&ssl=1" alt="Alt text" height="300px" >
+  <img src="https://i0.wp.com/norklan.app/wp-content/uploads/2022/09/102926-support.gif?fit=640%2C640&ssl=1" alt="Alt text" height="400px" width="400" >
 </div>
 
 Welcome to the MMMUT Resources Repository! This repository is a centralized hub for various resources that can assist you during your college journey. Whether you're looking for previous year question papers, notes, or study materials, you've come to the right place.
 
 [![GitHub Stars](https://img.shields.io/github/stars/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/stargazers)[![GitHubForks](https://img.shields.io/github/forks/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/network/members)
 
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting-started)
-- [Technology Stack](#technology-stack)
-- [How to Run the Project](#how-to-run-the-project)
-- [Contributors](#contributors)
-- [Contributing](#contributing)
-- [License](#license)
-- 
 ## About 
 
 Welcome to the MMMUT Resources Repository, your one-stop destination for academic excellence! 🎓
@@ -36,9 +26,9 @@ We believe in the power of knowledge sharing and collaboration. Our vision is to
 
 Join us in this exciting learning adventure, contribute your own resources, and together, let's make college life even more rewarding!
 
-<p align="right">
+<div align="center">
   <img src="https://cdn.dribbble.com/users/750408/screenshots/3543947/media/30f32ab9f5f3d9f096a7e407252b65cc.gif" alt="Alt text" height="100px">
-</p>
+</div>
 
 
 
