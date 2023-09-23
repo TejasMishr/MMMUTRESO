@@ -94,20 +94,20 @@ body {
 }
 
 .p-10 p {
-  animation: blink .5s infinite linear;
+  animation: blink 1.75s infinite linear;
 }
 
 @keyframes blink {
   0% {
-    color: red;
+    color: rgb(23, 240, 160);
   }
 
   50% {
-    color: rgb(43, 70, 243);
+    color: rgb(3, 141, 246);
   }
 
   100% {
-    color: red;
+    color: rgb(6, 237, 217);
   }
 
 }
@@ -152,13 +152,27 @@ body {
 .tab-more-button {
   position: relative;
   bottom: 1px;
-  left: 90%;
-  background-color: #ff0000;
+  left: 85%;
+  width: 15%; /* Set the button width to 15% of its container */
+  background: linear-gradient(90deg, #ff0000, #ff00ff);
+  background-size: 200% 100%;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 0; /* Adjust padding to center-align the text vertically */
   cursor: pointer;
   border-radius: 4px;
+  transition: background-position 0.3s ease-in-out;
+
+  text-align: center; /* Center-align the text horizontally */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for long text if needed */
+}
+
+/* Add the :focus style as before */
+.tab-more-button:focus {
+  outline: none;
+  background: linear-gradient(90deg, #ff00ff, #ff0000);
 }
 
 .tab-more-button:hover {

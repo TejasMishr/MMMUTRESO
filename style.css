@@ -239,16 +239,19 @@ canvas {
   transition-duration: 0.5s;
 }
 .svgIcon {
-  height: 11px;
+  height: 20px;
+  top: 20px;
     transition-duration: 1.5s;
     padding: 0px;
+    /* background-color: #000; */
     margin: 0px;
     align-items: center;
     text-align: center;
 }
 
 .btn:hover {
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(99, 97, 97);
+  /* color: rgb(184, 180, 180); */
   color: rgb(0, 0, 0);
   transition-duration: .5s;
 }
@@ -372,6 +375,7 @@ h2 {
   grid-template-columns: 1fr 3fr;
   align-items: center;
   height: 75px;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -670,7 +674,10 @@ ul li a {
 
     .navbar li a {
       font-size: 1rem;
-      color: black;
+      color: rgb(248, 247, 247);
+      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inclusive Sans', sans-serif;
+
     }
 
     .menu-toggle,
