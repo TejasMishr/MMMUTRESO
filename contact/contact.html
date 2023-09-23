@@ -16,6 +16,34 @@
         color: black;
       }
     }
+    @keyframes changeColor {
+    0% {
+      color: red;
+    }
+    25% {
+      color: yellow;
+    }
+    50% {
+      color: green;
+    }
+    75% {
+      color: blue;
+    }
+    100% {
+      color: red;
+    }
+  }
+
+  .changing-color a {
+    text-decoration: none;
+    animation: changeColor 5s linear infinite;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .changing-color a:hover {
+    transform: scale(1.05); /* Increase the size on hover */
+  }
+
   </style>
 </head>
 
@@ -51,7 +79,7 @@
         <div class="responsive-container-block container">
           <form class="form-box">
             <p class="text-blk contact-head">
-              <a href="../report.html">You Can Also Report Here</a>
+              <h1 class="changing-color"><a href="../report.html">--> Tap Here To Report <--</a></h1>
             </p>
             <p class="text-blk contact-subhead">
               You can get in touch with us using the provided contact form for any inquiries. If you encounter any issues or bugs, please report them through the same form so we can address them promptly. Your feedback is essential in enhancing our services.            </p>
