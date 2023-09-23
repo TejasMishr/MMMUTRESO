@@ -368,16 +368,18 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 3fr;
   align-items: center;
-  height: 70px;
+  height: 75px;
   overflow: hidden;
 }
 
 .navbar img {
-  height: 42px;
+
+  /* top: -2px; */
+  height: 73px;
   width: auto;
-  filter: invert(1);
+  filter: invert(0);
   justify-self: start;
-  margin-left: 2rem;
+ 
 }
 
 .navbar ul {
@@ -582,6 +584,14 @@ ul li a {
 
 
   @media only screen and (max-width: 800px) {
+
+    .navbar {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      align-items: center;
+      height: 40px;
+      overflow: hidden;
+  }
 
     .text h1 {
       width: max-content;
