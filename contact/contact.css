@@ -720,7 +720,7 @@ object{
   
   .navbar li a {
     font-size: 1rem;
-    color: black;
+    color: rgb(246, 245, 245);
   }
 
   @media (max-width: 1024px) {
@@ -742,6 +742,9 @@ object{
   @media (max-width: 768px) {
     .contact_us .submit-btn {
       width: 100%;
+    }
+    .nav-item a{
+      color: black;
     }
   
     .contact_us .input {
@@ -1046,6 +1049,7 @@ body {
   .wk-mobile-1 {
     width: 8.333333%;
   }
+ 
 
   .wk-mobile-2 {
     width: 16.666667%;
@@ -1089,5 +1093,10 @@ body {
 
   .wk-mobile-12 {
     width: 100%;
+  }
+}
+@media (max-width:700px) {
+  .nav-item a{
+    color: black;
   }
 }

@@ -97,7 +97,8 @@
 }
 .img img:hover{
     transform: translateY(-2vh);
-    transition: .20s ease-in-out;
+    transition: .30s ease;
+   
     border-radius: 50%;
 
 }

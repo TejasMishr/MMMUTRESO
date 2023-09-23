@@ -126,6 +126,7 @@ h2 {
   width: auto;
   justify-self: start;
   margin-left: 13px;
+  border-radius: 50px;
 }
 
 .navbar ul {
@@ -138,7 +139,7 @@ h2 {
 
 .navbar li a {
   font-size: 1rem;
-  color: black;
+  color: rgb(252, 250, 250);
 }
 
 .nav-item a {
