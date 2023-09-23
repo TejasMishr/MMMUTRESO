@@ -64,6 +64,14 @@ object{
 
 h1 {
   font-size: 2.2rem;
+  /* font-family: 'Lato', 'Arial', sans-serif; */ 
+  /* font-family: 'Arvo', serif; */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Inclusive Sans', sans-serif;
+ 
+}
+p{
+  font-family: cursive;
 }
 
 h2 {
@@ -72,6 +80,10 @@ h2 {
   text-align: center;
   line-height: 1.4;
   margin-bottom: 10px;
+  font-family: 'Lato', 'Arial', sans-serif; */
+  /* font-family: 'Arvo', serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
 /* BASIC SETUP */
@@ -109,6 +121,8 @@ h2 {
   align-items: center;
   height: 50px;
   overflow: hidden;
+  background-color: #090909;
+  
 }
 
 .navbar img {
@@ -127,11 +141,15 @@ h2 {
 }
 
 .nav-item a {
-  color: #000;
+  color: #f9f9f9;
   font-size: 0.9rem;
   font-weight: 400;
   text-decoration: none;
   transition: color 0.3s ease-out;
+  font-family: 'Lato', 'Arial', sans-serif; */
+  /* font-family: 'Arvo', serif; */
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 
 .nav-item a:hover {
@@ -395,6 +413,7 @@ object{
 
   .navbar li a {
     font-size: 1rem;
+    
   }
 
   .menu-toggle,
