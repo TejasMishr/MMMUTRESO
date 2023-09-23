@@ -5,7 +5,10 @@
 
 Welcome to the MMMUT Resources Repository! This repository is a centralized hub for various resources that can assist you during your college journey. Whether you're looking for previous year question papers, notes, or study materials, you've come to the right place.
 
-[![GitHub Stars](https://img.shields.io/github/stars/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/stargazers)[![GitHubForks](https://img.shields.io/github/forks/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/network/members)
+[![GitHub Stars](https://img.shields.io/github/stars/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/stargazers)[![GitHubForks](https://img.shields.io/github/forks/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/network/members) 
+
+![Deployment Status](https://img.shields.io/badge/Deployment-Pending-yellow)
+
 
 ## About 
 
