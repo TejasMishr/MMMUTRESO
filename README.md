@@ -67,7 +67,10 @@ Open the HTML files in your preferred web browser to access the resources.
 ## Contributors
 
 A big thank you to all the contributors who have made this project possible. Your dedication and hard work are greatly appreciated.
-[![Tejas Mishr](https://github.com/tejasmishr.png?size=50)](https://github.com/tejasmishr)[![Prachi PAtel](https://github.com/myselfprachi.png?size=50)](https://github.com/myselfprachi)[![Aditya Gaur](https://github.com/adityagaur7.png?size=50)](https://github.com/adityagaur7)
+
+
+[![Contributors](https://contrib.rocks/image?repo=TejasMishr/MMMUTRESO)](https://github.com/TejasMishr/MMMUTRESO/graphs/contributors)
+
 
 If you'd like to contribute to this project, please read our [Contribution Guidelines](CONTRIBUTING.md) to get started. We welcome your ideas and contributions!
 
