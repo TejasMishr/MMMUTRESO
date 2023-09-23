@@ -63,7 +63,7 @@ Our project harnesses the power of a diverse technology stack to provide you wit
 
 To run this project locally, follow these steps:
 
-Clone the repository to your local machine using git clone https://github.com/TejasMishr/MMMUTRESO`.
+Clone the repository to your local machine using git clone https://github.com/TejasMishr/MMMUTRESO.
 Navigate to the project directory: MMMUTRESO.
 Open the HTML files in your preferred web browser to access the resources.
 
