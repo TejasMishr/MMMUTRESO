@@ -54,11 +54,14 @@ if (link) {
 addNewItem('events', 'Notice Regarding Orientation Cum Induction Progarammen', 'Notice', 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf');
 addNewItem('events', 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM', '19th September 2023', 'https://www.youtube.com/watch?v=TobiCVMpb0k');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
+addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 // Add a news item
 addNewItem('news', ' Important Notice for Induction Program', '21 September 2023', 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf');
