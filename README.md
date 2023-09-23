@@ -26,14 +26,17 @@ We believe in the power of knowledge sharing and collaboration. Our vision is to
 
 Join us in this exciting learning adventure, contribute your own resources, and together, let's make college life even more rewarding!
 
-<div align="center">
+
+  ## Getting Started 
+  <div align="left">
   <img src="https://cdn.dribbble.com/users/750408/screenshots/3543947/media/30f32ab9f5f3d9f096a7e407252b65cc.gif" alt="Alt text" height="100px">
-</div>
+  </div>
 
 
 
 
-## Getting Started
+
+
 
 To get started, follow the steps below:
 
