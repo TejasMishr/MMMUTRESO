@@ -9,7 +9,8 @@ document.addEventListener('contextmenu', function (e) {
    
     setTimeout(function () {
         iframe.style.display = 'block';
-    }, 10000); 
+    }, 90000); 
+    // alert('Content got hidden')
 });
 
 

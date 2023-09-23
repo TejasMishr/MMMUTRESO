@@ -82,7 +82,7 @@
     </div>
     <div class="iframe-container">
       
-      <iframe id="iframeViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" oncontextmenu="return false;"
+      <iframe id="iframeViewer" frameborder="0" scrolling="no" oncontextmenu="return false;" 
         allowfullscreen>
       </iframe>
       
@@ -127,30 +127,31 @@
               '&allowdl=no';
     
             iframeViewer.addEventListener('contextmenu', (e) => {
-              e.preventDefault(); // Prevent the default right-click behavior on the iframe
+              e.preventDefault(); 
             });
           }
         } else if (selectedBranch == -1) {
-          // Display the "ripple" for 60 seconds (1 minute)
+          
           displayRipple(60000);
     
           branchSelect.style.backgroundColor = "#fe0000";
           branchSelect.style.color = "white";
     
-          // Clear the iframe src when no branch is selected
+          
           iframeViewer.src = '';
         }
       }
     
-      // Define a function to get the folderid based on the selected branch
+      
       function getFolderId(branch) {
-        // Map branch values to corresponding folder ids
         var folderIds = {
           '0': '125eMGKukgD1fENBSZRX_W5Tpf1DLCZ8U', // CSE             //Done  
           '1': '1WhBxYyRwLp-M9_hYaLoNZy2tSfYgjvCh', // IT             //Done
           '2': '1s9fbotWWBzONKNVYv0gDPD38QabjGry1', // ECE
           '3': '1oquyt0gNpqE5fchpITqw6OFHlilb7rzw', // Electrical
-          '4': '1LszhC5702Fo9gNQdPQqo5Ulm9j0ObZvR', // Civil          //Done
+
+          '4': '1LszhC5702Fo9gNQdPQqo5Ulm9j0ObZvR', // Civil
+
           '5': '1-57W78GsClxzmtTQe2xn-Y3YKeE6Ewuv', // MECH
           '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', // CHEMICAL
           '7': '1BrYznkf8M5kGSAJK70woS1-kjd1JWF0j', // B-Pharma

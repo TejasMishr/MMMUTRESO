@@ -51,31 +51,31 @@ if (link) {
 
 
 // Add an event item
+addNewItem('events', 'Notice Regarding Orientation Cum Induction Progarammen', 'Notice', 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf');
+addNewItem('events', 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM', '19th September 2023', 'https://www.youtube.com/watch?v=TobiCVMpb0k');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
-addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf');
 // Add a news item
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
-addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
-addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
+addNewItem('news', ' Important Notice for Induction Program', '21 September 2023', 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf');
+addNewItem('news', ' Anti-Ragging Duty List', 'NOTICE', 'http://www.mmmut.ac.in/News_content/14040news_09182023.pdf');
+addNewItem('news', 'Important Notice for Newly Admitted Students Session 2023-24', 'NOTICE', 'http://www.mmmut.ac.in/News_content/45340news_09142023.pdf');
 
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
 addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
 
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
-addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
-
-addNewItem('news', 'Final screening report of Pharmaceutical Science and Technology Department', 'On 12 September 2023', 'News_content/24504news_09122023.pdf');
-addNewItem('news', 'Final Result of written exam for Assistant Professor (Contractual) ', 'on 16th September 2023', 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf');
-
-
+addNewItem('news', ' Important Notice for Induction Program', '21 September 2023', 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf');
+addNewItem('news', ' Anti-Ragging Duty List', 'NOTICE', 'http://www.mmmut.ac.in/News_content/14040news_09182023.pdf');
+addNewItem('news', 'Important Notice for Newly Admitted Students Session 2023-24', 'NOTICE', 'http://www.mmmut.ac.in/News_content/45340news_09142023.pdf');
+addNewItem('news', ' Important Notice for Induction Program', '21 September 2023', 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf');
+addNewItem('news', ' Anti-Ragging Duty List', 'NOTICE', 'http://www.mmmut.ac.in/News_content/14040news_09182023.pdf');
+addNewItem('news', 'Important Notice for Newly Admitted Students Session 2023-24', 'NOTICE', 'http://www.mmmut.ac.in/News_content/45340news_09142023.pdf');
 
 
 

@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     background: rgb(49,44,113);
-background: radial-gradient(circle, rgba(49,44,113,1) 0%, rgba(127,236,231,1) 100%);
+background: radial-gradient(circle, rgb(5, 5, 5) 0%, rgb(76, 76, 76) 100%);
 z-index: 10;
 display: none;
 }
@@ -24,8 +24,8 @@ display: none;
 
 .lds-ripple div {
     position: absolute;
-    border: 4px solid #ffffff;
-    opacity: 1;
+    border: 5px solid #fdfcfc;
+    opacity: 10px;
     border-radius: 50%;
     animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }

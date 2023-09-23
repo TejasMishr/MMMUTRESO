@@ -14,6 +14,9 @@
 
 // console.log("hello");
 
+
+
+
 var bari1 = document.querySelector('#bar1');
 var bari2 = document.querySelector('#bar2');
 var bari3 = document.querySelector('#bar3');
@@ -53,19 +56,19 @@ var f1 = ()=>{
 
 // marquee bug fixing
 // <!-- block right -->
-// document.addEventListener("contextmenu",function(e){e.preventDefault();})
+document.addEventListener("contextmenu",function(e){e.preventDefault();})
 
-// window.addEventListener('keydown', function (event) {
+window.addEventListener('keydown', function (event) {
 
-//     event.preventDefault();
+    event.preventDefault();
 
-// });
+});
 
-// window.onresize = function() {
-//     if ((window.outerHeight - window.innerHeight) > 100) {
-//      window.close();
-//     }
-// }
+window.onresize = function() {
+    if ((window.outerHeight - window.innerHeight) > 100) {
+     window.close();
+    }
+}
 
 
 

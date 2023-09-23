@@ -16,6 +16,9 @@
   <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
+    .nav-item{
+      text-align: center;
+    }
     
     .nav-wrapper {
       z-index: 7;
@@ -140,18 +143,23 @@
       <div class="grad-bar"></div>
       <nav class="navbar">
         
-        <a href="index.html"><img src="img/logo.png" alt="MMMUT"></a>
+        <a href="index.html"><img id="imgg" src="img/logo.gif" alt="MMMUT"></a>
 
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-          <span class="bar" id="bar1"></span>
+          <!-- <span class="bar" id="bar1"></span>
           <span class="bar" id="bar2"></span>
-          <span class="bar" id="bar3"></span>
+          <span class="bar" id="bar3"></span> -->
+          <div class="nv">
+        <a href="https://forms.gle/qDaCYTcDGpWoqY6C8"> <button id="button">Contribute</button></a>
+            <a href="team.html"><button id="button">Team</button></a> 
+          </div>
+          
         </div>
         <ul class="nav no-search navi">
-          <li class="nav-item"><a href="index.html" class="animation">Home</a></li>
-          <li class="nav-item"><a href="pyq/PYQ.html" class="animation">PYQ</a></li>
+          <li class="nav-item" ><a href="index.html" class="animation">Home</a></li>
+          <li class="nav-item"><a href="https://forms.gle/qDaCYTcDGpWoqY6C8" class="animation">Contribute</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
-          <li class="nav-item"><a href="team.html" class="animation">Team</a></li>
+          <li class="nav-item"><a href="team.html" style="text-align: center;" class="animation">Team</a></li>
           <li class="nav-item"><a href="contact/contact.html" class="animation">Contact Us</a></li>
 
         </ul>
@@ -286,7 +294,7 @@
               <p>Bulid Your Nation : Explore Mechanical
               </p>
 
-               <button class="btn"><a href="pages/page.html">Notes</a></button>
+               <button class="btn"><a href="pages/page.html?branch=5">Notes</a></button>
 <!--               <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
 
 
@@ -349,7 +357,7 @@
               <h1 class="h1k">MCA</h1>
               <p>Empower Your Journey in MCA</p>
               <button class="btn"><a href="pages/page.html?branch=8">Notes</a></button>
-              <button class="btn"><a href="MCA/mca.html">PYQ</a></button>
+              <button class="btn"><a href="MCA/mca.html?branch=0">PYQ</a></button>
             </div>
           </div>
         </div>
@@ -367,7 +375,7 @@
               <p>Ignite Your Journey: Explore PHARMA
               </p>
               <button class="btn"><a href="pages/page.html?branch=7">Notes</a></button>
-              <button class="btn"><a href="Bpharm/bpharm.html">PYQ</a></button>
+              <button class="btn"><a href="Bpharm/bpharm.html?branch=0">PYQ</a></button>
 
               <!-- Button need to be added -->
             </div>
@@ -552,10 +560,10 @@
       </div>
       <div class="col2">
         <h3>Reach us </h3>
-        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff;"></i> <i class="fa-brands fa-instagram fa-xl"
-          style="color: #ffffff;"></i>
-        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff;"></i>
-        <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff; cursor: pointer;"></i> 
+        <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff; cursor: pointer;"></i>
+        <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff; cursor: pointer;"></i>
+        <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff; cursor: pointer;"></i>
         </p>
       </div>
       <div class="col3"><b><u>About Us</u></b>
@@ -631,7 +639,7 @@
 
 <script src="pages/page.html"></script>
 
-<script src="topbar/topbar.js"></script>
+<!-- <script src="topbar/topbar.js"></script> -->
 
 <!-- // analytics-->
 <script type="module">
@@ -657,7 +665,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 </script>
-
+<script src="script.js"></script>
 
 </html>
 
