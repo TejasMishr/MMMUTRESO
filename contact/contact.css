@@ -54,6 +54,9 @@ object{
   justify-content: center;
 }
 
+.navbar{
+  background-color: black;
+}
 
 
 .text{
@@ -125,13 +128,19 @@ h2 {
 
 }
 
-.nav-item a {
-  color: #000;
-  font-size: 0.9rem;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.3s ease-out;
-}
+
+  .nav-item a {
+    color: #f5f0f0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Lato', 'Arial', sans-serif; */
+      /* font-family: 'Arvo', serif; */
+      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inclusive Sans', sans-serif;
+    transition: color 0.3s ease-out;
+  }
+
 
 .nav-item a:hover {
   color: #3498db;
@@ -446,6 +455,7 @@ object{
 /* Contact us page css */
 .contact_us * {
     font-family: Nunito, sans-serif;
+    color: #23D5AB;
   }
   
   .contact_us .text-blk {
@@ -516,11 +526,11 @@ object{
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
-    background-color: #00b289;
+    background-color: #000000;
   }
   
   .contact_us .container-block.form-wrapper {
-    background-color: white;
+    background-color: #333434;
     max-width: 1000px;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
@@ -678,7 +688,7 @@ object{
     padding-bottom: 0px;
     padding-left: 10px;
     font-size: 19px;
-    color: black;
+    color: #e0d5d5;
     font-weight: 600;
     margin-top: 0px;
     margin-right: 0px;
@@ -708,6 +718,11 @@ object{
     color: white;
   }
   
+  .navbar li a {
+    font-size: 1rem;
+    color: black;
+  }
+
   @media (max-width: 1024px) {
     .contact_us .responsive-container-block.container {
       padding-top: 0px;

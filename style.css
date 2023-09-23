@@ -573,6 +573,7 @@ ul li a {
     height: 220px;
     background: #333;
     top: 20px;
+    color: red;
     border-radius: 12px;
     transition: 0.5s;
     overflow: hidden;
@@ -586,6 +587,7 @@ ul li a {
     .text h1 {
       width: max-content;
       font-size: 18px;
+     
       padding: 20px 40px;
     }
 
@@ -656,6 +658,7 @@ ul li a {
 
     .navbar li a {
       font-size: 1rem;
+      color: black;
     }
 
     .menu-toggle,

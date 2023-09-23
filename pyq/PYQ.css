@@ -56,6 +56,10 @@ object{
   flex-direction: column;
   justify-content: center;
 }
+.navbar{
+  background: black;
+  color: white;
+}
 
 /* .particles-js-canvas-el{
   width: 99%;
@@ -132,11 +136,20 @@ h2 {
 
 }
 
+.navbar li a {
+  font-size: 1rem;
+  color: black;
+}
+
 .nav-item a {
-  color: #000;
+  color: #f5f0f0;
   font-size: 0.9rem;
   font-weight: 400;
   text-decoration: none;
+  font-family: 'Lato', 'Arial', sans-serif; */
+    /* font-family: 'Arvo', serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inclusive Sans', sans-serif;
   transition: color 0.3s ease-out;
 }
 
@@ -518,7 +531,9 @@ select * {
     border: none;
 } 
 
-
+li .nav-item a{
+  color: #ccc;
+}
 
 .parents{
   width: 70%;
