@@ -3,9 +3,10 @@
   <img src="https://i0.wp.com/norklan.app/wp-content/uploads/2022/09/102926-support.gif?fit=640%2C640&ssl=1" alt="Alt text" height="400px" width="400" >
 </div>
 
-Welcome to the MMMUT Resources Repository! This repository is a centralized hub for various resources that can assist you during your college journey. Whether you're looking for previous year question papers, notes, or study materials, you've come to the right place.
+Welcome to the **MMMUT Resources Repository**! This repository serves as a centralized hub for a wide range of resources that can greatly assist you during your college journey at MMMUT. Whether you're in search of previous year question papers, lecture notes, or study materials, you've come to the right place.
 
 [![GitHub Stars](https://img.shields.io/github/stars/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/stargazers)[![GitHubForks](https://img.shields.io/github/forks/TejasMishr/MMMUTRESO?style=social)](https://github.com/TejasMishr/MMMUTRESO/network/members) ![Deployment Status](https://img.shields.io/badge/Deployment-Pending-yellow)
+
 
 
 ## About 
@@ -75,11 +76,16 @@ Open the HTML files in your preferred web browser to access the resources.
 
 A big thank you to all the contributors who have made this project possible. Your dedication and hard work are greatly appreciated.
 
-
-[![Contributors](https://contrib.rocks/image?repo=TejasMishr/MMMUTRESO)](https://github.com/TejasMishr/MMMUTRESO/graphs/contributors)
-
+<div align="center">
+  <a href="https://github.com/TejasMishr/MMMUTRESO/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=TejasMishr/MMMUTRESO" alt="Contributors">
+  </a>
+</div>
 
 If you'd like to contribute to this project, please read our [Contribution Guidelines](CONTRIBUTING.md) to get started. We welcome your ideas and contributions!
+<div align="center">
+    <h3 align="center">Show some love by ⭐️ the repository!</h3>
+</div>
 
 ## Contributing
 
@@ -91,6 +97,16 @@ Welcome to the community of knowledge builders! Your contributions are essential
 4. 📝 **Commit Your Changes**: Provide meaningful commit messages that tell the story of your contributions. For example: `git commit -m "Added detailed calculus notes"`.
 5. 🚀 **Push to Your Branch**: Share your brilliance with the world! Push your branch to GitHub: `git push origin your-branch-name`.
 6. 🔀 **Open a Pull Request (PR)**: It's showtime! Open a Pull Request to submit your changes. Our community will review and appreciate your work.
+
+
+
+
+<div align="center">
+  <h3> Feel free to explore the resources and make the most of your college experience. Happy learning</h3>
+<div>
+<div align="center">
+  <h4><p><em>Brought to you with ❤️ </em></p></h2>
+</div>
 
 
 
