@@ -153,20 +153,26 @@ body {
   position: relative;
   bottom: 1px;
   left: 85%;
-  background: linear-gradient(90deg, #ff0000, #ff00ff); 
+  width: 15%; /* Set the button width to 15% of its container */
+  background: linear-gradient(90deg, #ff0000, #ff00ff);
   background-size: 200% 100%;
   color: #fff;
   border: none;
-  padding: 5px 10px;
+  padding: 5px 0; /* Adjust padding to center-align the text vertically */
   cursor: pointer;
   border-radius: 4px;
-  transition: background-position 0.3s ease-in-out; 
+  transition: background-position 0.3s ease-in-out;
 
-  
-  &:focus {
-    outline: none; 
-    background: linear-gradient(90deg, #ff00ff, #ff0000); 
-  }
+  text-align: center; /* Center-align the text horizontally */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for long text if needed */
+}
+
+/* Add the :focus style as before */
+.tab-more-button:focus {
+  outline: none;
+  background: linear-gradient(90deg, #ff00ff, #ff0000);
 }
 
 .tab-more-button:hover {
