@@ -52,13 +52,13 @@ function addNewItem(tabType, title, description, link, buttonText) {
 addNewItem('events', 'Notice Regarding Orientation Cum Induction Progarammen', 'Notice', 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf','VIEW..');
 addNewItem('events', 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM', '19th September 2023', 'https://www.youtube.com/watch?v=TobiCVMpb0k','Watch..');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf','VIEW..');
-addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html','LOGIN');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'Username: student & Password: student', 'http://172.16.1.250:8081/jasperserver/login.html','LOGIN');
+addNewItem('events', 'Game Of Codes: Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf','REGISTER');
+addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf','More..');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'Username: student & Password: student', 'http://172.16.1.250:8081/jasperserver/login.html','More..');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf','REGISTER');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf','More..');
-addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html','More..');
-addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf','REGISTER');
-addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf','More..');
-addNewItem('events', 'RESULT OF ALL SEMESTERS', 'USERNAME : student & PASSWORD : student', 'http://172.16.1.250:8081/jasperserver/login.html','Login');
+addNewItem('events', 'RESULT OF ALL SEMESTERS', 'Username: student & Password: student', 'http://172.16.1.250:8081/jasperserver/login.html','Login');
 addNewItem('events', 'Eighth Convocation Celebration', 'on 19th September 2023', 'News_content/24134news_09012023.pdf','More..');
 addNewItem('events', 'Game Of Codes : Codechef MMMUT Chapter', 'on 14th September 2023', 'News_content/24134news_09012023.pdf','REGISTER');
 
