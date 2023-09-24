@@ -31,6 +31,27 @@
       display: none;
     }
 
+    @keyframes slowShake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: slowShake 3s infinite; /* Adjust the duration (5s) as needed */
+}
    
   </style>
   <script>
@@ -169,7 +190,7 @@
     </div>
     <div class="heropage">
       <div class="text">
-        <h1 id="explore-resources">Explore RESOURCES</h1>
+        <h1 id="explore-resources" class="shake">Explore</h1>
       </div>
       <canvas></canvas>
     </div>
