@@ -1,13 +1,13 @@
-// $("#search-icon").click(function() {
+//     $("#search-icon").click(function() {
 //     $(".nav").toggleClass("search");
 //     $(".nav").toggleClass("no-search");
 //     $(".search-input").toggleClass("search-active");
-//   });
+//     });
   
-//   $('.menu-toggle').click(function(){
+//      $('.menu-toggle').click(function(){
 //      $(".nav").toggleClass("mobile-nav");
 //      $(this).toggleClass("is-active");
-//   });
+//     });
 
 
 //   obj.data= "UNIT 1.pdf";
@@ -64,11 +64,11 @@ window.addEventListener('keydown', function (event) {
 
 });
 
-window.onresize = function() {
-    if ((window.outerHeight - window.innerHeight) > 100) {
-     window.close();
-    }
-}
+// window.onresize = function() {
+//     if ((window.outerHeight - window.innerHeight) > 100) {
+//      window.close();
+//     }
+// }
 
 
 
