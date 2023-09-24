@@ -876,3 +876,9 @@ ul li a {
       padding: 20px 40px;
   }
 }
+@media  (max-width: 290px){
+.container .card .imgbr {
+  width: 160px;
+  height: 160px;
+}
+}
