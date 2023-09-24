@@ -66,7 +66,8 @@ body {
   height: 60vh;
   position: relative;
   /* Add this line */
-  overflow-y: auto;
+  overflow-y: scroll;
+  /* transition: 0.5s ease-in-out; */
   /* overflow-x: hidden; */
 
 }
@@ -75,7 +76,7 @@ body {
   height: max-content;
 }
 
-.p-10,hr{
+/* .p-10,hr{
   animation: scroll 60s infinite linear;
 }
 @keyframes scroll {
@@ -91,7 +92,7 @@ body {
     transform: translateY(10vh);
   }
 
-}
+} */
 
 .p-10 p {
   animation: blink 1.75s infinite linear;
