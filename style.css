@@ -95,7 +95,7 @@ canvas {
   justify-content: center;
   align-items: flex-start;
 
-  height: 300px;
+  height: 277px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -169,6 +169,11 @@ canvas {
   color: #333;
   font-size: 1.05em;
 
+}
+.content{
+
+
+  position: absolute;
 }
 
 .btn {
