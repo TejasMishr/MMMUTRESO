@@ -47,34 +47,38 @@
 
 
     </section>
-  <div class="parents">
+    <div class="parents">
 
-  
-    <form action="#" class="filter-options">
-      <select name="branch" id="branch" value="x">
-        <option value="-1">Select a Branch</option>
-        <option value="0">C.S.E</option>
-        <option value="1">I.T</option>
-        <option value="2">E.C.E</option>
-        <option value="3">Electrical</option>
-        <option value="4">CIVIL</option>
-        <option value="5">MECH.</option>
-        <option value="6">CHEMICAL</option>
-        <option value="7">B-Pharma</option>
-        <option value="8">MCA</option>
-        <option value="9">BBA</option>
-        <option value="10">MBA</option>
-        <option value="11">MSC</option>
-        <option value="12">PHD</option>
-      </select>
-     
-    </form>
-    <!-- <button class="btn" onclick="updateIframe()">Search</button> -->
-    <button class="button" onclick="updateIframe()">
-      <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
-     Search
-   </button>
-  </div>
+
+      <form action="#" class="filter-options">
+        <select name="branch" id="branch" value="x">
+          <option value="-1">Select a Branch</option>
+          <option value="0">C.S.E</option>
+          <option value="1">I.T</option>
+          <option value="2">E.C.E</option>
+          <option value="3">Electrical</option>
+          <option value="4">CIVIL</option>
+          <option value="5">MECH.</option>
+          <option value="6">CHEMICAL</option>
+          <option value="7">B-Pharma</option>
+          <option value="8">MCA</option>
+          <option value="9">BBA</option>
+          <option value="10">MBA</option>
+          <option value="11">MSC</option>
+          <option value="12">PHD</option>
+        </select>
+
+      </form>
+      <!-- <button class="btn" onclick="updateIframe()">Search</button> -->
+      <button class="button" onclick="updateIframe()">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+          </path>
+        </svg>
+        Search
+      </button>
+    </div>
     <div id="load" style="min-height: 200vh;">
       <div class="lds-ripple">
         <div></div>
@@ -82,104 +86,101 @@
       </div>
     </div>
     <div class="iframe-container">
-      
-      <iframe id="iframeViewer" frameborder="0" scrolling="no" oncontextmenu="return false;" 
-        allowfullscreen>
+
+      <iframe id="iframeViewer" frameborder="0" scrolling="no" oncontextmenu="return false;" allowfullscreen>
       </iframe>
-      
+
     </div>
-    
-    
+
+
 
     <script>
       var branchSelect = document.getElementById('branch');
       var iframeViewer = document.getElementById('iframeViewer');
       var ripple = document.querySelector("#load");
-    
+
       // Add change event listener to the select element
       branchSelect.addEventListener('change', updateIframe);
-    
+
       function displayRipple(duration) {
         ripple.style.display = "flex";
         setTimeout(() => {
           ripple.style.display = "none";
         }, duration);
       }
-    
+
       function updateIframe() {
         var selectedBranch = branchSelect.value;
         if (selectedBranch >= 0) {
           // Display the "ripple" for 3 seconds
           displayRipple(3000);
-    
+
           branchSelect.style.backgroundColor = "#e1e1e1";
           branchSelect.style.color = "black";
-    
-          var bkey = 'AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ'; 
+
+          var bkey = 'AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ';
           var folderId = getFolderId(selectedBranch);
-    
+
           if (folderId !== '') {
-            
+
             iframeViewer.src =
               'https://googledriveembedder.collegefam.com/?key=' +
               bkey +
               '&folderid=' +
               folderId +
               '&allowdl=no';
-    
+
             iframeViewer.addEventListener('contextmenu', (e) => {
-              e.preventDefault(); 
+              e.preventDefault();
             });
           }
         } else if (selectedBranch == -1) {
-          
+
           displayRipple(60000);
-    
+
           branchSelect.style.backgroundColor = "#fe0000";
           branchSelect.style.color = "white";
-    
-          
+
+
           iframeViewer.src = '';
         }
       }
-    
-      
+
+
       function getFolderId(branch) {
         var folderIds = {
           '0': '125eMGKukgD1fENBSZRX_W5Tpf1DLCZ8U', // CSE             //Done  
           '1': '1WhBxYyRwLp-M9_hYaLoNZy2tSfYgjvCh', // IT             //Done
           '2': '1s9fbotWWBzONKNVYv0gDPD38QabjGry1', // ECE
           '3': '1oquyt0gNpqE5fchpITqw6OFHlilb7rzw', // Electrical
-
           '4': '1LszhC5702Fo9gNQdPQqo5Ulm9j0ObZvR', // Civil
-
           '5': '1-57W78GsClxzmtTQe2xn-Y3YKeE6Ewuv', // MECH
           '6': '15RfPYwWaWNc_oY9rILKC2bxzvYXlS8aL', // CHEMICAL
           '7': '1BrYznkf8M5kGSAJK70woS1-kjd1JWF0j', // B-Pharma
-          '8': 'ID',  // MCA
-          '9': 'ID',  // BBA
+          '8': 'ID', // MCA
+          '9': 'ID', // BBA
           '10': 'ID', // MBA
-          '11': 'ID',  // MSC
-          '12': 'ID'  // PHD
+          '11': 'ID', // MSC
+          '12': 'ID' // PHD
         };
-    
+
         // Return the folder id for the selected branch
         return folderIds[branch] || '';
       }
-    
+
       // Initial update when the page loads
       updateIframe();
     </script>
 
 
-    
-    
-    
-    
-    
+
+
+
+
+
     <!-- // analytics-->
-<script type="module">
-  // Import the functions you need from the SDKs you need
+    <script type="module">
+      // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
@@ -201,8 +202,8 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-    
-    
+
+
     <script src="page.js"></script>
     <script src="../script.js"></script>
 
