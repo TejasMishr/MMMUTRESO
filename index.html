@@ -17,6 +17,10 @@
   <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
+    body{
+      scroll-behavior: smooth;
+    }
+
     .nav-item {
       text-align: center;
     }
@@ -55,6 +59,11 @@
 
     .shake {
       animation: slowShake 3s infinite;
+    }
+    @media (max-width:720px) {
+      .container .card{
+        height: 277px;
+      }
     }
   </style>
   <script>
@@ -196,7 +205,7 @@
     </div>
     <div class="heropage">
       <div class="text">
-        <h1 id="explore-resources" class="shake">EXPLORE RESOURCES</h1>
+        <h1 id="explore-resources" class="shake">EXPLORE</h1>
       </div>
       <canvas></canvas>
     </div>
