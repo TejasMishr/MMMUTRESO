@@ -25,6 +25,7 @@ var navi = document.querySelector('.navbar ul');
 var menu = document.querySelector('#mobile-menu');
 // /transform: translate(-101%);
 
+var heading = document.querySelector('#explore-resources');
 var count = 0;
 
 
@@ -36,17 +37,19 @@ var f1 = () => {
     if (count % 2 == 0) {
         // alert("ok");
         navi.style.transform = "translate(-101%)";
-
+       
         bari2.style.display = "flex";
         bari1.style.transform = "rotate(0) translateY(0px)";
         bari3.style.transform = "rotate(0)  translateY(0px)";
+        heading.style.position = "relative";
     } else {
-
+        
         navi.style.display = "flex";
         navi.style.transform = "translate(0%)";
         bari2.style.display = "none";
         bari1.style.transform = "rotate(45deg) translateY(6px)";
         bari3.style.transform = "rotate(-45deg)  translateY(-5px)";
+        heading.style.position = "absolute";
     }
 
 
