@@ -865,5 +865,14 @@ ul li a {
     .nav-item a{
       color: black
     }
+    
   }
  
+  @media only screen and (max-width: 800px){
+  .text h1 {
+      width: max-content;
+      font-size: 18px;
+      position: absolute;
+      padding: 20px 40px;
+  }
+}
