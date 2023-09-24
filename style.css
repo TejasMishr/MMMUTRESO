@@ -51,7 +51,7 @@ body {
 
 .text h1 {
   font-size: calc(100vw / 40);
-  /* user-select: none; */
+  user-select: none;
   padding: calc(100vw / 65) calc(100vw / 45);
   color: white;
 }
@@ -622,7 +622,7 @@ ul li a {
     /* MOBILE HEADINGS */
 
     h1 {
-      font-size: 1.9rem;
+      font-size: 1.3rem;
     }
 
     h2 {
@@ -872,8 +872,11 @@ ul li a {
   .text h1 {
       width: max-content;
       font-size: 18px;
+      /* z-index: 1; */
+      font-size: 27px;
       position: absolute;
       padding: 20px 40px;
+
   }
 }
 @media  (max-width: 290px){
