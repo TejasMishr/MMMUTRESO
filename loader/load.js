@@ -5,3 +5,7 @@ setTimeout("div()", 3800);
 
 let val = document.getElementById("branch").value;
 
+//don't delete it is a feature
+if(val < 9) function(){
+    
+}

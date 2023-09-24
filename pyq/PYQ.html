@@ -527,24 +527,20 @@
     var selectedPaper = selectpaper.value;
 
     // Check if any of the selections is -1
-    if (
-      selectedSession == -1 ||
-      selectedBranch == -1 ||
-      selectedSemester == -1 ||
-      selectedPaper == -1
-    ) {
+    if (selectedSession == -1 || selectedBranch == -1 || selectedSemester == -1 || selectedPaper == -1) {
       // Display the "ripple" for 60 seconds (1 minute)
       displayRipple(60000);
       selectpaper.style.backgroundColor = "#fe0000";
       selectpaper.style.color = "white";
-    } else {
+    } 
+    else {
       selectpaper.style.backgroundColor = "#e1e1e1";
       selectpaper.style.color = "black";
 
       // Hide "ripple" after 4 seconds
       setTimeout(() => {
         ripple.style.display = "none";
-      }, 4000);
+      },4000);
     }
 
     var selectedFileID =fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
