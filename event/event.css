@@ -153,23 +153,23 @@ body {
   position: relative;
   bottom: 1px;
   left: 85%;
-  width: 15%; /* Set the button width to 15% of its container */
+  width: 15%; 
   background: linear-gradient(90deg, #ff0000, #ff00ff);
   background-size: 200% 100%;
   color: #fff;
   border: none;
-  padding: 5px 0; /* Adjust padding to center-align the text vertically */
+  padding: 5px 0;
   cursor: pointer;
   border-radius: 4px;
   transition: background-position 0.3s ease-in-out;
 
-  text-align: center; /* Center-align the text horizontally */
-  white-space: nowrap; /* Prevent text from wrapping */
-  overflow: hidden; /* Hide overflowing text */
-  text-overflow: ellipsis; /* Show ellipsis for long text if needed */
+  text-align: center; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 
-/* Add the :focus style as before */
+
 .tab-more-button:focus {
   outline: none;
   background: linear-gradient(90deg, #ff00ff, #ff0000);
@@ -299,5 +299,10 @@ body {
 
   .tab-more-button {
     left: 80%;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .nav-item li a{
+color: #000;
   }
 }

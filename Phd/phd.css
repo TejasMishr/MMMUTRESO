@@ -371,7 +371,7 @@ input {
     background-color: #fff;
     width: 100%;
     height: calc(100vh - 55px);
-    /* transform: translate(-101%); */
+    transform: translate(0%);
     text-align: center;
     overflow: hidden;
     display: none;

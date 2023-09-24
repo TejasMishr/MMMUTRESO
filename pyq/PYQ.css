@@ -28,6 +28,8 @@ p {
   color: #fff;
   text-align: center;
   line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inclusive Sans', sans-serif;
 }
 .features button{
   width: 30vw;
@@ -415,6 +417,7 @@ object{
 
   .navbar li a {
     font-size: 1rem;
+    /* color: #000; */
   }
 
   .menu-toggle,
@@ -571,4 +574,14 @@ li .nav-item a{
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 5rem;
+  }
+  @media only screen and (max-width: 720px) {
+    .nav-item li a{
+  color: #000;
+    }
+    
+  .navbar li a {
+    /* font-size: 1rem; */
+    color: #000;
+  }
   }

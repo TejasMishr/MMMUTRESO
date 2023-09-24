@@ -9,43 +9,55 @@
   <link href="../style.css" rel="stylesheet" type="text/css" />
 
   <style>
-    .nav-wrapper{
+    .nav-wrapper {
       z-index: 7;
       position: relative;
     }
+
     @media (max-width:730px) {
-      .nav-item a{
+      .nav-item a {
         color: black;
       }
     }
+
     @keyframes changeColor {
-    0% {
-      color: red;
-    }
-    25% {
-      color: yellow;
-    }
-    50% {
-      color: green;
-    }
-    75% {
-      color: blue;
-    }
-    100% {
-      color: red;
-    }
-  }
+      0% {
+        color: red;
+      }
 
-  .changing-color a {
-    text-decoration: none;
-    animation: changeColor 5s linear infinite;
-    transition: transform 0.2s ease-in-out;
-  }
+      25% {
+        color: yellow;
+      }
 
-  .changing-color a:hover {
-    transform: scale(1.05); /* Increase the size on hover */
-  }
+      50% {
+        color: green;
+      }
 
+      75% {
+        color: blue;
+      }
+
+      100% {
+        color: red;
+      }
+    }
+
+    .changing-color a {
+      text-decoration: none;
+      animation: changeColor 5s linear infinite;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    .changing-color a:hover {
+      transform: scale(1.05);
+      /* Increase the size on hover */
+    }
+
+    @media (max-width:720px) {
+      canvas {
+        z-index: 1;
+      }
+    }
   </style>
 </head>
 
@@ -58,18 +70,18 @@
         <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
         <a href="../index.html"> <img style="border-radius: 43px" src="../img/logo.gif" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-            <span class="bar" id="bar1"></span>
-            <span class="bar" id="bar2"></span>
-            <span class="bar" id="bar3"></span>
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
         </div>
         <ul class="nav no-search">
           <li class="nav-item"><a href="../index.html">Home</a></li>
           <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-          <i class="fas fa-search" id="search-icon"></i>
-          <input class="search-input" type="text" placeholder="Search..">
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <!-- <i class="fas fa-search" id="search-icon"></i> -->
+          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
         </ul>
       </nav>
     </div>
@@ -78,59 +90,62 @@
       <p> Empowering Your Academic Journey!</p>
     </section>
     <div class="contact_us">
-        <div class="responsive-container-block container">
-          <form class="form-box">
-            <p class="text-blk contact-head">
-              <h1 class="changing-color"><a href="../report.html">--> Tap Here To Report <--</a></h1>
-            </p>
-            <p class="text-blk contact-subhead">
-              You can get in touch with us using the provided Contactform for any inquiries. If you encounter any issues or bugs, please report them through the same form so we can address them promptly. Your feedback is essential in enhancing our services.            </p>
-            <div class="container-block form-wrapper">
-              <div class="responsive-container-block">
-                <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">
-                  <p class="text-blk input-title">
-                    First Name
-                  </p>
-                  <input class="input" id="ijowk-4" name="FirstName">
-                </div>
-                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                  <p class="text-blk input-title">
-                    Last Name
-                  </p>
-                  <input class="input" id="indfi-3" name="Last Name">
-                </div>
-                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                  <p class="text-blk input-title">
-                    Email
-                  </p>
-                  <input class="input" id="ipmgh-4" name="Email">
-                </div>
-                <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                  <p class="text-blk input-title">
-                    Phone No.
-                  </p>
-                  <input class="input" id="imgis-4" name="PhoneNumber">
-                </div>
-                <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-4">
-                  <p class="text-blk input-title">
-                    Message
-                  </p>
-                  <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..."></textarea>
-                </div>
+      <div class="responsive-container-block container">
+        <form class="form-box">
+          <p class="text-blk contact-head">
+            <h1 class="changing-color"><a href="../report.html">--> Tap Here To Report <--</a> </h1> </p> <p
+                  class="text-blk contact-subhead">
+                  You can get in touch with us using the provided Contactform for any inquiries. If you encounter any
+                  issues or bugs, please report them through the same form so we can address them promptly. Your
+                  feedback is essential in enhancing our services.
+          </p>
+          <div class="container-block form-wrapper">
+            <div class="responsive-container-block">
+              <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">
+                <p class="text-blk input-title">
+                  First Name
+                </p>
+                <input class="input" id="ijowk-4" name="FirstName">
               </div>
-              <button class="submit-btn">
-                Send Message
-              </button>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  Last Name
+                </p>
+                <input class="input" id="indfi-3" name="Last Name">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  Email
+                </p>
+                <input class="input" id="ipmgh-4" name="Email">
+              </div>
+              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
+                <p class="text-blk input-title">
+                  Phone No.
+                </p>
+                <input class="input" id="imgis-4" name="PhoneNumber">
+              </div>
+              <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-4">
+                <p class="text-blk input-title">
+                  Message
+                </p>
+                <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..."></textarea>
+              </div>
             </div>
-          </form>
-        </div>
+            <button class="submit-btn">
+              Send Message
+            </button>
+          </div>
+        </form>
       </div>
-      <!-- <script src="../script.js" theme="dark" position="bottom-right"></script> -->
-      <script src="../particles.js"></script>
-      <script src="../app.js"></script>
+    </div>
+    <!-- <script src="../script.js" theme="dark" position="bottom-right"></script> -->
+    <script src="../particles.js"></script>
+    <script src="../app.js"></script>
     </section>
 
-</div>
+  </div>
 </body>
 <script type="text/javascript" src="contact.js"></script>
+
 </html>
