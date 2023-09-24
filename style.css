@@ -95,7 +95,7 @@ canvas {
   justify-content: center;
   align-items: flex-start;
 
-  height: 277px;
+  height: 300px;
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
@@ -882,6 +882,9 @@ ul li a {
       position: absolute;
       padding: 20px 40px;
 
+  }
+  .container .card{
+    height: 277px;
   }
 }
 @media  (max-width: 290px){
