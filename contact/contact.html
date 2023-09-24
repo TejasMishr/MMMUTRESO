@@ -45,6 +45,11 @@
   .changing-color a:hover {
     transform: scale(1.05); /* Increase the size on hover */
   }
+  @media (max-width:720px) {
+    canvas{
+      z-index: 1;
+    }
+  }
 
   </style>
 </head>
@@ -67,9 +72,9 @@
           <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="#">Contact</a></li>
-          <i class="fas fa-search" id="search-icon"></i>
-          <input class="search-input" type="text" placeholder="Search..">
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <!-- <i class="fas fa-search" id="search-icon"></i> -->
+          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
         </ul>
       </nav>
     </div>

@@ -7,9 +7,9 @@
   <title>MMMUT Resource </title>
   <link href="phd.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
-  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <script type="text/javascript" src="../script.js"></script>
   <style>
-    .nav-wrapper{
+    .nav-wrapper {
       z-index: 7;
       position: relative;
     }
@@ -25,18 +25,18 @@
         <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
         <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-            <span class="bar" id="bar1"></span>
-            <span class="bar" id="bar2"></span>
-            <span class="bar" id="bar3"></span>
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
         </div>
         <ul class="nav no-search">
           <li class="nav-item"><a href="../index.html">Home</a></li>
-          <li class="nav-item"><a href="#">PYQ</a></li>
+          <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
           <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
-          <i class="fas fa-search" id="search-icon"></i>
-          <input class="search-input" type="text" placeholder="Search..">
+          <!-- <i class="fas fa-search" id="search-icon"></i> -->
+          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
         </ul>
       </nav>
     </div>
@@ -49,18 +49,18 @@
 
 
 
-    
 
 
- <!-- Select branch and semester -->
- <form action="#" class="filter-options">
-    <select name="session" id="session">
+
+    <!-- Select branch and semester -->
+    <form action="#" class="filter-options">
+      <select name="session" id="session">
         <option value="Session">Select Session</option>
         <option value="0">2021-24</option>
         <option value="1">2022-25</option>
-    </select>
+      </select>
 
-    <select name="branch" id="branch">
+      <select name="branch" id="branch">
         <option value="select">Select Department</option>
         <option value="0">MSc</option>
         <!-- <option value="1">IT</option>
@@ -69,9 +69,9 @@
         <option value="4">CE</option>
         <option value="5">ME</option>
         <option value="6">CHE</option> -->
-    </select>
+      </select>
 
-    <select name="semester" id="fileSelect">
+      <select name="semester" id="fileSelect">
         <option value="select">Select a Semester</option>
         <option value="0">I</option>
         <option value="1">II</option>
@@ -81,57 +81,52 @@
         <option value="5">VI</option>
         <!-- <option value="6">VII</option>
         <option value="7">VIII</option> -->
-    </select>
+      </select>
 
-    <select name="paper" id="selectpaper">
+      <select name="paper" id="selectpaper">
         <option value="selectpaper">Select Papers</option>
         <option value="0">Minor 1</option>
         <option value="1">Minor 2</option>
         <option value="2">Major</option>
-    </select>
-</form>
+      </select>
+    </form>
 
-<div class="pdf-container">
-    <iframe
-        id="pdfViewer"
-        frameborder="0"
-        scrolling="no"
-        sandbox="allow-same-origin allow-scripts"
-        src=""
-        onerror="displayErrorMessage()"
-    ></iframe>
-</div>
+    <div class="pdf-container">
+      <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
+        onerror="displayErrorMessage()"></iframe>
+    </div>
+  </div>
 
-<script>
-    
-    var fileIDs = 
+  <script>
+
+    var fileIDs =
       [
         // SESSION 2021-24
-       
-        [
-             // BRANCH Phd
-            
-            [
-              // SEMESTER--------------------->>>>>
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v', 'null'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV', '1HwEoYy1lNYsqWNIwpNQQL-QsgNrWAujr'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
-            ]
+        [
+          // BRANCH Phd
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v', 'null'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV', '1HwEoYy1lNYsqWNIwpNQQL-QsgNrWAujr'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ]
 
 
         ],
@@ -139,31 +134,31 @@
 
 
         // SESSION 2022-25
-       
-        [
-             // BRANCH Phd
-            
-            [
-              // SEMESTER--------------------->>>>>
 
-                // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt', '1AelSov8YGtXdmAP5q0QbBfJ79SMqy28O'],
-                // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N', '1BBL7FxyIKiPyv-zChbJFkHdm33U0vtwr'],
-                // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-                // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['  ','  ','  '],
-                // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-                ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-                
-            ]
+        [
+          // BRANCH Phd
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt', '1AelSov8YGtXdmAP5q0QbBfJ79SMqy28O'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N', '1BBL7FxyIKiPyv-zChbJFkHdm33U0vtwr'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['  ', '  ', '  '],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ]
 
         ]
 
@@ -184,49 +179,55 @@
     selectpaper.addEventListener('change', updatePDF);
 
     function updatePDF() {
-        var selectedSession = sessionSelect.value;
-        var selectedBranch = branchSelect.value;
-        var selectedSemester = fileSelect.value;
-        var selectedPaper = selectpaper.value;
+      var selectedSession = sessionSelect.value;
+      var selectedBranch = branchSelect.value;
+      var selectedSemester = fileSelect.value;
+      var selectedPaper = selectpaper.value;
 
-        // Adjust the array indices based on the selected values
-        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
+      // Adjust the array indices based on the selected values
+      var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
-        // Update the src attribute of the iframe
-        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+      // Update the src attribute of the iframe
+      pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
     }
 
     // Function to display an error message
     function displayErrorMessage() {
-        alert('There was an error loading the PDF. Please Contactthe administrator.');
+      alert('There was an error loading the PDF. Please Contactthe administrator.');
     }
 
     // Initial update when the page loads
     updatePDF();
-</script>
+  </script>
 
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
-    authDomain: "mmmutreso.firebaseapp.com",
-    projectId: "mmmutreso",
-    storageBucket: "mmmutreso.appspot.com",
-    messagingSenderId: "3955922251",
-    appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
-    measurementId: "G-CDM7273LVH"
-  };
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+      authDomain: "mmmutreso.firebaseapp.com",
+      projectId: "mmmutreso",
+      storageBucket: "mmmutreso.appspot.com",
+      messagingSenderId: "3955922251",
+      appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+      measurementId: "G-CDM7273LVH"
+    };
 
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script>
+    
+  </script>
+   <script src="phd.js"></script>
+
+</body>
 
 </html>

@@ -51,7 +51,7 @@ body {
 
 .text h1 {
   font-size: calc(100vw / 40);
-  user-select: none;
+  /* user-select: none; */
   padding: calc(100vw / 65) calc(100vw / 45);
   color: white;
 }
@@ -60,7 +60,7 @@ canvas {
   height: 100vh;
   background-color: transparent;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 
   width: 100vw;
 }
@@ -674,7 +674,7 @@ ul li a {
 
     .navbar li a {
       font-size: 1rem;
-      color: rgb(248, 247, 247);
+      color: rgb(0, 0, 0);
       font-family: Arial, Helvetica, sans-serif;
       font-family: 'Inclusive Sans', sans-serif;
 
@@ -861,3 +861,18 @@ ul li a {
 
 
 
+  @media (max-width:770px) {
+    .nav-item a{
+      color: black
+    }
+    
+  }
+ 
+  @media only screen and (max-width: 800px){
+  .text h1 {
+      width: max-content;
+      font-size: 18px;
+      position: absolute;
+      padding: 20px 40px;
+  }
+}
