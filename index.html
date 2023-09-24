@@ -17,10 +17,10 @@
   <script type="text/javascript" src="dat.gui.min.js"></script>
 
   <style>
-    .nav-item{
+    .nav-item {
       text-align: center;
     }
-    
+
     .nav-wrapper {
       z-index: 7;
       position: relative;
@@ -32,30 +32,36 @@
     }
 
     @keyframes slowShake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
+      0% {
+        transform: translateX(0);
+      }
 
-.shake {
-  animation: slowShake 3s infinite; /* Adjust the duration (5s) as needed */
-}
-   
+      25% {
+        transform: translateX(-5px);
+      }
+
+      50% {
+        transform: translateX(5px);
+      }
+
+      75% {
+        transform: translateX(-5px);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .shake {
+      animation: slowShake 3s infinite;
+    }
   </style>
   <script>
-    window.ga = window.ga || function () { (ga.q = ga.q || []).push(arguments) }; ga.l = +new Date;
+    window.ga = window.ga || function () {
+      (ga.q = ga.q || []).push(arguments)
+    };
+    ga.l = +new Date;
     ga('create', 'UA-105392568-1', 'auto');
     ga('send', 'pageview');
   </script>
@@ -68,67 +74,67 @@
   <!-- loader -->
   <div id="back">
     <div class="stars">
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-        <div class="star"></div>
-      </div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
     <div class="pyramid-loader">
-        <div class="wrapper">
-          <span class="side side1"></span>
-          <span class="side side2"></span>
-          <span class="side side3"></span>
-          <span class="side side4"></span>
-          <span class="shadow"></span>
-        </div>  
+      <div class="wrapper">
+        <span class="side side1"></span>
+        <span class="side side2"></span>
+        <span class="side side3"></span>
+        <span class="side side4"></span>
+        <span class="shadow"></span>
       </div>
-</div>
+    </div>
+  </div>
 
   <!-- hello tejas  -->
 
@@ -158,13 +164,13 @@
     <div id="starss2"></div>
     <div id="starss3"></div>
     <div id="starss4"></div>
-</div>
+  </div>
   <div class="page-wrapper">
-    
+
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        
+
         <a href="index.html"><img id="imgg" src="img/logo.gif" alt="MMMUT"></a>
 
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
@@ -172,14 +178,14 @@
           <span class="bar" id="bar2"></span>
           <span class="bar" id="bar3"></span>
         </div>
-          <!-- <div class="nv">
+        <!-- <div class="nv">
         <a href="https://forms.gle/qDaCYTcDGpWoqY6C8"> <button id="button">Contribute</button></a>
             <a href="team.html"><button id="button">Team</button></a> 
           </div> -->
-          
-        
+
+
         <ul class="nav no-search navi">
-          <li class="nav-item" ><a href="index.html" class="animation">Home</a></li>
+          <li class="nav-item"><a href="index.html" class="animation">Home</a></li>
           <li class="nav-item"><a href="https://forms.gle/qDaCYTcDGpWoqY6C8" class="animation">Contribute</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="team.html" style="text-align: center;" class="animation">Team</a></li>
@@ -200,11 +206,11 @@
 
 
     </section> -->
-     <!-- here goes he event and news section -->
+    <!-- here goes he event and news section -->
 
 
-    
-     <section class="eve">
+
+    <section class="eve">
 
       <div class="part">
         <div class="left" id="left">
@@ -380,11 +386,11 @@
               <p>Bulid Your Nation : Explore Mechanical
               </p>
 
-               <button class="btn"><a href="pages/page.html?branch=5">Notes</a></button>
-            <!-- <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
+              <button class="btn"><a href="pages/page.html?branch=5">Notes</a></button>
+              <!-- <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
 
 
-             
+
               <button class="btn"><a href="pyq/PYQ.html?branch=5">PYQ</a></button>
 
             </div>
@@ -420,8 +426,12 @@
               <p>Navigate to Your Course Syllabus: Explore Syllabus
               </p>
               <button class="btn"><a href="sy/sy.html">
-                <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></svg>
-                Explore </a></button>
+                  <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+                    </path>
+                  </svg>
+                  Explore </a></button>
               <!-- <button class="btn"><a href="BBMBA/BBMB.html">PYQ</a></button> -->
 
               <!-- Button need to be added -->
@@ -557,13 +567,13 @@
     </div>
 
 
-   
+
   </div>
 
-<div style="width: 100vw; height: 5px;background-color: aqua;"></div>
-   <footer class="footer">
+  <div style="width: 100vw; height: 5px;background-color: aqua;"></div>
+  <footer class="footer">
 
-  
+
 
     <div class="row">
       <div class="col">
@@ -584,7 +594,7 @@
       </div>
       <div class="col2">
         <h3>Reach us </h3>
-        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff; cursor: pointer;"></i> 
+        <i class="fa-brands fa-facebook fa-xl" style="color: #ffffff; cursor: pointer;"></i>
         <i class="fa-brands fa-instagram fa-xl" style="color: #ffffff; cursor: pointer;"></i>
         <i class="fa-brands fa-twitter fa-xl" style="color: #ffffff; cursor: pointer;"></i>
         <i class="fa-brands fa-linkedin fa-xl" style="color: #ffffff; cursor: pointer;"></i>
@@ -652,7 +662,6 @@
       caros[currentindex].classList.toggle('active')
 
     }, 7000);
-
   </script>
 
   <script src="load/load.js"></script>
@@ -667,7 +676,7 @@
 
 <!-- // analytics-->
 <script type="module">
-// Import the functions you need from the SDKs you need
+  // Import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
 // TODO: Add SDKs for Firebase products that you want to use
@@ -692,4 +701,3 @@ const analytics = getAnalytics(app);
 <script src="script.js"></script>
 
 </html>
-
