@@ -51,7 +51,7 @@ body {
 
 .text h1 {
   font-size: calc(100vw / 40);
-  user-select: none;
+  /* user-select: none; */
   padding: calc(100vw / 65) calc(100vw / 45);
   color: white;
 }
@@ -60,7 +60,7 @@ canvas {
   height: 100vh;
   background-color: transparent;
   position: relative;
-  z-index: 10;
+  z-index: 5;
 
   width: 100vw;
 }
@@ -239,16 +239,19 @@ canvas {
   transition-duration: 0.5s;
 }
 .svgIcon {
-  height: 11px;
+  height: 20px;
+  top: 20px;
     transition-duration: 1.5s;
     padding: 0px;
+    /* background-color: #000; */
     margin: 0px;
     align-items: center;
     text-align: center;
 }
 
 .btn:hover {
-  background-color: rgb(68, 68, 68);
+  background-color: rgb(99, 97, 97);
+  /* color: rgb(184, 180, 180); */
   color: rgb(0, 0, 0);
   transition-duration: .5s;
 }
@@ -372,6 +375,7 @@ h2 {
   grid-template-columns: 1fr 3fr;
   align-items: center;
   height: 75px;
+  background-color: black;
   overflow: hidden;
 }
 
@@ -670,7 +674,10 @@ ul li a {
 
     .navbar li a {
       font-size: 1rem;
-      color: black;
+      color: rgb(0, 0, 0);
+      font-family: Arial, Helvetica, sans-serif;
+      font-family: 'Inclusive Sans', sans-serif;
+
     }
 
     .menu-toggle,
@@ -854,3 +861,18 @@ ul li a {
 
 
 
+  @media (max-width:770px) {
+    .nav-item a{
+      color: black
+    }
+    
+  }
+ 
+  @media only screen and (max-width: 800px){
+  .text h1 {
+      width: max-content;
+      font-size: 18px;
+      position: absolute;
+      padding: 20px 40px;
+  }
+}

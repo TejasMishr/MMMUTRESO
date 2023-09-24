@@ -11,7 +11,7 @@ body{
     align-items: center;
     background: rgb(49,44,113);
 background: radial-gradient(circle, rgb(5, 5, 5) 0%, rgb(76, 76, 76) 100%);
-z-index: 10;
+z-index: 4;
 display: none;
 }
 .lds-ripple {

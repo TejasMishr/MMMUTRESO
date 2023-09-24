@@ -95,11 +95,15 @@
     color: #50CC59;
     font-size: 1.4rem;
 }
+.img img{
+    border-radius: 50%;
+}
 .img img:hover{
     transform: translateY(-2vh);
     transition: .30s ease;
    
-    border-radius: 50%;
+    border-radius: 0%;
+    transform: scale(1.1) translateY(-10px);
 
 }
 i{
@@ -115,3 +119,8 @@ i:hover{
 .container{
     background: black;
 }
+@media only screen and (max-width: 720px) {
+    .nav-item li a{
+  color: #000;
+    }
+  }

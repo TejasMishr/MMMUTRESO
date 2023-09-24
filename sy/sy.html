@@ -7,6 +7,7 @@
   <title>MMMUT Resource </title>
   <link href="sy.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../loader/load.css">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
   <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
 
@@ -39,8 +40,8 @@
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <!-- <img src="../img/logo.png" alt="MMMUT"> -->
-        <a href="../index.html"> <img src="../img/logo.png" alt="MMMUT"></a>
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
           <span class="bar" id="bar1"></span>
           <span class="bar" id="bar2"></span>
@@ -51,7 +52,7 @@
           <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="../contact/contact.html">Contact Us</a></li>
+          <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
           <i class="fas fa-search" id="search-icon"></i>
           <input class="search-input" type="text" placeholder="Search..">
         </ul>
@@ -194,7 +195,7 @@
       
         // Function to display an error message
         function displayErrorMessage() {
-          alert('There was an error loading the PDF. Please contact the administrator.');
+          alert('There was an error loading the PDF. Please Contactthe administrator.');
         }
       
         // Initial update when the page loads
@@ -227,7 +228,45 @@
     </script>
     <script src="pyq.js"></script>
    
+    <script>
+      
+var bari1 = document.querySelector('#bar1');
+var bari2 = document.querySelector('#bar2');
+var bari3 = document.querySelector('#bar3');
+
+var navi = document.querySelector('.navbar ul');
+var menu = document.querySelector('#mobile-menu');
+// /transform: translate(-101%);
+
+var count = 0;
+
+
+var f1 = ()=>{
+    // alert('ok');
+   count++;
+   
+     
+   if(count%2==0){
+    // alert("ok");
+    navi.style.transform = "translate(-101%)";
+
+    bari2.style.display="flex";
+    bari1.style.transform="rotate(0) translateY(0px)";
+    bari3.style.transform="rotate(0)  translateY(0px)";
+   }else{
     
+    navi.style.display="flex";
+    navi.style.transform = "translate(0%)";
+    bari2.style.display="none";
+    bari1.style.transform="rotate(45deg) translateY(6px)";
+    bari3.style.transform="rotate(-45deg)  translateY(-5px)";
+   }
+
+
+
+
+}
+    </script>
 </body>
 
 </html>

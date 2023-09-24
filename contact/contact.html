@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>MMMUT Resource </title>
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
   <link href="contact.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
 
   <style>
     .nav-wrapper{
@@ -43,6 +45,11 @@
   .changing-color a:hover {
     transform: scale(1.05); /* Increase the size on hover */
   }
+  @media (max-width:720px) {
+    canvas{
+      z-index: 1;
+    }
+  }
 
   </style>
 </head>
@@ -53,8 +60,8 @@
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <!-- <img src="../img/logo.png" alt="MMMUT"> -->
-        <a href="../index.html"> <img style="border-radius: 43px" src="../img/logo.png" alt="MMMUT"></a>
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img style="border-radius: 43px" src="../img/logo.gif" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
             <span class="bar" id="bar1"></span>
             <span class="bar" id="bar2"></span>
@@ -65,9 +72,9 @@
           <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="#">Contact Us</a></li>
-          <i class="fas fa-search" id="search-icon"></i>
-          <input class="search-input" type="text" placeholder="Search..">
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <!-- <i class="fas fa-search" id="search-icon"></i> -->
+          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
         </ul>
       </nav>
     </div>
@@ -82,7 +89,7 @@
               <h1 class="changing-color"><a href="../report.html">--> Tap Here To Report <--</a></h1>
             </p>
             <p class="text-blk contact-subhead">
-              You can get in touch with us using the provided contact form for any inquiries. If you encounter any issues or bugs, please report them through the same form so we can address them promptly. Your feedback is essential in enhancing our services.            </p>
+              You can get in touch with us using the provided Contactform for any inquiries. If you encounter any issues or bugs, please report them through the same form so we can address them promptly. Your feedback is essential in enhancing our services.            </p>
             <div class="container-block form-wrapper">
               <div class="responsive-container-block">
                 <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">

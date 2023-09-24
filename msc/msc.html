@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>MMMUT Resource </title>
-  <link href="mscphd.css" rel="stylesheet" type="text/css" />
-  <!-- <script type="text/javascript" src="script.js"></script> -->
+  <link href="msc.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="script.js"></script>
   <style>
     .nav-wrapper{
       z-index: 7;
@@ -21,8 +22,8 @@
     <div class="nav-wrapper">
       <div class="grad-bar"></div>
       <nav class="navbar">
-        <!-- <img src="../img/logo.png" alt="MMMUT"> -->
-        <a href="../index.html"> <img src="../img/logo.png" alt="MMMUT"></a>
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
             <span class="bar" id="bar1"></span>
             <span class="bar" id="bar2"></span>
@@ -33,7 +34,7 @@
           <li class="nav-item"><a href="#">PYQ</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="../contact/contact.html">Contact Us</a></li>
+          <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
           <i class="fas fa-search" id="search-icon"></i>
           <input class="search-input" type="text" placeholder="Search..">
         </ul>
@@ -197,7 +198,7 @@
 
     // Function to display an error message
     function displayErrorMessage() {
-        alert('There was an error loading the PDF. Please contact the administrator.');
+        alert('There was an error loading the PDF. Please Contactthe administrator.');
     }
 
     // Initial update when the page loads
@@ -227,5 +228,6 @@
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
+<script src="msc.js"></script>
 
 </html>

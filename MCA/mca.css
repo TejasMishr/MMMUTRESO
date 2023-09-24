@@ -512,3 +512,8 @@ select * {
     height: 100%;
     border: none;
 } 
+@media only screen and (max-width: 720px) {
+  .nav-item li a{
+color: #000;
+  }
+}

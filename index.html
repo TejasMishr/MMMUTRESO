@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>MMMUT Resource </title>
+  <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="script.js"></script>
   <link rel="stylesheet" href="load/loader.css">
@@ -146,21 +147,22 @@
         <a href="index.html"><img id="imgg" src="img/logo.gif" alt="MMMUT"></a>
 
         <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-          <!-- <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar1"></span>
           <span class="bar" id="bar2"></span>
-          <span class="bar" id="bar3"></span> -->
-          <div class="nv">
+          <span class="bar" id="bar3"></span>
+        </div>
+          <!-- <div class="nv">
         <a href="https://forms.gle/qDaCYTcDGpWoqY6C8"> <button id="button">Contribute</button></a>
             <a href="team.html"><button id="button">Team</button></a> 
-          </div>
+          </div> -->
           
-        </div>
+        
         <ul class="nav no-search navi">
           <li class="nav-item" ><a href="index.html" class="animation">Home</a></li>
           <li class="nav-item"><a href="https://forms.gle/qDaCYTcDGpWoqY6C8" class="animation">Contribute</a></li>
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="team.html" style="text-align: center;" class="animation">Team</a></li>
-          <li class="nav-item"><a href="contact/contact.html" class="animation">Contact Us</a></li>
+          <li class="nav-item"><a href="contact/contact.html" class="animation">Contact</a></li>
 
         </ul>
       </nav>
@@ -177,6 +179,69 @@
 
 
     </section> -->
+     <!-- here goes he event and news section -->
+
+
+    
+     <section class="eve">
+
+      <div class="part">
+        <div class="left" id="left">
+          <div class="caros active" var="0">
+            <img class="carosimage activeimage" src="eventassets/gameofcodes.jpg" />
+          </div>
+          <div class="caros" var="1">
+            <img class="carosimage" src="eventassets/cpseminar.jpg" />
+          </div>
+          <div class="caros" var="1">
+            <img class="carosimage" src="eventassets/mmmadmin.jpeg" />
+          </div>
+          <div class="caros" var="2">
+            <img class="carosimage" src="eventassets/mmmut.jpg" />
+          </div>
+          <div class="caros" var="3">
+            <img class="carosimage" src="eventassets/tnp.jpg" />
+          </div>
+          <div class="backarrow">
+            <img src="eventassets/back-arrow.svg" />
+          </div>
+          <div class="rightarrow">
+            <img src="eventassets/right-arrow.svg" />
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="tab-container" style="height: 85vh;">
+            <nav>
+              <div class="tab-header">
+                <a class="tab-item active" data-tab="events">Events</a>
+                <a class="tab-item" data-tab="news">Latest News</a>
+              </div>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel active" id="events">
+                <div class="tab-heading">
+                  <h3>Events</h3>
+                </div>
+                <div class="tab-block">
+                  <!-- Event items go here -->
+                </div>
+              </div>
+              <div class="tab-panel" id="news">
+                <div class="tab-heading">
+                  <h3>Latest News</h3>
+                </div>
+                <div class="tab-block">
+                  <!-- News items go here -->
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <div class="parent">
       <section class="features">
@@ -295,7 +360,7 @@
               </p>
 
                <button class="btn"><a href="pages/page.html?branch=5">Notes</a></button>
-<!--               <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
+            <!-- <button class="btn"><a href="pyq/PYQ.html">PYQ</a></button> -->
 
 
              
@@ -471,69 +536,7 @@
     </div>
 
 
-    <!-- here goes he event and news section -->
-
-
-    
-    <section class="eve">
-
-      <div class="part">
-        <div class="left" id="left">
-          <div class="caros active" var="0">
-            <img class="carosimage activeimage" src="eventassets/gameofcodes.jpg" />
-          </div>
-          <div class="caros" var="1">
-            <img class="carosimage" src="eventassets/cpseminar.jpg" />
-          </div>
-          <div class="caros" var="1">
-            <img class="carosimage" src="eventassets/mmmadmin.jpeg" />
-          </div>
-          <div class="caros" var="2">
-            <img class="carosimage" src="eventassets/mmmut.jpg" />
-          </div>
-          <div class="caros" var="3">
-            <img class="carosimage" src="eventassets/tnp.jpg" />
-          </div>
-          <div class="backarrow">
-            <img src="eventassets/back-arrow.svg" />
-          </div>
-          <div class="rightarrow">
-            <img src="eventassets/right-arrow.svg" />
-          </div>
-        </div>
-
-        <div class="right">
-          <div class="tab-container" style="height: 85vh;">
-            <nav>
-              <div class="tab-header">
-                <a class="tab-item active" data-tab="events">Events</a>
-                <a class="tab-item" data-tab="news">Latest News</a>
-              </div>
-            </nav>
-            <div class="tab-content">
-              <div class="tab-panel active" id="events">
-                <div class="tab-heading">
-                  <h3>Events</h3>
-                </div>
-                <div class="tab-block">
-                  <!-- Event items go here -->
-                </div>
-              </div>
-              <div class="tab-panel" id="news">
-                <div class="tab-heading">
-                  <h3>Latest News</h3>
-                </div>
-                <div class="tab-block">
-                  <!-- News items go here -->
-                </div>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-      </div>
-    </section>
+   
   </div>
 
 <div style="width: 100vw; height: 5px;background-color: aqua;"></div>
@@ -543,7 +546,7 @@
 
     <div class="row">
       <div class="col">
-        <img src="img/logo.png" class="logo">
+        <img src="img/logo.gif" class="logo">
         <p>Our motive is to support our upcomming juniors and share our valuable knowledge and resources to everyone.✨
         </p>
       </div>
