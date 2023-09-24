@@ -1,48 +1,49 @@
-// Function to add a new item to either Events or Latest News
+
 function addNewItem(tabType, title, description, link, buttonText) {
-  // Create a new list item element
+  
   const listItem = document.createElement('li');
   listItem.classList.add('p-10');
 
-  // Create the title element
+  
   const titleElement = document.createElement('h6');
   titleElement.innerHTML = `<span>${title}</span>`;
   listItem.appendChild(titleElement);
 
-  // Create the description element
+  
   const descriptionElement = document.createElement('p');
   descriptionElement.textContent = description;
   listItem.appendChild(descriptionElement);
 
-  // Create the link element (if a link is provided)
+  
   if (link) {
-    const buttonElement = document.createElement('button'); // Create a button element
-    buttonElement.textContent = buttonText; // Set the button text
-    buttonElement.classList.add('tab-more-button', 'price-dec', 'hvr-float-shadow', 'bg-info'); // Add button styles
+    const buttonElement = document.createElement('button'); 
+    buttonElement.textContent = buttonText; 
+    buttonElement.classList.add('tab-more-button', 'price-dec', 'hvr-float-shadow', 'bg-info');
     buttonElement.addEventListener('click', () => {
-      window.open(link, '_blank'); // Open the link in a new tab when the button is clicked
+      window.open(link, '_blank'); 
     });
     listItem.appendChild(buttonElement);
   }
 
-  // Get the tab block for the specified tabType
+  
   const tabBlock = document.querySelector(`#${tabType} .tab-block`);
 
-  // Insert a horizontal line (hr) before the new item
+  
   const previousItem = tabBlock.lastChild;
   if (previousItem) {
     tabBlock.insertBefore(document.createElement('hr'), previousItem.nextSibling);
   }
   document.querySelector('hr').classList.add('hr');
   
-  // Add the new item to the tab block
+ 
   tabBlock.appendChild(listItem);
 }
 
-// Example usage of the updated function
 
 
-// addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Learn More');
+
+
+// FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
 
 
 
