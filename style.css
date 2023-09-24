@@ -170,11 +170,6 @@ canvas {
   font-size: 1.05em;
 
 }
-.content{
-
-
-  position: absolute;
-}
 
 .btn {
   background-color: #1d1717;
@@ -685,11 +680,7 @@ ul li a {
 
     }
 
-    .menu-toggle,
-    .bar {
-      display: block;
-      cursor: pointer;
-    }
+    
 
     .navbar img {
       height: 3rem;
@@ -706,7 +697,9 @@ ul li a {
       height: 20vh;
     }
     
-
+.nv{
+  display: none;
+}
 
 
 
@@ -754,6 +747,13 @@ ul li a {
 .nav {
   margin-bottom: 15px;
 }
+@media (max-width:770px) {
+  .menu-toggle,
+    .bar {
+      display: block;
+      cursor: pointer;
+    }
+}
 
 @media only screen and (max-width:420px) {
   .col {
@@ -789,6 +789,7 @@ ul li a {
   }
   .nv{
     display: flex;
+    flex-direction: row-reverse;
   }
   #button {
     font-size: 12px;
@@ -879,12 +880,9 @@ ul li a {
       font-size: 18px;
       /* z-index: 1; */
       font-size: 27px;
-      position: absolute;
+      /* position: absolute; */
       padding: 20px 40px;
 
-  }
-  .container .card{
-    height: 277px;
   }
 }
 @media  (max-width: 290px){
