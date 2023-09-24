@@ -170,6 +170,11 @@ canvas {
   font-size: 1.05em;
 
 }
+.content{
+
+
+  position: absolute;
+}
 
 .btn {
   background-color: #1d1717;
@@ -877,6 +882,9 @@ ul li a {
       position: absolute;
       padding: 20px 40px;
 
+  }
+  .container .card{
+    height: 277px;
   }
 }
 @media  (max-width: 290px){
