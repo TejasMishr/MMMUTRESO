@@ -44,7 +44,20 @@ function addNewItem(tabType, title, description, link, buttonText) {
 
 
 let currentIndex = 0;
-const eventItems = [{
+const eventItems = [
+  {
+    title: 'Important Notice regarding inauguration of New Administrative Building',
+    description: 'on 26.09.2023, 11:00 AM',
+    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
+    buttonText: 'More.'
+  },
+  {
+    title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
+    description: 'Username: student & Password: student',
+    link: 'http://172.16.1.250:8081/jasperserver/login.html',
+    buttonText: 'LOGIN'
+  },
+  {
     title: 'Notice Regarding Orientation Cum Induction Program',
     description: 'Notice',
     link: 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf',
@@ -124,6 +137,12 @@ const eventItems = [{
 
 const newsItems = [
   {
+    title: 'Important Notice regarding inauguration of New Administrative Building',
+    description: 'on 26.09.2023, 11:00 AM',
+    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
+    buttonText: 'More.'
+  },
+  {
     title: 'Notice Regarding Orientation Cum Induction Program',
     description: 'Notice',
     link: 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf',
@@ -148,10 +167,10 @@ const newsItems = [
     buttonText: 'LOGIN'
   },
   {
-    title: 'Game Of Codes: Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Important Notice regarding inauguration of New Administrative Building',
+    description: 'on 26.09.2023, 11:00 AM',
+    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
+    buttonText: 'More.'
   },
   {
     title: 'Eighth Convocation Celebration',
@@ -166,10 +185,10 @@ const newsItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Important Notice regarding inauguration of New Administrative Building',
+    description: 'on 26.09.2023, 11:00 AM',
+    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
+    buttonText: 'More.'
   },
   {
     title: 'Eighth Convocation Celebration',
@@ -190,10 +209,10 @@ const newsItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Important Notice regarding inauguration of New Administrative Building',
+    description: 'on 26.09.2023, 11:00 AM',
+    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
+    buttonText: 'More.'
   },
   {
     title: 'Important Notice for Induction Program',
