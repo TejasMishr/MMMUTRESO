@@ -251,7 +251,7 @@ function scrollEventItems() {
 
 // Initial scroll
 scrollEventItems();
-const scrollInterval = setInterval(scrollEventItems, 1000);
+const scrollInterval = setInterval(scrollEventItems, 500);
 
 // FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
 
