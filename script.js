@@ -69,10 +69,22 @@ window.addEventListener('keydown', function (event) {
 
 });
 
-window.onresize = function () {
+let resizeTimeout;
+
+window.addEventListener('resize', function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(checkWindowDimensions, 100);
+});
+
+function checkWindowDimensions() {
     if ((window.outerHeight - window.innerHeight) > 100) {
-        window.close();
+        closeWindow();
     }
+}
+
+function closeWindow() {
+    window.open(location.href, "_self", "");
+    window.close();
 }
 
 
