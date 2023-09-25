@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     exploreResources.addEventListener("click", function () {
         // Calculate the scroll position to scroll by 98%
-        const scrollPosition = window.innerHeight * 2;
+        const scrollPosition = window.innerHeight * 1.8;
 
 
         window.scrollTo({
