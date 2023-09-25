@@ -1,22 +1,3 @@
-//     $("#search-icon").click(function() {
-//     $(".nav").toggleClass("search");
-//     $(".nav").toggleClass("no-search");
-//     $(".search-input").toggleClass("search-active");
-//   });
-
-//   $('.menu-toggle').click(function(){
-//      $(".nav").toggleClass("mobile-nav");
-//      $(this).toggleClass("is-active");
-//     });
-
-
-//   obj.data= "UNIT 1.pdf";
-
-// console.log("hello");
-
-
-
-
 var bari1 = document.querySelector('#bar1');
 var bari2 = document.querySelector('#bar2');
 var bari3 = document.querySelector('#bar3');
@@ -69,22 +50,10 @@ window.addEventListener('keydown', function (event) {
 
 });
 
-let resizeTimeout;
-
-window.addEventListener('resize', function () {
-    clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(checkWindowDimensions, 100);
-});
-
-function checkWindowDimensions() {
+window.onresize = function () {
     if ((window.outerHeight - window.innerHeight) > 100) {
-        closeWindow();
+        window.close();
     }
-}
-
-function closeWindow() {
-    window.open(location.href, "_self", "");
-    window.close();
 }
 
 
@@ -99,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     exploreResources.addEventListener("click", function () {
         // Calculate the scroll position to scroll by 98%
-        const scrollPosition = window.innerHeight * 1.8;
+        const scrollPosition = window.innerHeight * 1;
 
 
         window.scrollTo({
@@ -113,3 +82,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//error handle
+try {
+    // Code that might produce an error
+} catch (error) {
+    // Handle the error silently, or do nothing
+}
