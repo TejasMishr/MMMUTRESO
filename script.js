@@ -101,9 +101,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-//error handle
-try {
-    // Code that might produce an error
-} catch (error) {
-    // Handle the error silently, or do nothing
-}
