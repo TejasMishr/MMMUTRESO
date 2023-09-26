@@ -59,6 +59,45 @@
       }
     }
   </style>
+
+
+
+
+
+
+
+  <!-- cintact form js -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('a5N-1Zl7iNCVGKFrE');
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        alert('ok');
+        // these IDs from the previous steps
+        emailjs.sendForm('Gmail', 'contact_form', this)
+          .then(function () {
+            console.log('SUCCESS!');
+          }, function (error) {
+            console.log('FAILED...', error);
+          });
+      });
+    }
+  </script>
+
+
+
+
+
+
+
 </head>
 
 <body>
@@ -91,7 +130,7 @@
     </section>
     <div class="contact_us">
       <div class="responsive-container-block container">
-        <form class="form-box">
+        <form class="form-box" id="contact-form">
           <p class="text-blk contact-head">
             <h1 class="changing-color"><a href="../report.html">--> Tap Here To Report <--</a> </h1> </p> <p
                   class="text-blk contact-subhead">
@@ -103,38 +142,30 @@
             <div class="responsive-container-block">
               <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">
                 <p class="text-blk input-title">
-                  First Name
+                  Name
                 </p>
-                <input class="input" id="ijowk-4" name="FirstName">
-              </div>
-              <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-                <p class="text-blk input-title">
-                  Last Name
-                </p>
-                <input class="input" id="indfi-3" name="Last Name">
+                <input class="input" id="ijowk-4" name="name">
               </div>
               <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                 <p class="text-blk input-title">
                   Email
                 </p>
-                <input class="input" id="ipmgh-4" name="Email">
+                <input class="input" id="ipmgh-4" name="email">
               </div>
               <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
                 <p class="text-blk input-title">
                   Phone No.
                 </p>
-                <input class="input" id="imgis-4" name="PhoneNumber">
+                <input class="input" id="imgis-4" name="phone">
               </div>
               <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-4">
                 <p class="text-blk input-title">
                   Message
                 </p>
-                <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..."></textarea>
+                <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..." name="message"></textarea>
               </div>
             </div>
-            <button class="submit-btn">
-              Send Message
-            </button>
+            <button class="submit-btn" type="submit">Send Message</button>
           </div>
         </form>
       </div>
