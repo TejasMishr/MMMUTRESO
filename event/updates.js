@@ -46,10 +46,10 @@ function addNewItem(tabType, title, description, link, buttonText) {
 let currentIndex = 0;
 const eventItems = [
   {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
+    title: 'Registration For New Semester',
+    description: 'Registration',
+    link: 'https://registration.mmmut.ac.in/',
+    buttonText: 'Register'
   },
   {
     title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
@@ -58,22 +58,22 @@ const eventItems = [
     buttonText: 'LOGIN'
   },
   {
-    title: 'Notice Regarding Orientation Cum Induction Program',
-    description: 'Notice',
-    link: 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf',
-    buttonText: 'VIEW..'
+    title:'Student LOGIN Portal',
+    description: 'LOGIN',
+    link: 'https://registration.mmmut.ac.in/StudentLogin',
+    buttonText: 'LOGIN'
   },
   {
-    title: 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM',
-    description: '19th September 2023',
-    link: 'https://www.youtube.com/watch?v=TobiCVMpb0k',
-    buttonText: 'Watch..'
+    title: 'Register Ragging Complaint',
+    description: 'Anti-Ragging',
+    link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=1i5z0J-ojUiyneXp583eXH--PWniG4JFlYuBA5ETzWdUN0VENjUzUzZSVkJSVkNQNDIyUUdUQVk4Ny4u',
+    buttonText: 'Complaint'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'VIEW..'
+    title: 'Website Access Login Portal',
+    description: 'Only For Faculties',
+    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
+    buttonText: 'LOGIN.'
   },
   {
     title: 'RESULT OF ALL SEMESTERS',
@@ -82,16 +82,16 @@ const eventItems = [
     buttonText: 'LOGIN'
   },
   {
-    title: 'Game Of Codes: Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Sponsored Research Projects ',
+    description: 'Funded Projects',
+    link: 'http://www.mmmut.ac.in/ViewSponsoredProjects',
+    buttonText: 'More..'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Training And Placement Website',
+    description: 'Website',
+    link: 'https://tnpmmmut.tech/',
+    buttonText: 'View'
   },
   {
     title: 'RESULT OF ALL SEMESTERS',
@@ -100,21 +100,9 @@ const eventItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
-  },
-  {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
-  },
-  {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
+    title: 'Alumini Portal',
+    description: '',
+    link: 'https://www.malaviyans.in/',
     buttonText: 'Login'
   },
   {
@@ -124,10 +112,22 @@ const eventItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Alumini Portal',
+    description: '',
+    link: 'https://www.malaviyans.in/',
+    buttonText: 'Login'
+  },
+  {
+    title: 'Training And Placement Website',
+    description: 'Website',
+    link: 'https://tnpmmmut.tech/',
+    buttonText: 'View'
+  },
+  {
+    title: 'Website Access Login Portal',
+    description: 'Only For Faculties',
+    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
+    buttonText: 'LOGIN.'
   }
 ];
 
