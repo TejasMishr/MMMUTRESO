@@ -79,31 +79,31 @@ const eventItems = [
     title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
     description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'More..'
+    buttonText: 'LOGIN.'
   },
   {
     title: 'Sponsored Research Projects ',
     description: 'Funded Projects',
     link: 'http://www.mmmut.ac.in/ViewSponsoredProjects',
-    buttonText: 'More..'
+    buttonText: 'View..'
   },
   {
     title: 'Training And Placement Website',
     description: 'Website',
     link: 'https://tnpmmmut.tech/',
-    buttonText: 'View'
+    buttonText: 'View.'
   },
   {
     title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
     description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'More..'
+    buttonText: 'Login.'
   },
   {
     title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
     description: 'Alumini Portal',
     link: 'https://www.malaviyans.in/',
-    buttonText: 'Login'
+    buttonText: 'Login.'
   },
   {
     title: 'Eighth Convocation Celebration',
@@ -115,7 +115,7 @@ const eventItems = [
     title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
     description: 'Alumini Portal',
     link: 'https://www.malaviyans.in/',
-    buttonText: 'Login'
+    buttonText: 'Login.'
   },
   {
     title: 'Training and Placement Cell - Your Bridge to Career Success Begins Here',
