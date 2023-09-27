@@ -243,34 +243,32 @@ const newsItems = [
 
 
 function scrollEventItems() {
+  // if (currentIndex >= eventItems.length) {
+  //   currentIndex = 0; // Reset the index to start over if all items have been displayed
+  // }
 
-  if (currentIndex >= eventItems.length) {
-    
-    return;
-    
-  } else {
-    const tabBlock = document.querySelector('#events .tab-block');
-    const eventItem = eventItems[currentIndex];
-    const newsItem = newsItems[currentIndex];
-    addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
-    if (currentIndex <= newsItems.length){
-      addNewItem('news', newsItem.title, newsItem.description, newsItem.link, newsItem.buttonText);
+  const tabBlock = document.querySelector('#events .tab-block');
+  const eventItem = eventItems[currentIndex];
+  const newsItem = newsItems[currentIndex];
 
-    }
-
-   
-
-    if (tabBlock.children.length > 2) {
-      tabBlock.removeChild(tabBlock.firstChild);
-    }
-
-    currentIndex++;
+  addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
+  if (currentIndex < newsItems.length) {
+    addNewItem('news', newsItem.title, newsItem.description, newsItem.link, newsItem.buttonText);
   }
+
+  if (tabBlock.children.length > 2) {
+    tabBlock.removeChild(tabBlock.firstChild);
+  }
+
+  currentIndex++;
 }
 
-// Initial scroll
+
 scrollEventItems();
-const scrollInterval = setInterval(scrollEventItems, 500);
+
+
+
+const scrollInterval = setInterval(scrollEventItems, 2000);
 
 // FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
 
