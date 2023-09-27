@@ -46,8 +46,8 @@ function addNewItem(tabType, title, description, link, buttonText) {
 let currentIndex = 0;
 const eventItems = [
   {
-    title: 'Registration For New Semester',
-    description: 'Registration',
+    title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
+    description: 'Registration Portal',
     link: 'https://registration.mmmut.ac.in/',
     buttonText: 'Register'
   },
@@ -58,8 +58,8 @@ const eventItems = [
     buttonText: 'LOGIN'
   },
   {
-    title:'Student LOGIN Portal',
-    description: 'LOGIN',
+    title:'Student LOGIN Portal: Your Gateway to Academic Resources and Campus Information. Access Your Educational Journey',
+    description: 'Student LOGIN Portal',
     link: 'https://registration.mmmut.ac.in/StudentLogin',
     buttonText: 'LOGIN'
   },
@@ -70,16 +70,16 @@ const eventItems = [
     buttonText: 'Complaint'
   },
   {
-    title: 'Website Access Login Portal',
+    title: 'Website Access Login Portal ( Faculties )',
     description: 'Only For Faculties',
     link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
     buttonText: 'LOGIN.'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
+    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
+    description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'LOGIN'
+    buttonText: 'More..'
   },
   {
     title: 'Sponsored Research Projects ',
@@ -94,14 +94,14 @@ const eventItems = [
     buttonText: 'View'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
+    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
+    description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
     buttonText: 'More..'
   },
   {
-    title: 'Alumini Portal',
-    description: '',
+    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
+    description: 'Alumini Portal',
     link: 'https://www.malaviyans.in/',
     buttonText: 'Login'
   },
@@ -112,14 +112,14 @@ const eventItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Alumini Portal',
-    description: '',
+    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
+    description: 'Alumini Portal',
     link: 'https://www.malaviyans.in/',
     buttonText: 'Login'
   },
   {
-    title: 'Training And Placement Website',
-    description: 'Website',
+    title: 'Training and Placement Cell - Your Bridge to Career Success Begins Here',
+    description: 'Training And Placement Website',
     link: 'https://tnpmmmut.tech/',
     buttonText: 'View'
   },
