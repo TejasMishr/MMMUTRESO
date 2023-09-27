@@ -11,6 +11,76 @@
     color: white;
 
 }
+#cont1{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+    overflow-x: auto;    
+    overflow-y: hidden; 
+    width: 100%;        
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cont1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#cont1 .card {
+    /* flex: 0 0 calc(23.33% - 20px); 
+    margin: 2px;
+    text-align: center; */
+}
+
+@media (max-width: 768px) {
+    #cont1 .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #cont1 .card{
+        flex: 0 0 calc(100% - 20px); 
+    }
+}
+
+
+
+@media (max-width:720px) {
+    #cont1{
+        width: 90%;
+    }
+    #cont1 img{
+        height: 160px;
+        width: 160px;
+    }
+    #cont1 p,h2{
+    font-size: 16px;
+    }
+    #cont1 h1{
+        font-size: 21px;
+    }
+    
+}
+
+.mov{
+    overflow-x: auto;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* white-space: nowrap;  */
+    /* overflow-x: auto;     */
+    /* overflow-y: hidden;  */
+    width: 100%;        
+}
+
 
 .heading1
 {
@@ -41,7 +111,9 @@
     background-color: #ffffff11;
     backdrop-filter: blur(1px);
 }
-
+#cont1 .card{
+ background: bottom;
+}
 .container1 .details h1 {
     font-size: 28px;
     line-height: normal;
@@ -68,7 +140,19 @@
     width: 200px;
 
 }
-
+#cont1 .card{
+    margin: 0 3vw;
+}
+#cont1 img{
+    height: 150px;
+    width: 150px;
+}
+#cont1 p,h2{
+font-size: 16px;
+}
+#cont1 h1{
+    font-size: 21px;
+}
 
 .container1 .info {
     display: flex;
