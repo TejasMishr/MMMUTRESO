@@ -758,6 +758,7 @@ ul li a {
     }
     .navbar ul {
       display: flex;
+      transform: translate(-101%);
     }
 }
 
@@ -900,3 +901,4 @@ ul li a {
 @media (max-width:770px) {
   
 }
+

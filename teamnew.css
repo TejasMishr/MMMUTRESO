@@ -97,6 +97,15 @@
     position: relative;
     z-index: -1;
 }
+.container .card .imgbr {
+    background: bottom;
+    width: 80%;
+}
+.container .card .imgbr img{
+    border-radius: 0%;
+
+}
+
 
 .container1 .card {
     height: 400px;
@@ -111,6 +120,9 @@
     background-color: #ffffff11;
     backdrop-filter: blur(1px);
 }
+.container .card{
+    height: 303px;
+}
 #cont1 .card{
  background: bottom;
 }
@@ -124,6 +136,9 @@
     line-height: normal;
     margin-top: 5px;
     color: white;
+}
+.imgbr .img img{
+    border-radius: 0%;
 }
 
 .container1 .details p {
@@ -207,4 +222,26 @@ i:hover{
     .nav-item li a{
   color: #000;
     }
+    .heading2{
+        margin-top: 50vh;
+    } 
+    .container1 .card{
+        margin-bottom: 10vh;
+        
+     } 
+     /* .container1{
+        height: 81vh;
+     } */
   }
+  
+  .container .details p{
+    display: block;
+    font-size: 15px;
+  }
+  .container{
+    height: 420px;
+  }
+
+.container .details h2{
+    color: #df5d55;
+}
