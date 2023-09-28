@@ -56,7 +56,7 @@
 
 @media (max-width:720px) {
     #cont1{
-        width: 90%;
+        width: 99%;
     }
     #cont1 img{
         height: 160px;
@@ -162,6 +162,7 @@
     height: 150px;
     width: 150px;
 }
+
 #cont1 p,h2{
 font-size: 16px;
 }
@@ -244,4 +245,13 @@ i:hover{
 
 .container .details h2{
     color: #df5d55;
+}
+
+
+/* Add these styles to your existing CSS or create a new stylesheet */
+
+.mov {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
 }
