@@ -794,6 +794,36 @@
         document.getElementById("back").style.visibility = "hidden";
     }
     setTimeout("div()", 5000);
+
+    var moving = document.querySelector('.mov')
+
+
+
+const cont1 = document.getElementById('cont1');
+
+function scrollRightToLeft() {
+    const scrollSpeed = 2; 
+    cont1.scrollLeft += scrollSpeed;
+
+    if (cont1.scrollLeft >= cont1.scrollWidth - cont1.clientWidth) {
+        cont1.scrollLeft = 0;
+    }
+
+    requestAnimationFrame(scrollRightToLeft);
+}
+
+scrollRightToLeft();
+
+
+
+
+
+
+
+
+
+
+
 </script>
 
 
