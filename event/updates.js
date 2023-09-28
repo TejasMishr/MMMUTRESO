@@ -254,10 +254,22 @@ const newsItems = [
 ];
 
 
+function displayAllEvents() {
+  const tabBlock = document.querySelector('#events .tab-block');
+  for (let i = 0; i < eventItems.length; i++) {
+    const eventItem = eventItems[i];
+    addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
+  }
+
+  if (tabBlock.children.length > 2) {
+    tabBlock.removeChild(tabBlock.firstChild);
+  }
+}
+
 function scrollEventItems() {
-  // if (currentIndex >= eventItems.length) {
-  //   currentIndex = 0; // Reset the index to start over if all items have been displayed
-  // }
+  if (currentIndex >= eventItems.length) {
+    currentIndex = 0;
+  }
 
   const tabBlock = document.querySelector('#events .tab-block');
   const eventItem = eventItems[currentIndex];
@@ -276,11 +288,11 @@ function scrollEventItems() {
 }
 
 
-scrollEventItems();
+displayAllEvents();
 
-
-
-const scrollInterval = setInterval(scrollEventItems, 2000);
+setTimeout(function() {
+  setInterval(scrollEventItems, 2000);
+}, 5000); // Adjust the delay and interval as needed
 
 // FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
 
