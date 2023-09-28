@@ -46,10 +46,10 @@ function addNewItem(tabType, title, description, link, buttonText) {
 let currentIndex = 0;
 const eventItems = [
   {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
+    title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
+    description: 'Registration Portal',
+    link: 'https://registration.mmmut.ac.in/',
+    buttonText: 'Register'
   },
   {
     title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
@@ -58,64 +58,64 @@ const eventItems = [
     buttonText: 'LOGIN'
   },
   {
-    title: 'Notice Regarding Orientation Cum Induction Program',
-    description: 'Notice',
-    link: 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf',
-    buttonText: 'VIEW..'
-  },
-  {
-    title: 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM',
-    description: '19th September 2023',
-    link: 'https://www.youtube.com/watch?v=TobiCVMpb0k',
-    buttonText: 'Watch..'
-  },
-  {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'VIEW..'
-  },
-  {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
+    title:'Student LOGIN Portal: Your Gateway to Academic Resources and Campus Information. Access Your Educational Journey',
+    description: 'Student LOGIN Portal',
+    link: 'https://registration.mmmut.ac.in/StudentLogin',
     buttonText: 'LOGIN'
   },
   {
-    title: 'Game Of Codes: Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Register Ragging Complaint',
+    description: 'Anti-Ragging',
+    link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=1i5z0J-ojUiyneXp583eXH--PWniG4JFlYuBA5ETzWdUN0VENjUzUzZSVkJSVkNQNDIyUUdUQVk4Ny4u',
+    buttonText: 'Complaint'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Website Access Login Portal ( Faculties )',
+    description: 'Only For Faculties',
+    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
+    buttonText: 'LOGIN.'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
+    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
+    description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'More..'
+    buttonText: 'LOGIN.'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Website Access Login Portal ( Faculties )',
+    description: 'Only For Faculties',
+    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
+    buttonText: 'LOGIN.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Sponsored Research Projects ',
+    description: 'Funded Projects',
+    link: 'http://www.mmmut.ac.in/ViewSponsoredProjects',
+    buttonText: 'View..'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
+    title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
+    description: 'Registration Portal',
+    link: 'https://registration.mmmut.ac.in/',
+    buttonText: 'Register'
+  },
+  {
+    title: 'Training And Placement Website',
+    description: 'Website',
+    link: 'https://tnpmmmut.tech/',
+    buttonText: 'View.'
+  },
+  {
+    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
+    description: 'Username:student & Password:student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'Login'
+    buttonText: 'Login.'
+  },
+  {
+    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
+    description: 'Alumini Portal',
+    link: 'https://www.malaviyans.in/',
+    buttonText: 'Login.'
   },
   {
     title: 'Eighth Convocation Celebration',
@@ -124,10 +124,22 @@ const eventItems = [
     buttonText: 'More..'
   },
   {
-    title: 'Game Of Codes : Codechef MMMUT Chapter',
-    description: 'on 14th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'REGISTER'
+    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
+    description: 'Alumini Portal',
+    link: 'https://www.malaviyans.in/',
+    buttonText: 'Login.'
+  },
+  {
+    title: 'Training and Placement Cell - Your Bridge to Career Success Begins Here',
+    description: 'Training And Placement Website',
+    link: 'https://tnpmmmut.tech/',
+    buttonText: 'View'
+  },
+  {
+    title: 'Website Access Login Portal',
+    description: 'Only For Faculties',
+    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
+    buttonText: 'LOGIN.'
   }
 ];
 
@@ -243,34 +255,32 @@ const newsItems = [
 
 
 function scrollEventItems() {
+  // if (currentIndex >= eventItems.length) {
+  //   currentIndex = 0; // Reset the index to start over if all items have been displayed
+  // }
 
-  if (currentIndex >= eventItems.length) {
-    
-    return;
-    
-  } else {
-    const tabBlock = document.querySelector('#events .tab-block');
-    const eventItem = eventItems[currentIndex];
-    const newsItem = newsItems[currentIndex];
-    addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
-    if (currentIndex <= newsItems.length){
-      addNewItem('news', newsItem.title, newsItem.description, newsItem.link, newsItem.buttonText);
+  const tabBlock = document.querySelector('#events .tab-block');
+  const eventItem = eventItems[currentIndex];
+  const newsItem = newsItems[currentIndex];
 
-    }
-
-   
-
-    if (tabBlock.children.length > 2) {
-      tabBlock.removeChild(tabBlock.firstChild);
-    }
-
-    currentIndex++;
+  addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
+  if (currentIndex < newsItems.length) {
+    addNewItem('news', newsItem.title, newsItem.description, newsItem.link, newsItem.buttonText);
   }
+
+  if (tabBlock.children.length > 2) {
+    tabBlock.removeChild(tabBlock.firstChild);
+  }
+
+  currentIndex++;
 }
 
-// Initial scroll
+
 scrollEventItems();
-const scrollInterval = setInterval(scrollEventItems, 500);
+
+
+
+const scrollInterval = setInterval(scrollEventItems, 2000);
 
 // FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
 
