@@ -824,21 +824,36 @@
     var moving = document.querySelector('.mov')
 
 
-
-const cont1 = document.getElementById('cont1');
+    const cont1 = document.getElementById('cont1');
+let animationId;
 
 function scrollRightToLeft() {
-    const scrollSpeed = 2; 
+    const scrollSpeed = 1; // Adjust scroll speed as needed
     cont1.scrollLeft += scrollSpeed;
 
+    // Reset scroll position when it reaches the end
     if (cont1.scrollLeft >= cont1.scrollWidth - cont1.clientWidth) {
         cont1.scrollLeft = 0;
     }
 
-    requestAnimationFrame(scrollRightToLeft);
+    animationId = requestAnimationFrame(scrollRightToLeft);
 }
 
-scrollRightToLeft();
+function pauseScroll() {
+    cancelAnimationFrame(animationId);
+}
+
+function resumeScroll() {
+    animationId = requestAnimationFrame(scrollRightToLeft);
+}
+
+// Start the continuous scroll animation
+animationId = requestAnimationFrame(scrollRightToLeft);
+
+// Add event listeners to pause and resume scrolling on hover
+cont1.addEventListener('mouseenter', pauseScroll);
+cont1.addEventListener('mouseleave', resumeScroll);
+
 
 
 
