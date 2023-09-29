@@ -1,19 +1,19 @@
-document.addEventListener('DOMContentLoaded', function () {
-  const tabItems = document.querySelectorAll('.tab-item');
-  const tabPanels = document.querySelectorAll('.tab-panel');
+document.addEventListener("DOMContentLoaded", function () {
+  const tabItems = document.querySelectorAll(".tab-item");
+  const tabPanels = document.querySelectorAll(".tab-panel");
 
-  tabItems.forEach(item => {
-      item.addEventListener('click', () => {
-          // Remove 'active' class from all tab items and panels
-          tabItems.forEach(tabItem => tabItem.classList.remove('active'));
-          tabPanels.forEach(tabPanel => tabPanel.classList.remove('active'));
+  tabItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      // Remove 'active' class from all tab items and panels
+      tabItems.forEach((tabItem) => tabItem.classList.remove("active"));
+      tabPanels.forEach((tabPanel) => tabPanel.classList.remove("active"));
 
-          // Add 'active' class to the clicked tab item and corresponding panel
-          item.classList.add('active');
-          const targetPanelId = item.getAttribute('data-tab');
-          const targetPanel = document.getElementById(targetPanelId);
-          targetPanel.classList.add('active');
-      });
+      // Add 'active' class to the clicked tab item and corresponding panel
+      item.classList.add("active");
+      const targetPanelId = item.getAttribute("data-tab");
+      const targetPanel = document.getElementById(targetPanelId);
+      targetPanel.classList.add("active");
+    });
   });
 });
 
@@ -23,18 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
 //   // alert("ok");
 //   a = a + 50;
 //   d.style.transform=`translateY(${a}px)`;
-//   // d.style.transform = "translateY(`${}`px)";
+//   // d.style.transform = "translateY(`${}`px)"; ̰1
 // }
-
-
-
 
 // setInterval(() => {
 //   scrol();
 // }, 500);
 
-
-const elements = document.querySelectorAll('.p-10, hr');
+const elements = document.querySelectorAll(".p-10, hr");
 
 function scrollAnimation() {
   let scrollTop = window.scrollY;
@@ -57,7 +53,7 @@ scrollAnimation();
 //   // alert('ok');
 //   p10.style.removeProperty="animation";
 //   hre.style.removeProperty="animation";
- 
+
 // })
 // tabBlock.addEventListener('mouseout', function () {
 //   // Add the animation property to p10 and hre

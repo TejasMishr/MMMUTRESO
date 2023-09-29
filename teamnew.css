@@ -11,6 +11,76 @@
     color: white;
 
 }
+#cont1{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+    overflow-x: auto;    
+    overflow-y: hidden; 
+    width: 100%;        
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cont1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#cont1 .card {
+    /* flex: 0 0 calc(23.33% - 20px); 
+    margin: 2px;
+    text-align: center; */
+}
+
+@media (max-width: 768px) {
+    #cont1 .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #cont1 .card{
+        flex: 0 0 calc(100% - 20px); 
+    }
+}
+
+
+
+@media (max-width:720px) {
+    #cont1{
+        width: 99%;
+    }
+    #cont1 img{
+        height: 160px;
+        width: 160px;
+    }
+    #cont1 p,h2{
+    font-size: 16px;
+    }
+    #cont1 h1{
+        font-size: 21px;
+    }
+    
+}
+
+.mov{
+    overflow-x: auto;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* white-space: nowrap;  */
+    /* overflow-x: auto;     */
+    /* overflow-y: hidden;  */
+    width: 100%;        
+}
+
 
 .heading1
 {
@@ -27,6 +97,15 @@
     position: relative;
     z-index: -1;
 }
+.container .card .imgbr {
+    background: bottom;
+    width: 80%;
+}
+.container .card .imgbr img{
+    border-radius: 0%;
+
+}
+
 
 .container1 .card {
     height: 400px;
@@ -41,7 +120,12 @@
     background-color: #ffffff11;
     backdrop-filter: blur(1px);
 }
-
+.container .card{
+    height: 303px;
+}
+#cont1 .card{
+ background: bottom;
+}
 .container1 .details h1 {
     font-size: 28px;
     line-height: normal;
@@ -52,6 +136,9 @@
     line-height: normal;
     margin-top: 5px;
     color: white;
+}
+.imgbr .img img{
+    border-radius: 0%;
 }
 
 .container1 .details p {
@@ -68,7 +155,20 @@
     width: 200px;
 
 }
+#cont1 .card{
+    margin: 0 3vw;
+}
+#cont1 img{
+    height: 150px;
+    width: 150px;
+}
 
+#cont1 p,h2{
+font-size: 16px;
+}
+#cont1 h1{
+    font-size: 21px;
+}
 
 .container1 .info {
     display: flex;
@@ -123,4 +223,35 @@ i:hover{
     .nav-item li a{
   color: #000;
     }
+    .heading2{
+        margin-top: 50vh;
+    } 
+    .container1 .card{
+        margin-bottom: 10vh;
+        
+     } 
+     /* .container1{
+        height: 81vh;
+     } */
   }
+  
+  .container .details p{
+    display: block;
+    font-size: 15px;
+  }
+  .container{
+    height: 420px;
+  }
+
+.container .details h2{
+    color: #df5d55;
+}
+
+
+/* Add these styles to your existing CSS or create a new stylesheet */
+
+.mov {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}

@@ -577,7 +577,7 @@ ul li a {
 
 /* Mobile Devices - Phones/Tablets */
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 770px) {
   .container .card .imgbr {
     position: absolute;
     width: 260px;
@@ -756,6 +756,10 @@ ul li a {
       display: block;
       cursor: pointer;
     }
+    .navbar ul {
+      display: flex;
+      transform: translate(-101%);
+    }
 }
 
 @media only screen and (max-width:420px) {
@@ -894,3 +898,7 @@ ul li a {
   height: 160px;
 }
 }
+@media (max-width:770px) {
+  
+}
+
