@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="eng">
 
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,13 @@
   <title>MCA </title>
   <link href="mca.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="script.js"></script>
+  <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css" type="text/css"/>
+  <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
   <style>
     .nav-wrapper {
       z-index: 7;
@@ -55,13 +61,13 @@
     <!-- Select branch and semester -->
     <form action="#" class="filter-options">
       <select name="session" id="session">
-        <option value="Session">Select Session</option>
+        <option value="-1">Select Session</option>
         <option value="0">2021-24</option>
         <option value="1">2022-25</option>
       </select>
 
       <select name="branch" id="branch">
-        <option value="select">Select Department</option>
+        <option value="-1">Select Department</option>
         <option value="0">MCA</option>
         <!-- <option value="1">IT</option>
         <option value="2">ECE</option>
@@ -72,7 +78,7 @@
       </select>
 
       <select name="semester" id="fileSelect">
-        <option value="select">Select a Semester</option>
+        <option value="-1">Select a Semester</option>
         <option value="0">I</option>
         <option value="1">II</option>
         <option value="2">III</option>
@@ -84,12 +90,28 @@
       </select>
 
       <select name="paper" id="selectpaper">
-        <option value="selectpaper">Select Papers</option>
+        <option value="-1">Select Papers</option>
         <option value="0">Minor 1</option>
         <option value="1">Minor 2</option>
         <option value="2">Major</option>
       </select>
     </form>
+    <div id="load">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h1 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h1>
+          <h2>Error: 404 page not found</h2>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
+      </div>
+    </div>
+    <script src="../loader/load.js"></script>
 
     <div class="pdf-container">
       <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
@@ -164,40 +186,77 @@
       ];
 
 
+      var sessionSelect = document.getElementById('session');
+      var branchSelect = document.getElementById('branch');
+      var fileSelect = document.getElementById('fileSelect');
+      var selectpaper = document.getElementById('selectpaper');
+      var pdfViewer = document.getElementById('pdfViewer');
+      var ripple = document.querySelector("#load");
+      var maine = document.querySelector('.main');
+      var pdf = document.querySelector('.pdf-container');
 
-    var sessionSelect = document.getElementById('session');
-    var branchSelect = document.getElementById('branch');
-    var fileSelect = document.getElementById('fileSelect');
-    var selectpaper = document.getElementById('selectpaper');
-    var pdfViewer = document.getElementById('pdfViewer');
+      // Function ripple
+      function displayRipple(duration) {
+        ripple.style.display = "flex";
+        setTimeout(() => {
+          ripple.style.display = "none";
+        }, duration);
+      }
 
-    // Add change event listeners to the select elements
-    sessionSelect.addEventListener('change', updatePDF);
-    branchSelect.addEventListener('change', updatePDF);
-    fileSelect.addEventListener('change', updatePDF);
-    selectpaper.addEventListener('change', updatePDF);
+      function updatePDF() {
+        var selectedSession = sessionSelect.value;
+        var selectedBranch = branchSelect.value;
+        var selectedSemester = fileSelect.value;
+        var selectedPaper = selectpaper.value;
 
-    function updatePDF() {
-      var selectedSession = sessionSelect.value;
-      var selectedBranch = branchSelect.value;
-      var selectedSemester = fileSelect.value;
-      var selectedPaper = selectpaper.value;
+        // Check if any of the selections is -1
+        if (selectedSession == -1 || selectedBranch == -1 || selectedSemester == -1 || selectedPaper == -1) {
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+          selectpaper.style.backgroundColor = "#fe0000";
+          selectpaper.style.color = "white";
+        } else {
+          selectpaper.style.backgroundColor = "#e1e1e1";
+          selectpaper.style.color = "black";
 
-      // Adjust the array indices based on the selected values
-      var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
+          // Hide "ripple" after 4 seconds
+          setTimeout(() => {
+            ripple.style.display = "none";
+          }, 4000);
+        }
 
-      // Update the src attribute of the iframe
-      pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
-    }
+        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
-    // Function to display an error message
-    function displayErrorMessage() {
-      alert('There was an error loading the PDF. Please Contactthe administrator.');
-    }
+        if (selectedFileID === 'null') {
+          // Redirect to another page (e.g., "error.html")
+          // window.location.href = 'error.html';
+          maine.style.display = "flex";
+          pdf.style.display = "none";
+        } else {
+          maine.style.display = "none";
+          pdf.style.display = "flex";
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+        }
 
-    // Initial update when the page loads
-    updatePDF();
-  </script>
+        // Update the src attribute of the iframe
+        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+      }
+
+      // Function to display an error message
+      function displayErrorMessage() {
+        alert('There was an error loading the PDF. Please Contact the administrator.');
+      }
+
+      sessionSelect.addEventListener('change', updatePDF);
+      branchSelect.addEventListener('change', updatePDF);
+      fileSelect.addEventListener('change', updatePDF);
+      selectpaper.addEventListener('change', updatePDF);
+
+      // Initial update when the page loads
+      updatePDF();
+    </script>
+
 
   <script type="module">
     // Import the functions you need from the SDKs you need
