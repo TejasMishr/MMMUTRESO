@@ -1,176 +1,45 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-
-<url>
-  <loc>https://mmmut.xyz/</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/index.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/team.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/report.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=0</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=0</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=1</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=1</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=2</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=2</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=13</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=3</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=3</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=6</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=4</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=5</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=5</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=4</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html?branch=6</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/syllabus/syllabus.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=12</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/mtech/mtech.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=8</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/MCA/mca.html?branch=0</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=7</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/Bpharm/bpharm.html?branch=0</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=9</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/BBMBA/BBMB.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=10</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/notes/note.html?branch=11</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/msc/msc.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/contact/contact.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://mmmut.xyz/pyq/PYQ.html</loc>
-  <lastmod>2023-09-28T09:56:53+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml version='1.0' encoding='UTF-8'?>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
+    <url>
+        <loc>https://mmmut.xyz/</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/BBMBA/BBMB.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/Bpharm/bpharm.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/MCA/mca.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/contact/contact.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/index.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/msc/msc.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/mtech/mtech.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/notes/note.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/pyq/PYQ.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/pyq/PYQ.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/report.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/syllabus/syllabus.html</loc>
+    </url>
+    <url>
+        <loc>https://mmmut.xyz/team.html</loc>
+    </url>
 </urlset>
