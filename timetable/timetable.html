@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>MMMUT Cut-Off</title>
+  <title>MMMUT Timetable</title>
   <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" href="../loader/load.css">
   <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
@@ -19,7 +19,7 @@
   <meta name="description"
     content="Madan Mohan Malviya University of Technology (MMMUT) Timetable, including PYQ and Notes of all semesters of B.tech BBA Bpharma MBA Mtech B-Pharma M-TECH">
   <meta name="keywords"
-    content="MMMUT,mmmut,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech">
+    content="MMMUT,mmmut,mmmut gorakhpur,mmmut counselling,mmmut cut off,mmmut placement,mmmut cut off jee mains,mmmut student login,mmmut gorakhpur cutoff jee mains,mmmut b pharma fees,mmmut is government or private,mmmut .ac.in,mmmut admission process,samarth mmmut,mmmut cut off jee mains percentile,mmmut cse average package,mmmut logo,mmmut counselling 2022,mmmut counselling 2022 date,mmmut gorakhpur cutoff,mmmut ac in,mmmut cut off jee mains,mmmut placement,mmmut entrance exam 2021,mmmut admission,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech">
   <meta name="robots" content="index , follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
@@ -38,13 +38,6 @@
       #load {
         height: 121vh;
       }
-    }
-    .filter-options{
-      display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-content: stretch;
-    justify-content: space-evenly;
     }
   </style>
 </head>
@@ -90,22 +83,25 @@
    
 
 <form action="#" class="filter-options">
-    <h2>MMMUT Cut-Off</h2>
+    <h2>Timetable Select</h2>
     <select name="branch" id="branch" value="x">
-      <option value="-1">Select Year</option>
-      <option value="0">2023</option>
-      <option value="1">2022</option>
-      <option value="2">2021</option>
-     <!--<option value="3">2023</option>
-      <option value="4">2023</option>
-      <option value="5">2023</option>
-      <option value="6">2023</option>
-      <option value="7">2023</option>
-      <option value="8">2023</option>
-      <option value="9">2023</option>-->
+      <option value="-1">Select Department</option>
+      <option value="0">B.tech 1st Year</option>
+      <option value="1">B.tech 2nd Year</option>
+      <option value="2">B.tech 3rd Year</option>
+      <option value="3">B.tech Final Year</option>
+      <option value="4">B-Pharma</option>
+      <option value="5">BBA</option>
+      <option value="6">MBA</option>
+      <option value="7">MSC</option>
+      <option value="8">M-tech</option>
+      <option value="9">MCA</option>
     </select>
+
   </form>
     </form>
+    <!-- <button class="btn" onclick="updatePDF()">Search</button> -->
+
     <div id="load">
       <div class="lds-ripple">
         <div></div>
@@ -129,7 +125,7 @@
     <script src="../loader/load.js"></script>
 
     <script>
-      var fileIDs = ['null','1t-mX6s0wZIf8cgJmyJVquRjOORgs9jsh','1xdGsg7OqJLY_5iRgq_OU5fcwwg-Fgu3m'];
+      var fileIDs = ['18Zzd-XSq32NdMf7JePva9sAEBmkH3pAh','null','null'];
 
       
       var branchSelect = document.getElementById('branch');

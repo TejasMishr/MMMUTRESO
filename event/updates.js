@@ -149,22 +149,28 @@ const eventItems = [
 
 const newsItems = [
   {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
+    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
+    description: 'Academic Calender',
+    link: 'https://www.mmmut.xyz/holidays/holidays.html',
+    buttonText: 'View.'
   },
   {
-    title: 'Notice Regarding Orientation Cum Induction Program',
-    description: 'Notice',
-    link: 'http://www.mmmut.ac.in/News_content/51201news_09212023.pdf',
-    buttonText: 'VIEW..'
+    title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
+    description: 'MMMUT Cutoff',
+    link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
+    buttonText: 'Explore'
   },
   {
-    title: 'Live webcasting of MMMUT 8th Convocation-2023 on 19-09-2023 at 10:00 AM',
-    description: '19th September 2023',
-    link: 'https://www.youtube.com/watch?v=TobiCVMpb0k',
-    buttonText: 'Watch..'
+    title: 'Fee Structure Of MMMUT (B.tech,BBA,MCA,B-Pharma,MBA,M.tech)',
+    description: 'Fee Structure MMMUT',
+    link: 'http://www.mmmut.xyz/Fee/feestructure.html',
+    buttonText: 'VIEW.'
+  },
+  {
+    title: 'Previous Year Placement Bronchure MMMUT (2021,2022)',
+    description: 'Placement Bronchure',
+    link: 'https://www.mmmut.xyz/Placement/placement.html',
+    buttonText: 'View.'
   },
   {
     title: 'Eighth Convocation Celebration',
@@ -185,10 +191,10 @@ const newsItems = [
     buttonText: 'More.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
+    description: 'Academic Calender',
+    link: 'https://www.mmmut.xyz/holidays/holidays.html',
+    buttonText: 'View.'
   },
   {
     title: 'RESULT OF ALL SEMESTERS',
@@ -203,22 +209,22 @@ const newsItems = [
     buttonText: 'More.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
+    description: 'MMMUT Cutoff',
+    link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
+    buttonText: 'Explore'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'Login'
+    title: 'Fee Structure Of MMMUT (B.tech,BBA,MCA,B-Pharma,MBA,M.tech)',
+    description: 'Fee Structure MMMUT',
+    link: 'http://www.mmmut.xyz/fee/fee.html',
+    buttonText: 'VIEW.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Previous Year Placement Bronchure MMMUT (2021,2022)',
+    description: 'Placement Bronchure',
+    link: 'https://www.mmmut.xyz/placement/placement.html',
+    buttonText: 'View.'
   },
   {
     title: 'Important Notice regarding inauguration of New Administrative Building',
