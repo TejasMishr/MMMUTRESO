@@ -62,10 +62,10 @@
         height: 160px;
         width: 160px;
     }
-    #cont1 p,h2{
+    #cont1 p,h3{
     font-size: 16px;
     }
-    #cont1 h1{
+    #cont1 h2{
         font-size: 21px;
     }
     
@@ -89,7 +89,7 @@
 .heading{
     padding: 5rem 0;
 }
-.heading h1{
+.heading h2{
     color: white;
     text-align: center;
 }
@@ -126,12 +126,12 @@
 #cont1 .card{
  background: bottom;
 }
-.container1 .details h1 {
+.container1 .details h2 {
     font-size: 28px;
     line-height: normal;
 }
 
-.container1 .details h2 {
+.container1 .details h3 {
     font-size: 18px;
     line-height: normal;
     margin-top: 5px;
@@ -163,10 +163,10 @@
     width: 150px;
 }
 
-#cont1 p,h2{
+#cont1 p,h3{
 font-size: 16px;
 }
-#cont1 h1{
+#cont1 h2{
     font-size: 21px;
 }
 
@@ -243,7 +243,7 @@ i:hover{
     height: 420px;
   }
 
-.container .details h2{
+.container .details h3{
     color: #df5d55;
 }
 

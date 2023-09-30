@@ -19,7 +19,7 @@ font-family: 'Poppins', sans-serif; */
 
 /* HEADINGS */
 
-h1,
+h2,
 p {
   color: #fff;
   text-align: center;
@@ -62,7 +62,7 @@ object{
   justify-content: center;
 }
 
-h1 {
+h2 {
   font-size: 2.2rem;
   /* font-family: 'Lato', 'Arial', sans-serif; */ 
   /* font-family: 'Arvo', serif; */
@@ -74,7 +74,7 @@ p{
   font-family: cursive;
 }
 
-h2 {
+h3 {
   color: #000;
   font-size: 1.3rem;
   text-align: center;
@@ -370,11 +370,11 @@ color: #000;
 
   /* MOBILE HEADINGS */
 
-  h1 {
+  h2 {
     font-size: 1.9rem;
   }
 
-  h2 {
+  h3 {
     font-size: 1rem;
   }
 

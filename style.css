@@ -52,7 +52,7 @@ body {
   
 } */
 
-.text h1 {
+.text h2 {
   font-size: calc(100vw / 40);
   user-select: none;
   padding: calc(100vw / 65) calc(100vw / 45);
@@ -160,7 +160,7 @@ canvas {
 }
 
 
-.container.card .content h2 {
+.container.card .content h3 {
   font-size: 1.5em;
   font-weight: 700;
   color: var(---clr);
@@ -276,7 +276,7 @@ a {
 
 
 
-h1.sep,
+h2.sep,
 p.sep {
   color: #fff;
   text-align: center;
@@ -330,11 +330,11 @@ object {
   justify-content: center;
 }
 
-h1 {
+h2 {
   font-size: 2.2rem;
 }
 
-h2 {
+h3 {
   color: #000;
   font-size: 1.3rem;
   text-align: center;
@@ -603,7 +603,7 @@ ul li a {
       overflow: hidden;
   }
 
-    .text h1 {
+    .text h2 {
       width: max-content;
       font-size: 18px;
      
@@ -624,11 +624,11 @@ ul li a {
 
     /* MOBILE HEADINGS */
 
-    h1 {
+    h2 {
       font-size: 1.3rem;
     }
 
-    h2 {
+    h3 {
       font-size: 1rem;
     }
 
@@ -882,7 +882,7 @@ ul li a {
   }
  
   @media only screen and (max-width: 800px){
-  .text h1 {
+  .text h2 {
       width: max-content;
       font-size: 18px;
       /* z-index: 1; */

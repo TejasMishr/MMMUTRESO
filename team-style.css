@@ -12,7 +12,7 @@ font-family: 'Poppins', sans-serif; */
 
 /* HEADINGS */
 
-h1,
+h2,
 p {
   color: #fff;
   text-align: center;
@@ -62,11 +62,11 @@ object {
   justify-content: center;
 }
 
-h1 {
+h2 {
   font-size: 2.2rem;
 }
 
-h2 {
+h3 {
   color: #000;
   font-size: 1.3rem;
   text-align: center;
@@ -350,11 +350,11 @@ input {
 
   /* MOBILE HEADINGS */
 
-  h1 {
+  h2 {
     font-size: 1.9rem;
   }
 
-  h2 {
+  h3 {
     font-size: 1rem;
   }
 
@@ -646,7 +646,7 @@ body {
   transform: translateY(0px);
 }
 
-.card .content .details h1 {
+.card .content .details h2 {
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(5 195 170);
@@ -655,7 +655,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-.card .content .details h2 {
+.card .content .details h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: rgb(5 195 170);
