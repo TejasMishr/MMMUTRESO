@@ -129,9 +129,7 @@
     <script src="../loader/load.js"></script>
 
     <script>
-      var fileIDs = ['null','null','null'];
-
-      
+      var fileIDs = ['2PACX-1vTWZ4hE_HcROvQPu0ofwepJkkvlw7M66uWODMQays7KcYLu2N-4XooJXzEmjLJrsTYnRA_1lvYtla4K','null','null'];
       var branchSelect = document.getElementById('branch');
       
       var pdfViewer = document.getElementById('pdfViewer');
@@ -183,7 +181,13 @@
         }
 
         // Update the src attribute of the iframe
-        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+        if (selectedBranch==0){
+          pdfViewer.src = 'https://docs.google.com/spreadsheets/d/e/' + selectedFileID + '/pubhtml?widget=true&amp;headers=false';
+        }
+        else{
+          pdfViewer.src = "https://drive.google.com/file/d/" + selectedFileID + "/preview";
+        }
+       
       }
 
       // Function to display an error message
