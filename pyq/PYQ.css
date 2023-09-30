@@ -477,6 +477,13 @@ object{
 
   
 }
+.filter-options h3{
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 @media (min-width : 720px){
   .filter-options {
@@ -586,4 +593,18 @@ li .nav-item a{
     /* font-size: 1rem; */
     color: #000;
   }
+  form h3{
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
   }
+  }
+  
+  /* @media (max-width:720px) {
+    h3{
+       margin-top: .5vh;
+     }
+    } */
