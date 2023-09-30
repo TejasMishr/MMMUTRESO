@@ -149,6 +149,12 @@ const eventItems = [
 
 const newsItems = [
   {
+    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
+    description: 'Academic Calender',
+    link: 'https://www.mmmut.xyz/holidays/holidays.html',
+    buttonText: 'View.'
+  },
+  {
     title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
     description: 'MMMUT Cutoff',
     link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
@@ -157,13 +163,13 @@ const newsItems = [
   {
     title: 'Fee Structure Of MMMUT (B.tech,BBA,MCA,B-Pharma,MBA,M.tech)',
     description: 'Fee Structure MMMUT',
-    link: 'http://www.mmmut.xyz/fee/fee.html',
+    link: 'http://www.mmmut.xyz/Fee/feestructure.html',
     buttonText: 'VIEW.'
   },
   {
     title: 'Previous Year Placement Bronchure MMMUT (2021,2022)',
     description: 'Placement Bronchure',
-    link: 'https://www.mmmut.xyz/placement/placement.html',
+    link: 'https://www.mmmut.xyz/Placement/placement.html',
     buttonText: 'View.'
   },
   {
@@ -185,10 +191,10 @@ const newsItems = [
     buttonText: 'More.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
+    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
+    description: 'Academic Calender',
+    link: 'https://www.mmmut.xyz/holidays/holidays.html',
+    buttonText: 'View.'
   },
   {
     title: 'RESULT OF ALL SEMESTERS',
