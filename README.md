@@ -84,7 +84,7 @@ A big thank you to all the contributors who have made this project possible. You
 
 If you'd like to contribute to this project, please read our [Contribution Guidelines](CONTRIBUTING.md) to get started. We welcome your ideas and contributions!
 <div align="center">
-    <h3 align="center">Show some love by ⭐️ the repository!</h3>
+    <h4 align="center">Show some love by ⭐️ the repository!</h4>
 </div>
 
 ## Contributing
@@ -102,10 +102,10 @@ Welcome to the community of knowledge builders! Your contributions are essential
 
 
 <div align="center">
-  <h3> Feel free to explore the resources and make the most of your college experience. Happy learning</h3>
+  <h4> Feel free to explore the resources and make the most of your college experience. Happy learning</h4>
 <div>
 <div align="center">
-  <h4><p><em>Brought to you with ❤️ </em></p></h2>
+  <h4><p><em>Brought to you with ❤️ </em></p></h3>
 </div>
 
 -----
