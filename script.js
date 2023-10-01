@@ -77,11 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-
-
-
+window.onresize = function() {
+    if ((window.outerHeight - window.innerHeight) > 100) {
+     window.location.href="/";
+    }
+}
 //error handle
 try {
     // Code that might produce an error
