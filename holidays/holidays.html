@@ -46,6 +46,14 @@
     align-content: stretch;
     justify-content: space-evenly;
     }
+    @media (max-width:720px) {
+    form h3{
+        margin-top: 1vh;
+      }
+     
+    }
+   
+
   </style>
 </head>
 
@@ -90,7 +98,7 @@
    
 
 <form action="#" class="filter-options">
-    <h3>Holidays</h3>
+  <div id="h3"><h3>Holidays</h3></div>
     <select name="branch" id="branch" value="x">
       <option value="-1">Select Calender</option>
       <option value="0">Academic Calender</option>
@@ -125,7 +133,7 @@
       </div>
     </div>
     <div class="pdf-container">
-      <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
+      <iframe id="pdfViewer" frameborder="0" scrolling="no"  src=""
         onerror="displayErrorMessage()"></iframe>
     </div>
 
