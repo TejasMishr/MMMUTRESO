@@ -39,7 +39,7 @@ function createUpdateExtraLink(text, href) {
   marquee.appendChild(updateLink);
   marquee.appendChild(document.createTextNode("\u00A0|\u00A0")); //pipe separator
 }
-createUpdateLink("  ", "#");
+createUpdateLink("MMMUT RESOURCE HUB", "#");
 createUpdateLink("Cutoff Added", "https://mmmut.xyz/cutoff/cutoff.html");
 createUpdateLink("Placement stats added", "https://mmmut.xyz/Placement/placement.html");
 createUpdateLink("Syllabus Updated", "https://mmmut.xyz/syllabus/syllabus.html");
