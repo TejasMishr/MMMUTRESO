@@ -40,18 +40,18 @@ function createUpdateExtraLink(text, href) {
   marquee.appendChild(document.createTextNode("\u00A0|\u00A0")); //pipe separator
 }
 
-createUpdateLink("Update 1", "https://example.com/update1");
-createUpdateLink("Update 2", "https://example.com/update2");
-createUpdateLink("Syllabus Updated", "sy/sy.html");
+createUpdateLink("Cutoff Added", "https://mmmut.xyz/cutoff/cutoff.html");
+createUpdateLink("Placement stats added", "https://mmmut.xyz/Placement/placement.html");
+createUpdateLink("Syllabus Updated", "https://mmmut.xyz/syllabus/syllabus.html");
 createUpdateExtraLink("Report Issues", "report.html");
 
-createUpdateLink("IT Content Updated", "#");
+createUpdateLink("IOT Notes Updated", "#");
 
-createUpdateLink("B-pharma Sem 1 Added", "#");
+createUpdateLink("B-pharma updated", "#");
 
-createUpdateLink("Civil old Notes Added", "pages/pages.html");
-createUpdateLink("MCA BBA MBA department Added", "#");
-createUpdateLink("Civil old Notes Added", "pages/pages.html");
-createUpdateLink("MCA BBA MBA department Added", "#");
+createUpdateLink("Time Table UPDATED", "timetable/timetale.html");
+createUpdateLink("MCA BBA MBA PYQ Added", "#");
+createUpdateLink("Mechanical Notes Added", "#");
+createUpdateLink("Important Links Added", "#");
 
 document.getElementById("m5").start();
