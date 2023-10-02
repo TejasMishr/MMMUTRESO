@@ -501,7 +501,7 @@ h3 {
 
 .row {
   display: flex;
-  width: 80%;
+  width: 99%;
   margin: auto;
   flex-wrap: wrap;
   align-items: center;
