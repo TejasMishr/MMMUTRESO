@@ -39,11 +39,11 @@ function createUpdateExtraLink(text, href) {
   marquee.appendChild(updateLink);
   marquee.appendChild(document.createTextNode("\u00A0|\u00A0")); //pipe separator
 }
-
+createUpdateLink("  ", "#");
 createUpdateLink("Cutoff Added", "https://mmmut.xyz/cutoff/cutoff.html");
 createUpdateLink("Placement stats added", "https://mmmut.xyz/Placement/placement.html");
 createUpdateLink("Syllabus Updated", "https://mmmut.xyz/syllabus/syllabus.html");
-createUpdateExtraLink("Report Issues", "report.html");
+// createUpdateExtraLink("Report Issues", "report.html");
 
 createUpdateLink("IOT Notes Updated", "#");
 
@@ -53,5 +53,6 @@ createUpdateLink("Time Table UPDATED", "timetable/timetale.html");
 createUpdateLink("MCA BBA MBA PYQ Added", "#");
 createUpdateLink("Mechanical Notes Added", "#");
 createUpdateLink("Important Links Added", "#");
+createUpdateLink("  ", "#");
 
 document.getElementById("m5").start();
