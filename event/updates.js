@@ -51,12 +51,7 @@ const eventItems = [
     link: 'https://registration.mmmut.ac.in/',
     buttonText: 'Register'
   },
-  {
-    title: 'Time Table section',
-    description: 'Time Table',
-    link: './timetable/timetable.html',
-    buttonText: 'View.'
-  },
+  
   {
     title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
     description: 'Username: student & Password: student',
@@ -156,6 +151,12 @@ const newsItems = [
     buttonText: 'View.'
   },
   {
+    title: 'Time Table section',
+    description: 'Time Table',
+    link: './timetable/timetable.html',
+    buttonText: 'View.'
+  },
+  {
     title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
     description: 'MMMUT Cutoff',
     link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
@@ -209,12 +210,7 @@ const newsItems = [
     link: 'https://www.mmmut.xyz/placement/placement.html',
     buttonText: 'View.'
   },
-  {
-    title: 'Important Notice for Induction Program',
-    description: '21 September 2023',
-    link: 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf',
-    buttonText: 'More..'
-  },
+
   {
     title: 'Anti-Ragging Duty List',
     description: 'NOTICE',
