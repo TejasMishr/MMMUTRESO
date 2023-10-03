@@ -51,6 +51,7 @@ const eventItems = [
     link: 'https://registration.mmmut.ac.in/',
     buttonText: 'Register'
   },
+  
   {
     title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
     description: 'Username: student & Password: student',
@@ -117,12 +118,7 @@ const eventItems = [
     link: 'https://www.malaviyans.in/',
     buttonText: 'Login.'
   },
-  {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'More..'
-  },
+
   {
     title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
     description: 'Alumini Portal',
@@ -155,6 +151,12 @@ const newsItems = [
     buttonText: 'View.'
   },
   {
+    title: 'Time Table section',
+    description: 'Time Table',
+    link: './timetable/timetable.html',
+    buttonText: 'View.'
+  },
+  {
     title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
     description: 'MMMUT Cutoff',
     link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
@@ -173,22 +175,10 @@ const newsItems = [
     buttonText: 'View.'
   },
   {
-    title: 'Eighth Convocation Celebration',
-    description: 'on 19th September 2023',
-    link: 'News_content/24134news_09012023.pdf',
-    buttonText: 'VIEW..'
-  },
-  {
     title: 'RESULT OF ALL SEMESTERS',
     description: 'Username: student & Password: student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
     buttonText: 'LOGIN'
-  },
-  {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
   },
   {
     title: 'Holidays and Academic Calander MMMUT Gorakhpur',
@@ -201,12 +191,6 @@ const newsItems = [
     description: 'Username: student & Password: student',
     link: 'http://172.16.1.250:8081/jasperserver/login.html',
     buttonText: 'More..'
-  },
-  {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
   },
   {
     title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
@@ -226,28 +210,11 @@ const newsItems = [
     link: 'https://www.mmmut.xyz/placement/placement.html',
     buttonText: 'View.'
   },
-  {
-    title: 'Important Notice regarding inauguration of New Administrative Building',
-    description: 'on 26.09.2023, 11:00 AM',
-    link: 'http://www.mmmut.ac.in/News_content/11022news_09252023.pdf',
-    buttonText: 'More.'
-  },
-  {
-    title: 'Important Notice for Induction Program',
-    description: '21 September 2023',
-    link: 'http://www.mmmut.ac.in/News_content/44324news_09222023.pdf',
-    buttonText: 'More..'
-  },
+
   {
     title: 'Anti-Ragging Duty List',
     description: 'NOTICE',
     link: 'http://www.mmmut.ac.in/News_content/14040news_09182023.pdf',
-    buttonText: 'More..'
-  },
-  {
-    title: 'Important Notice for Newly Admitted Students Session 2023-24',
-    description: 'NOTICE',
-    link: 'http://www.mmmut.ac.in/News_content/45340news_09142023.pdf',
     buttonText: 'More..'
   },
   {
