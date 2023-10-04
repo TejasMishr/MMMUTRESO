@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player and Playlist</title>
+    <link rel="stylesheet" href="lecture.css" />
+  </head>
+
+  <body>
+    <form action="#" class="filter-options">
+      <select name="branch" id="branch">
+        <option value="-1">Select Your Branch</option>
+       
+        <option value="0">CSE</option>
+        <option value="0">I.T</option>
+
+      </select>
+
+      <select name="semester" id="fileSelect">
+        <option value="-1">Select a Semester</option>
+        <option value="0">I</option>
+        <option value="1">II</option>
+        <option value="2">III</option>
+        <option value="3">IV</option>
+        
+      </select>
+
+      <select name="subject" id="SelectSubject">
+        <option value="-1">Select Subject</option>
+        <option value="0">sub I</option>
+        <option value="1">sub II</option>
+        <option value="2">sub III</option>
+        <option value="3">sub IV</option>
+      </select>
+    </form>
+
+    <div class="container">
+      <div class="player">
+        <iframe
+          id="videoPlayer"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="playlist" id="playlist">
+        <!-- Playlist items will be dynamically added here -->
+      </div>
+    </div>
+    <script src="lecture.js"></script>
+  </body>
+</html>

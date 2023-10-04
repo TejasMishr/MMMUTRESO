@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>syllabus </title>
+  <link href="syllabus.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css">
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="../script.js"></script>
+  <style>
+    .nav-wrapper {
+      z-index: 7;
+      position: relative;
+    }
+    
+    #session{
+        width: 10rem;
+    }
+
+    #branch{
+        width: 10rem;
+    }
+
+    @media (max-width:400px) {
+      #load {
+        height: 121vh;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
+        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
+          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+          <li class="nav-item"><a href="../team.html">Teams</a></li>
+          <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+    <section id="particles-js" class="heading">
+      <h2>MMMUT Resource Hub</h2>
+      <p> Empowering Your Academic Journey!</p>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Select branch and semester -->
+    <form action="#" class="filter-options">
+      <select name="session" id="session">
+        <option value="-1">Select Session</option>
+        <option value="0">2021-25</option>
+        <option value="1">2022-26</option>
+      </select>
+
+      <select name="branch" id="branch">
+        <option value="-1">Select a Branch</option>
+        <option value="0">C.S.E</option>
+        <option value="1">I.T</option>
+        <option value="2">E.C.E</option>
+        <option value="3">I.O.T</option>
+        <option value="4">E.E</option>
+        <option value="5">Chemical</option>
+        <option value="6">Mechanical</option>
+        <option value="7">CIVIL</option>
+        <option value="8">B-pharma</option>
+        <option value="9">MCA</option>
+        <option value="10">BBA</option>
+        <option value="11">MBA</option>
+        <!-- <option value="12">MSC</option> -->
+        <!-- <option value="13">mtech</option> -->
+
+      </select>
+    </form>
+
+
+
+    <div id="load">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h2 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h2>
+          <h3>Error: 404 page not found</h3>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
+      </div>
+    </div>
+    <div class="pdf-container">
+      <iframe id="pdfViewer" frameborder="0" scrolling="no" src=""
+        onerror="displayErrorMessage()"></iframe>
+    </div>
+
+    <script src="../loader/load.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script>
+        
+        var fileIDs = [
+          // Format index (0)-> CSE 
+
+          ['1UMxEWfEGoV7smeG8m1X-z5Hcb9J3zwyA', '1Vxm1oFIykNnDYoWZC98xkN6O_dP9Kxm6', '1ANTmyWnNhGp_bR47H4tCgr4-FRzCTFIg', '1V6JgmABRgViYdG37MgQIsngGeHxbA6cP', '1QhVXLZE9NMb1gIkilVS3q4FgzzYRDjNW', '1uZ89YPI3bSVj78SmcI1-MEij0vWbMt9Z', '1LadjzAuc6vADj_S8HIXYRxYribl3Ei9u','1tqovJ5_6JTCYjTdVcj6lpKh7qb4alK1b','1GRFBlIb0peIZHvsIfcZs_XzFBQC6S47Q','1qKGDz2xaKonIJxruJ8E2eP4FZto2zwEJ','1usgpSTqb62kOf5ffVY1S2PtSTBzcVyqa','1au2-spDrf1P93FPtnnhQmJ0dz1hXBBcv','null','null'], // 2021-25
+          // CSE,IT,ECE,IOT,EE,CHE,ME,Civil,Bpharm,Mca,BBA,MBA,MSC,PHD
+          ['1zI7vwOcdUPz5r14bcKCmKgr5qIa0uUvF', '1mpyebVGwHORQ4qXMkwEAk5yln9sqcdsW', '1V6JgmABRgViYdG37MgQIsngGeHxbA6cP','1V6JgmABRgViYdG37MgQIsngGeHxbA6cP', '1GpkO3Fo14M_jeWfEcSCDm3_Ue5WUmZcO', '1IxH7P5EvUk6hDLnSVB24Fr2YvU8KcSGE', '1o8Um3Q43h3MM1fYIvXVlupPVJeX_DPIC', '1EVAHqJ1WA2KBrA3SN9npG3tOJFhpmHzr','1GRFBlIb0peIZHvsIfcZs_XzFBQC6S47Q','1qKGDz2xaKonIJxruJ8E2eP4FZto2zwEJ','1usgpSTqb62kOf5ffVY1S2PtSTBzcVyqa','1au2-spDrf1P93FPtnnhQmJ0dz1hXBBcv','null','null'] // 2022-26
+
+        ];
+      
+        // Get DOM elements
+        var sessionSelect = document.getElementById('session');
+        var branchSelect = document.getElementById('branch');
+        var pdfViewer = document.getElementById('pdfViewer');
+        var ripple = document.querySelector("#load");
+        var maine = document.querySelector('.main');
+        var pdf = document.querySelector('.pdf-container');
+      
+        // Add change event listeners to the select elements
+        sessionSelect.addEventListener('change', updatePDF);
+        branchSelect.addEventListener('change', updatePDF);
+      
+        // Function to display the "ripple" for a specified duration
+        function displayRipple(duration) {
+          ripple.style.display = "flex";
+          setTimeout(() => {
+            ripple.style.display = "none";
+          }, duration);
+        }
+      
+        // Function to update the PDF based on selected values
+        function updatePDF() {
+          var selectedSession = sessionSelect.value;
+          var selectedBranch = branchSelect.value;
+      
+          if (selectedSession == -1 && selectedBranch == -1) {
+            // Display the "ripple" for 60 seconds (1 minute)
+            displayRipple(60000);
+            sessionSelect.style.backgroundColor = "#fe0000";
+            branchSelect.style.color = "white";
+          } else {
+            sessionSelect.style.backgroundColor = "#e1e1e1";
+            branchSelect.style.color = "black";
+            
+      
+            // Hide the "ripple" after 4 seconds
+            setTimeout(() => {
+              ripple.style.display = "none";
+            }, 4000);
+          }
+      
+          // Adjust the array indices based on the selected values
+          var selectedFileID = fileIDs[selectedSession][selectedBranch];
+      
+          if (selectedFileID == 'null') {
+            // Redirect to another page (e.g., "error.html")
+            // window.location.href = 'error.html';
+            maine.style.display = "flex";
+            pdf.style.display = "none";
+          } else {
+            maine.style.display = "none";
+            pdf.style.display = "flex";
+            // Display the "ripple" for 60 seconds (1 minute)
+            displayRipple(60000);
+          }
+      
+          // Update the src attribute of the iframe
+          pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+        }
+      
+        // Function to display an error message
+        function displayErrorMessage() {
+          alert('There was an error loading the PDF. Please Contactthe administrator.');
+        }
+      
+        // Initial update when the page loads
+        updatePDF();
+      </script>
+      
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+        authDomain: "mmmutreso.firebaseapp.com",
+        projectId: "mmmutreso",
+        storageBucket: "mmmutreso.appspot.com",
+        messagingSenderId: "3955922251",
+        appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+        measurementId: "G-CDM7273LVH"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script src="pyq.js"></script>
+   
+    <script>
+      
+var bari1 = document.querySelector('#bar1');
+var bari2 = document.querySelector('#bar2');
+var bari3 = document.querySelector('#bar3');
+
+var navi = document.querySelector('.navbar ul');
+var menu = document.querySelector('#mobile-menu');
+// /transform: translate(-101%);
+
+var count = 0;
+
+
+var f1 = ()=>{
+    // alert('ok');
+   count++;
+   
+     
+   if(count%2==0){
+    // alert("ok");
+    navi.style.transform = "translate(-101%)";
+
+    bari2.style.display="flex";
+    bari1.style.transform="rotate(0) translateY(0px)";
+    bari3.style.transform="rotate(0)  translateY(0px)";
+   }else{
+    
+    navi.style.display="flex";
+    navi.style.transform = "translate(0%)";
+    bari2.style.display="none";
+    bari1.style.transform="rotate(45deg) translateY(6px)";
+    bari3.style.transform="rotate(-45deg)  translateY(-5px)";
+   }
+
+
+
+
+}
+    </script>
+</body>
+
+</html>

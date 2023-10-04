@@ -1,0 +1,257 @@
+.container1 {
+    height: max-content;
+    padding: 0rem 0;
+    margin: 10px auto;
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    color: white;
+
+}
+#cont1{
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap; 
+    overflow-x: auto;    
+    overflow-y: hidden; 
+    width: 100%;        
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+   
+    display: flex;
+    -webkit-overflow-scrolling: touch;
+}
+
+#cont1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+#cont1 .card {
+    /* flex: 0 0 calc(23.33% - 20px); 
+    margin: 2px;
+    text-align: center; */
+}
+
+@media (max-width: 768px) {
+    #cont1 .card {
+        flex: 0 0 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    #cont1 .card{
+        flex: 0 0 calc(100% - 20px); 
+    }
+}
+
+
+
+@media (max-width:720px) {
+    #cont1{
+        width: 99%;
+    }
+    #cont1 img{
+        height: 160px;
+        width: 160px;
+    }
+    #cont1 p,h3{
+    font-size: 16px;
+    }
+    #cont1 h2{
+        font-size: 21px;
+    }
+    
+}
+
+.mov{
+    overflow-x: auto;
+    display: flex;
+    /* flex-wrap: nowrap; */
+    /* white-space: nowrap;  */
+    /* overflow-x: auto;     */
+    /* overflow-y: hidden;  */
+    width: 100%;        
+}
+
+
+.heading1
+{
+    padding-top: 5rem;
+}
+.heading{
+    padding: 5rem 0;
+}
+.heading h2{
+    color: white;
+    text-align: center;
+}
+.bg-animation {
+    position: relative;
+    z-index: -1;
+}
+.container .card .imgbr {
+    background: bottom;
+    width: 80%;
+}
+.container .card .imgbr img{
+    border-radius: 0%;
+
+}
+
+
+.container1 .card {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ffffff11;
+    backdrop-filter: blur(1px);
+}
+.container .card{
+    height: 303px;
+}
+#cont1 .card{
+ background: bottom;
+}
+.container1 .details h2 {
+    font-size: 28px;
+    line-height: normal;
+}
+
+.container1 .details h3 {
+    font-size: 18px;
+    line-height: normal;
+    margin-top: 5px;
+    color: white;
+}
+.imgbr .img img{
+    border-radius: 0%;
+}
+
+.container1 .details p {
+    width: 80%;
+    font-size: 18px;
+    margin: auto;
+    display: none;
+}
+
+.container1 img {
+    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
+    width: 200px;
+
+}
+#cont1 .card{
+    margin: 0 3vw;
+}
+#cont1 img{
+    height: 150px;
+    width: 150px;
+}
+
+#cont1 p,h3{
+font-size: 16px;
+}
+#cont1 h2{
+    font-size: 21px;
+}
+
+.container1 .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container1 .info a:nth-child(1) {
+    color: #317BAD;
+    /* color: black !important; */
+}
+
+.container1 .info a:nth-child(2) {
+    color: #c13584;
+    /* background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d); */
+}
+
+.container1 .info a:nth-child(3) {
+    color: #E94133;
+}
+.container1 .info a:nth-child(4)
+{
+    color: #50CC59;
+    font-size: 1.4rem;
+}
+.img img{
+    border-radius: 50%;
+}
+.img img:hover{
+    transform: translateY(-2vh);
+    transition: .30s ease;
+   
+    border-radius: 0%;
+    transform: scale(1.1) translateY(-10px);
+
+}
+i{
+
+filter: contrast(1);     
+}
+i:hover{
+   
+    transform: scale(1.3);
+    filter: contrast(0); 
+
+}
+.container{
+    background: black;
+}
+@media only screen and (max-width: 720px) {
+    .nav-item li a{
+  color: #000;
+    }
+    .heading2{
+        margin-top: 50vh;
+    } 
+    .container1 .card{
+        margin-bottom: 10vh;
+        
+     } 
+     /* .container1{
+        height: 81vh;
+     } */
+  }
+  
+  .container .details p{
+    display: block;
+    font-size: 15px;
+  }
+  .container{
+    height: 420px;
+  }
+
+.container .details h3{
+    color: #df5d55;
+}
+
+
+/* Add these styles to your existing CSS or create a new stylesheet */
+
+.mov {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}

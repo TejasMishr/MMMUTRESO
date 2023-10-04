@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MMMUT Fee-Structure</title>
+  <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css">
+  <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+
+  <meta name="title" content="MMMUT Fee">
+  <meta name="description"
+    content="Madan Mohan Malviya University of Technology (MMMUT) Timetable, including PYQ and Notes of all semesters of B.tech BBA Bpharma MBA Mtech B-Pharma M-TECH">
+  <meta name="keywords"
+    content="MMMUT,mmmut fee,MMMUT Fee Structure,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm fee,mmmut pyq,mmmut notes,mmmut btech fee,mmmut BBA fee ,MBA fee,Bpharma fee,Mtech fee">
+  <meta name="robots" content="index , follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+
+  <style>
+    .page-wrapper{
+        background:black;
+    }
+    .nav-wrapper {
+      z-index: 7;
+      position: relative;
+    }
+
+    @media (max-width:400px) {
+      #load {
+        height: 121vh;
+      }
+    }
+    .filter-options{
+      display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    }
+    @media (max-width:720px) {
+    form h3{
+        margin-top: 1vh;
+      }
+     
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
+        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="#">PYQ</a></li>
+          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+          <li class="nav-item"><a href="../team.html">Teams</a></li>
+          <li class="nav-item"><a href="../report.html">Contact</a></li>
+          <!-- <i class="fas fa-search" id="search-icon"></i> -->
+          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
+        </ul>
+      </nav>
+    </div>
+    <section id="particles-js" class="heading">
+      <h2>MMMUT Resource Hub</h2>
+      <p> Empowering Your Academic Journey!</p>
+
+
+    </section>
+
+
+
+
+    <!-- <div class="parents"> -->
+
+
+    <!-- Select branch and semester -->
+   
+
+<form action="#" class="filter-options">
+  <div id="h3"> <h3>Fee Structure</h3></div>
+   
+    <select name="branch" id="branch" value="x">
+      <option value="-1">Select</option>
+      <option value="0">Details</option>
+      <!-- <option value="1">Holiday Calender</option> -->
+      <!-- <option value="2">B.tech 3rd Year</option>
+      <option value="3">B.tech Final Year</option>
+      <option value="4">B-Pharma</option>
+      <option value="5">BBA</option>
+      <option value="6">MBA</option>
+      <option value="7">MSC</option>
+      <option value="8">M-tech</option>
+      <option value="9">MCA</option> -->
+    </select>
+
+  </form>
+    </form>
+    <!-- <button class="btn" onclick="updatePDF()">Search</button> -->
+
+    <div id="load">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h2 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h2>
+          <h3>Error: 404 page not found</h3>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
+      </div>
+    </div>
+    <div class="pdf-container">
+      <iframe id="pdfViewer" frameborder="0" scrolling="no"  src=""
+        onerror="displayErrorMessage()"></iframe>
+    </div>
+
+    <script src="../loader/load.js"></script>
+
+    <script>
+      var fileIDs = ['1g94YwPFTf18AK0_KOF-TOGYfxepdPWrC','null','null'];
+
+      
+      var branchSelect = document.getElementById('branch');
+      
+      var pdfViewer = document.getElementById('pdfViewer');
+      var ripple = document.querySelector("#load");
+      var maine = document.querySelector('.main');
+      var pdf = document.querySelector('.pdf-container');
+
+      // Function ripple
+      function displayRipple(duration) {
+        ripple.style.display = "flex";
+        setTimeout(() => {
+          ripple.style.display = "none";
+        }, duration);
+      }
+
+      function updatePDF() {
+        
+        var selectedBranch = branchSelect.value;
+       
+
+        // Check if any of the selections is -1
+        if (selectedBranch == -1) {
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+          branchSelect.style.backgroundColor = "#fe0000";
+          branchSelect.style.color = "white";
+        } else {
+          branchSelect.style.backgroundColor = "#e1e1e1";
+          branchSelect.style.color = "black";
+
+          // Hide "ripple" after 4 seconds
+          setTimeout(() => {
+            ripple.style.display = "none";
+          }, 4000);
+        }
+
+        var selectedFileID = fileIDs[selectedBranch];
+
+        if (selectedFileID === 'null') {
+          // Redirect to another page (e.g., "error.html")
+          // window.location.href = 'error.html';
+          maine.style.display = "flex";
+          pdf.style.display = "none";
+        } else {
+          maine.style.display = "none";
+          pdf.style.display = "flex";
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+        }
+
+        // Update the src attribute of the iframe
+        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+      }
+
+      // Function to display an error message
+      function displayErrorMessage() {
+        alert('There was an error loading the PDF. Please Contact the administrator.');
+      }
+
+     
+      branchSelect.addEventListener('change', updatePDF);
+      
+
+      // Initial update when the page loads
+      updatePDF();
+    </script>
+
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+        authDomain: "mmmutreso.firebaseapp.com",
+        projectId: "mmmutreso",
+        storageBucket: "mmmutreso.appspot.com",
+        messagingSenderId: "3955922251",
+        appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+        measurementId: "G-CDM7273LVH"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+    <script src="../pyq/pyq.js"></script>
+
+
+</body>
+
+</html>

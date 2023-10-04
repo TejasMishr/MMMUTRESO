@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>MCA </title>
+  <link href="mca.css" rel="stylesheet" type="text/css" />
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+  <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css" type="text/css"/>
+  <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script type="text/javascript" src="../script.js"></script>
+  <style>
+    .nav-wrapper {
+      z-index: 7;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
+        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="#">PYQ</a></li>
+          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+          <li class="nav-item"><a href="../team.html">Teams</a></li>
+          <li class="nav-item"><a href="../contact/contact.html">Contact</a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+    <section id="particles-js" class="heading">
+      <h2>MMMUT Resource Hub</h2>
+      <p> Empowering Your Academic Journey!</p>
+
+
+    </section>
+
+
+
+
+
+
+    <!-- Select branch and semester -->
+    <form action="#" class="filter-options">
+      <select name="session" id="session">
+        <option value="-1">Select Session</option>
+        <option value="0">2021-24</option>
+        <option value="1">2022-25</option>
+      </select>
+
+      <select name="branch" id="branch">
+        <option value="-1">Select Department</option>
+        <option value="0">MCA</option>
+        <!-- <option value="1">IT</option>
+        <option value="2">ECE</option>
+        <option value="3">EE</option>
+        <option value="4">CE</option>
+        <option value="5">ME</option>
+        <option value="6">CHE</option> -->
+      </select>
+
+      <select name="semester" id="fileSelect">
+        <option value="-1">Select a Semester</option>
+        <option value="0">I</option>
+        <option value="1">II</option>
+        <option value="2">III</option>
+        <option value="3">IV</option>
+        <!-- <option value="4">V</option>
+        <option value="5">VI</option> -->
+        <!-- <option value="6">VII</option>
+        <option value="7">VIII</option> -->
+      </select>
+
+      <select name="paper" id="selectpaper">
+        <option value="-1">Select Papers</option>
+        <option value="0">Minor 1</option>
+        <option value="1">Minor 2</option>
+        <option value="2">Major</option>
+      </select>
+    </form>
+    <div id="load">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="particle">
+        <div class="content">
+          <h2 id="head">4<span><i class="fa-solid fa-ghost fa-lg" style="color: #3b404a;"></i></span>4</h2>
+          <h3>Error: 404 page not found</h3>
+          <p>Sorry, the page you're looking for cannot be accessed</p>
+        </div>
+      </div>
+    </div>
+    <script src="../loader/load.js"></script>
+
+    <div class="pdf-container">
+      <iframe id="pdfViewer" frameborder="0" scrolling="no" sandbox="allow-same-origin allow-scripts" src=""
+        onerror="displayErrorMessage()"></iframe>
+    </div>
+  </div>
+  <script>
+
+    var fileIDs =
+      [
+        // SESSION 2021-24
+
+        [
+          // BRANCH MCA
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v', 'null'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV', '1HwEoYy1lNYsqWNIwpNQQL-QsgNrWAujr'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+            // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['  ','  ','  '],
+            // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['  ','  ','  '],
+            // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ]
+
+
+        ],
+
+
+
+        // SESSION 2022-25
+
+        [
+          // BRANCH MCA
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt', '1AelSov8YGtXdmAP5q0QbBfJ79SMqy28O'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N', '1BBL7FxyIKiPyv-zChbJFkHdm33U0vtwr'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+            // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['  ','  ','  '],
+            // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+            // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['  ','  ','  '],
+            // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+          ]
+
+        ]
+
+      ];
+
+
+      var sessionSelect = document.getElementById('session');
+      var branchSelect = document.getElementById('branch');
+      var fileSelect = document.getElementById('fileSelect');
+      var selectpaper = document.getElementById('selectpaper');
+      var pdfViewer = document.getElementById('pdfViewer');
+      var ripple = document.querySelector("#load");
+      var maine = document.querySelector('.main');
+      var pdf = document.querySelector('.pdf-container');
+
+      // Function ripple
+      function displayRipple(duration) {
+        ripple.style.display = "flex";
+        setTimeout(() => {
+          ripple.style.display = "none";
+        }, duration);
+      }
+
+      function updatePDF() {
+        var selectedSession = sessionSelect.value;
+        var selectedBranch = branchSelect.value;
+        var selectedSemester = fileSelect.value;
+        var selectedPaper = selectpaper.value;
+
+        // Check if any of the selections is -1
+        if (selectedSession == -1 || selectedBranch == -1 || selectedSemester == -1 || selectedPaper == -1) {
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+          selectpaper.style.backgroundColor = "#fe0000";
+          selectpaper.style.color = "white";
+        } else {
+          selectpaper.style.backgroundColor = "#e1e1e1";
+          selectpaper.style.color = "black";
+
+          // Hide "ripple" after 4 seconds
+          setTimeout(() => {
+            ripple.style.display = "none";
+          }, 4000);
+        }
+
+        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
+
+        if (selectedFileID === 'null') {
+          // Redirect to another page (e.g., "error.html")
+          // window.location.href = 'error.html';
+          maine.style.display = "flex";
+          pdf.style.display = "none";
+        } else {
+          maine.style.display = "none";
+          pdf.style.display = "flex";
+          // Display the "ripple" for 60 seconds (1 minute)
+          displayRipple(60000);
+        }
+
+        // Update the src attribute of the iframe
+        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+      }
+
+      // Function to display an error message
+      function displayErrorMessage() {
+        alert('There was an error loading the PDF. Please Contact the administrator.');
+      }
+
+      sessionSelect.addEventListener('change', updatePDF);
+      branchSelect.addEventListener('change', updatePDF);
+      fileSelect.addEventListener('change', updatePDF);
+      selectpaper.addEventListener('change', updatePDF);
+
+      // Initial update when the page loads
+      updatePDF();
+    </script>
+
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+      authDomain: "mmmutreso.firebaseapp.com",
+      projectId: "mmmutreso",
+      storageBucket: "mmmutreso.appspot.com",
+      messagingSenderId: "3955922251",
+      appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+      measurementId: "G-CDM7273LVH"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="mca.js"></script>
+</body>
+
+</html>
