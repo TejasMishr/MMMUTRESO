@@ -46,6 +46,12 @@ function addNewItem(tabType, title, description, link, buttonText) {
 let currentIndex = 0;
 const eventItems = [
   {
+    title: 'PlayList Section added',
+    description: 'Playlist',
+    link: 'lecture/lecture.html',
+    buttonText: 'Open'
+  },
+  {
     title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
     description: 'Registration Portal',
     link: 'https://registration.mmmut.ac.in/',
