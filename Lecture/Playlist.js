@@ -280,10 +280,10 @@ const Pid = [
         [
           // Subject 0 (sub I) Applied physics-(technical physics)
           "PL5zwY2E7i60VL5GwnW9bl681uEXNwDP1h",
-          // Subject 1 (sub II) C LAng
-          "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
-          // Subject 2 (sub III) ECE
-          "PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS",
+          // Subject 1 (sub II) Maths(complex anylasis and integral transform
+          "PLU6SqdYcYsfI3sh-ho_iiTkCGsTbVh_Sw",
+          // Subject 2 (sub III) Thermodynamics-
+          "PLjtQ3BMex7hvIuffqJ-zD6grphZta10VZ",
           // Subject 3 (sub IV)
           "PLL6Ah8JHS-GAAz_H1_t331aRBFMzDF72d",
           // Subject 4 (sub V)
