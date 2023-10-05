@@ -4,30 +4,30 @@ const Pid = [
     // Semester (I)
     [
       // Subject 0 (sub I)
-      "null",
+      "PL7qxHC_-XSZlhHt6gQuCDiLiQGZFhiauQ",
       // Subject 1 (sub II)
-      "null",
+      "PL7qxHC_-XSZmafOUewEGxTKsc7brHKti_",
       // Subject 2 (sub III)
-      "null",
+      "PLNiSYvRcckSzflvtkJ0n2jNnEyQ7URVaq",
       // Subject 3 (sub IV)
-      "null",
+      "PLNiSYvRcckSytZRiJJfNMakIFyFAuIHaC",
       // Subject 4 (sub V)
-      "null",
+      "PLNiSYvRcckSxMizP6bP4Tajed9GNJirLj",
       // Subject 5 (sub VI)
       "null",
     ],
     // Semester 2
     [
       // Subject 0 (sub I)
-      "null",
+      "PLNiSYvRcckSyPEJ_PFIK-kfE66UUB_zmM",
       // Subject 1 (sub II)
-      "null",
+      "PLFpCrsN3l3fA0NMq5RGzPzznnYxb2DGPu",
       // Subject 2 (sub III)
-      "null",
+      "PLx3iL6VlhJOqOX7RxXqbU4h9CFl9tuKmW",
       // Subject 3 (sub IV)
-      "null",
+      "PL7qxHC_-XSZkiuWLE7FrXBro-CSVlAmY-",
       // Subject 4 (sub V)
-      "null",
+      "PLNiSYvRcckSwnuGqB7s0-lwEgEBjO0G9U",
       // Subject 5 (sub VI)
       "null",
     ],

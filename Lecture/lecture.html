@@ -129,14 +129,162 @@
 
       <select name="subject" id="SelectSubject">
         <option value="-1">Subject</option>
-        <option value="0">sub I</option>
+        <!-- <option value="0">sub I</option>
         <option value="1">sub II</option>
         <option value="2">sub III</option>
         <option value="3">sub IV</option>
         <option value="4">sub V</option>
-        <option value="5">sub VI</option>
+        <option value="5">sub VI</option> -->
       </select>
     </form>
+
+
+
+
+
+    <script>
+      var subnames = 
+      [
+        //CSE Subjects
+        [
+          //sem 1 subject names
+          ["Linear Algebra and DE", "Linear Algebra", "Function and DE", "BEE", "Web dev"],
+          //sem 2 names
+          ["POC-1", "Pathophysiology", "HAP-2", "CAP", "Biochemistry", "null"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 4
+           ["null", "null", "null", "null", "null", "null"]
+        ],
+        //IT subjects
+        [
+          // sem 1
+          ["Matrix","Sequence","Basic of electronics(BEC)", "Basic of electrical engineering(BEE)", "Software tools"],
+          //sem 2
+          ["Graph theory and discrete ", "Programming fundamentals", "", "null", "null", "null"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"]
+          //sem 4
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 5
+          ["null", "null", "null", "null", "null", "null"]
+        ],
+
+        //ECE 
+
+        [
+          // sem 1
+          ["Maths", "BEE", "null", "null", "null", "null"],
+          //sem 2
+          ["_C-programming _", "C Lang", "ECE", "BEE", "null", "null"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"]
+          //sem 4
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 5
+          ["null", "null", "null", "null", "null", "null"]
+        ],
+
+        //EE
+        [
+          // sem 1
+          ["null", "null", "null", "null", "null", "null"],
+          //sem 2
+          ["null", "null", "null", "null", "null", "null"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"]
+          //sem 4
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 5
+          ["null", "null", "null", "null", "null", "null"]
+        ],
+
+        // Mechanical
+
+
+        [
+          // sem 1
+          ["ordinary and partial differential eqn", "C-programming", "Engineering Mechanics", "Tikle's academy"],
+          //sem 2
+          [" Applied physics", "complex anylasis and integral transform", "Thermodynamics"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"]
+          //sem 4
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 5
+          ["null", "null", "null", "null", "null", "null"]
+        ],
+        // chemical
+        [
+          // sem 1
+          ["MAths", "null", "null", "null", "null", "null"],
+          //sem 2
+          ["Maths", "MAths", "null", "null", "null", "null"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"]
+          //sem 4
+          ["null", "null", "null", "null", "null", "null"],
+           //sem 5
+          ["null", "null", "null", "null", "null", "null"]
+        ]
+
+        // //
+        // [
+        //   // sem 1
+        //   ["null", "null", "null", "null", "null", "null"],
+        //   //sem 2
+        //   ["null", "null", "null", "null", "null", "null"],
+        //   //sem 3
+        //   ["null", "null", "null", "null", "null", "null"]
+        //   //sem 4
+        //   ["null", "null", "null", "null", "null", "null"],
+        //    //sem 5
+        //   ["null", "null", "null", "null", "null", "null"]
+        // ]
+      ];
+
+      // Function to update the subjects based on selected branch and semester
+      function updateSubjects() {
+        var branchIndex = document.getElementById("branch").value;
+        var semesterIndex = document.getElementById("fileSelect").value; // Changed the ID here
+        var subjectSelect = document.getElementById("SelectSubject");
+
+       
+        subjectSelect.innerHTML = "";
+
+       
+        if (
+          branchIndex >= 0 &&
+          semesterIndex >= 0 &&
+          subnames[branchIndex] &&
+          subnames[branchIndex][semesterIndex]
+        ) {
+          var subjects = subnames[branchIndex][semesterIndex];
+          // var tot=0;
+          for (var i = 0; i < subjects.length; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text =
+              subjects[i] !== null ? subnames[branchIndex][semesterIndex][i] : "N/A";
+            console.log(subnames[branchIndex][i]);
+            subjectSelect.appendChild(option);
+          }
+        } else {
+          var option = document.createElement("option");
+          option.value = "-1";
+          option.text = "Subject";
+          subjectSelect.appendChild(option);
+        }
+      }
+
+   
+      document.getElementById("branch").addEventListener("change", updateSubjects);
+      document.getElementById("fileSelect").addEventListener("change", updateSubjects); 
+    </script>
+
+
+
+
 
     <div class="container">
       <div class="player">

@@ -102,12 +102,12 @@
       <select name="branch" id="branch">
         <option value="-1">Branch</option>
 
-        <option value="0">CSE</option>
-        <option value="1">I.T</option>
+        <option value="0">B-pharma</option>
+        <!-- <option value="1">I.T</option>
         <option value="2">E.C.E</option>
         <option value="3">EE</option>
         <option value="4">MECH</option>
-        <option value="5">Chemical</option>
+        <option value="5">Chemical</option> -->
       </select>
 
       <select name="semester" id="fileSelect">
@@ -120,14 +120,73 @@
 
       <select name="subject" id="SelectSubject">
         <option value="-1">Subject</option>
-        <option value="0">sub I</option>
+        <!-- <option value="0">sub I</option>
         <option value="1">sub II</option>
         <option value="2">sub III</option>
         <option value="3">sub IV</option>
         <option value="4">sub V</option>
-        <option value="5">sub VI</option>
+        <option value="5">sub VI</option> -->
       </select>
     </form>
+
+    <script>
+      var subnames = 
+      [
+        //CSE Subjects
+        [
+          //sem 1 subject names
+          ["PA", "Maths", "Pharmaceutics", "PIC", "HAP-1"],
+          //sem 2 names
+          ["POC-1", "Pathophysiology", "HAP-2", "CAP", "Biochemistry"],
+          //sem 3
+          ["null", "null", "null", "null", "null", "null"],
+        ],
+        // //IT subjects
+        // [
+        //   [" I.T Maths", " I.T Physics", " I.T Chemistry", " I.T Bio", " I.T che", " I.T phy"],
+        //   ["A", "B", "C", "D", "E", null],
+        //   ["X", "Y", "Z", "ZZ", null, null],
+        // ]
+      ];
+
+      // Function to update the subjects based on selected branch and semester
+      function updateSubjects() {
+        var branchIndex = document.getElementById("branch").value;
+        var semesterIndex = document.getElementById("fileSelect").value; // Changed the ID here
+        var subjectSelect = document.getElementById("SelectSubject");
+
+       
+        subjectSelect.innerHTML = "";
+
+       
+        if (
+          branchIndex >= 0 &&
+          semesterIndex >= 0 &&
+          subnames[branchIndex] &&
+          subnames[branchIndex][semesterIndex]
+        ) {
+          var subjects = subnames[branchIndex][semesterIndex];
+          // var tot=0;
+          for (var i = 0; i < subjects.length; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text =
+              subjects[i] !== null ? subnames[branchIndex][semesterIndex][i] : "N/A";
+            console.log(subnames[branchIndex][i]);
+            subjectSelect.appendChild(option);
+          }
+        } else {
+          var option = document.createElement("option");
+          option.value = "-1";
+          option.text = "Subject";
+          subjectSelect.appendChild(option);
+        }
+      }
+
+   
+      document.getElementById("branch").addEventListener("change", updateSubjects);
+      document.getElementById("fileSelect").addEventListener("change", updateSubjects); 
+    </script>
 
     <div class="container">
       <div class="player">

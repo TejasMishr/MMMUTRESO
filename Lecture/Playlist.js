@@ -19,9 +19,9 @@ const Pid = [
     // Semester 2
     [
       // Subject 0 (sub I)
-      "PLBliHJXnYGcoWgNqYH23eqI91LgeeY5fe",
+      "null",
       // Subject 1 (sub II)
-      "PLDzeHZWIZsTryvtXdMr6rPh4IDexB5NIA",
+      "null",
       // Subject 2 (sub III)
       "null",
       // Subject 3 (sub IV)
@@ -34,7 +34,7 @@ const Pid = [
     //Sem 3
     [
       // Subject 0 (sub I)
-      "PLdM-WZokR4tZb3xr9l1hBdzd-7m5mgHh_",
+      "null",
       // Subject 1 (sub II)
       "null",
       // Subject 2 (sub III)
@@ -68,7 +68,7 @@ const Pid = [
     // Semester (I)
     [
       // Subject 0 (sub I)
-      "PLBliHJXnYGcrhL0OWYOq-n58p6rqo88NK",
+      // "PLBliHJXnYGcrhL0OWYOq-n58p6rqo88NK",
       // Subject 1 (sub II)
       "PLBliHJXnYGcrLrUib1UyvuWi1XupGDDI-",
 
@@ -84,11 +84,11 @@ const Pid = [
     // Semester 2
     [
       // Subject 0 (sub I)
-      "null",
+      "PL5Dqs90qDljWYE8YKJTeJvlmePixSLtDK",
       // Subject 1 (sub II)
-      "PLq-Gm0yRYwTjqLVw4u5-VjL7ediCqRrj1",
+      "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 2 (sub III)
-      "null",
+      // "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 3 (sub IV)
       "null",
       // Subject 4 (sub V)
@@ -152,7 +152,7 @@ const Pid = [
       "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 2 (sub III) ECE
       "PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS",
-      // Subject 3 (sub IV)
+      // Subject 3 (sub IV) BEE
       "PLL6Ah8JHS-GAAz_H1_t331aRBFMzDF72d",
       // Subject 4 (sub V)
       "null",
