@@ -46,6 +46,6 @@ function updatePlaylist() {
   }
 }
 function playVideo(videoId) {
-  const videoUrl = `https://www.youtube.com/embed/${videoId}?modestbranding=1&autoplay=1&showinfo=1&rel=0`;
+  const videoUrl = `https://www.youtube.com/embed/${videoId}?modestbranding=1&autoplay=1&showinfo=0&rel=0`;
   videoPlayer.src = videoUrl;
 }
