@@ -14,7 +14,7 @@ const Pid = [
         // Subject 4 (sub V) Web dev- 
         "PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
         // Subject 5 (sub VI)
-        "null",
+        "null"
       ],
       // Semester 2
       [
@@ -29,7 +29,7 @@ const Pid = [
         // Subject 4 (sub V)
         "null",
         // Subject 5 (sub VI)
-        "null",
+        "null"
       ],
       //Sem 3
       [
@@ -44,7 +44,7 @@ const Pid = [
         // Subject 4 (sub V)
         "null",
         // Subject 5 (sub VI)
-        "null",
+        "null"
       ],
   
       // Semester 4  (--->>>>  DONE <<<<<------)
@@ -60,8 +60,8 @@ const Pid = [
         // Subject 4 (sub V)
         "PL-JvKqQx2Atd--1Gs3WB8nmWOWRbEM7WW",
         // Subject 5 (sub VI)
-        "PL9RcWoqXmzaIG-RWneeqDJ-FCt66S15pl",
-      ],
+        "PL9RcWoqXmzaIG-RWneeqDJ-FCt66S15pl"
+      ]
     ],
     //IT BRANCH
     [
@@ -79,7 +79,7 @@ const Pid = [
         // Subject 4 (sub V) Software Tools
         "PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&si=TpmGhp1XxkKV98qW",
         // Subject 5 (sub VI)
-        "null",
+        "null "
       ],
       // Semester 2
       [
@@ -190,5 +190,137 @@ const Pid = [
         // Subject 5 (sub VI)
         "null",
       ]
-    ]
+    ],
+
+
+    //Electrical
+    [
+        // Semester (I)
+        [
+          // Subject 0 (sub I)
+          "null",
+          // Subject 1 (sub II) 
+          "null",
+          // Subject 2 (sub III)
+          "null",
+          // Subject 3 (sub IV)
+          "null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+        // Semester 2 
+        [
+          // Subject 0 (sub I) 
+          "Null",
+          // Subject 1 (sub II) 
+          "Null",
+          // Subject 2 (sub III) 
+          "Null",
+          // Subject 3 (sub IV)
+          "Null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+    
+        //Semester 3
+        [
+          // Subject 0 (sub I)
+          "null",
+          // Subject 1 (sub II)
+          "null",
+          // Subject 2 (sub III)
+          "null",
+          // Subject 3 (sub IV)
+          "null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+        // Semester 4
+        [
+          // Subject 0 (sub I)
+          "null",
+          // Subject 1 (sub II)
+          "null",
+          // Subject 2 (sub III)
+          "null",
+          // Subject 3 (sub IV)
+          "null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ]
+      ],
+
+      //Mechanical
+
+      [
+        // Semester (I)
+        [
+          // Subject 0 (sub I) Maths(ordinary and partial differential eqn)
+          "PLU6SqdYcYsfIuZVt20v-eNZBfFLENrM1F",
+          // Subject 1 (sub II) C-programming
+          "PLxgZQoSe9cg1drBnejUaDD9GEJBGQ5hMt",
+          // Subject 2 (sub III)  Engineering Mechanics
+          "PLPvaSRcEQh4lfyQYKBRuTiLekgVIw2jvC",
+          // Subject 3 (sub IV) Tikle's academy
+          "PLDN15nk5uLiAyM7MbRBF1eIFC8y5vMRxI",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+        // Semester 2 
+        [
+          // Subject 0 (sub I) Applied physics-(technical physics)
+          "PL5zwY2E7i60VL5GwnW9bl681uEXNwDP1h",
+          // Subject 1 (sub II) C LAng
+          "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
+          // Subject 2 (sub III) ECE
+          "PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS",
+          // Subject 3 (sub IV)
+          "PLL6Ah8JHS-GAAz_H1_t331aRBFMzDF72d",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+    
+        //Semester 3
+        [
+          // Subject 0 (sub I)
+          "null",
+          // Subject 1 (sub II)
+          "null",
+          // Subject 2 (sub III)
+          "null",
+          // Subject 3 (sub IV)
+          "null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ],
+        // Semester 4
+        [
+          // Subject 0 (sub I)
+          "null",
+          // Subject 1 (sub II)
+          "null",
+          // Subject 2 (sub III)
+          "null",
+          // Subject 3 (sub IV)
+          "null",
+          // Subject 4 (sub V)
+          "null",
+          // Subject 5 (sub VI)
+          "null",
+        ]
+      ]
   ];
