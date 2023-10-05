@@ -264,7 +264,7 @@ const Pid = [
         // Semester (I)
         [
           // Subject 0 (sub I) Maths(ordinary and partial differential eqn)
-          "PLU6SqdYcYsfIuZVt20v-eNZBfFLENrM1F",
+          "PLW-k2MbJTiuqVmVs-lQPNiuF8-9H5Xatx",
           // Subject 1 (sub II) C-programming
           "PLxgZQoSe9cg1drBnejUaDD9GEJBGQ5hMt",
           // Subject 2 (sub III)  Engineering Mechanics
