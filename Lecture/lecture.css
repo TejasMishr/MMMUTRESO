@@ -11,7 +11,7 @@ body{
   }
   
   .player {
-    background-color: #e58454;
+    background-color: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
     flex: 0 0 70%;
     position: relative;
   }
@@ -24,7 +24,7 @@ body{
   .playlist {
     width: auto;
     flex: 0 0 28%;
-    background-color: #424f46;
+    background-color: linear-gradient(to right, #434343 0%, black 100%);
     color: #fff;
     overflow-y: auto;
     padding: 10px;
@@ -51,7 +51,7 @@ body{
     }
 
     .player {
-      background-color: #e58454;
+      background-color: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
       flex: 0 0 50%;
       position: relative;
     }
