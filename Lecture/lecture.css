@@ -38,8 +38,20 @@ body{
     background: linear-gradient(109.6deg, rgba(0, 0, 0, 0.93) 11.2%, rgb(63, 61, 61) 78.9%);
     border-radius: 5px;
     cursor: pointer;
-  }
-  
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 1;
+    }
+}
   .playlist-item a {
     text-decoration: none;
     color: #d3d3d3;;
