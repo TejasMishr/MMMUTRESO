@@ -1,162 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture Room</title>
+    <meta
+      name="keywords"
+      content="mmmut video lectures,mmmut lectures,mmmut,mmmut gorakhpur,mmmut counselling,mmmut cut off,mmmut placement,mmmut cut off jee mains,mmmut student login,mmmut gorakhpur cutoff jee mains,mmmut b pharma fees,mmmut is government or private,mmmut .ac.in,mmmut admission process,samarth mmmut,mmmut cut off jee mains percentile,mmmut cse average package,mmmut logo,mmmut counselling 2022,mmmut counselling 2022 date,mmmut gorakhpur cutoff,mmmut ac in,mmmut cut off jee mains,mmmut placement,mmmut entrance exam 2021,mmmut admission,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech"
+    />
+    <meta name="robots" content="index , follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
+    <!-- <script type="text/javascript" src="../script.js"></script> -->
+    <link rel="stylesheet" href="../loader/load.css" />
+    <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/674dd8e09c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lecture Room</title>
-  <meta name="keywords"
-  content="mmmut video lectures,mmmut lectures,mmmut,mmmut gorakhpur,mmmut counselling,mmmut cut off,mmmut placement,mmmut cut off jee mains,mmmut student login,mmmut gorakhpur cutoff jee mains,mmmut b pharma fees,mmmut is government or private,mmmut .ac.in,mmmut admission process,samarth mmmut,mmmut cut off jee mains percentile,mmmut cse average package,mmmut logo,mmmut counselling 2022,mmmut counselling 2022 date,mmmut gorakhpur cutoff,mmmut ac in,mmmut cut off jee mains,mmmut placement,mmmut entrance exam 2021,mmmut admission,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech">
-<meta name="robots" content="index , follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="language" content="English">
-  <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
-  <!-- <script type="text/javascript" src="../script.js"></script> -->
-  <link rel="stylesheet" href="../loader/load.css">
-  <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
-  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
-  <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <link rel="stylesheet" href="lecture.css" />
 
-  <link rel="stylesheet" href="lecture.css" />
-
-
-  <style>
-    .navbar ul{
-      gap: 1vh;
-    }
-    .page-wrapper {
-      background: black;
-    }
-
-    .nav-wrapper {
-      z-index: 7;
-      position: relative;
-    }
-
-    @media (max-width:400px) {
-      #load {
-        height: 121vh;
+    <style>
+      .navbar ul {
+        gap: 1vh;
       }
-    }
-
-    .filter-options {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-content: stretch;
-      justify-content: space-evenly;
-    }
-
-    @media (max-width:720px) {
-      form h3 {
-        margin-top: 1vh;
+      .page-wrapper {
+        background: black;
       }
 
-    }
-    @media only screen and (max-width: 720px){
-.navbar ul {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    justify-content: start;
-    top: 55px;
-    background-color: #fff;
-    width: 100%;
-    height: calc(100vh - 55px);
-    /* transform: translate(-101%); */
-    text-align: center;
-    overflow: hidden;
-    display: none;
-}
+      .nav-wrapper {
+        z-index: 7;
+        position: relative;
+      }
 
-    }
-    #particles-js{
-  min-height: 165px;
+      @media (max-width: 400px) {
+        #load {
+          height: 121vh;
+        }
+      }
 
-}
+      .filter-options {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+      }
 
-  </style>
-</head>
+      @media (max-width: 720px) {
+        form h3 {
+          margin-top: 1vh;
+        }
+      }
+      @media only screen and (max-width: 720px) {
+        .navbar ul {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          justify-content: start;
+          top: 55px;
+          background-color: #fff;
+          width: 100%;
+          height: calc(100vh - 55px);
+          /* transform: translate(-101%); */
+          text-align: center;
+          overflow: hidden;
+          display: none;
+        }
+      }
+      #particles-js {
+        min-height: 165px;
+      }
+    </style>
+  </head>
 
-<body>
-  <div class="page-wrapper">
-    <div class="nav-wrapper">
-      <div class="grad-bar"></div>
-      <nav class="navbar">
-
-        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
-        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
-          <span class="bar" id="bar1"></span>
-          <span class="bar" id="bar2"></span>
-          <span class="bar" id="bar3"></span>
-        </div>
-        <ul class="nav no-search">
-          <li class="nav-item"><a href="../index.html">Home</a></li>
-          <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
-          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
-          <li class="nav-item"><a href="../team.html">Teams</a></li>
-          <li class="nav-item"><a href="../report.html">Contact</a></li>
-          <!-- <i class="fas fa-search" id="search-icon"></i> -->
-          <!-- <input class="search-input" type="text" placeholder="Search.."> -->
-        </ul>
-      </nav>
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+          <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT" /></a>
+          <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+          </div>
+          <ul
+            class="nav no-search"
+            style="align-items: center; text-align: center; gap: 1rem"
+          >
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
+            <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+            <li class="nav-item"><a href="../team.html">Teams</a></li>
+            <li class="nav-item"><a href="../report.html">Contact</a></li>
+            <!-- <i class="fas fa-search" id="search-icon"></i> -->
+            <!-- <input class="search-input" type="text" placeholder="Search.."> -->
+          </ul>
+        </nav>
+      </div>
     </div>
 
+    <form action="#" class="filter-options">
+      <select name="branch" id="branch">
+        <option value="-1">Branch</option>
 
-  </div>
+        <option value="0">CSE</option>
+        <option value="1">I.T</option>
+        <option value="2">E.C.E</option>
+        <option value="3">EE</option>
+        <option value="4">MECH</option>
+        <option value="5">Chemical</option>
+      </select>
 
+      <select name="semester" id="fileSelect">
+        <option value="-1">Semester</option>
+        <option value="0">I</option>
+        <option value="1">II</option>
+        <option value="2">III</option>
+        <option value="3">IV</option>
+      </select>
 
+      <select name="subject" id="SelectSubject">
+        <option value="-1">Subject</option>
+        <option value="0">sub I</option>
+        <option value="1">sub II</option>
+        <option value="2">sub III</option>
+        <option value="3">sub IV</option>
+        <option value="4">sub V</option>
+        <option value="5">sub VI</option>
+      </select>
+    </form>
 
-
-  <form action="#" class="filter-options">
-    <select name="branch" id="branch">
-      <option value="-1">Branch</option>
-
-      <option value="0">CSE</option>
-      <option value="1">I.T</option>
-      <option value="2">E.C.E</option>
-      <option value="3">EE</option>
-      <option value="4">MECH</option>
-      <option value="5">Chemical</option>
-
-
-    </select>
-
-    <select name="semester" id="fileSelect">
-      <option value="-1">Semester</option>
-      <option value="0">I</option>
-      <option value="1">II</option>
-      <option value="2">III</option>
-      <option value="3">IV</option>
-
-    </select>
-
-    <select name="subject" id="SelectSubject">
-      <option value="-1">Subject</option>
-      <option value="0">sub I</option>
-      <option value="1">sub II</option>
-      <option value="2">sub III</option>
-      <option value="3">sub IV</option>
-      <option value="4">sub V</option>
-      <option value="5">sub VI</option>
-    </select>
-  </form>
-
-  <div class="container">
-    <div class="player">
-      <iframe id="videoPlayer" width="100%" height="100%" frameborder="0" oncontextmenu="return false" ;
-        allowfullscreen></iframe>
+    <div class="container">
+      <div class="player">
+        <iframe
+          id="videoPlayer"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          oncontextmenu="return false"
+          ;
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="playlist" id="playlist">
+        <!-- Playlist dynamically added here -->
+      </div>
     </div>
-    <div class="playlist" id="playlist">
-      <!-- Playlist dynamically added here -->
-    </div>
-  </div>
-  <script src="Playlist.js"></script>
-  <script src="lecture.js"></script>
-</body>
-<script src="../script.js"></script>
-
+    <script src="Playlist.js"></script>
+    <script src="lecture.js"></script>
+  </body>
+  <script src="../script.js"></script>
 </html>
