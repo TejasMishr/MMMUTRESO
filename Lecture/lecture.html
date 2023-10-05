@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Player and Playlist</title>
+    <title>Lecture Room</title>
     <link rel="stylesheet" href="lecture.css" />
   </head>
 
   <body>
+    
+
+
+
+
+
     <form action="#" class="filter-options">
       <select name="branch" id="branch">
         <option value="-1">Select Your Branch</option>
        
         <option value="0">CSE</option>
         <option value="0">I.T</option>
+        <option value="0">E.C.E</option>
+
 
       </select>
 
@@ -32,6 +40,8 @@
         <option value="1">sub II</option>
         <option value="2">sub III</option>
         <option value="3">sub IV</option>
+        <option value="2">sub V</option>
+        <option value="3">sub VI</option>
       </select>
     </form>
 
@@ -42,13 +52,16 @@
           width="100%"
           height="100%"
           frameborder="0"
+          oncontextmenu="return false";
           allowfullscreen
         ></iframe>
       </div>
       <div class="playlist" id="playlist">
-        <!-- Playlist items will be dynamically added here -->
+        <!-- Playlist dynamically added here -->
       </div>
     </div>
+    <script src="Playlist.js"></script>
     <script src="lecture.js"></script>
   </body>
+  <script src="../script.js"></script>
 </html>

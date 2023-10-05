@@ -48,7 +48,7 @@ const eventItems = [
   {
     title: 'PlayList Section added',
     description: 'Playlist',
-    link: 'lecture/lecture.html',
+    link: 'Lecture/lecture.html',
     buttonText: 'Open'
   },
   {
