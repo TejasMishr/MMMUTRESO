@@ -84,18 +84,24 @@ body{
 .filter-options{
   /* display: grid; */
   margin-inline: auto;
-    max-width: 40rem;
-    padding-left: 40px;
+    max-width: 37rem;
+    padding-left: 5px;
   
 }
 
-@media (min-width : 720px){
+@media (min-width : 220px){
   .filter-options {
     display: flex;
+   
     justify-content:space-between;
-  padding: 10px;
+  /* padding: 10px; */
   max-width: 40rem;
+  padding-left: 5px;
   margin-inline: auto;
+  }
+
+  .select{
+    width: 5rem;
   }
 }
 
