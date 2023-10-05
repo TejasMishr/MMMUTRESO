@@ -131,10 +131,10 @@ const Pid = [
     [
       // Semester (I)
       [
-        // Subject 0 (sub I)
-        "null",
-        // Subject 1 (sub II)
-        "null",
+        // Subject 0 (sub I) MAths
+        "PLITlusC8mcFEm-fjUm76j2a2EeculkGd5",
+        // Subject 1 (sub II) BEE
+        "PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc",
         // Subject 2 (sub III)
         "null",
         // Subject 3 (sub IV)
