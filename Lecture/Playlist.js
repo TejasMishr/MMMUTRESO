@@ -3,16 +3,16 @@ const Pid = [
     [
       // Semester (I)
       [
-        // Subject 0 (sub I)
-        "PLdM-WZokR4tZb3xr9l1hBdzd-7m5mgHh_",
-        // Subject 1 (sub II)
-        "null",
-        // Subject 2 (sub III)
-        "null",
-        // Subject 3 (sub IV)
-        "null",
-        // Subject 4 (sub V)
-        "null",
+        // Subject 0 (sub I) Sequence Series-
+        "PLATr6JN15ruiKzyauE49SIqdfV5r8Wqam&si=rOcROgRP4lJo-7bJ",
+        // Subject 1 (sub II) Linear Algebra - 
+        "PLhSp9OSVmeyIVQpCt2kwsC1dNVl1GwlVn",
+        // Subject 2 (sub III) Function and DE- 
+        "PLU6SqdYcYsfLPxjd-k-MaoG7qgRQ-2fKc",
+        // Subject 3 (sub IV) BEE-
+        "PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc",
+        // Subject 4 (sub V) Web dev- 
+        "PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg",
         // Subject 5 (sub VI)
         "null",
       ],
@@ -72,12 +72,12 @@ const Pid = [
         // Subject 1 (sub II)
         "PLBliHJXnYGcrLrUib1UyvuWi1XupGDDI-",
        
-        // Subject 2 (sub III)
-        "null",
-        // Subject 3 (sub IV)
-        "null",
-        // Subject 4 (sub V)
-        "null",
+        // Subject 2 (sub III) BEC
+        "PLwjK_iyK4LLDBB1E9MFbxGCEnmMMOAXOH",
+        // Subject 3 (sub IV) BEE
+        "PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=z2z_wodyAZoIT3Tp", 
+        // Subject 4 (sub V) Software Tools
+        "PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg&si=TpmGhp1XxkKV98qW",
         // Subject 5 (sub VI)
         "null",
       ],
