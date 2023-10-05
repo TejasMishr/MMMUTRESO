@@ -144,16 +144,16 @@ const Pid = [
         // Subject 5 (sub VI)
         "null",
       ],
-      // Semester 2
+      // Semester 2 
       [
-        // Subject 0 (sub I)
-        "null",
-        // Subject 1 (sub II)
-        "null",
-        // Subject 2 (sub III)
-        "null",
+        // Subject 0 (sub I) _C-programming _
+        "PLBlnK6fEyqRggZZgYpPMUxdY1CYkZtARR",
+        // Subject 1 (sub II) C LAng
+        "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
+        // Subject 2 (sub III) ECE
+        "PLBlnK6fEyqRiw-GZRqfnlVIBz9dxrqHJS",
         // Subject 3 (sub IV)
-        "null",
+        "PLL6Ah8JHS-GAAz_H1_t331aRBFMzDF72d",
         // Subject 4 (sub V)
         "null",
         // Subject 5 (sub VI)
