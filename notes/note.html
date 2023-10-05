@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Notes </title>
+  <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
+  <link href="note.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="../loader/load.css">
+  <script type="text/javascript" src="../script.js"></script>
+
+  <meta name="title" content="MMMUT Team">
+  <meta name="description"
+    content="Madan Mohan Malviya University of Technology (MMMUT) and its resources is designed by MMMUT RESO Team, including PYQ and Notes of all semesters of B.tech BBA Bpharma MBA Mtech">
+    <meta name="keywords"
+    content="MMMUT,mmmut,mmmut notes,MMMUT Notes,mmmut gorakhpur,mmmut counselling,mmmut cut off,mmmut placement,mmmut cut off jee mains,mmmut student login,mmmut gorakhpur cutoff jee mains,mmmut b pharma fees,mmmut is government or private,mmmut .ac.in,mmmut admission process,samarth mmmut,mmmut cut off jee mains percentile,mmmut cse average package,mmmut logo,mmmut counselling 2022,mmmut counselling 2022 date,mmmut gorakhpur cutoff,mmmut ac in,mmmut cut off jee mains,mmmut placement,mmmut entrance exam 2021,mmmut admission,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech">
+  <meta name="robots" content="index , follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>MMMUT Resources</title>
+  <meta name="language" content="English">
+
+
+  <style>
+    .nav-wrapper {
+      z-index: 7;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body oncontextmenu="return false;">
+
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+      <div class="grad-bar"></div>
+      <nav class="navbar">
+        <!-- <img src="../img/logo.gif" alt="MMMUT"> -->
+        <a href="../index.html"> <img src="../img/logo.gif" alt="MMMUT"></a>
+        <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+          <span class="bar" id="bar1"></span>
+          <span class="bar" id="bar2"></span>
+          <span class="bar" id="bar3"></span>
+        </div>
+        <ul class="nav no-search">
+          <li class="nav-item"><a href="../index.html">Home</a></li>
+          <li class="nav-item"><a href="../pyq/PYQ.html">PYQ</a></li>
+          <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+          <li class="nav-item"><a href="../team.html">Teams</a></li>
+          <li class="nav-item"><a href="../report.html">Contact</a></li>
+          <i class="fas fa-search" id="search-icon"></i>
+          <input class="search-input" type="text" placeholder="Search..">
+        </ul>
+      </nav>
+    </div>
+    <section id="particles-js" class="heading">
+      <h2>MMMUT Resource Hub</h2>
+      <p> Empowering Your Academic Journey!</p>
+
+
+    </section>
+    <div class="parents">
+
+
+      <form action="#" class="filter-options">
+        <select name="branch" id="branch" value="x">
+          <option value="-1">Select a Branch</option>
+          <option value="0">C.S.E</option>
+          <option value="1">I.T</option>
+          <option value="2">E.C.E</option>
+          <option value="13">I.O.T</option>
+          <option value="3">Electrical</option>
+          <option value="4">CIVIL</option>
+          <option value="5">MECH.</option>
+          <option value="6">CHEMICAL</option>
+          <option value="7">B-Pharma</option>
+          <option value="8">MCA</option>
+          <option value="9">BBA</option>
+          <option value="10">MBA</option>
+          <option value="11">MSC</option>
+          <option value="12">MTECH</option>
+        </select>
+
+      </form>
+      <!-- <button class="btn" onclick="updateIframe()">Search</button> -->
+      <button class="button" onclick="updateIframe()">
+        <svg class="svgIcon" viewBox="0 0 512 512" height="1em" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z">
+          </path>
+        </svg>
+        Search
+      </button>
+    </div>
+    <div id="load" style="min-height: 200vh;">
+      <div class="lds-ripple">
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div class="iframe-container">
+
+      <iframe id="iframeViewer" frameborder="0" scrolling="no" oncontextmenu="return false;" allowfullscreen>
+      </iframe>
+
+    </div>
+
+
+
+    <script>
+      var branchSelect = document.getElementById('branch');
+      var iframeViewer = document.getElementById('iframeViewer');
+      var ripple = document.querySelector("#load");
+
+      // Add change event listener to the select element
+      branchSelect.addEventListener('change', updateIframe);
+
+      function displayRipple(duration) {
+        ripple.style.display = "flex";
+        setTimeout(() => {
+          ripple.style.display = "none";
+        }, duration);
+      }
+
+      function updateIframe() {
+        var selectedBranch = branchSelect.value;
+        if (selectedBranch >= 0) {
+          // Display the "ripple" for 3 seconds
+          displayRipple(3000);
+
+          branchSelect.style.backgroundColor = "#e1e1e1";
+          branchSelect.style.color = "black";
+
+          var bkey = 'AIzaSyABJbK8Ek3DD1xIUjk8FxqQB0YZuV0iDsQ';
+          var folderId = getFolderId(selectedBranch);
+
+          if (folderId !== '') {
+
+            iframeViewer.src =
+              'https://googledriveembedder.collegefam.com/?key=' +
+              bkey +
+              '&folderid=' +
+              folderId +
+              '&allowdl=no';
+
+            iframeViewer.addEventListener('contextmenu', (e) => {
+              e.preventDefault();
+            });
+          }
+        } else if (selectedBranch == -1) {
+
+          displayRipple(60000);
+
+          branchSelect.style.backgroundColor = "#fe0000";
+          branchSelect.style.color = "white";
+
+
+          iframeViewer.src = '';
+        }
+      }
+
+
+      function getFolderId(branch) {
+        var folderIds = {
+          '0': '125eMGKukgD1fENBSZRX_W5Tpf1DLCZ8U', // CSE              
+          '1': '1WhBxYyRwLp-M9_hYaLoNZy2tSfYgjvCh', // IT             
+          '2': '1s9fbotWWBzONKNVYv0gDPD38QabjGry1', // ECE 
+
+          '3': '1oquyt0gNpqE5fchpITqw6OFHlilb7rzw', // Electrical      
+          '4': '1LszhC5702Fo9gNQdPQqo5Ulm9j0ObZvR', // Civil           
+          '5': '1muv5kc8liBce-s2npWoJxKHpFxVUroXZ', // MECH             
+          '6': '1D-X2UO7G7MSe7buftZHzXLVOYzCFj1zd', // CHEMICAL        
+          '7': '1BXNQtRLruJAn59SWAk2FYFie7mFXezg-', // B-Pharma        
+          '8': '1q4NTkt4VGuLP0jQ5JviNgvVhxYPvJJsf', // MCA            
+          '9': '1ADHR43mlTPVULERES1hJEoHHUTU3mXbb', // BBA
+          '10': '1fZOdLaw2mdrParA5QSs3RQqjjdji9dVL', // MBA
+          '11': '1Z2ZObZlWETSo6SY1FFty0qkWykLNxOCU', // MSC
+          '12': '1xNiLzaWdSB8Nphj5J-zXwtbXYL1H325V', // mtech
+          '13': '1XVmtbqqSUuEEAdjHGhnaqeErvI6QFNFZ' //IOT 
+        };
+
+        // Return the folder id for the selected branch
+        return folderIds[branch] || '';
+      }
+
+      // Initial update when the page loads
+      updateIframe();
+    </script>
+
+
+
+
+
+
+
+    <!-- // analytics-->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+    authDomain: "mmmutreso.firebaseapp.com",
+    projectId: "mmmutreso",
+    storageBucket: "mmmutreso.appspot.com",
+    messagingSenderId: "3955922251",
+    appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+    measurementId: "G-CDM7273LVH"
+  };
+  
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+
+
+    <script src="note.js"></script>
+    <script src="../script.js"></script>
+
+
+</html>
