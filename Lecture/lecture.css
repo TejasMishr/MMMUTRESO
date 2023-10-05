@@ -49,6 +49,17 @@ body{
     .container {
       flex-direction: column;
     }
+
+    .player {
+      background-color: #e58454;
+      flex: 0 0 50%;
+      position: relative;
+    }
+
+    .playlist{
+      flex: 0 0 48%;
+      padding: 2px;
+    }
   
     .player,
     .playlist {
