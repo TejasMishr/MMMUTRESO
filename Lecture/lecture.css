@@ -111,8 +111,8 @@ select {
   outline: 0;
   background: #e1e1e1;
   color: #090909;
-  border: 2px solid crimson;
-  padding: 7px;
+  border: 1px solid crimson;
+  padding: 3px;
   border-radius: 30px;
   cursor: pointer;
   width: 12rem;
