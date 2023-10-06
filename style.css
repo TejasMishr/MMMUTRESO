@@ -107,10 +107,10 @@ canvas {
 
 }
 
-.container .card:hover {
+/* .container .card:hover {
   height: 400px;
 
-}
+} */
 
 .container .card .imgbr {
   position: absolute;
@@ -124,11 +124,11 @@ canvas {
 
 }
 
-.container .card:hover .imgbr {
+/* .container .card:hover .imgbr {
   top: -100px;
   scale: 0.75;
   box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
-}
+} */
 
 .container .card .imgbr img {
   position: absolute;
@@ -153,11 +153,11 @@ canvas {
 
 }
 
-.container .card:hover .content {
+/* .container .card:hover .content {
   top: 150px;
   height: 250px;
 
-}
+} */
 
 
 .container.card .content h3 {
@@ -902,3 +902,152 @@ ul li a {
   
 }
 
+
+
+
+
+
+/* Style for the custom tab image containers */
+.custom-tab-block {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
+    gap: -20px;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+.custom-tab-block img {
+  width: 23px;
+  height: auto;
+  margin: 5px; /* Add margin to create a gap between images */
+}
+
+/* Style for the custom tab panels and headers */
+.custom-tab-panel {
+  display: none;
+  /* height: 68vh; */
+  overflow: hidden;
+  /* overflow-y: scroll; */
+}
+
+.custom-tab-panel.active {
+  display: block;
+}
+
+.custom-tab-heading {
+  text-align: center;
+}
+
+/* Style for the custom tab header links */
+.custom-tab-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.custom-tab-item {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f1f1f1;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.custom-tab-item:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+
+.image-container{
+  height: 100%;
+  width: auto;
+padding: 5px;
+/* box-sizing: inherit; */
+background-image: linear-gradient(
+  125deg,
+  hsl(0deg 0% 100%) 13%,
+  hsl(300deg 100% 100%) 41%,
+  hsl(300deg 100% 100%) 47%,
+  hsl(300deg 100% 100%) 49%,
+  hsl(0deg 3% 99%) 49%,
+  hsl(0deg 3% 96%) 48%,
+  hsl(0deg 3% 92%) 48%,
+  hsl(0deg 3% 89%) 48%,
+  hsl(0deg 3% 90%) 48%,
+  hsl(0deg 3% 93%) 52%,
+  hsl(0deg 3% 97%) 60%,
+  hsl(0deg 0% 100%) 99%
+);
+}
+
+.image-container:hover{
+  background-image: linear-gradient(
+    125deg,
+    hsl(200deg 59% 86%) 0%,
+    hsl(202deg 58% 84%) 33%,
+    hsl(205deg 58% 83%) 43%,
+    hsl(207deg 57% 82%) 48%,
+    hsl(209deg 56% 80%) 50%,
+    hsl(213deg 56% 79%) 50%,
+    hsl(215deg 55% 78%) 50%,
+    hsl(217deg 55% 77%) 50%,
+    hsl(219deg 54% 75%) 50%,
+    hsl(222deg 53% 74%) 50%,
+    hsl(224deg 53% 73%) 53%,
+    hsl(227deg 52% 72%) 60%,
+    hsl(229deg 51% 70%) 94%
+  );
+}
+.image-container img{
+  /* border: 2px solid black; */
+/* border-radius: 50%; */
+height: 10vh;
+width: auto;
+
+}
+
+.image-container:hover img{
+  border: 1px solid rgb(57, 57, 57);
+  border-radius: 50%;
+  transition: .10s ease-in-out;
+}
+
+
+
+
+.image-title{
+  /* font-size: 23px; */
+  text-wrap: 10px;
+  color: #000;
+  font-weight: 700;
+ text-align: center;
+}
+.image-container2{
+  max-width:20vw ;
+  margin: 2px;
+}
+.image-container{
+  width: 100%;
+}
+
+@media (max-width:720px) {
+  .image-container img{
+    width: 90%;
+  }
+  .part{
+    flex-direction: column-reverse;
+  }
+}
+.parent{
+  display: none;
+}
