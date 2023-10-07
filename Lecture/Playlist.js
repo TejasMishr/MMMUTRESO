@@ -99,9 +99,9 @@ const Pid = [
     //Semester 3
     [
       // Subject 0 (sub I)
-      "null",
+      "PLspCDH1t7pQddZ5YPr0LHIxSML2ORDKgF",
       // Subject 1 (sub II)
-      "PL5Dqs90qDljWiE0fK-akBQXH2yp2OWXVr",
+      "PLISTUNloqsz0z9JJJke7g7PxRLvy6How9",
       // Subject 2 (sub III)
       "null",
       // Subject 3 (sub IV)
