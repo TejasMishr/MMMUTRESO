@@ -422,6 +422,7 @@ const lecturesImages = [
 
 // Adding dynamic images with titles to the "Misc Materials" custom tab
 const miscImages = [
+  { src: "img/Registration.jpeg", title: "Registration" ,link: "https://registration.mmmut.ac.in/"},
   { src: "img/syllabus.jpg", title: "SYLLABUS",link: "syllabus/syllabus.html" },
   { src: "img/Result.jpeg", title: "Result" ,link: "http://172.16.1.250:8081/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2FStudents&reportUnit=%2FStudents%2FResult_of_All_Semesters&standAlone=true"},
   { src: "img/Academic_calender.jpeg", title: "Calender",link: "holidays/holidays.html" },
@@ -430,6 +431,7 @@ const miscImages = [
   { src: "img/Notice.jpeg", title: "Contribute" ,link: "Contribute.html"},
   { src: "img/Placement.jpeg", title: "Placement" ,link: "Placement/placement.html"},
   { src: "img/Timetable.jpeg", title: "TimeTable" ,link: "timetable/timetable.html"},
+  { src: "img/Alumini.jpeg", title: "Alumini" ,link: "https://www.malaviyans.in/"},
 ];
 
 // Call the function to add dynamic images with titles and parent divs to the respective custom tabs
