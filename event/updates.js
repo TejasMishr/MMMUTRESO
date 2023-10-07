@@ -412,7 +412,7 @@ const pyqsImages = [
 const lecturesImages = [
   { src: "img/btech_pyq.jpg", title: "BTECH",link: "Lecture/lecture.html" },
   { src: "img/mtech_pyq.jpg", title: "MTECH",link: "Contribute.html" },
-  { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharm/Lecture/lecture.html"},
+  { src: "img/Bpharma_pyq.jpg", title: "BPharm" ,link: "Bpharm/Lecture/lecture.html"},
   { src: "img/mca_pyq.jpg", title: "MCA",link: "Contribute.html" },
   { src: "img/bba_pyq.jpg", title: "BBA",link: "Contribute.html" },
   { src: "img/mba_pyq.jpg", title: "MBA",link: "Contribute.html" },
@@ -422,14 +422,14 @@ const lecturesImages = [
 
 // Adding dynamic images with titles to the "Misc Materials" custom tab
 const miscImages = [
-  { src: "img/Registration.jpeg", title: "Registration" ,link: "https://registration.mmmut.ac.in/"},
+  { src: "img/Registration.jpeg", title: "Register" ,link: "https://registration.mmmut.ac.in/"},
   { src: "img/syllabus.jpg", title: "SYLLABUS",link: "syllabus/syllabus.html" },
   { src: "img/Result.jpeg", title: "Result" ,link: "http://172.16.1.250:8081/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2FStudents&reportUnit=%2FStudents%2FResult_of_All_Semesters&standAlone=true"},
   { src: "img/Academic_calender.jpeg", title: "Calender",link: "holidays/holidays.html" },
   { src: "img/Cutoff.jpeg", title: "Cutoff" ,link: "cutoff/cutoff.html"},
   { src: "img/Fee.jpeg", title: "Fee" ,link: "Fee/feestructure.html"},
   { src: "img/Notice.jpeg", title: "Contribute" ,link: "Contribute.html"},
-  { src: "img/Placement.jpeg", title: "Placement" ,link: "Placement/placement.html"},
+  { src: "img/placement.jpeg", title: "Placement" ,link: "Placement/placement.html"},
   { src: "img/Timetable.jpeg", title: "TimeTable" ,link: "timetable/timetable.html"},
   { src: "img/Alumini.jpeg", title: "Alumini" ,link: "https://www.malaviyans.in/"},
 ];
