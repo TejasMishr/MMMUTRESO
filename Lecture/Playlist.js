@@ -203,25 +203,25 @@ const Pid = [
   [
     // Semester (I)
     [
-      // Subject 0 (sub I)
-      "null",
-      // Subject 1 (sub II)
-      "null",
-      // Subject 2 (sub III)
-      "null",
-      // Subject 3 (sub IV)
-      "null",
-      // Subject 4 (sub V)
-      "null",
+      // Subject 0 (sub I) Electronics Minor 1 & 2
+      "PL-IC1WV1OE4mUCq1VSqjgVM7KMTitVcSy",
+      // Subject 1 (sub II) Maths 1
+      "PL5Dqs90qDljVi1IPwOFK4kXxcnxQmeZrr",
+      // Subject 2 (sub III) Maths 2
+      "PL5Dqs90qDljX76bGTzMjyFU_FsSkmIzYU",
+      // Subject 3 (sub IV) Maths 3
+      "PL5Dqs90qDljUHULTc6ab67oi6BB0DYkcs",
+      // Subject 4 (sub V) C language
+      "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 5 (sub VI)
       "null",
     ],
     // Semester 2
     [
-      // Subject 0 (sub I)
-      "Null",
-      // Subject 1 (sub II)
-      "Null",
+      // Subject 0 (sub I) Differential Eqn
+      "PLdM-WZokR4tbGKbeK8fDIdEN0NEcvAQlC",
+      // Subject 1 (sub II) BEE
+      "PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc",
       // Subject 2 (sub III)
       "Null",
       // Subject 3 (sub IV)
