@@ -92,7 +92,7 @@ const Pid = [
       "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 2 (sub III)
       "PLBliHJXnYGcoxAvJ0hKFZE4XIgu1Xa8y6", //Applied Stat Unit 1
-      "PLBliHJXnYGcrhFuWeceuV1uGNh-ohND2x",
+      "PLBliHJXnYGcrhFuWeceuV1uGNh-ohND2x", //Stat 1
       "PLBliHJXnYGcq-D6mpLIh6CHn-Nd4IIFbZ", //Discrete Unit 1
       "PLBliHJXnYGcrM3n-LqgrpTns8t69wVDb-" , //Discrete Unit 2
       "PLBliHJXnYGcpa3018BjWCtdRDpIqz2jAZ" , //Algebric Structure (Minor)
@@ -106,9 +106,9 @@ const Pid = [
     //Semester 3
     [
       // Subject 0 (sub I)
-      "PLspCDH1t7pQddZ5YPr0LHIxSML2ORDKgF",
+      "null",
       // Subject 1 (sub II)
-      "PLISTUNloqsz0z9JJJke7g7PxRLvy6How9",
+      "PL5Dqs90qDljWiE0fK-akBQXH2yp2OWXVr",
       // Subject 2 (sub III)
       "null",
       // Subject 3 (sub IV)
