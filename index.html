@@ -32,7 +32,9 @@
 
 
 
-    function gtag() { dataLayer.push(arguments); }
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
 
@@ -65,6 +67,7 @@
       position: relative;
 
     }
+
 
     .dg.ac {
       display: none;
@@ -100,6 +103,76 @@
       .container .card {
         height: 277px;
       }
+    }
+
+    .right {
+      padding: 2px;
+    }
+
+    @media (max-width: 1150px) {
+      .custom-tab-panel {
+        height: 68vh;
+        overflow-y: scroll;
+      }
+    }
+
+    @media (min-width: 720px) and (max-width: 920px) {
+      .custom-tab-item {
+        padding: 5px 5px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f1f1f1;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        margin: 0 4px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+    }
+
+
+    @media (max-width: 450px) {
+      .custom-tab-item {
+        padding: 5px 4px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f1f1f1;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        margin: 0 6px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+    }
+
+    @media (max-width: 280px) {
+      .custom-tab-item {
+        padding: 2px 2px;
+        text-decoration: none;
+        color: #333;
+        background-color: #f1f1f1;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        margin: 0 3px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+    }
+
+    @media (max-width : 310px) {
+      .image-conntainer{
+        padding: 0;
+      }
+      .image-container2 {
+    max-width: 19vw;
+    margin: 0px;
+
+}
+.custom-tab-block{
+  gap: 5px;
+}
+
+      
     }
   </style>
   <script>
@@ -261,38 +334,7 @@
       <div class="part">
 
 
-        <div class="right">
-          <div class="tab-container" style="height: 85vh;">
-            <nav>
-              <div class="tab-header">
-                <a class="tab-item active" data-tab="events">Events</a>
-                <a class="tab-item" data-tab="news">Links</a>
-              </div>
-            </nav>
-            <div class="tab-content">
-              <div class="tab-panel active" id="events">
-                <div class="tab-heading">
-                  <h4>Events</h4>
-                </div>
-                <div class="tab-block">
-                  <!-- Event items go here -->
-                </div>
-              </div>
-              <div class="tab-panel" id="news">
-                <div class="tab-heading">
-                  <h4>
-                    <h1>MMMUT</h1> Links
-                  </h4>
-                </div>
-                <div class="tab-block">
-                  <!-- News items go here -->
-                </div>
-              </div>
-            </div>
 
-
-          </div>
-        </div>
         <div class="right">
           <div class="custom-tab-container tab-container" style="height: 85vh;">
             <nav>
@@ -341,7 +383,39 @@
 
 
         </div>
-       
+        <div class="right">
+          <div class="tab-container" style="height: 85vh;">
+            <nav>
+              <div class="tab-header">
+                <a class="tab-item active" data-tab="events">Events</a>
+                <a class="tab-item" data-tab="news">Links</a>
+              </div>
+            </nav>
+            <div class="tab-content">
+              <div class="tab-panel active" id="events">
+                <div class="tab-heading">
+                  <h4>Events</h4>
+                </div>
+                <div class="tab-block">
+                  <!-- Event items go here -->
+                </div>
+              </div>
+              <div class="tab-panel" id="news">
+                <div class="tab-heading">
+                  <h4>
+                    <h1>MMMUT</h1> Links
+                  </h4>
+                </div>
+                <div class="tab-block">
+                  <!-- News items go here -->
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -473,42 +547,55 @@
   <!-- test git -->
 
   <script>
-    var caros = document.querySelectorAll('.caros');
-    let currentindex = document.querySelector('.active').getAttribute('var');
-    let numitems = caros.length;
-    var leftclick = document.querySelector('.backarrow')
-    var rightclick = document.querySelector('.rightarrow')
-    leftclick.addEventListener('click', function () {
-      currentindex = document.querySelector('.active').getAttribute('var')
-      console.log(currentindex);
+    document.addEventListener('DOMContentLoaded', function () {
+      var caros = document.querySelectorAll('.caros');
+      var currentindex = 0;
+      var numitems = caros.length;
+      var leftclick = document.querySelector('.backarrow');
+      var rightclick = document.querySelector('.rightarrow');
 
-      caros[currentindex].classList.toggle('active')
-      currentindex = currentindex - 1;
-      if (currentindex < 0) {
-        currentindex = numitems - 1;
+      function updateCarousel() {
+        for (var i = 0; i < numitems; i++) {
+          caros[i].classList.remove('active');
+        }
+        caros[currentindex].classList.add('active');
       }
-      caros[currentindex].classList.toggle('active')
-    })
-    rightclick.addEventListener('click', function () {
-      caros[currentindex].classList.toggle('active')
-      currentindex++;
-      if (currentindex === numitems) {
-        currentindex = 0;
+
+      leftclick.addEventListener('click', function () {
+        currentindex--;
+        if (currentindex < 0) {
+          currentindex = numitems - 1;
+        }
+        updateCarousel();
+      });
+
+      rightclick.addEventListener('click', function () {
+        currentindex++;
+        if (currentindex >= numitems) {
+          currentindex = 0;
+        }
+        updateCarousel();
+      });
+
+      function autoChangeSlide() {
+        currentindex++;
+        if (currentindex >= numitems) {
+          currentindex = 0;
+        }
+        updateCarousel();
       }
-      caros[currentindex].classList.toggle('active')
 
-    })
-    setInterval(() => {
-      caros[currentindex].classList.toggle('active');
-      currentindex++;
+      var interval = setInterval(autoChangeSlide, 7000);
 
+      //Pausing on interaction
+      document.querySelector('.eve').addEventListener('mouseover', function () {
+        clearInterval(interval);
+      });
 
-      if (currentindex === numitems) {
-        currentindex = 0;
-      }
-      caros[currentindex].classList.toggle('active')
-
-    }, 7000);
+      document.querySelector('.eve').addEventListener('mouseout', function () {
+        interval = setInterval(autoChangeSlide, 7000);
+      });
+    });
   </script>
 
   <script src="load/load.js"></script>

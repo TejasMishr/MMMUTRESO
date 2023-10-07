@@ -319,3 +319,9 @@ body {
 color: #000;
   }
 }
+
+
+.custom-tab-item.active {
+  background: #007bff;
+  color: white;
+}
