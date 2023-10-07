@@ -68,12 +68,15 @@ const Pid = [
     // Semester (I)
     [
       // Subject 0 (sub I)
-      // "PLBliHJXnYGcrhL0OWYOq-n58p6rqo88NK",
+      "PLq-Gm0yRYwTjqLVw4u5-VjL7ediCqRrj1", //Integral calculus
       // Subject 1 (sub II)
-      "PLBliHJXnYGcrLrUib1UyvuWi1XupGDDI-",
+      "PLhSp9OSVmeyIVQpCt2kwsC1dNVl1GwlVn",  //Matrix
+
+      "PLBliHJXnYGcqSLfUTZ2Dk9yRxkk8vX8FC", //Differential Equation
 
       // Subject 2 (sub III) BEC
       "PLwjK_iyK4LLDBB1E9MFbxGCEnmMMOAXOH",
+      "PL3qvHcrYGy1uF5KAGntUITTJ85Dm3Dtdy", //BEC 
       // Subject 3 (sub IV) BEE
       "PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=z2z_wodyAZoIT3Tp",
       // Subject 4 (sub V) Software Tools
@@ -88,7 +91,11 @@ const Pid = [
       // Subject 1 (sub II)
       "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
       // Subject 2 (sub III)
-      // "PLu0W_9lII9aiXlHcLx-mDH1Qul38wD3aR",
+      "PLBliHJXnYGcoxAvJ0hKFZE4XIgu1Xa8y6", //Applied Stat Unit 1
+      "PLBliHJXnYGcrhFuWeceuV1uGNh-ohND2x",
+      "PLBliHJXnYGcq-D6mpLIh6CHn-Nd4IIFbZ", //Discrete Unit 1
+      "PLBliHJXnYGcrM3n-LqgrpTns8t69wVDb-" , //Discrete Unit 2
+      "PLBliHJXnYGcpa3018BjWCtdRDpIqz2jAZ" , //Algebric Structure (Minor)
       // Subject 3 (sub IV)
       "null",
       // Subject 4 (sub V)

@@ -271,6 +271,16 @@ setTimeout(function() {
 
 
 
+
+
+
+
+
+
+
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -278,28 +288,25 @@ setTimeout(function() {
 
 
 
- // Function to switch between custom tabs
  function switchCustomTab(tabName) {
-  // Get all custom tab panels
+
   const tabPanels = document.querySelectorAll(".custom-tab-panel");
 
-  // Hide all tab panels
   tabPanels.forEach(panel => {
     panel.style.display = "none";
   });
 
-  // Show the selected tab panel
+
   const selectedTab = document.querySelector(`#custom-${tabName}`);
   if (selectedTab) {
     selectedTab.style.display = "block";
   }
 }
 
-// Add click event listeners to custom tab items
 const customTabItems = document.querySelectorAll(".custom-tab-item");
 customTabItems.forEach(item => {
   item.addEventListener("click", function() {
-    // Get the data-custom-tab attribute to determine the tab to switch to
+   
     const tabName = this.getAttribute("data-custom-tab");
 
     // Remove 'active' class from all tab items
@@ -307,15 +314,15 @@ customTabItems.forEach(item => {
       tabItem.classList.remove("active");
     });
 
-    // Add 'active' class to the clicked tab item
+   
     this.classList.add("active");
 
-    // Switch to the selected tab
+   
     switchCustomTab(tabName);
   });
 });
 
-// Initialize with the first tab (optional)
+
 switchCustomTab("notes");
 
 
@@ -335,44 +342,41 @@ function addImagesToCustomTab(tabName, imageInfo) {
   
   // Clear existing content
   customTabBlock.innerHTML = "";
-
-  // Iterate through image info and create image elements with titles, anchor tags, and parent divs
   for (const info of imageInfo) {
     const imgParentDiv = document.createElement("div");
     const imgParentDiv2 = document.createElement("div");
     imgParentDiv.classList.add("image-container"); // Add a class for styling
     imgParentDiv2.classList.add("image-container2"); // Add a class for styling
 
-    // Create an anchor tag
+   
     const anchor = document.createElement("a");
-    anchor.href = info.link; // Set the link URL
-    anchor.target = "_blank"; // Set the target to open in a new tab/window (optional)
-
+    anchor.href = info.link; 
+    anchor.target = "_blank"; 
     const img = document.createElement("img");
     img.src = info.src;
     img.alt = "Image";
 
-    // Append the image to the anchor tag
+    
     anchor.appendChild(img);
 
-    // Append the anchor tag to the parent div
+   
     imgParentDiv.appendChild(anchor);
 
     const title = document.createElement("div");
     title.textContent = info.title;
-    title.classList.add("image-title"); // Add a class for styling
+    title.classList.add("image-title"); 
 
-    // Append the title to the parent div
+    
     imgParentDiv.appendChild(title);
 
-    // Append the parent div to the custom tab block
+    
     customTabBlock.appendChild(imgParentDiv2);
     imgParentDiv2.appendChild(imgParentDiv);
   }
 }
 
 
-// Example: Adding dynamic images with titles to the "Notes" custom tab
+// Adding dynamic images with titles to the "Notes" custom tab
 const notesImages = [
   { src: "img/cse.jpg", title: "CSE",link: "notes/note.html?branch=0"},
   { src: "img/IT.jpg", title: "IT",link: "notes/note.html?branch=1" },
@@ -392,7 +396,7 @@ const notesImages = [
  
 ];
 
-// Example: Adding dynamic images with titles to the "PYQs" custom tab
+// Adding dynamic images with titles to the "PYQs" custom tab
 const pyqsImages = [
   { src: "img/btech_pyq.jpg", title: "BTECH",link: "pyq/PYQ.html" },
   { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharm/bpharm.html?branch=0"},
@@ -403,10 +407,10 @@ const pyqsImages = [
   { src: "img/mtech_pyq.jpg", title: "MTECH",link: "mtech/mtech.html" },
 ];
 
-// Example: Adding dynamic images with titles to the "Lectures" custom tab
+// Adding dynamic images with titles to the "Lectures" custom tab
 const lecturesImages = [
   { src: "img/btech_pyq.jpg", title: "BTECH",link: "Lecture/lecture.html" },
-  { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharma/Lecture/lecture.html"},
+  { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharm/Lecture/lecture.html"},
   // { src: "img/mca_pyq.jpg", title: "MCA",link: "notes/note.html?branch=0" },
   // { src: "img/bba_pyq.jpg", title: "BBA",link: "notes/note.html?branch=0" },
   // { src: "img/mba_pyq.jpg", title: "MBA",link: "notes/note.html?branch=0" },
@@ -414,18 +418,20 @@ const lecturesImages = [
   // { src: "img/mtech_pyq.jpg", title: "MTECH",link: "notes/note.html?branch=0" },
 ];
 
-// Example: Adding dynamic images with titles to the "Misc Materials" custom tab
-const miscImages = [
-  { src: "img/Misc1.png", title: "Miscellaneous 1",link: "notes/note.html?branch=0" },
-  { src: "img/Misc2.png", title: "Miscellaneous 2" ,link: "notes/note.html?branch=0"},
-  { src: "img/Misc3.png", title: "Miscellaneous 3" ,link: "notes/note.html?branch=0"},
-];
+// Adding dynamic images with titles to the "Misc Materials" custom tab
+// const miscImages = [
+//   { src: "img/Misc1.png", title: "Miscellaneous 1",link: "notes/note.html?branch=0" },
+//   { src: "img/Misc2.png", title: "Miscellaneous 2" ,link: "notes/note.html?branch=0"},
+//   { src: "img/Misc3.png", title: "Miscellaneous 3" ,link: "notes/note.html?branch=0"},
+// ];
 
 // Call the function to add dynamic images with titles and parent divs to the respective custom tabs
+
+
 addImagesToCustomTab("notes", notesImages);
 addImagesToCustomTab("pyqs", pyqsImages);
 addImagesToCustomTab("lectures", lecturesImages);
-addImagesToCustomTab("misc", miscImages);
+// addImagesToCustomTab("misc", miscImages);
 
 
 
