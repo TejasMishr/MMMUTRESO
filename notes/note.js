@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 break; // Exit the loop once the option is found
             }
         }
+
+        if(branchSelect != -1){
+            updateIframe();
+          }
     }
 });
 
