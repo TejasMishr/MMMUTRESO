@@ -21,7 +21,7 @@
 function div(){
     document.getElementById("back").style.visibility="hidden";
 }
-setTimeout("div()", 3300);
+setTimeout("div()", 1500);
 
 
 
