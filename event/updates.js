@@ -402,7 +402,7 @@ const lecturesImages = [
   { src: "img/btech_pyq.jpg", title: "BTECH",link: "Lecture/lecture.html" },
   { src: "img/mtech_pyq.jpg", title: "MTECH",link: "Contribute.html" },
   { src: "img/Bpharma_pyq.jpg", title: "BPharm" ,link: "Bpharm/Lecture/lecture.html"},
-  { src: "img/mca_pyq.jpg", title: "MCA",link: "Contribute.html" },
+  { src: "img/mca_pyq.jpg", title: "MCA",link: "MCA/Lecture/lecture.html" },
   { src: "img/bba_pyq.jpg", title: "BBA",link: "Contribute.html" },
   { src: "img/mba_pyq.jpg", title: "MBA",link: "Contribute.html" },
   // { src: "img/mca_pyq.jpg", title: "MCA",link: "Contribute.html" },

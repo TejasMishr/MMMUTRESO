@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lecture Room</title>
+    <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
+    <!-- <script type="text/javascript" src="../script.js"></script> -->
+    <link rel="stylesheet" href="https://mmmut.xyz/loader/load.css" />
+    <link rel="stylesheet" href="https://mmmut.xyz//pyq/error.css" type="text/css" />
+    <link rel="shortcut icon" href="https://mmmut.xyz/logo.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/674dd8e09c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+
+    <link rel="stylesheet" href="lecture.css" />
+    <link rel="stylesheet" href="../mca.css" />
+
+    <style>
+      .navbar{
+        background: black;
+      }
+      .nav-item a{
+        color: #fff;
+      }
+      .navbar ul {
+        gap: 1vh;
+      }
+      .page-wrapper {
+        background: black;
+      }
+
+      .nav-wrapper {
+        z-index: 7;
+        position: relative;
+      }
+
+      @media (max-width: 400px) {
+        #load {
+          height: 121vh;
+        }
+      }
+
+      .filter-options {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: stretch;
+        justify-content: space-evenly;
+      }
+
+      @media (max-width: 720px) {
+        form h3 {
+          margin-top: 1vh;
+        }
+      }
+      @media only screen and (max-width: 720px) {
+        .navbar ul {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          justify-content: start;
+          top: 55px;
+          background-color: #fff;
+          width: 100%;
+          height: calc(100vh - 55px);
+          /* transform: translate(-101%); */
+          text-align: center;
+          overflow: hidden;
+          display: none;
+        }
+      }
+      #particles-js {
+        min-height: 165px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page-wrapper">
+      <div class="nav-wrapper">
+        <div class="grad-bar"></div>
+        <nav class="navbar">
+          <a href="../index.html"> <img src="https://mmmut.xyz/img/logo.gif" alt="MMMUT" /></a>
+          <div class="menu-toggle" id="mobile-menu" onclick="f1()">
+            <span class="bar" id="bar1"></span>
+            <span class="bar" id="bar2"></span>
+            <span class="bar" id="bar3"></span>
+          </div>
+          <ul class="nav no-search">
+            <li class="nav-item"><a href="../index.html">Home</a></li>
+            <li class="nav-item"><a href="#">PYQ</a></li>
+            <!-- <li class="nav-item"><a href="#">Re</a></li> -->
+            <li class="nav-item"><a href="../team.html">Teams</a></li>
+            <li class="nav-item"><a href="../report.html">Contact</a></li>
+            <!-- <i class="fas fa-search" id="search-icon"></i> -->
+            <!-- <input class="search-input" type="text" placeholder="Search.."> -->
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <form action="#" class="filter-options">
+      <select name="branch" id="branch">
+        <option value="-1">Branch</option>
+
+        <option value="0">MCA</option>
+        <!-- <option value="1">I.T</option>
+        <option value="2">E.C.E</option>
+        <option value="3">EE</option>
+        <option value="4">MECH</option>
+        <option value="5">Chemical</option> -->
+      </select>
+
+      <select name="semester" id="fileSelect">
+        <option value="-1">Semester</option>
+        <option value="0">I</option>
+        <option value="1">II</option>
+        <option value="2">III</option>
+        <option value="3">IV</option>
+      </select>
+
+      <select name="subject" id="SelectSubject">
+        <option value="-1">Subject</option>
+        <!-- <option value="0">sub I</option>
+        <option value="1">sub II</option>
+        <option value="2">sub III</option>
+        <option value="3">sub IV</option>
+        <option value="4">sub V</option>
+        <option value="5">sub VI</option> -->
+      </select>
+    </form>
+
+    <script>
+      var subnames = 
+      [
+        //MCA Subjects
+        [
+          //sem 1 subject names
+          ["OOPS", "DBMS", "Computer Organization & Architecture", "Software Engineering", "LINUX","Software Engi. Gate Smasher"],
+          //sem 2 names
+          ["JAVA Programming", "Data Structures & Applications", "Web Technologies", "Operating System Concept",],
+          //sem 3
+          ["Artificial Intelligence", "C N", "DAA", "Cloud Computing"],
+        ],
+        // //IT subjects
+        // [
+        //   [" I.T Maths", " I.T Physics", " I.T Chemistry", " I.T Bio", " I.T che", " I.T phy"],
+        //   ["A", "B", "C", "D", "E", null],
+        //   ["X", "Y", "Z", "ZZ", null, null],
+        // ]
+      ];
+
+      // Function to update the subjects based on selected branch and semester
+      function updateSubjects() {
+        var branchIndex = document.getElementById("branch").value;
+        var semesterIndex = document.getElementById("fileSelect").value; // Changed the ID here
+        var subjectSelect = document.getElementById("SelectSubject");
+
+       
+        subjectSelect.innerHTML = "";
+
+       
+        if (
+          branchIndex >= 0 &&
+          semesterIndex >= 0 &&
+          subnames[branchIndex] &&
+          subnames[branchIndex][semesterIndex]
+        ) {
+          var subjects = subnames[branchIndex][semesterIndex];
+          // var tot=0;
+          for (var i = 0; i < subjects.length; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.text =
+              subjects[i] !== null ? subnames[branchIndex][semesterIndex][i] : "N/A";
+            console.log(subnames[branchIndex][i]);
+            subjectSelect.appendChild(option);
+          }
+        } else {
+          var option = document.createElement("option");
+          option.value = "-1";
+          option.text = "Subject";
+          subjectSelect.appendChild(option);
+        }
+      }
+
+   
+      document.getElementById("branch").addEventListener("change", updateSubjects);
+      document.getElementById("fileSelect").addEventListener("change", updateSubjects); 
+    </script>
+
+    <div class="container">
+      <div class="player">
+        <iframe
+          id="videoPlayer"
+          width="100%"
+          height="100%"
+          frameborder="0"
+          oncontextmenu="return false"
+          ;
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="playlist" id="playlist">
+        <!-- Playlist dynamically added here -->
+      </div>
+    </div>
+    <script src="Playlist.js"></script>
+    <script src="lecture.js"></script>
+  </body>
+  <script src="../script.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAl6ZAvmADnJ-3XskAjCiya73Q2l3Yxbro",
+      authDomain: "mmmutreso.firebaseapp.com",
+      projectId: "mmmutreso",
+      storageBucket: "mmmutreso.appspot.com",
+      messagingSenderId: "3955922251",
+      appId: "1:3955922251:web:5c61fdf70a647b87d904ce",
+      measurementId: "G-CDM7273LVH"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+</html>
