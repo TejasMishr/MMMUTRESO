@@ -45,11 +45,12 @@ function addNewItem(tabType, title, description, link, buttonText) {
 
 let currentIndex = 0;
 const eventItems = [
+
   {
-    title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
-    description: 'Registration Portal',
-    link: 'https://registration.mmmut.ac.in/',
-    buttonText: 'Register'
+    title: 'Orientation of Codechef MMMUT Chapter Society',
+    description: 'Comming Soon..',
+    link: 'https://chat.whatsapp.com/KE4dZGIit70HGAQk1c8k2d',
+    buttonText: 'Join..'
   },
   
   {
@@ -83,22 +84,10 @@ const eventItems = [
     buttonText: 'LOGIN.'
   },
   {
-    title: 'Website Access Login Portal ( Faculties )',
-    description: 'Only For Faculties',
-    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
-    buttonText: 'LOGIN.'
-  },
-  {
     title: 'Sponsored Research Projects ',
     description: 'Funded Projects',
     link: 'http://www.mmmut.ac.in/ViewSponsoredProjects',
     buttonText: 'View..'
-  },
-  {
-    title: 'Register for the New Semester: Navigate Your Academic Journey Through Registration Portal',
-    description: 'Registration Portal',
-    link: 'https://registration.mmmut.ac.in/',
-    buttonText: 'Register'
   },
   {
     title: 'Training And Placement Website',
