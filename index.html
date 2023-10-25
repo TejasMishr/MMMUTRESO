@@ -71,6 +71,9 @@
   </script>
   <!-- End Google Analytics -->
 
+  <link rel="manifest" href="manifest.json">
+
+
   <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="script.js"></script>
@@ -237,6 +240,66 @@
       }
     }
 
+    .eve{
+      margin-top: -8px;
+    }
+
+
+
+
+/* fixed button install css */
+/* .fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+} */
+
+/* #addToHomeScreenBtn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+    animation: moveUpDown 1s infinite alternate;
+}
+
+#addToHomeScreenBtn:hover {
+    background-color: #28a745;
+}
+
+#addToHomeScreenBtn .download-icon {
+    font-size: 24px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 10%;
+
+
+
+} */
+
+#addToHomeScreenBtn{
+    background: none;
+    /* color: white; */
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    padding: 1px;
+}
+
+/* ---------------------------------- */
+
+
+
+
     
   </style>
   <script>
@@ -368,7 +431,8 @@
 
         <ul class="nav no-search navi">
           <li class="nav-item"><a href="index.html" class="animation">Home</a></li>
-          <li class="nav-item"><a href="Contribute.html" class="animation">Contribute</a></li>
+          <li class="nav-item"><a class="animation" id="addToHomeScreenBtn">Install</a></li>
+        
           <!-- <li class="nav-item"><a href="#">Re</a></li> -->
           <li class="nav-item"><a href="team.html" style="text-align: center;" class="animation">Team</a></li>
           <li class="nav-item"><a href="report.html" class="animation">Contact</a></li>
@@ -391,6 +455,21 @@
 
     </section> -->
     <!-- here goes he event and news section -->
+
+
+
+
+<!-- fixed button Html install -->
+
+    <!-- <div class="fixed-button">
+      <div class="circle" id="addToHomeScreenBtn">
+          <span class="download-icon">&#x2B07;</span>
+      </div>
+    </div> -->
+
+
+<!-- ============================ -->
+
 
 
     <section class="eve">
@@ -698,4 +777,69 @@
 </script>
 <script src="script.js"></script>
 
+
+
+
+<script>
+  // Select the button element
+const addToHomeScreenBtn = document.getElementById('addToHomeScreenBtn');
+
+// Initialize deferredPrompt for use later to show browser install prompt
+let deferredPrompt;
+
+// Event listener for beforeinstallprompt event
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  event.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = event;
+
+  // Show the button
+  addToHomeScreenBtn.style.display = 'block';
+  
+  // Handle button click
+  addToHomeScreenBtn.addEventListener('click', () => {
+    // Show the install prompt
+    deferredPrompt.prompt();
+
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice
+      .then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+
+        // Reset the deferredPrompt variable
+        deferredPrompt = null;
+      });
+
+    // Hide the button after prompting
+    addToHomeScreenBtn.style.display = 'none';
+  });
+});
+
+// Event listener for appinstalled event
+window.addEventListener('appinstalled', (event) => {
+  console.log('App was installed.', event);
+});
+</script>
+
+<!-- <script>
+  const installButton = document.querySelector('.addToHomeScreenBtn');
+const fixedButton = document.getElementById('addToHomeScreenBtn');
+
+installButton.addEventListener('click', function() {
+    fixedButton.style.display = 'block';
+});
+
+fixedButton.addEventListener('click', function(event) {
+    event.stopPropagation(); // Prevents the click event from reaching the body and immediately hiding the button
+});
+
+document.body.addEventListener('click', function() {
+    fixedButton.style.display = 'none';
+});
+</script> -->
 </html>

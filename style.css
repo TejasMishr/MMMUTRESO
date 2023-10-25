@@ -496,6 +496,7 @@ h3 {
   position: relative;
   background: linear-gradient(to right, #00093c, #2d0b00);
   padding: 10px 0 20px;
+  z-index: 1;
 
 }
 
