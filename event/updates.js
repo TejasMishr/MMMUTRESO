@@ -46,12 +46,7 @@ function addNewItem(tabType, title, description, link, buttonText) {
 let currentIndex = 0;
 const eventItems = [
 
-  {
-    title: 'Orientation of Codechef MMMUT Chapter Society',
-    description: 'Comming Soon..',
-    link: 'https://chat.whatsapp.com/KE4dZGIit70HGAQk1c8k2d',
-    buttonText: 'Join..'
-  },
+ 
   
   {
     title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
