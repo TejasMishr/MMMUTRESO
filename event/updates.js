@@ -159,15 +159,15 @@ const newsItems = [
     buttonText: 'View.'
   },
   {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'LOGIN'
+    title: 'Powering Progress: The International Conference on Energy, Functional Materials and Photonics on March 1-2, 2024',
+    description: 'Notice',
+    link: 'https://www.ppicefp.in/',
+    buttonText: 'Open'
   },
   {
-    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
-    description: 'Academic Calender',
-    link: 'https://www.mmmut.xyz/holidays/holidays.html',
+    title: 'Office Order Dean ',
+    description: 'MMMUT',
+    link: 'http://www.mmmut.ac.in/News_content/03553news_12042023.pdf',
     buttonText: 'View.'
   },
   {
