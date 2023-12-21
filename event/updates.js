@@ -1,261 +1,80 @@
-function addNewItem(tabType, title, description, link, buttonText) {
-
+function addNewItem(tabType, title, description, link, buttonText, imageUrl) {
   const listItem = document.createElement('li');
-  listItem.classList.add('p-10');
+  listItem.classList.add('p-10', 'd-flex', 'align-items-center');
 
+  // Create and append image element
+  const imageElement = document.createElement('img');
+  imageElement.src = imageUrl;
+  imageElement.alt = title;
+  imageElement.style.height = '100px';
+  listItem.appendChild(imageElement);
 
+  // Create and append title element
   const titleElement = document.createElement('h6');
   titleElement.innerHTML = `<span>${title}</span>`;
   listItem.appendChild(titleElement);
 
-
+  // Create and append description element
   const descriptionElement = document.createElement('p');
   descriptionElement.textContent = description;
   listItem.appendChild(descriptionElement);
 
+  // Create and append button element if link is provided
+  const buttonElement = document.createElement('button');
+  let count = parseInt(localStorage.getItem(`${tabType}_${title}_count`)) || getRandomInt(100, 300);
 
-  if (link) {
-    const buttonElement = document.createElement('button');
-    buttonElement.textContent = buttonText;
-    buttonElement.classList.add('tab-more-button', 'price-dec', 'hvr-float-shadow', 'bg-info');
-    buttonElement.addEventListener('click', () => {
-      window.open(link, '_blank');
-    });
-    listItem.appendChild(buttonElement);
-  }
+  buttonElement.textContent = `🎂 ${count}`;
+  buttonElement.classList.add('tab-more-button', 'price-dec', 'hvr-float-shadow', 'bg-info');
 
+  buttonElement.addEventListener('click', () => {
+    const previousCount = count;
+    count++;
+    buttonElement.textContent = `🎂 ${count}`;
 
+    // Update count in local storage
+    localStorage.setItem(`${tabType}_${title}_count`, count.toString());
+
+    // Check if the count has changed
+    if (previousCount !== count) {
+      // Apply celebration background for two seconds
+      listItem.classList.add('celebration-background');
+      setTimeout(() => {
+        listItem.classList.remove('celebration-background');
+      }, 2000);
+    }
+
+    // window.open(link, '_blank');
+  });
+
+  listItem.appendChild(buttonElement);
+
+  // Append the new item to the tab block
   const tabBlock = document.querySelector(`#${tabType} .tab-block`);
-
-
   const previousItem = tabBlock.lastChild;
+
   if (previousItem) {
     tabBlock.insertBefore(document.createElement('hr'), previousItem.nextSibling);
   }
+
   document.querySelector('hr').classList.add('hr');
-
-
   tabBlock.appendChild(listItem);
 }
 
-
-
-//Events
-
-
-let currentIndex = 0;
-const eventItems = [
-
- 
-  
-  {
-    title: 'RESULT OF ALL SEMESTERS (Connect to Campus Wi-Fi)',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'LOGIN'
-  },
-  {
-    title:'Student LOGIN Portal: Your Gateway to Academic Resources and Campus Information. Access Your Educational Journey',
-    description: 'Student LOGIN Portal',
-    link: 'https://registration.mmmut.ac.in/StudentLogin',
-    buttonText: 'LOGIN'
-  },
-  {
-    title: 'Register Ragging Complaint',
-    description: 'Anti-Ragging',
-    link: 'https://forms.office.com/Pages/ResponsePage.aspx?id=1i5z0J-ojUiyneXp583eXH--PWniG4JFlYuBA5ETzWdUN0VENjUzUzZSVkJSVkNQNDIyUUdUQVk4Ny4u',
-    buttonText: 'Complaint'
-  },
-  {
-    title: 'Website Access Login Portal ( Faculties )',
-    description: 'Only For Faculties',
-    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
-    buttonText: 'LOGIN.'
-  },
-  {
-    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
-    description: 'Username:student & Password:student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'LOGIN.'
-  },
-  {
-    title: 'Sponsored Research Projects ',
-    description: 'Funded Projects',
-    link: 'http://www.mmmut.ac.in/ViewSponsoredProjects',
-    buttonText: 'View..'
-  },
-  {
-    title: 'Training And Placement Website',
-    description: 'Website',
-    link: 'https://tnpmmmut.tech/',
-    buttonText: 'View.'
-  },
-  {
-    title: 'RESULT OF ALL SEMESTERS ( Connect With University Wi-fi )',
-    description: 'Username:student & Password:student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'Login.'
-  },
-  {
-    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
-    description: 'Alumini Portal',
-    link: 'https://www.malaviyans.in/',
-    buttonText: 'Login.'
-  },
-
-  {
-    title: 'Stay Linked: Connect with Your Alumni Network for Insights, Opportunities, and Lifelong Connections!',
-    description: 'Alumini Portal',
-    link: 'https://www.malaviyans.in/',
-    buttonText: 'Login.'
-  },
-  {
-    title: 'Training and Placement Cell - Your Bridge to Career Success Begins Here',
-    description: 'Training And Placement Website',
-    link: 'https://tnpmmmut.tech/',
-    buttonText: 'View'
-  },
-  {
-    title: 'Website Access Login Portal',
-    description: 'Only For Faculties',
-    link: 'http://www.mmmut.ac.in/admin_stsmmm/adminlogin_mmmec',
-    buttonText: 'LOGIN.'
-  }
-];
-
-
-
-//NEWS
-
-const newsItems = [
-  {
-    title: 'Holidays and Academic Calander MMMUT Gorakhpur',
-    description: 'Academic Calender',
-    link: 'https://www.mmmut.xyz/holidays/holidays.html',
-    buttonText: 'View.'
-  },
-  {
-    title: 'Time Table section',
-    description: 'Time Table',
-    link: './timetable/timetable.html',
-    buttonText: 'View.'
-  },
-  {
-    title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
-    description: 'MMMUT Cutoff',
-    link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
-    buttonText: 'Explore'
-  },
-  {
-    title: 'Fee Structure Of MMMUT (B.tech,BBA,MCA,B-Pharma,MBA,M.tech)',
-    description: 'Fee Structure MMMUT',
-    link: 'http://www.mmmut.xyz/Fee/feestructure.html',
-    buttonText: 'VIEW.'
-  },
-  {
-    title: 'Previous Year Placement Bronchure MMMUT (2021,2022)',
-    description: 'Placement Bronchure',
-    link: 'https://www.mmmut.xyz/Placement/placement.html',
-    buttonText: 'View.'
-  },
-  {
-    title: 'Powering Progress: The International Conference on Energy, Functional Materials and Photonics on March 1-2, 2024',
-    description: 'Notice',
-    link: 'https://www.ppicefp.in/',
-    buttonText: 'Open'
-  },
-  {
-    title: 'Office Order Dean ',
-    description: 'MMMUT',
-    link: 'http://www.mmmut.ac.in/News_content/03553news_12042023.pdf',
-    buttonText: 'View.'
-  },
-  {
-    title: 'RESULT OF ALL SEMESTERS',
-    description: 'Username: student & Password: student',
-    link: 'http://172.16.1.250:8081/jasperserver/login.html',
-    buttonText: 'More..'
-  },
-  {
-    title: 'Previous Year Cutoff (2021 , 2022 , 2023) ',
-    description: 'MMMUT Cutoff',
-    link: 'http://www.mmmut.xyz/cutoff/cutoff.html',
-    buttonText: 'Explore'
-  },
-  {
-    title: 'Fee Structure Of MMMUT (B.tech,BBA,MCA,B-Pharma,MBA,M.tech)',
-    description: 'Fee Structure MMMUT',
-    link: 'http://www.mmmut.xyz/fee/fee.html',
-    buttonText: 'VIEW.'
-  },
-  {
-    title: 'Previous Year Placement Bronchure MMMUT (2021,2022)',
-    description: 'Placement Bronchure',
-    link: 'https://www.mmmut.xyz/placement/placement.html',
-    buttonText: 'View.'
-  },
-
-  {
-    title: 'Anti-Ragging Duty List',
-    description: 'NOTICE',
-    link: 'http://www.mmmut.ac.in/News_content/14040news_09182023.pdf',
-    buttonText: 'More..'
-  },
-  {
-    title: 'Final Result of written exam for Assistant Professor (Contractual)',
-    description: 'on 16th September 2023',
-    link: 'http://www.mmmut.ac.in/News_content/00003news_08022023.pdf',
-    buttonText: 'More..'
-  }
- 
-];
-
-
-function displayAllEvents() {
-  const tabBlock = document.querySelector('#events .tab-block');
-  for (let i = 0; i < eventItems.length; i++) {
-    const eventItem = eventItems[i];
-    addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
-  }
-
-  if (tabBlock.children.length > 2) {
-    tabBlock.removeChild(tabBlock.firstChild);
-  }
-}
-
-function scrollEventItems() {
-  if (currentIndex >= eventItems.length) {
-    currentIndex = 0;
-  }
-
-  const tabBlock = document.querySelector('#events .tab-block');
-  const eventItem = eventItems[currentIndex];
-  const newsItem = newsItems[currentIndex];
-
-  addNewItem('events', eventItem.title, eventItem.description, eventItem.link, eventItem.buttonText);
-  if (currentIndex < newsItems.length) {
-    addNewItem('news', newsItem.title, newsItem.description, newsItem.link, newsItem.buttonText);
-  }
-
-  if (tabBlock.children.length > 2) {
-    tabBlock.removeChild(tabBlock.firstChild);
-  }
-
-  currentIndex++;
+// Function to get a random integer between min and max (inclusive)
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 
-displayAllEvents();
-
-setTimeout(function() {
-  setInterval(scrollEventItems, 2000);
-}, 2000); // Adjust the delay and interval as needed
-
-// FORMAT -> addNewItem('Events', 'Event Title', 'Event Description', 'https://example.com', 'Button text');
-
-
-
-
+// Example usage
+// addNewItem(
+//   'events',
+//   'Event Title 1',
+//   'Event Description 1',
+//   'https://example.com',
+//   '🎉 112',
+//   'https://s3-us-west-2.amazonaws.com/dbsmedia/'
+// );
 
 
 
@@ -264,168 +83,116 @@ setTimeout(function() {
 
 
 
+function isBirthdayToday(birthday) {
+  // Assuming the birthday is in the format "MM-DD"
+  const today = new Date();
+  const formattedToday = `${today.getDate().toString().padStart(2, '0')}/${(today.getMonth() + 1).toString().padStart(2, '0')}/${today.getFullYear()}`;
+  
+  var ans = formattedToday.substring(0,6);
+  var bir = birthday.substring(0,6);
+  // console.log(bir)
+  return bir === ans; 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+}
+async function fetchData() {
+  const apiUrl = "https://www.jsonkeeper.com/b/8ZB9";
+  const proxyUrl = "https://api.allorigins.win/get?url=";
 
+  try {
+      const response = await fetch(proxyUrl + encodeURIComponent(apiUrl), {
+          method: 'GET',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+      });
 
+      if (!response.ok) {
+          throw new Error(`Error fetching data. Status code: ${response.status}`);
+      }
 
-
-
-
- function switchCustomTab(tabName) {
-
-  const tabPanels = document.querySelectorAll(".custom-tab-panel");
-
-  tabPanels.forEach(panel => {
-    panel.style.display = "none";
-  });
-
-
-  const selectedTab = document.querySelector(`#custom-${tabName}`);
-  if (selectedTab) {
-    selectedTab.style.display = "block";
+      const data = await response.json();
+      return data;
+  } catch (error) {
+      console.error(error.message);
+      return null;
   }
 }
 
-const customTabItems = document.querySelectorAll(".custom-tab-item");
-customTabItems.forEach(item => {
-  item.addEventListener("click", function() {
-   
-    const tabName = this.getAttribute("data-custom-tab");
+// Example usage
+var din = new Date();
+var mnth = din.getMonth();
+console.log(mnth);
+let data;
 
-    // Remove 'active' class from all tab items
-    customTabItems.forEach(tabItem => {
-      tabItem.classList.remove("active");
-    });
-
-   
-    this.classList.add("active");
-
-   
-    switchCustomTab(tabName);
-  });
-});
-
-
-switchCustomTab("notes");
-
-
-
-
-
-
-
-
-
-
-
-
-// Function to create and add image elements with titles, anchor tags, and a parent div to a specific custom tab
-function addImagesToCustomTab(tabName, imageInfo) {
-  const customTabBlock = document.querySelector(`#custom-tab-block-${tabName}`);
-  
-  // Clear existing content
-  customTabBlock.innerHTML = "";
-  for (const info of imageInfo) {
-    const imgParentDiv = document.createElement("div");
-    const imgParentDiv2 = document.createElement("div");
-    imgParentDiv.classList.add("image-container"); // Add a class for styling
-    imgParentDiv2.classList.add("image-container2"); // Add a class for styling
-
-   
-    const anchor = document.createElement("a");
-    anchor.href = info.link; 
-    anchor.target = "_blank"; 
-    const img = document.createElement("img");
-    img.src = info.src;
-    img.alt = "Image";
-
-    
-    anchor.appendChild(img);
-
-   
-    imgParentDiv.appendChild(anchor);
-
-    const title = document.createElement("div");
-    title.textContent = info.title;
-    title.classList.add("image-title"); 
-
-    
-    imgParentDiv.appendChild(title);
-
-    
-    customTabBlock.appendChild(imgParentDiv2);
-    imgParentDiv2.appendChild(imgParentDiv);
-  }
+var currmnth ;
+switch (mnth) {
+  case 0: currmnth = 'Jan'
+      break;
+      case 1: currmnth = 'Feb'
+      break;
+      case 2: currmnth = 'Mar'
+      break;
+      case 3: currmnth = 'Apr'
+      break;
+      case 4: currmnth = 'May'
+      break;
+      case 5: currmnth = 'June'
+      break;    
+      case 6: currmnth = 'July'
+      break;
+      case 7: currmnth = 'Aug'
+      break;
+      case 8: currmnth = 'Sept'
+      break;
+      case 9: currmnth = 'Oct'
+      break;
+      case 10: currmnth = 'Nov'
+      break;
+      case 11: currmnth = 'Dec'
+      break;
+  default:
+      break;
 }
 
 
-// Adding dynamic images with titles to the "Notes" custom tab
-const notesImages = [
-  { src: "img/cse.jpg", title: "CSE",link: "notes/note.html?branch=0"},
-  { src: "img/IT.jpg", title: "IT",link: "notes/note.html?branch=1" },
-  { src: "img/ECE.jpg", title: "ECE" ,link: "notes/note.html?branch=2"},
-  { src: "img/IOT.jpg", title: "IOT" ,link: "notes/note.html?branch=13"},
-  { src: "img/EE.jpg", title: "EE",link: "notes/note.html?branch=3" },
-  { src: "img/CIVIL.jpg", title: "CIVIL" ,link: "notes/note.html?branch=4"},
-  { src: "img/mech.jpg", title: "MECH",link: "notes/note.html?branch=5" },
-  { src: "img/CHEM.jpg", title: "CHEM" ,link: "notes/note.html?branch=6"},
- 
-  { src: "img/Bpharma.jpg", title: "BPHARMA",link: "notes/note.html?branch=7" },
-  { src: "img/MCA.jpg", title: "MCA",link: "notes/note.html?branch=8" },
-  { src: "img/BBA.jpg", title: "BBA",link: "notes/note.html?branch=9" },
-  { src: "img/MBA.jpg", title: "MBA" ,link: "notes/note.html?branch=10"},
-  { src: "img/MSC.jpg", title: "MSC" ,link: "notes/note.html?branch=11"},
-  { src: "img/MTECH.jpg", title: "MTECH" ,link: "notes/note.html?branch=12"},
- 
-];
+var res;
+async function main() {
+  data = await fetchData();
 
-// Adding dynamic images with titles to the "PYQs" custom tab
-const pyqsImages = [
-  { src: "img/btech_pyq.jpg", title: "BTECH",link: "pyq/PYQ.html" },
-  { src: "img/mca_pyq.jpg", title: "MCA",link: "MCA/mca.html?branch=0" },
-  { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharm/bpharm.html?branch=0"},
-  
-  { src: "img/bba_pyq.jpg", title: "BBA",link: "BBMBA/BBMB.html" },
-  { src: "img/mba_pyq.jpg", title: "MBA",link: "BBMBA/BBMB.html" },
-  // { src: "img/mca_pyq.jpg", title: "MCA",link: "notes/note.html?branch=0" },
-  { src: "img/mtech_pyq.jpg", title: "MTECH",link: "mtech/mtech.html" },
-];
+  if (data) {
 
-// Adding dynamic images with titles to the "Lectures" custom tab
-const lecturesImages = [
-  { src: "img/btech_pyq.jpg", title: "BTECH",link: "Lecture/lecture.html" },
-  { src: "img/mtech_pyq.jpg", title: "MTECH",link: "Contribute.html" },
-  { src: "img/Bpharma_pyq.jpg", title: "BPharm" ,link: "Bpharm/Lecture/lecture.html"},
-  { src: "img/mca_pyq.jpg", title: "MCA",link: "MCA/Lecture/lecture.html" },
-  { src: "img/bba_pyq.jpg", title: "BBA",link: "Contribute.html" },
-  { src: "img/mba_pyq.jpg", title: "MBA",link: "Contribute.html" },
-  // { src: "img/mca_pyq.jpg", title: "MCA",link: "Contribute.html" },
-  
-];
+      var items = JSON.parse(data.contents);
 
-// Adding dynamic images with titles to the "Misc Materials" custom tab
-const miscImages = [
-  { src: "img/Registration.jpeg", title: "Register" ,link: "https://registration.mmmut.ac.in/"},
-  { src: "img/syllabus.jpg", title: "SYLLABUS",link: "syllabus/syllabus.html" },
-  { src: "img/Result.jpeg", title: "Result" ,link: "http://172.16.1.250:8081/jasperserver/flow.html?_flowId=viewReportFlow&_flowId=viewReportFlow&ParentFolderUri=%2FStudents&reportUnit=%2FStudents%2FResult_of_All_Semesters&standAlone=true"},
-  { src: "img/Academic_calender.jpeg", title: "Calender",link: "holidays/holidays.html" },
-  { src: "img/Cutoff.jpeg", title: "Cutoff" ,link: "cutoff/cutoff.html"},
-  { src: "img/Fee.jpeg", title: "Fee" ,link: "Fee/feestructure.html"},
-  { src: "img/Notice.jpeg", title: "Contribute" ,link: "Contribute.html"},
-  { src: "img/placement.jpeg", title: "Placement" ,link: "Placement/placement.html"},
-  { src: "img/Timetable.jpeg", title: "TimeTable" ,link: "timetable/timetable.html"},
-  { src: "img/Alumini.jpeg", title: "Alumini" ,link: "https://www.malaviyans.in/"},
-];
+      // var x = items[0].DOB.substring(0,6);
 
-// Call the function to add dynamic images with titles and parent divs to the respective custom tabs
-
-
-addImagesToCustomTab("notes", notesImages);
-addImagesToCustomTab("pyqs", pyqsImages);
-addImagesToCustomTab("lectures", lecturesImages);
-addImagesToCustomTab("misc", miscImages);
+      //  var finaldata = items[0].currmnth;
+      
+      if(mnth){
+res = items[0][currmnth];
+          // console.log(res);
+      }
+         
 
 
 
- 
+      for (let i = 0; i < res.length; i++) {
+         
+          if (isBirthdayToday(res[i].DOB)) {
+
+              addNewItem('events',
+                `${res[i].Name}`,
+                `${res[i].AllotedBranch}`,
+                '',
+                '🎂 112',
+                `${res[i].Photo}`,)
+          
+          }
+          // else{
+          //     console.log('aayein');
+          // }
+
+        
+      }
+  }
+}
+main();
