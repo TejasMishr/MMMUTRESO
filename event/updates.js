@@ -95,8 +95,9 @@ function isBirthdayToday(birthday) {
 
 }
 async function fetchData() {
-  const apiUrl = "https://www.jsonkeeper.com/b/8ZB9";
+  const apiUrl = "https://as9055.github.io/KuchBhi/Data.json";
   const proxyUrl = "https://api.allorigins.win/get?url=";
+
 
   try {
       const response = await fetch(proxyUrl + encodeURIComponent(apiUrl), {
@@ -113,7 +114,7 @@ async function fetchData() {
       const data = await response.json();
       return data;
   } catch (error) {
-      console.error(error.message);
+      // console.error(error.message);
       return null;
   }
 }
@@ -121,7 +122,7 @@ async function fetchData() {
 // Example usage
 var din = new Date();
 var mnth = din.getMonth();
-console.log(mnth);
+// console.log(mnth);
 let data;
 
 var currmnth ;
