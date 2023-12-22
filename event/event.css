@@ -8,7 +8,7 @@ body {
 }
 
 .celebration-background {
-  background: url(../img/celebrate.gif) no-repeat;
+  background: url(../img/celebrate.webp) no-repeat;
   background-position: center;
   background-size: contain;
   transform: rotateY('180deg');
