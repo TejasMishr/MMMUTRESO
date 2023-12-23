@@ -85,7 +85,6 @@
         <option value="-1">Select Session</option>
         <option value="0">2021-25</option>
         <option value="1">2022-26</option>
-        <option value="2">2023-27</option>
       </select>
 
       <select name="branch" id="branch">
@@ -142,35 +141,418 @@
 
     <script src="../loader/load.js"></script>
 
-
-
     <script>
-      async function fetchFileIDs() {
-        try {
-          const response = await fetch('https://grandmaster2004.github.io/Event_Api/Event_API.json');
-          const data = await response.json();
-    
-          // Replace the fileIDs variable with the data received from the API
-          fileIDs = data.fileIDs;
-    
-          // Call the updatePDF function to update the PDF viewer with the new data
-          updatePDF();
-        } catch (error) {
-          console.error('Error fetching file IDs:', error);
-          // displayErrorMessage();
-        }
-      }
-    
-      // Call the fetchFileIDs function when the page loads
-      window.onload = fetchFileIDs;
-    </script>
+      var fileIDs = [
+        // SESSION 2021-25
+
+        [
+          // BRANCH CSE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Va59cXE9Ik-0WRktQFh1OWGIEjF0d67-', '1AxW_P50PXKfH2L-cN6XzSKQnIH-tjl-C',
+              '1r6aLbqTmij0i8v7cq0J2-SIRmWK5sH2A'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1M4etyDdgOAPUylVQ0HxlxPI2v12oj-h5', 'null', '1cuO5Wonv1Kb7Pz6brWfdBLEWI9sj9qa_'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1E940iD3oF3trMrRZyQaW33IEynq3V5-x', '1E38yUF5IFcxFiyo8pKhQary2y0daGNaG',
+              '1ETo5iAYImio-PaZVq0ipy-S-0oHcOR60'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH IT
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1dlTfrZ8gMMt2jNMAm5FKyDhc3oUAqVfB', '1dlTfrZ8gMMt2jNMAm5FKyDhc3oUAqVfB',
+              '1dlTfrZ8gMMt2jNMAm5FKyDhc3oUAqVfB'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1oZ8HqI64PWZNYXdwLIy4OhTrclTIT_9v', '1oZ8HqI64PWZNYXdwLIy4OhTrclTIT_9v',
+              '1oZ8HqI64PWZNYXdwLIy4OhTrclTIT_9v'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1eaEcT7AQvhJgtrtebrw_GADjYtTeuflo', '13y8ogGr_RJYh7tsyj8R8cqP81nvmKezL',
+              '1j2SgXi32zdQB6rjfdBTLfBbzYTI40rWD'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['13h-zZIjKMV03Je2hXY1ylneQY7lc9NsH', '11lGegn7FEmxl-2HIpQOMNoIghdWznxKH',
+              '1lUVEn4Awz-pcNXxDAlB91Mhonb_xPmd1'
+            ],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1AksdIJyk6KpxjNAxwnC2_Ajbk-Wbq1Nz', '1IDYgPwzUfYEg3i8BxqdmkHjZszlG14uQ',
+              '1mZuhLo6UpNN6h46ZaqS3jsYc-x5dgQMX'
+            ],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+          // BRANCH ECE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1lb2uvLS2Fofp4kGo9I5uTWBl2moPCQ4V', '1gjHk9juyEadtm-_izmr1N8IB20x19nYY',
+              '1BaKWg4pG6XWZbcefebzm7kYVUKsNJRdr'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1rEECffDpOSs6p61ijXkyKVYdDIM4pY6A', '1uYjDSI67UScwvlr5pUi2CFQW55rkOmAo',
+              '1N-BA_2a_YTr416MEgvxGxa6jiZzk1CDZ'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1MXLCtWMKNuk9k6XjCv5zQDjDA3Lq7C3t', '1MXLCtWMKNuk9k6XjCv5zQDjDA3Lq7C3t', '1MJyj_JGxbkeZAZb1HCvW9TNROUL8JNEs'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+          // BRANCH EE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['17v_7PChQzXSi9lSr0O9BxJcZt5qWxkyr', '18E2ILt6s5QiTEZEn9SKv94w7fTiUmLKW',
+              '17tNSguzuiY-mF-CFSBOLzghdSZIPcYms'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['18KwhsKhDiaqeqolEMjjf-xmPvcHrwNiC', '18FwB4Jp8Lws4krkDCtTzElobUPrxJ2aw',
+              '18FcWP80Ut342X9yFjZGW-scOegxx5Q-w'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['18vmW0NXXMN_NBNeoc9WCulnqj6r83moG', '191CWRSjIfjpmu1mctdIkeej2ckLJnyDq',
+              '18wmZNKarobRJARuDnu55UAC15zQxAOkz'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH CHEMICAL
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+          // BRANCH Mechanical
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['108Xj5Zg_KISzHiZVO9vHobdWv52R8cd-', '10SyxGVebEh4-HjBs1OP5TR89cxOyAecU',
+              '10_Z3rlUhw1Fy7SHS2HQ_zt2ryO4JpXhW'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['176x4fscQUT6AobwmWke1mZ74VXeYdg3K', '1d6qS0-4gxqfJLjB1z2gQ_UpZTsmOAF70', '1jiGmsxR7lslTBHk6uipT4Hz7RLP5uvV1'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1DNfy5kAVI85AkJJBcNDc8OFS9QzAFzQg', '1jYSPB6-Nt6uiqFWuS3GiftbjW2fVUtW3', '1DOqJlywP8fWwoz6yHp0VWqG7KHcbsO4y'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH CIVIL
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1Yhq42Ucir1lhVY_Cbp-RFnfVYrE8kQ5F', '1iD7xg6_2s113TVJcGw4TQiGk-yU3Mcg-',
+              '1oyKcUVsuEPTdZ7bax2A_oSz-9-sxW0YX'
+            ],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) ->, Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ]
+        ],
 
 
 
+        // SESSION 2022-26
 
-    <script>
-    
-    var sessionSelect = document.getElementById('session');
+        [
+          // BRANCH CSE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['19o4wOXUgHWKBNhqgZil1y8r4eILuMRjB', '1d8wGyC7EYVB6kUzbNz8_hakeYLEm-mBi',
+              '1ZoeiHEIctksGAjK34UPkDrpx7Pp18ls3'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1eE5LvZxmYH1KOnA9NPIVTvkM8DGay1Wg', '1s-MAqXIzEB9lFWoNwNzGKYo6c8LCSfW_',
+              '1ZXg0BgLtwpmG2JNGfXL3V-1R6H5CUnzl'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH IT
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1M87QSlQZ38e9h-3X8_NrWkeXZ7bXkr4k', '14iLxZmI-Qde9ANBhN3koLLs_CKZXRZe6',
+              '1jA58bmsrFuZdleUOYn5i_CTLp1o54EBB'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1cgBStqOgJlPFkuDBV0vpUNnDWC_0uWEO', '1kXOdQGSU8VP19XHE1MckUqAJspKPOzpu',
+              '12sDZqj1LaQedGSkQaC18LMcxTpC5yd43'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1uLoyALEGcO1am8-EPriRnX4S5oLpGq2Y', 'null','null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1wyVhBl6urBbCq8--USdfv3n-q70-_af-', '1ToKlqtn4sGuwdQqfqD2RHZAaOwEGPerg',
+              '1aopZnNTAr-v4T7-n4UNWqCCLPDI6FxnN'
+            ],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+          // BRANCH ECE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1EIZj6ON5s3RthepfBpkR_1SaVKakF8Wk', 'null',
+              '1w02_9nRj41RRATeOA84k-78IxJID3tzh'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1wiADWTTGNfaZGcbpdTM3_jxa1sHU0odo', '1Q5qI_uzNOG2fcym1YjRSvAEVKi1HYL80', '1os1asSqVF6X7YYjeXxZeRB7VwIUjpkqE'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+          // BRANCH EE
+          //Done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', '1moHi6sUttEpXR6r6aQnqHVfcfb3GZJsN','1RgI6SIVuDg-iQqGlKeaj9w3dg3RwxV_4'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1qDGCn6WlIWyd8MRDlCBRrC0uXAiQFdZw', '14xy773SazcAayhLAqnwwVzokcKCtinyj', '1FgRqVlMkhVPu0OGUOUA0pizPBn9k_Hh6z'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH CHEMICAL
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1VJef6HgXaEwVIL1UcCt0FF32xI-4F3-S', '1ExahsBZWaJAdNSwVSV4B9ZGr7QU7bJIV','1Kztesweiui8RM0XFC8zogvMdjlyjuXck'],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1fow98-DY8ck-VHaXki7dq7WZvKDVEGTL', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+
+          ],
+
+          // BRANCH Mechanical
+          //done
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['12YBHj1NaYPSL3-qXtGLy4_aLGRC2bfdF', '11wPRn9TYy0B5X41RLN6pUwaKmxRfDzVx',
+              '1-iO7mkr3PjwlyD3UMo_DI9abyOFKIrWE'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1-xA8R55Yj9sxjYeFwSI_REiGN7L_Eu2q', '100VekL-q9ELRnzPF-CrRj1qysoPPdDz4',
+              '102IAZAufBCEPyigaowSHIqUD8TpmRtyO'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+
+
+          // BRANCH CIVIL
+
+          [
+            // SEMESTER--------------------->>>>>
+
+            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1h93JhnHTx-gFlbx6YpInuCy6guMvKnFp', '12qKO7wzCIKJMwd12xHDeS3WrqmFUsDjM',
+              '1-CtdivsDWCb2fJZLV_7P57ruaeRYuy9t'
+            ],
+            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['1K0vowulbzSMXRsH4JiCbgBpypX2qlugY', '1pFNMIHLjCFGPPlJTQ21THG3_OAm3d_eJ',
+              '1e-nBtTXcC9uV9o0lFT-Rx2hx4DJJQs2h'
+            ],
+            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null'],
+            // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+            ['null', 'null', 'null']
+
+          ],
+        ]
+      ];
+
+      var sessionSelect = document.getElementById('session');
       var branchSelect = document.getElementById('branch');
       var fileSelect = document.getElementById('fileSelect');
       var selectpaper = document.getElementById('selectpaper');
