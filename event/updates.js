@@ -10,6 +10,7 @@ function addNewItem(tabType, title, description, link, buttonText, imageUrl) {
   listItem.appendChild(imageElement);
 
   // Create and append title element
+  let buttonClicked = false;
   const titleElement = document.createElement('h6');
   titleElement.innerHTML = `<span>${title}</span>`;
   listItem.appendChild(titleElement);
@@ -21,8 +22,8 @@ function addNewItem(tabType, title, description, link, buttonText, imageUrl) {
 
   // Create and append button element if link is provided
   const buttonElement = document.createElement('button');
-  let count = parseInt(localStorage.getItem(`${tabType}_${title}_count`)) || getRandomInt(100, 300);
-
+  let count = parseInt(localStorage.getItem(`${tabType}_${title}_count`)) || getRandomInt(10, 30);
+  let buttonclicked = 0;
   buttonElement.textContent = `🎂 ${count}`;
   buttonElement.classList.add('tab-more-button', 'price-dec', 'hvr-float-shadow', 'bg-info');
 
@@ -30,10 +31,11 @@ function addNewItem(tabType, title, description, link, buttonText, imageUrl) {
     const previousCount = count;
     count++;
     buttonElement.textContent = `🎂 ${count}`;
-
     // Update count in local storage
     localStorage.setItem(`${tabType}_${title}_count`, count.toString());
 
+      buttonClicked = true;
+      buttonElement.disabled = true;
     // Check if the count has changed
     if (previousCount !== count) {
       // Apply celebration background for two seconds
@@ -42,7 +44,6 @@ function addNewItem(tabType, title, description, link, buttonText, imageUrl) {
         listItem.classList.remove('celebration-background');
       }, 2000);
     }
-
     // window.open(link, '_blank');
   });
 

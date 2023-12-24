@@ -11,6 +11,7 @@ class Birthday {
     // create a lovely place to store the firework
     this.fireworks = []
     this.counter = 0
+    this.buttonClicked = false
 
   }
   
@@ -27,20 +28,24 @@ class Birthday {
   }
   
   onClick(evt) {
-     let x = evt.clientX || evt.touches && evt.touches[0].pageX
-     let y = evt.clientY || evt.touches && evt.touches[0].pageY
-     
-     let count = random(3,5)
-     for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
-        random(this.spawnA, this.spawnB),
-        this.height,
-        x,
-        y,
-        random(0, 260),
-        random(30, 110)))
-          
-     this.counter = -1
-     
+    if (!this.buttonClicked) { // Check if the button hasn't been clicked yet
+      let x = evt.clientX || evt.touches && evt.touches[0].pageX
+      let y = evt.clientY || evt.touches && evt.touches[0].pageY
+      
+      let count = random(3,5)
+      for(let i = 0; i < count; i++) this.fireworks.push(new Firework(
+          random(this.spawnA, this.spawnB),
+          this.height,
+          x,
+          y,
+          random(0, 260),
+          random(30, 110)))
+            
+      this.counter = -1
+      this.buttonClicked = true // Set the flag to indicate button click
+    } else {
+      alert('Birthday already celebrated! 🎉') // Notify that birthday has already been celebrated
+    }
   }
   
   update(delta) {
