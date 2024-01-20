@@ -361,5 +361,42 @@ const Pid = [
       // Subject 5 (sub VI)
       "null",
     ]
+  ],
+
+  //CES
+  [
+    //Semester 1
+    [
+      // Subject 0 (hint)
+      " ",
+      // Subject 4 (19 ka pahada)
+      "PLd2bsFGdEBh_O0PU6yTcNouSgZ8PdYHdt",
+      
+      // Subject 2 (bhupendra jogi)
+      "PLd2bsFGdEBh8FfJkOqB7uYr6deLINxPxz",
+      // Subject 3 (hey prabhu )
+      "PLd2bsFGdEBh8UOj-uRMOpcoLNU0uZymZF",
+      // Subject 1 (moye moye)
+      "PLd2bsFGdEBh9yPZDjP75iMdLDdrQr-nqE",
+      // Subject 5 (baigan)
+      "PLd2bsFGdEBh9ywxM0Y9O-5h-_1_2km71Q",
+    ]
+    // Semester 2
+    // [
+    //   // Subject 0 (sub I)
+    //   "PLITlusC8mcFGKfOu3FinrxCFgRb9hnTww",
+    //   // Subject 1 (sub II)
+    //   "PLITlusC8mcFFpzIDKigW3X3-rfXBIjROJ",
+    //   // Subject 2 (sub III)
+    //   "null",
+    //   // Subject 3 (sub IV)
+    //   "null",
+    //   // Subject 4 (sub V)
+    //   "null",
+    //   // Subject 5 (sub VI)
+    //   "null",
+    // ]
   ]
+
+  // 
 ];
