@@ -9,7 +9,8 @@ function createUpdateLink(text, href) {
 
   //  image element
   var img = document.createElement("img");
-  img.src = "topbar/star.gif";
+  //star
+  img.src = "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fstar.gif?alt=media&token=3986e7fb-4607-4fd9-a6de-a27e061eefa8";
   img.style.width = "22px";
 
   var marquee = document.getElementById("m5");
@@ -30,7 +31,8 @@ function createUpdateExtraLink(text, href) {
 
   // image element
   var img = document.createElement("img");
-  img.src = "topbar/warn.jpeg";
+  //warn
+  img.src = "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fwarn.png?alt=media&token=9aec9265-8f27-47ad-ab5f-99bc9f553997";
   img.style.width = "22px";
 
   var marquee = document.getElementById("m5");
