@@ -110,7 +110,7 @@ function switchCustomTab(tabName) {
   const pyqsImages = [
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fbtech_pyq.jpg?alt=media&token=f6a7543a-c90d-4ec9-bab7-5f929c51e19f", title: "BTECH",link: "pyq/PYQ.html" },
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fmca_pyq.jpg?alt=media&token=f74338d8-b4b2-40e5-9598-fdca55965084", title: "MCA",link: "MCA/mca.html?branch=0" },
-    { src: "img/Bpharma_pyq.jpg", title: "BPHARMA" ,link: "Bpharm/bpharm.html?branch=0"},
+    { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2FBpharma_pyq.jpg?alt=media&token=add9fbbe-3d1d-4c04-a46e-764bc09f00bb", title: "BPHARMA" ,link: "Bpharm/bpharm.html?branch=0"},
     
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fbba_pyq.jpg?alt=media&token=cba0d7ae-0870-445a-bece-250f6b2c7e9b", title: "BBA",link: "BBMBA/BBMB.html" },
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fmba_pyq.jpg?alt=media&token=1966851c-707a-4da8-816a-84c016c168e1", title: "MBA",link: "BBMBA/BBMB.html" },
@@ -120,7 +120,7 @@ function switchCustomTab(tabName) {
   
   // Adding dynamic images with titles to the "Lectures" custom tab
   const lecturesImages = [
-    { src: "img/btech_pyq.jpg", title: "BTECH",link: "Lecture/lecture.html" },
+    { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fbtech_pyq.jpg?alt=media&token=f6a7543a-c90d-4ec9-bab7-5f929c51e19f", title: "BTECH",link: "Lecture/lecture.html" },
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fmtech_pyq.jpg?alt=media&token=a3ddbde3-4332-4ebc-9891-77fede4fb1ac", title: "MTECH",link: "Contribute.html" },
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2FBpharma.jpg?alt=media&token=3bec86d8-c32a-4127-8e76-dcc714b1915a", title: "BPharm" ,link: "Bpharm/Lecture/lecture.html"},
     { src: "https://firebasestorage.googleapis.com/v0/b/mmmutapi.appspot.com/o/img%2Fmca_pyq.jpg?alt=media&token=f74338d8-b4b2-40e5-9598-fdca55965084", title: "MCA",link: "MCA/Lecture/lecture.html" },
