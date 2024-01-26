@@ -90,21 +90,76 @@ function isBirthdayToday(birthday) {
   
   var ans = formattedToday.substring(0,6);
   var bir = birthday.substring(0,6);
-  // console.log(bir)
+ 
   return bir === ans; 
 
 }
+
+var din = new Date();
+var 
+currentMonth= din.getMonth();
+var month;
+
+switch (currentMonth) {
+  case 0:
+
+      month = "Jan.json";
+
+      break;
+  case 1:
+      month = "Feb.json";
+      break;
+  case 2:
+      month = "Mar.json";
+      break;
+  case 3:
+      month = "Apr.json";
+      break;
+  case 4:
+      month = "May.json";
+      break;
+  case 5:
+      month = "Jun.json";
+      break;
+  case 6:
+      month = "Jul.json";
+      break;
+  case 7:
+      month = "Aug.json";
+      break;
+  case 8:
+      month = "Sept.json";
+      break;
+  case 9:
+      month = "Oct.json";
+      break;
+  case 10:
+      month = "Nov.json";
+      break;
+  case 11:
+      month = "Dec.json";
+      break;
+  default:
+      month = "Invalid Month"; // Handle unexpected cases
+}
+
+
+
+
 async function fetchData() {
-  const apiUrl = "https://as9055.github.io/KuchBhi/Data.json";
+     var apiUrl = "https://raw.githubusercontent.com/AnonymousAdgaur/BirthdayApi/main/";
+   apiUrl = apiUrl + month;
   const proxyUrl = "https://api.allorigins.win/get?url=";
 
-
   try {
+//  const response = await fetch(apiUrl);
       const response = await fetch(proxyUrl + encodeURIComponent(apiUrl), {
           method: 'GET',
           headers: {
               'Content-Type': 'application/json',
-          },
+          }
+          // ,
+          // mode: 'no-cors',
       });
 
       if (!response.ok) {
@@ -112,88 +167,84 @@ async function fetchData() {
       }
 
       const data = await response.json();
+     
       return data;
   } catch (error) {
-      // console.error(error.message);
+      console.error(error);
       return null;
   }
 }
 
-// Example usage
-var din = new Date();
-var mnth = din.getMonth();
-// console.log(mnth);
-let data;
 
-var currmnth ;
-switch (mnth) {
-  case 0: currmnth = 'Jan'
-      break;
-      case 1: currmnth = 'Feb'
-      break;
-      case 2: currmnth = 'Mar'
-      break;
-      case 3: currmnth = 'Apr'
-      break;
-      case 4: currmnth = 'May'
-      break;
-      case 5: currmnth = 'June'
-      break;    
-      case 6: currmnth = 'July'
-      break;
-      case 7: currmnth = 'Aug'
-      break;
-      case 8: currmnth = 'Sept'
-      break;
-      case 9: currmnth = 'Oct'
-      break;
-      case 10: currmnth = 'Nov'
-      break;
-      case 11: currmnth = 'Dec'
-      break;
-  default:
-      break;
-}
+
+
+
+
 
 
 var res;
 async function main() {
   data = await fetchData();
-
+ 
   if (data) {
-
       var items = JSON.parse(data.contents);
 
-      // var x = items[0].DOB.substring(0,6);
-
-      //  var finaldata = items[0].currmnth;
-      
-      if(mnth){
-res = items[0][currmnth];
+      if (items) {
+          res = items;
           // console.log(res);
-      }
-         
 
-
-
-      for (let i = 0; i < res.length; i++) {
-         
-          if (isBirthdayToday(res[i].DOB)) {
-
-              addNewItem('events',
-                `${res[i].Name}`,
-                `${res[i].AllotedBranch}`,
-                '',
-                '🎂 112',
-                `${res[i].Photo}`,)
-          
+          if (res) {
+              for (let i = 0; i < res.length; i++) {
+                  if (isBirthdayToday(res[i].DOB)) {
+                    addNewItem('events',`${res[i].Name}`,`${res[i].Branch}`,"",'🎂 112',`${res[i].Photo}`,)
+                    // console.log(res[i].Name);
+                  }
+              }
+          } else {
+              alert("No Data Found");
           }
-          // else{
-          //     console.log('aayein');
-          // }
-
-        
+      } else {
+          alert("No Data Found for the current month");
       }
   }
 }
-main();
+
+
+function createCard(item) {
+  // Assuming your item has properties like title, image, etc.
+  const cardContainer = document.createElement('div');
+  cardContainer.className = 'card';
+
+  const titleElement = document.createElement('h2');
+  titleElement.textContent = `${item.Name}`;
+  titleElement.className='NameOfBirthdayGuy';
+
+  const branch = document.createElement('h3');
+  branch.textContent = `${item.Branch}`;
+  branch.className='BranchOfBirthdayGuy'
+
+  const year = document.createElement('h3');
+  year.textContent = `${item.Year}`;
+  year.className='YearOfBirthdayGuy'
+
+  const imageElement = document.createElement('img');
+  imageElement.src = `${item.Photo}`;
+  imageElement.alt = item.title;
+  imageElement.className='ImageOfBirthdayGuy'
+
+  // You can add more elements for other properties like description, etc.
+
+  cardContainer.appendChild(titleElement);
+  cardContainer.appendChild(imageElement);
+  cardContainer.appendChild(branch);
+  cardContainer.appendChild(year);
+
+  // Append the card to the body or any other container
+  document.body.appendChild(cardContainer);
+}
+
+
+  main();
+
+
+// addNewItem('events',`${res[i].Name}`,`${res[i].AllotedBranch}`,'','🎂 112',`${res[i].Photo}`,)
