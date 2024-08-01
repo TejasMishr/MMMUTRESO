@@ -7,13 +7,13 @@
   <title>MCA </title>
   <meta name="description"
     content="Madan Mohan Malviya University of Technology (MMMUT) and its resources, PYQ and Notes of semesters of B.tech BBA Bpharm MBA MTech">
-    <meta name="keywords"
+  <meta name="keywords"
     content="MMMUT,mmmut,mmmut gorakhpur,mmmut counselling,mmmut cut off,mmmut placement,mmmut cut off jee mains,mmmut student login,mmmut gorakhpur cutoff jee mains,mmmut b pharma fees,mmmut is government or private,mmmut .ac.in,mmmut admission process,samarth mmmut,mmmut cut off jee mains percentile,mmmut cse average package,mmmut logo,mmmut counselling 2022,mmmut counselling 2022 date,mmmut gorakhpur cutoff,mmmut ac in,mmmut cut off jee mains,mmmut placement,mmmut entrance exam 2021,mmmut admission,Madan Mohan Malaviya University of Technology, Gorakhpur (U.P.) India,MMMUT pyq,MMMUT PYQ,Madan Mohan Malaviya University,MMMUT reso,mmmut xyz,mmmut resources,mmm,mmmut pyq,mmmut notes,mmmut btech,mmmut BBA,MBA,Bpharma,Mtech">
   <meta name="robots" content="index , follow">
   <link href="mca.css" rel="stylesheet" type="text/css" />
   <link href="../style.css" rel="stylesheet" type="text/css" />
   <link href="../pyq/PYQ.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="../loader/load.css" type="text/css"/>
+  <link rel="stylesheet" href="../loader/load.css" type="text/css" />
   <link rel="stylesheet" href="../pyq/error.css" type="text/css" />
   <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/674dd8e09c.js" crossorigin="anonymous"></script>
@@ -67,8 +67,8 @@
     <form action="#" class="filter-options">
       <select name="session" id="session">
         <option value="-1">Select Session</option>
-        <option value="0">2021-24</option>
-        <option value="1">2022-25</option>
+        <option value="0">2022-24</option>
+        <option value="1">2023-25</option>
       </select>
 
       <select name="branch" id="branch">
@@ -95,11 +95,21 @@
       </select>
 
       <select name="paper" id="selectpaper">
-        <option value="-1">Select Papers</option>
+        <!-- <option value="-1">Select Papers</option>
         <option value="0">Minor 1</option>
         <option value="1">Minor 2</option>
-        <option value="2">Major</option>
+        <option value="2">Major</option> -->
+
+        <!-- New options -->
+        <option value="0">Minor</option>
+        <option value="1">Major</option>
       </select>
+
+      <!-- option for paper code -->
+      <select name="paperCode" id="Pcode">
+        <option value="-1">Select Paper Code</option>
+      </select>
+
     </form>
     <div id="load">
       <div class="lds-ripple">
@@ -125,142 +135,177 @@
   </div>
   <script>
 
-    var fileIDs =
+    // var fileIDs =
+    //   [
+    //     // SESSION 2021-24
+
+    //     [
+    //       // BRANCH MCA
+
+    //       [
+    //         // SEMESTER--------------------->>>>>
+
+    //         // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v', 'null'],
+    //         // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV', '1HwEoYy1lNYsqWNIwpNQQL-QsgNrWAujr'],
+    //         // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['null', 'null', 'null'],
+    //         // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['null', 'null', 'null']
+    //         // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['  ','  ','  '],
+    //         // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+    //         // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['  ','  ','  '],
+    //         // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+    //       ]
+
+
+    //     ],
+
+
+
+    //     // SESSION 2022-25
+
+    //     [
+    //       // BRANCH MCA
+
+    //       [
+    //         // SEMESTER--------------------->>>>>
+
+    //         // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt', '1AelSov8YGtXdmAP5q0QbBfJ79SMqy28O'],
+    //         // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N', '1BBL7FxyIKiPyv-zChbJFkHdm33U0vtwr'],
+    //         // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['null', 'null', 'null'],
+    //         // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         ['null', 'null', 'null']
+    //         // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['  ','  ','  '],
+    //         // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
+    //         // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['  ','  ','  '],
+    //         // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
+    //         // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
+
+    //       ]
+
+    //     ]
+
+    //   ];
+
+
+    // New changes
+    var fileIDs = [
+      // SESSION 2022-24
       [
-        // SESSION 2021-24
-
+        // BRANCH MCA
         [
-          // BRANCH MCA
-
-          [
-            // SEMESTER--------------------->>>>>
-
-            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v', 'null'],
-            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV', '1HwEoYy1lNYsqWNIwpNQQL-QsgNrWAujr'],
-            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['null', 'null', 'null'],
-            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['null', 'null', 'null']
-            // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['  ','  ','  '],
-            // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-            // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['  ','  ','  '],
-            // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-
-          ]
-
-
-        ],
-
-
-
-        // SESSION 2022-25
-
-        [
-          // BRANCH MCA
-
-          [
-            // SEMESTER--------------------->>>>>
-
-            // SEM 1  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt', '1AelSov8YGtXdmAP5q0QbBfJ79SMqy28O'],
-            // SEM 2  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N', '1BBL7FxyIKiPyv-zChbJFkHdm33U0vtwr'],
-            // SEM 3  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['null', 'null', 'null'],
-            // SEM 4  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            ['null', 'null', 'null']
-            // // SEM 5  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['  ','  ','  '],
-            // // SEM 6  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3'],
-            // // SEM 7  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['  ','  ','  '],
-            // // SEM 8  (Format : index(0) -> Minor 1  index(1) -> Minor 2 index(2) -> Major)
-            // ['file_id_Minor_1', 'file_id_Minor_2', 'file_id_3']
-
-          ]
-
+          // SEMESTER--------------------->>>>>
+          // SEM 1  (Format : index(0) -> Minor index(1) -> Major)
+          ['1Gy5DzdweFo8gru-L6rFpxO-u5Oqqs615', '1H3OzxkL644ODPWkkchE8kv_1Na_chc5v'],
+          // SEM 2  (Format : index(0) -> Minor index(1) -> Major)
+          ['1GskFUbE0609Sa41HPBSS5SNKT0bZJ5cT', '1HmRhdLnIPC8q1Be9zCIVawbD8FHJ1HVV'],
+          // SEM 3  (Format : index(0) -> Minor index(1) -> Major)
+          ['null', 'null'],
+          // SEM 4  (Format : index(0) -> Minor index(1) -> Major)
+          ['null', 'null']
         ]
+      ],
+      // SESSION 2023-25
+      [
+        // BRANCH MCA
+        [
+          // SEMESTER--------------------->>>>>
+          // SEM 1  (Format : index(0) -> Minor index(1) -> Major)
+          ['1AZXX88Zsjhu_qqQWzUje-Tr7rkWtMwBL', '1AaXqdNTMQWn9bSPYYstXn_5tHx-Abitt'],
+          // SEM 2  (Format : index(0) -> Minor index(1) -> Major)
+          ['1Ay63ByZbFDe1fNsPUenSrCsaIjYGXEgC', '1AtXWbNg2knXSP6gNtKXVphb-uDRNv66N'],
+          // SEM 3  (Format : index(0) -> Minor index(1) -> Major)
+          ['null', 'null'],
+          // SEM 4  (Format : index(0) -> Minor index(1) -> Major)
+          ['null', 'null']
+        ]
+      ]
+    ];
 
-      ];
 
+    var sessionSelect = document.getElementById('session');
+    var branchSelect = document.getElementById('branch');
+    var fileSelect = document.getElementById('fileSelect');
+    var selectpaper = document.getElementById('selectpaper');
+    var pdfViewer = document.getElementById('pdfViewer');
+    var ripple = document.querySelector("#load");
+    var maine = document.querySelector('.main');
+    var pdf = document.querySelector('.pdf-container');
 
-      var sessionSelect = document.getElementById('session');
-      var branchSelect = document.getElementById('branch');
-      var fileSelect = document.getElementById('fileSelect');
-      var selectpaper = document.getElementById('selectpaper');
-      var pdfViewer = document.getElementById('pdfViewer');
-      var ripple = document.querySelector("#load");
-      var maine = document.querySelector('.main');
-      var pdf = document.querySelector('.pdf-container');
+    // Function ripple
+    function displayRipple(duration) {
+      ripple.style.display = "flex";
+      setTimeout(() => {
+        ripple.style.display = "none";
+      }, duration);
+    }
 
-      // Function ripple
-      function displayRipple(duration) {
-        ripple.style.display = "flex";
+    function updatePDF() {
+      var selectedSession = sessionSelect.value;
+      var selectedBranch = branchSelect.value;
+      var selectedSemester = fileSelect.value;
+      var selectedPaper = selectpaper.value;
+
+      // Check if any of the selections is -1
+      if (selectedSession == -1 || selectedBranch == -1 || selectedSemester == -1 || selectedPaper == -1) {
+        // Display the "ripple" for 60 seconds (1 minute)
+        displayRipple(60000);
+        selectpaper.style.backgroundColor = "#fe0000";
+        selectpaper.style.color = "white";
+      } else {
+        selectpaper.style.backgroundColor = "#e1e1e1";
+        selectpaper.style.color = "black";
+
+        // Hide "ripple" after 4 seconds
         setTimeout(() => {
           ripple.style.display = "none";
-        }, duration);
+        }, 4000);
       }
 
-      function updatePDF() {
-        var selectedSession = sessionSelect.value;
-        var selectedBranch = branchSelect.value;
-        var selectedSemester = fileSelect.value;
-        var selectedPaper = selectpaper.value;
+      var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
 
-        // Check if any of the selections is -1
-        if (selectedSession == -1 || selectedBranch == -1 || selectedSemester == -1 || selectedPaper == -1) {
-          // Display the "ripple" for 60 seconds (1 minute)
-          displayRipple(60000);
-          selectpaper.style.backgroundColor = "#fe0000";
-          selectpaper.style.color = "white";
-        } else {
-          selectpaper.style.backgroundColor = "#e1e1e1";
-          selectpaper.style.color = "black";
-
-          // Hide "ripple" after 4 seconds
-          setTimeout(() => {
-            ripple.style.display = "none";
-          }, 4000);
-        }
-
-        var selectedFileID = fileIDs[selectedSession][selectedBranch][selectedSemester][selectedPaper];
-
-        if (selectedFileID === 'null') {
-          // Redirect to another page (e.g., "error.html")
-          // window.location.href = 'error.html';
-          maine.style.display = "flex";
-          pdf.style.display = "none";
-        } else {
-          maine.style.display = "none";
-          pdf.style.display = "flex";
-          // Display the "ripple" for 60 seconds (1 minute)
-          displayRipple(60000);
-        }
-
-        // Update the src attribute of the iframe
-        pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+      if (selectedFileID === 'null') {
+        // Redirect to another page (e.g., "error.html")
+        // window.location.href = 'error.html';
+        maine.style.display = "flex";
+        pdf.style.display = "none";
+      } else {
+        maine.style.display = "none";
+        pdf.style.display = "flex";
+        // Display the "ripple" for 60 seconds (1 minute)
+        displayRipple(60000);
       }
 
-      // Function to display an error message
-      function displayErrorMessage() {
-        alert('There was an error loading the PDF. Please Contact the administrator.');
-      }
+      // Update the src attribute of the iframe
+      pdfViewer.src = 'https://drive.google.com/file/d/' + selectedFileID + '/preview';
+    }
 
-      sessionSelect.addEventListener('change', updatePDF);
-      branchSelect.addEventListener('change', updatePDF);
-      fileSelect.addEventListener('change', updatePDF);
-      selectpaper.addEventListener('change', updatePDF);
+    // Function to display an error message
+    function displayErrorMessage() {
+      alert('There was an error loading the PDF. Please Contact the administrator.');
+    }
 
-      // Initial update when the page loads
-      updatePDF();
-    </script>
+    sessionSelect.addEventListener('change', updatePDF);
+    branchSelect.addEventListener('change', updatePDF);
+    fileSelect.addEventListener('change', updatePDF);
+    selectpaper.addEventListener('change', updatePDF);
+
+    // Initial update when the page loads
+    updatePDF();
+  </script>
 
 
   <script type="module">
